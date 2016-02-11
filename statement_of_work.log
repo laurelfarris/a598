@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.11.14)  11 FEB 2016 15:17
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.11.14)  11 FEB 2016 15:29
 entering extended mode
  %&-line parsing enabled.
 **statement_of_work.tex
@@ -117,20 +117,20 @@ File: pdftex.def 2007/01/08 v0.04d Graphics/color for pdfTeX
 )) (./statement_of_work.aux)
 \openout1 = `statement_of_work.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 -------------------- Geometry parameters
 paper: class default
 landscape: --
@@ -170,7 +170,7 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-Package hyperref Info: Link coloring OFF on input line 12.
+Package hyperref Info: Link coloring OFF on input line 13.
 
 (/usr/share/texmf/tex/latex/hyperref/nameref.sty
 Package: nameref 2006/12/27 v2.28 Cross-referencing by name of section
@@ -180,15 +180,15 @@ Package: refcount 2006/02/20 v3.0 Data extraction from references (HO)
 )
 \c@section@level=\count98
 )
-LaTeX Info: Redefining \ref on input line 12.
-LaTeX Info: Redefining \pageref on input line 12.
+LaTeX Info: Redefining \ref on input line 13.
+LaTeX Info: Redefining \pageref on input line 13.
  (./statement_of_work.out)
 (./statement_of_work.out)
 \@outlinefile=\write3
 \openout3 = `statement_of_work.out'.
 
 
-Overfull \hbox (9.57472pt too wide) in paragraph at lines 41--47
+Overfull \hbox (9.57472pt too wide) in paragraph at lines 42--48
 \OT1/cmr/m/n/12 in-for-ma-tion from the lit-er-a-ture, gen-eral rel-e-vance to 
 sci-ence/astronomy, pos-si-ble projects,
  []
@@ -197,43 +197,39 @@ sci-ence/astronomy, pos-si-ble projects,
 
 {/usr/share/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 86.
+(Font)              <12> on input line 87.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 86.
+(Font)              <8> on input line 87.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 86.
+(Font)              <6> on input line 87.
 
-Underfull \hbox (badness 1275) in paragraph at lines 106--110
+Underfull \hbox (badness 1275) in paragraph at lines 107--111
 []|$\OMS/cmsy/m/n/12 ^^E$ \OT1/cmr/m/n/12 Read [][]CORO-NAL LOOP OS-CIL-LA-TION
 S OB-SERVED WITH THE
  []
 
 
-LaTeX Warning: Float too large for page by 116.57172pt on input line 163.
+LaTeX Warning: Float too large for page by 116.57172pt on input line 164.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.166 \end{document}
-                     [2] (./statement_of_work.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+l.167 \end{document}
+                     [2] (./statement_of_work.aux) ) 
 Here is how much of TeX's memory you used:
- 2726 strings out of 256214
- 38297 string characters out of 1916999
+ 2727 strings out of 256214
+ 38310 string characters out of 1916999
  106677 words of memory out of 1500000
- 6022 multiletter control sequences out of 10000+200000
+ 6023 multiletter control sequences out of 10000+200000
  8410 words of font info for 30 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  25i,12n,32p,190b,329s stack positions out of 5000i,500n,6000p,200000b,15000s
-</usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/t
-ype1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb><
-/usr/share/texmf/fonts/type1/bluesky/cm/cmti12.pfb></usr/share/texmf/fonts/type
-1/bluesky/cm/cmtt12.pfb>
-Output written on statement_of_work.pdf (2 pages, 41130 bytes).
+</usr/share/texmf/fonts/typ
+e1/bluesky/cm/cmbx12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></u
+sr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/
+bluesky/cm/cmti12.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmtt12.pfb>
+Output written on statement_of_work.pdf (2 pages, 41142 bytes).
 PDF statistics:
  45 PDF objects out of 1000 (max. 8388607)
  6 named destinations out of 1000 (max. 131072)
