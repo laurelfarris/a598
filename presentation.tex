@@ -2,14 +2,16 @@
 \usepackage{graphicx}
 \usepackage{verbatim} % For using /begin{comment}; /end{comment}
 
-\definecolor{mine}{RGB}{155,155,155}
+\definecolor{oj}{rgb}{1.0,0.65,0.0}
+\definecolor{cblue}{rgb}{0.39,0.58,0.93}
 
 
 \setbeamercolor{normal text}{bg=black, fg=white}
-\setbeamercolor{frametitle}{fg=purple}
+\setbeamercolor{title}{fg=oj}
+\setbeamercolor{frametitle}{fg=oj}
 \setbeamercolor{block title}{fg=green}
-\setbeamercolor{itemize item}{fg=mine} % all frames will have red bullets
-\setbeamercolor{enumerate item}{fg=mine} % all frames will have red bullets
+\setbeamercolor{itemize item}{fg=cblue} % all frames will have red bullets
+\setbeamercolor{enumerate item}{fg=cblue} % all frames will have red bullets
 
 \usefonttheme{serif}
 \setbeamerfont{frametitle}{series=\bfseries} % Frame titles should be bold
@@ -25,8 +27,15 @@
     \titlepage
 \end{frame}
 
-\begin{frame}{Frame Title}
+\begin{frame}{Overview}
     The body of the frame
+\end{frame}
+
+\begin{frame}{Topic 1: Kink Oscillations}
+    Stuff about kink oscillations
+\end{frame}
+
+\begin{frame}{My Research}
 \end{frame}
 
 \end{document}

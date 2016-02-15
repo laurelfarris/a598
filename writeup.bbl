@@ -1,0 +1,14 @@
+\begin{thebibliography}{}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Aschwanden {et~al.}(1999)Aschwanden, Fletcher, Schrijver, \&
+  Alexander}]{kink_1}
+Aschwanden, M.~J., Fletcher, L., Schrijver, C.~J., \& Alexander, D. 1999, The
+  Astrophysical Journal, 520, 880
+
+\bibitem[{{Pascoe} {et~al.}(2015){Pascoe}, {Wright}, {De Moortel}, \&
+  {Hood}}]{kink_2}
+{Pascoe}, D.~J., {Wright}, A.~N., {De Moortel}, I., \& {Hood}, A.~W. 2015,
+  \aap, 578, A99
+
+\end{thebibliography}
