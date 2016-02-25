@@ -1,4 +1,5 @@
-\documentclass{beamer}
+\documentclass[table]{beamer}
+\usepackage{multirow}
 \usepackage{graphicx}
 \usepackage{verbatim} % For using /begin{comment}; /end{comment}
 
@@ -31,32 +32,113 @@
     The body of the frame
 \end{frame}
 
-\begin{frame}{Kinks and Sausages}
+\begin{frame}{Motivation/Main Scientific Question}
+    \begin{itemize}
+        \item The coronal heating problem
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Basic MHD equations}
+    Maybe
+\end{frame}
+
+\begin{frame}
     \begin{figure}
-        \includegraphics[width=3in]{kink_saus.png}
-    \caption*{\tiny image credit:
-    $https://inspirehep.net/record/1088737/files/figures_instab_locations.png$}
+        \includegraphics[width=3in]{disp_diagram.png}
     \end{figure}
 \end{frame}
 
-\begin{frame}{Kink modes}
-    In general $\ldots$
+\begin{frame}{Kink and Sausage modes}
+
+\begin{columns}
+    \begin{column}{0.5\textwidth}
     \begin{itemize}
         \item fast magnetoacoustic waves
         \item m = 1
         \item low plasma $\beta$
         \item present in coronal loops
     \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}  %%<--- here
+        \begin{itemize}
+            \item something about sausage modes
+        \end{itemize}
+    \end{column}
+\end{columns}
 \end{frame}
 
-\begin{frame}{Damping profiles of kink waves}
+\begin{frame}{Kinks and Sausages}
+    \begin{figure}
+        \includegraphics[width=3in]{kink_saus.png}
+        \caption*{\tiny image credit:
+            $https://inspirehep.net/record/1088737/files/figures_instab_locations.png$}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}{Kink1: Coronal loop oscillations observed with the
+        \emph{Transition Region And Coronal Explorer (TRACE)}}
     \begin{itemize}
-        \item Gaussian vs. exponential
+        \item Gaussian vs.\ exponential
         \item Plasma motions around footpoints of coronal loops
     \end{itemize}
 \end{frame}
 
-\begin{frame}{Sausage modes}
+\begin{frame}{Kink2: Excitation and damping of broadband kink waves
+    in the solar corona}
+\end{frame}
+
+\begin{frame}{Sausage1: Observations of sausage modes in magnetic pores}
+\end{frame}
+
+\begin{frame}{Sausage2: Sausage waves in transversely nonuniform
+    monolithic coronal tubes}
+\end{frame}
+
+\begin{frame}{Important Properties}
+    \begin{center}
+        \begin{tabular}{c|c|c|c|}
+            \cline{2-4} & timescale & sizescale & obs.\ method\\
+            \hline
+            \multicolumn{0}{|c|}{kink osc} & value & value & value\\
+            \hline
+            \multicolumn{0}{|c|}{sausage osc} & value & value & value\\
+            \hline
+            \multicolumn{0}{|c|}{acoustic osc} & value & value & value\\
+            \hline
+            \multicolumn{0}{|c|}{acoustic waves} & value & value & value\\
+            \hline
+            \multicolumn{0}{|c|}{fast waves} & value & value & value\\
+            \hline
+            \multicolumn{0}{|c|}{torsional modes} & value & value & value\\
+            \hline
+            \multicolumn{0}{|c|}{mixed modes} & value & value & value\\
+            \hline
+        \end{tabular}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Example Table}
+\begin{center}
+   \begin{tabular}{cc|c|c|}
+% row 1
+   \cline{3-4} & & \multicolumn{2}{|c|}{Condition (Gold standard)}\\
+% row 2
+   \cline{3-4} & & True & False \\
+   \hline
+% row 3 (and 4) - multirow
+   \multicolumn{1}{|c|} % add in vertical lines
+   {\multirow{2}{*}{Test outcome}}& % Text covers rows 3 and 4
+ % row 3
+   \multicolumn{1}{|c|}{Positive} %
+     & True Positive \cellcolor{green} & False Positive\cellcolor{red}\\
+ % row 4
+   \cline{2-4} \multicolumn{1}{|c|}{}
+     & \multicolumn{1}{|c|}{Negative}
+     & False Negative\cellcolor{red} & True Negative \cellcolor{green}\\
+    \hline
+    \end{tabular}
+\end{center}
 \end{frame}
 
 \begin{frame}{My Research}
