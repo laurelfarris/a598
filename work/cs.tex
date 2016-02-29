@@ -44,7 +44,7 @@
 \begin{itemize*}
     \item transverse (perpendicular to $\vec{F}_{res}$)
     \item torsional
-    \item incompressible
+    \item incompressible (under conditions of a straight cylinder (not twisted))
     \item type of MHD wave in which ions oscillate in response to a restoring
         force provided by an effective tension on the magentic field lines.
     \item low frequency (compared to the ion cyclotron frequency) traveling
@@ -92,6 +92,9 @@
         upper solar atmosphere.
 \end{itemize*}
 
+\subsection*{cusp speed}
+See \emph{tube speed}
+
 \section*{D}
 
 \subsection*{dispersion relations}
@@ -115,7 +118,21 @@
     \item propagate faster than both $V_A$ and $C_s$
 \end{itemize*}
 
+\subsection*{flute modes}
+See \emph{ballooning modes}
+
+\subsection*{fundamental modes}
+See \emph{global modes}
+
 \section*{G}
+
+\subsection*{global modes}
+\begin{itemize*}
+    \item $y(x,t)$ governed by some PDE with no \emph{explicit} time dependence.
+    \item A global mode is a solution of the form
+        $y(x,t) = \hat{y}(x)e^{i\omega t}$
+    \item PDE-dynamical system of infinitely many equations coupled together.
+\end{itemize*}
 
 \subsection*{gravity waves}
 Generated in fluid medium or interface between two media when the
@@ -168,6 +185,7 @@ which corresponds to the density weighed average Alfv\'en speed.
 \begin{itemize*}
     \item Waves are allowed to radiate into the external medium,
         i.e.\ the condition of mode localization is relaxed.
+    \item complex eigenfrequencies
     \item Bessel functions are replaced by Hankel functions in the
         dispersion relation. Can be the fundamental harmonic.
     \item Wavenumbers below cutoff value?
@@ -188,15 +206,17 @@ the direction of travel of the wave.
 
 \section*{M}
 \subsection*{magnetoacoustic waves}
-A magnetosonic wave (also magnetoacoustic wave) is a longitudinal wave
-of ions (and electrons) in a magnetized plasma propagating perpendicular
-to the stationary magnetic field.
-Magnetoacoustic modes are collectively supported by the plasma
-environment, i.e., the wave mode acts across neighbouring magnetic field
-lines and across transverse plasma inhomogeneities.
 \begin{itemize*}
+    \item A magnetosonic wave (also magnetoacoustic wave) is a
+        longitudinal wave of ions (and electrons) in a magnetized
+        plasma propagating perpendicular to the stationary magnetic field.
     \item compressible
-    \item slow?
+    \item slow MHD wave
+    \item collectively supported by the plasma environment, i.e., the wave mode acts
+        across neighbouring magnetic field lines and across transverse
+        plasma inhomogeneities.
+    \item observed as distrubances of EUV (and possibly X-ray) emission
+    \item both propagating and standing waves are observed
 \end{itemize*}
 
 \subsection*{magnetohydrodynamic (MHD) waves}
@@ -242,6 +262,21 @@ lines and across transverse plasma inhomogeneities.
                 \end{itemize*}
             \item damping: leakage by radiating modes? resonant abs? phase mixing?
             \item corona: compare obs and theory to discover new things
+        \end{itemize*}
+    \item \textcolor{red}{Interpreting observations: distinguish between modes that are
+        pressure driven (acoustic/slow magnetoacoustic) and magnetically
+        driven (Alfv\'en)}
+    \item \textcolor{red}{Relations between the (internal and external)
+        characteristic speeds (Alfv\'en, sound, and tube speeds)
+        \emph{determine properties of MHD modes guided by the tube.}}
+    \item The behavior of linear perturbations of the form
+        $$ \delta P_{tot}(r)\textrm{exp}\left[i(k_zz+m\phi-\omega t)\right]  $$
+        is governed by  the following system of first order differential
+        equations and algebraic equations:
+        $$ D\frac{d}{dr}(r\xi_r) = (C_A^2+C_s^2)\ldots  $$
+    \item Modes:
+        \begin{itemize*}
+            \item something
         \end{itemize*}
 \end{itemize*}
 
@@ -300,18 +335,28 @@ $$ k = \frac{2\pi}{\lambda}, \omega = \frac{2\pi}{T} $$
 This is what pressure waves are $\ldots$
 
 \section*{R}
+
+\subsection*{resonance}
+Periodic driving force frequency matches the wave frequency
+$\rightarrow$ large amplitude.
+
 \subsection*{resonant absorption}
-Mechanism of wave heating that could damp kink mode oscillations.
-Loss of acoustic power in sunspots. Time scales:
-\begin{enumerate*}
-    \item damping: collective mode $\rightarrow$ local mode,
-        \emph{independent} of dissipation.
-    \item dissipative damping of small scale perturbations of local
-        mode.
-\end{enumerate*}
-$\tau_1 \ll \tau_2$
+\begin{itemize*}
+    \item Mechanism of wave heating
+    \item could damp kink mode oscillations.
+    \item Loss of acoustic power in sunspots. Time scales:
+        \begin{enumerate*}
+            \item damping: collective mode $\rightarrow$ local mode,
+                \emph{independent} of dissipation.
+            \item dissipative damping of small scale perturbations of local
+                mode.
+        \end{enumerate*}
+        $\tau_1 \ll \tau_2$
+    \item inherently non-linear
+\end{itemize*}
 
 \section*{S}
+
 \subsection*{sausage modes}
 \begin{itemize*}
     \item m = 0
@@ -322,6 +367,7 @@ $\tau_1 \ll \tau_2$
     \item Has a long-wavelength cutoff (trapped sausage modes do
         not exist at longer wavelengths).
         Approaches a cut-off at the external Alfv\'en speed.
+        (Under condition of \emph{mode localization})
     \item Main feature is the periodic fluctuation of the cross-sectional
         area of the waveguide. This change is also associated with
         periodic fluctuations in density and temperature within the
@@ -353,10 +399,18 @@ $\tau_1 \ll \tau_2$
 \end{itemize*}
 
 \subsection*{speeds}
-Characteristic speeds of MHD are the sound speed and Alfv\'enic speed,
-given by:
-$ C_s = \sqrt{\frac{\gamma p_0}{\rho_0}} $ and
-$ C_A = \frac{B_0}{\sqrt{\mu_0\rho_0}} $
+Characteristic speeds of MHD:
+\begin{enumerate}
+    \item sound
+        $$ C_s = \sqrt{\frac{\gamma p_0}{\rho_0}} $$
+        $$ C_s \approx 166 T_o^{1/2} m s^{-1} = 200 km s^{-1}$$
+    \item Alfv\'en
+        $$ C_A = \frac{B_0}{\sqrt{\mu_0\rho_0}} $$
+        $$ V_A = 2.18\times10^{12}\frac{B_o}{\sqrt{n_o}}
+        \textrm{m}\ \textrm{s}^{-1}
+               = 3000 \textrm{km}\ \textrm{s}^{-1} $$
+               (B$_o \sim$ 100 G; n$_o$ $\sim$ 10$^{16}$ m$^{-3}$)
+\end{enumerate}
 
 \subsection*{spherical harmonics}
 3 kinds of resonant modes of oscillation:
@@ -375,6 +429,17 @@ Numbers:
         $-l \leq m \leq l$ (direction of waves is important); number of
         planes slicing longitudinally.
 \end{itemize*}
+
+\subsection*{standing waves}
+Confined to a finite region of space $\rightarrow$ quantifies the frequency
+\begin{itemize*}
+    \item Fundamental (2 nodes, one on each end):
+        $$f_1 = \frac{1}{2L}\sqrt{\frac{F}{\mu}}$$
+        where L is the string length, F is the tension, $\mu$ is the mass density
+    \item 3 nodes: $f_2 = 2f_1$
+    \item 4 nodes: $f_3 = 3f_1$
+\end{itemize*}
+
 
 \subsection*{surface modes}
 evanescent behavior in both media (inside and outside cylinder).
@@ -411,6 +476,11 @@ of the fluid surrounding the fixed structure. For a given structure,
 trapped modes may exist only at discrete frequencies.
 Mathematically, a trapped mode corresponds to an eigenvalue embedded
 in the continuous spectrum of the relevant operator.
+
+\subsection*{tube speed}
+Also known as \emph{cusp speed}, the tube speed is the combination of sound
+and Alfv\'en speeds.
+$$ C_T = C_sC_A/(C_A^2 + C_s^2)^{1/2} $$
 
 \section*{U}
 \section*{W}
