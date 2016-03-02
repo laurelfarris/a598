@@ -6,6 +6,9 @@
 Aschwanden, M.~J., Fletcher, L., Schrijver, C.~J., \& Alexander, D. 1999, The
   Astrophysical Journal, 520, 880
 
+\bibitem[{{Lopin} \& {Nagorny}(2015)}]{sausage_1}
+{Lopin}, I., \& {Nagorny}, I. 2015, \apj, 810, 87
+
 \bibitem[{Nakariakov \& Verwichte(2005)}]{Nak}
 Nakariakov, V.~M., \& Verwichte, E. 2005, Living Rev. Solar Phys.
 
@@ -13,5 +16,8 @@ Nakariakov, V.~M., \& Verwichte, E. 2005, Living Rev. Solar Phys.
   {Hood}}]{kink_2}
 {Pascoe}, D.~J., {Wright}, A.~N., {De Moortel}, I., \& {Hood}, A.~W. 2015,
   \aap, 578, A99
+
+\bibitem[{{Srivastava} \& {Dwivedi}(2010)}]{acoustic_1}
+{Srivastava}, A.~K., \& {Dwivedi}, B.~N. 2010, \mnras, 405, 2317
 
 \end{thebibliography}
