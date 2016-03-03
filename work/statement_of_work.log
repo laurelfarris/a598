@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.11.14)  26 FEB 2016 12:21
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.11.14)  2 MAR 2016 21:01
 entering extended mode
  %&-line parsing enabled.
 **statement_of_work.tex
@@ -207,24 +207,24 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 95.
- [3] [4] [5]
+ [3] [4]
 (./statement_of_work.aux) ) 
 Here is how much of TeX's memory you used:
- 3026 strings out of 256214
- 42304 string characters out of 1916999
+ 3025 strings out of 256214
+ 42298 string characters out of 1916999
  105743 words of memory out of 1500000
  6306 multiletter control sequences out of 10000+200000
  8103 words of font info for 29 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
- 25i,5n,32p,177b,387s stack positions out of 5000i,500n,6000p,200000b,15000s
+ 25i,5n,32p,177b,383s stack positions out of 5000i,500n,6000p,200000b,15000s
 </usr/share/texmf/fonts/type1/bluesky/cm/cmbx12.pfb>
 </usr/share/texmf/fonts/type1/bluesky/cm/cmr12.pfb></usr/share/texmf/fonts/type
 1/bluesky/cm/cmr17.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></us
 r/share/texmf/fonts/type1/bluesky/cm/cmti12.pfb></usr/share/texmf/fonts/type1/b
 luesky/cm/cmtt12.pfb>
-Output written on statement_of_work.pdf (5 pages, 48574 bytes).
+Output written on statement_of_work.pdf (4 pages, 47729 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 17 named destinations out of 1000 (max. 131072)
+ 73 PDF objects out of 1000 (max. 8388607)
+ 16 named destinations out of 1000 (max. 131072)
  17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
