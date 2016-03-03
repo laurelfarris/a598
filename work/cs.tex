@@ -1,11 +1,12 @@
 \documentclass[12pt]{article}
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=1.5in]{geometry}
 \usepackage{titlesec}
 \setlength{\parindent}{0em}
 \setlength{\parskip}{0.5em}
 \usepackage{enumitem}
 \usepackage{mdwlist}
 \usepackage{color}
+
 
 \title{\vspace{-0.5in}Wave Stuff}
 \author{}
@@ -16,7 +17,7 @@
 
 \vspace{-1in}
 
-\section*{A}
+\section*{\textcolor{magenta}{A}}
 
 \subsection*{acoustic waves (aka sound waves)}
 \begin{itemize*}
@@ -37,7 +38,9 @@
     \item large enough amplitude $\rightarrow$ shock wave,
         but usually small; ambient gas slightly disturbed
     \item exist in medium with low or non-existent magnetic field
-    \item isotropic
+    \item isotropic \- propagate equally in all directions. The phase
+        and group velocities are both equal to the sound speed (hence, the
+        part where acoustic waves are sound waves).
 \end{itemize*}
 
 \subsection*{Alfv\'en waves}
@@ -49,10 +52,20 @@
     \item type of MHD wave in which ions oscillate in response to a restoring
         force provided by an effective tension on the magentic field lines.
     \item low frequency (compared to the ion cyclotron frequency) traveling
-        oscillation of the ion and the magnetic field.
+        oscillation of the ion and the magnetic field. The ion mass
+        density provides the inertia and the magnetic field line
+        tension provides the restoring force.
     \item propagates in the direction of the magnetic field, although waves exist
         at oblique incidence and smoothly change into the magnetosonic wave
         when the propagation is perpendicular to the magnetic field.
+    \item The motion of the ions and the perturbation of the magnetic
+        field are in the same direction and transverse to the direction of
+        propagation. The wave is dispersionless.
+    \item If $v_{A} \ll c$, then $v \approx v_{A}$. If $v_{A} \gg c$,
+        then $v \approx c$. That is, at high field or low density, the
+        velocity of the Alfv\'en wave approaches the speed of light,
+        and the Alfv\'en wave becomes an ordinary electromagnetic
+        wave.
     \item possibly contribute to ion heating and acceleration in the solar
         wind via ion-cyclotron resonance with $ \nu > 10$ Hz, where R$_m$ is
         very large; small scale structures down to resistive or kinetic scales.
@@ -63,7 +76,8 @@
         and momentum far from source).
     \item easily excited by various dynamical perturbations of magnetic field
         lines.
-    \item promising tool for heating and diagnositcs of coronal magnetic structures.
+    \item promising tool for heating and diagnositcs of
+        coronal magnetic structures.
     \item magnetic force \emph{is} the restoring force$\ldots$ ``snaps'' back
         into a straight line, producing an Alfv\'en wave
     \item velicity is greater than the local sound speed in coronal conditions.
@@ -73,9 +87,22 @@
             \item present in magetnic structures? or everywhere?
             \item three types (shear, torsional, fast magnetoacoustic)?
         \end{itemize*}
+    \item Magnetic tension produces transverse waves that propagate
+        along the magnetic field $B_{o}$ with speed $v_{A}$:
+        $$ v_{A} = \frac{B_o}{\mu\rho_o} $$
+    \item (From \emph{Priest}): Types of Alfv\'en waves:
+        \begin{itemize*}
+            \item Shear or Torsional: No accompanying pressure or
+            density changes (magnetic field lines are straight?)
+            \item Compressional or Fast-Mode: Becomes a fast
+            magnetoacoutsic or fast-mode wave when pressure gradients
+            are included (Note: these are often the preferred names,
+            even when the pressure gradient is unimportant, so as to
+            avoid confusion with shear Alfv\'en waves). 
+        \end{itemize*}
 \end{itemize*}
 
-\section*{B}
+\section*{\textcolor{magenta}{B}}
 
 \subsection*{ballooning modes}
 \begin{itemize*}
@@ -85,7 +112,7 @@
 
 \subsection*{body modes}
 
-\section*{C}
+\section*{\textcolor{magenta}{C}}
 
 \subsection*{coronal loops}
 \begin{itemize*}
@@ -96,7 +123,7 @@
 \subsection*{cusp speed}
 See \emph{tube speed}
 
-\section*{D}
+\section*{\textcolor{magenta}{D}}
 
 \subsection*{dispersion relations}
 \begin{itemize*}
@@ -106,9 +133,9 @@ See \emph{tube speed}
         of a wave traveling through that medium.
 \end{itemize*}
 
-\section*{E}
+\section*{\textcolor{magenta}{E}}
 
-\section*{F}
+\section*{\textcolor{magenta}{F}}
 
 \subsection*{fast waves}
 \begin{itemize*}
@@ -125,7 +152,7 @@ See \emph{ballooning modes}
 \subsection*{fundamental modes}
 See \emph{global modes}
 
-\section*{G}
+\section*{\textcolor{magenta}{G}}
 
 \subsection*{global modes}
 \begin{itemize*}
@@ -150,14 +177,14 @@ Electromagnetic emission emitted by mildly relativistic electrons moving
 in a magnetic field
 (as opposed to synchrotron, with \emph{ultra}relativistic particles).
 
-\section*{H}
+\section*{\textcolor{magenta}{H}}
 
-\section*{I}
+\section*{\textcolor{magenta}{I}}
 \subsection*{instabilities}
 A disturbance that is not stabilized by the resulting forces.
 
-\section*{J}
-\section*{K}
+\section*{\textcolor{magenta}{J}}
+\section*{\textcolor{magenta}{K}}
 
 \subsection*{kink modes/waves/oscillations}
 \begin{itemize*}
@@ -191,7 +218,7 @@ A disturbance that is not stabilized by the resulting forces.
         the Z-pinch fusion power machines in the 1950s.
 \end{itemize*}
 
-\section*{L}
+\section*{\textcolor{magenta}{L}}
 
 \subsection*{leaky modes}
 \begin{itemize*}
@@ -216,7 +243,7 @@ waves in which the displacement of the \emph{medium} is in the
 same direction as, or the opposite direction to,
 the direction of travel of the wave.
 
-\section*{M}
+\section*{\textcolor{magenta}{M}}
 \subsection*{magnetoacoustic waves}
 \begin{itemize*}
     \item A magnetosonic wave (also magnetoacoustic wave) is a
@@ -307,13 +334,13 @@ Modes with the lowest wave number are \emph{global}, or
 Chromospheric signature of a large-scale coronal shock wave. Generated
 by flares, $\sim$ fast-mode MHD waves.
 
-\section*{N}
+\section*{\textcolor{magenta}{N}}
 \subsection*{Normal modes}
 Vibrational state of an oscillatory \emph{system} where the frequency
 is the same for all elements. E.g.\ resonant frequencies: equally
 spaced multiples of the fundamental.
 
-\section*{O}
+\section*{\textcolor{magenta}{O}}
 \subsection*{oscillations}
 Three types:
 \begin{enumerate*}
@@ -322,7 +349,7 @@ Three types:
     \item forced
 \end{enumerate*}
 
-\section*{P}
+\section*{\textcolor{magenta}{P}}
 
 \subsection*{phase mixing}
 \begin{itemize*}
@@ -346,7 +373,7 @@ $$ k = \frac{2\pi}{\lambda}, \omega = \frac{2\pi}{T} $$
 \subsection*{pressure waves}
 This is what pressure waves are $\ldots$
 
-\section*{R}
+\section*{\textcolor{magenta}{R}}
 
 \subsection*{resonance}
 Periodic driving force frequency matches the wave frequency
@@ -367,7 +394,7 @@ $\rightarrow$ large amplitude.
     \item inherently non-linear
 \end{itemize*}
 
-\section*{S}
+\section*{\textcolor{magenta}{S}}
 
 \subsection*{sausage modes}
 \begin{itemize*}
@@ -457,7 +484,7 @@ Confined to a finite region of space $\rightarrow$ quantifies the frequency
 evanescent behavior in both media (inside and outside cylinder).
 
 
-\section*{T}
+\section*{\textcolor{magenta}{T}}
 
 \subsection*{torsional vibration}
 \begin{itemize*}
@@ -494,8 +521,8 @@ Also known as \emph{cusp speed}, the tube speed is the combination of sound
 and Alfv\'en speeds.
 $$ C_T = C_sC_A/(C_A^2 + C_s^2)^{1/2} $$
 
-\section*{U}
-\section*{W}
+\section*{\textcolor{magenta}{U}}
+\section*{\textcolor{magenta}{W}}
 
 \subsection*{waves}
 \begin{itemize*}
@@ -524,8 +551,8 @@ $$ C_T = C_sC_A/(C_A^2 + C_s^2)^{1/2} $$
 Number of waves in a unit distance.
 $ k = 2\pi $
 
-\section*{X}
-\section*{Y}
-\section*{Z}
+\section*{\textcolor{magenta}{X}}
+\section*{\textcolor{magenta}{Y}}
+\section*{\textcolor{magenta}{Z}}
 
 \end{document}
