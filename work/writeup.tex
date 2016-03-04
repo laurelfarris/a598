@@ -12,7 +12,7 @@
 \title{\vspace{-0.75in}Coronal Seismology}
 \author{\vspace{-0.25in}Laurel Farris}
 \affil{New Mexico State University}
-\email{laurel@laurelfarris.com}
+\email{laurel07@nmsu.edu}
 
 \begin{abstract}
     Coronal seismology involves the investigation of {\mhd} (MHD) waves and
@@ -25,14 +25,11 @@ context of coronal seismology.
 \end{abstract}
 \keywords{Sun: corona \- Sun: oscillations \- Sun: seismology}
 
-\section{Introduction}\label{intro}
-\subsection{Motivation}
-[Motivation: coronal heating, other questions$\ldots$]
 
-\subsection{MHD}
-The heating of the corona by {\mhd} (MHD) waves is one of two prevalent theories
-on how it reaches such high temperatures, the other being magnetic
-reconnection (\cite{acoustic_1}).
+
+\section{Introduction}\label{intro}
+
+[Motivation: coronal heating, other questions$\ldots$]
 
 In \S\ref{MHD}, several major types of waves and oscillatory modes in
 the solar corona are described, along with recent investigations into
@@ -42,15 +39,56 @@ its implications for the broader field of coronal seismology in
 \S\ref{conclusion}.
 
 
-% General stuff about oscillations
-\section{Oscillations}\label{MHD}
+%======================================================================%
+\section{General MHD}\label{MHD}
+The heating of the corona by magnetohydrodynamic (MHD)
+waves is one of two prevalent theories
+on how it reaches such high temperatures, the other being magnetic
+reconnection (\cite{acoustic_1}).
 
+% Categories of MHD waves
+The categories of MHD waves and oscillations can be best understood
+by their speeds. Figure~\ref{speeds} shows the wave speeds relative
+to the internal and external Alfv\'en and sound speeds.
+
+\begin{figure}%[h]
+    \plotone{disp_diagram.png}
+    \caption{text (Image credit:~\cite{Nak})}
+    \label{speeds}
+\end{figure}
+
+% Modeling of MHD waves
+% Ideal MHD (possible maths)
+MHD waves are often modeled with a cylindrical flux tube embedded
+in a magnetic field.
+
+
+%----------------------------------------------------------------------%
+% General info about the different types of MHD waves
+\subsection{Wave Categories}
+\subsubsection{Oscillations}
 $$ \xi(x) = \xi(r)e^{i(kx+m\phi)} $$
+For kink oscillations, m=1, and for sausage modes, m=0.
+%----------------------------------------------------------------------%
+\subsection{Alfv\'en Waves}
+%----------------------------------------------------------------------%
+\subsection{Excitation Mechanisms}
+%----------------------------------------------------------------------%
+\subsection{Damping Mechanisms}
+\subsubsection{Resonant Absorption}
+\subsubsection{Phase Mixing}
+%----------------------------------------------------------------------%
+\subsection{Observation Techniques}
+Flux tubes (coronal loops), doppler shift and intensity variations,
+density variations, velocity and magnetic field values,
+etc.
 
-For kink oscillations, m=1, and for sausage
-modes, m=0.
 
-% Specific stuff about oscillations; referring to papers
+%======================================================================%
+\section{Research Topics}\label{topics}
+[Specific stuff from papers here]
+
+%----------------------------------------------------------------------%
 \subsection{Kink Oscillations}
 Kink oscillations are commonly associated with coronal loops, and
 characterize the spacial oscillations that occur over the surface of
@@ -111,10 +149,24 @@ density drops. The relationship between pore size and intensity can
 indicate
 
 \subsection{Acoustic Oscillations}
-\section{Waves}
+Magneto-acoustic waves can be divided into two categories:
+slow-mode and fast-mode (\cite{Aschwanden}).
+The slow-mode waves have phase speeds roughly equal to the sound speed
+in the medium in which they reside, so these are general acoustic, or
+sound waves.
+
+Fast-mode magnetoacoustic waves have phase speeds close to the Alfv\'en
+speed.
+
+The relatives periodicities of aacoustic oscillations were recognized
+as important characteristics, and modelled by~\cite{acoustic_2}.
+They recognized magnetoacoustic oscillations as a useful way to determine
+other properties of the solar atmosphere.
+
 \subsection{Propagating Acoustic Waves}
+
 \subsection{Propagating Fast Waves}
-\section{Modes}
+
 \subsection{Torsional Modes}
 \subsection{Mixed Modes}
 

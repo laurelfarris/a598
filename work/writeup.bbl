@@ -1,6 +1,9 @@
 \begin{thebibliography}{}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
+\bibitem[{Aschwanden(2004)}]{Aschwanden}
+Aschwanden, M. 2004, Springer
+
 \bibitem[{Aschwanden {et~al.}(1999)Aschwanden, Fletcher, Schrijver, \&
   Alexander}]{kink_1}
 Aschwanden, M.~J., Fletcher, L., Schrijver, C.~J., \& Alexander, D. 1999, The
@@ -16,6 +19,9 @@ Nakariakov, V.~M., \& Verwichte, E. 2005, Living Rev. Solar Phys.
   {Hood}}]{kink_2}
 {Pascoe}, D.~J., {Wright}, A.~N., {De Moortel}, I., \& {Hood}, A.~W. 2015,
   \aap, 578, A99
+
+\bibitem[{{Roberts} {et~al.}(1984){Roberts}, {Edwin}, \& {Benz}}]{acoustic_2}
+{Roberts}, B., {Edwin}, P.~M., \& {Benz}, A.~O. 1984, \apj, 279, 857
 
 \bibitem[{{Srivastava} \& {Dwivedi}(2010)}]{acoustic_1}
 {Srivastava}, A.~K., \& {Dwivedi}, B.~N. 2010, \mnras, 405, 2317
