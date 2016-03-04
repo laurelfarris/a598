@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 MAR 2016 18:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  4 MAR 2016 10:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -227,13 +227,13 @@ Package pdftex.def Info: disp_diagram.png used on input line 55.
  [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./disp_diagram.png>] (./writeup.bbl [2]) [3
+ <./disp_diagram.png>] [2] (./writeup.bbl) [3
 
 ] (./writeup.aux) ) 
 Here is how much of TeX's memory you used:
  2775 strings out of 493089
  36271 string characters out of 6134842
- 99793 words of memory out of 5000000
+ 100793 words of memory out of 5000000
  6218 multiletter control sequences out of 15000+600000
  11645 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -252,7 +252,7 @@ usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
 sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
 r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/
 local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on writeup.pdf (3 pages, 195995 bytes).
+Output written on writeup.pdf (3 pages, 198530 bytes).
 PDF statistics:
  73 PDF objects out of 1000 (max. 8388607)
  51 compressed objects within 1 object stream
