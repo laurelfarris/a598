@@ -1,8 +1,16 @@
 \documentclass[preprint2]{aastex}
 \usepackage{natbib}
+\usepackage{booktabs}
 \bibliographystyle{apj}
 
-\newcommand{\mhd}{magnetohydrodynamic}
+%\tabletypesize{\small}
+%\rotate
+%\tablewidth{dimen} % Default - pagewidth
+%\tablenum{1}
+%\tablecolumns{num}
+%\tablecaption{Characteristic properties of the basic MHD waves,
+%    along with their observational techniques\label{prop}}
+%\tablehead{\colhead{} & \colhead{} & \colhead{}}
 
 \shorttitle{Coronal Seismology}
 \shortauthors{Farris}
@@ -15,7 +23,8 @@
 \email{laurel07@nmsu.edu}
 
 \begin{abstract}
-    Coronal seismology involves the investigation of {\mhd} (MHD) waves and
+Coronal seismology involves the investigation of magnetohydrodynamic
+(MHD) waves and
 ocillatory phenomenae that arise in the solar corona. Here some of the
 dominant waves, oscillations, and modes are intimately investigated in
 the literature. Analysis of data from the Atmospheric Imaging
@@ -25,100 +34,83 @@ context of coronal seismology.
 \end{abstract}
 \keywords{Sun: corona \- Sun: oscillations \- Sun: seismology}
 
-
-
 \section{Introduction}\label{intro}
-
-[Motivation: coronal heating, other questions$\ldots$]
-
-In \S\ref{MHD}, several major types of waves and oscillatory modes in
-the solar corona are described, along with recent investigations into
-each one. \S\ref{data} includes a description of a research project and
-its implications for the broader field of coronal seismology in
-\S\ref{analysis}. Conclusions and future work are summed up in
-\S\ref{conclusion}.
-
-
-%======================================================================%
-\section{General MHD}\label{MHD}
 The heating of the corona by magnetohydrodynamic (MHD)
 waves is one of two prevalent theories
 on how it reaches such high temperatures, the other being magnetic
 reconnection (\cite{acoustic_1}).
 
-% Categories of MHD waves
+The basic types of MHD waves and oscillations are discussed in
+\S\ref{MHD}.
+\S\ref{topics} discusses each of the research topics in detail,
+including including references to work that has been done and is
+currently being carried out to address each one.
+\S\ref{data} and \S\ref{analysis}
+include a description of the research project and
+its implications for the broader field of coronal seismology.
+Conclusions and future work are summed up in
+\S\ref{conclusion}.
+%====================================================================%
+\section{General MHD}\label{MHD}
+%--------------------------------------------------------------------%
+\subsection{Types of Waves}
 The categories of MHD waves and oscillations can be best understood
-by their speeds. Figure~\ref{speeds} shows the wave speeds relative
+by their relative speeds. Figure~\ref{speeds} shows the wave speeds relative
 to the internal and external Alfv\'en and sound speeds.
 
-\begin{figure}%[h]
+\begin{figure}[ht]
     \plotone{disp_diagram.png}
     \caption{text (Image credit:~\cite{Nak})}
     \label{speeds}
 \end{figure}
 
-% Modeling of MHD waves
-% Ideal MHD (possible maths)
+%--------------------------------------------------------------------%
+\subsection{Equations and Models}
 MHD waves are often modeled with a cylindrical flux tube embedded
 in a magnetic field.
 
-
-%----------------------------------------------------------------------%
-% General info about the different types of MHD waves
-\subsection{Equations and Models}
 [cylindrical model, equations of ideal MHD, etc.]
 $$ \xi(x) = \xi(r)e^{i(kx+m\phi)} $$
 For kink oscillations, m=1, and for sausage modes, m=0.
-\subsection{Wave Categories}
-\subsubsection{Magnetoacoustic Waves}
-Magneto-acoustic waves can be divided into two categories:
-slow-mode and fast-mode (\cite{Aschwanden}).
-The slow-mode waves have phase speeds roughly equal to the sound speed
-in the medium in which they reside, so these are general acoustic, or
-sound waves.
 
-Fast-mode magnetoacoustic waves have phase speeds close to the Alfv\'en
-speed.
-\subsubsection{Alfv\'en Waves}
-%----------------------------------------------------------------------%
+There are several equations for ideal MHD from which the dispersion
+relations are derived (I think).
+%--------------------------------------------------------------------%
 \subsection{Excitation and Damping Mechanisms}
 \subsubsection{Resonant Absorption}
 \subsubsection{Phase Mixing}
-%----------------------------------------------------------------------%
+%--------------------------------------------------------------------%
 \subsection{Observation Techniques}
 Flux tubes (coronal loops), doppler shift and intensity variations,
 density variations, velocity and magnetic field values,
 etc.
-
-
-%======================================================================%
+%====================================================================%
 \section{Research Topics}\label{topics}
-[Specific stuff from papers here]
-
-%----------------------------------------------------------------------%
+%--------------------------------------------------------------------%
 \subsection{Kink Oscillations}
-Kink oscillations are commonly associated with coronal loops, and
-characterize the spacial oscillations that occur over the surface of
-the loop (\cite{Nak}).
+Kink oscillations are directly observed in coronal loops in extreme
+ultraviolet (EUV) wavelengths.
+They characterize the spacial oscillations that occur over the surface of
+the loop, perpendicular to the direction traversed by the length
+of the loop (\cite{Nak}).
+Kink oscillations occur in the ``long-wavelength regime'';
+the product of the wavenumber and the cross-section of the coronal
+loop is much less than 1 ($ka \ll 1$). The phase speed is just above
+the Alfv\'en speed within the loop, and the period of the oscillation
+is expected to be between $\sim$ 2 and 20 minutes
+(\cite{Asc}).
 
-
-%While temporal variations have been observed for the past (?) years
-%or so, spatial variations were not revealed until the launch of
-%TRACE, which provided sufficient spatial resolution to distinguish
-%the spatial displacements of MHD oscillations.
-% or
-%the different characteristics of MHD oscillations.
-
-%----paper1----%
+While temporal variations have been observed previously,
+spatial variations were not revealed until the launch of
+TRACE\@.
 Some of the first observations of these spatial variations
 were carried out by~\cite{kink_1},
-who utilized some of the first data released from the TRACE mission in
-order to investigate the oscillations present in coronal loops.
-Using data taken with the 171\AA{} filter, they modeled five loops that
-were present with a solar flare in 1998.
+utilizing preliminary data released from the TRACE mission
+to investigate the oscillations present in coronal loops.
+Using 171 \AA{} data, they modeled five loops
+that occompanied a solar flare in 1998.
 The resulting model had several qualities characteristic of
-fast kink modes, including asymmetry
-and
+fast kink modes, including asymmetry and
 displacements represented by sine curves.
 As the period of kink modes were already known to correlate
 with the magnetic field strength of the loop, pinpointing this
@@ -144,8 +136,6 @@ the effect of a ``highly structured'' driver, which they
 found to be unrealistic, and the effects of eddies and photospheric
 motions around the footpoints of the coronal loops.
 
-
-
 \subsection{Sausage Oscillations}
 \cite{sausage_1} plotted the changes in intensity and cross-sectional
 area for sausage oscillations in photospheric pores extending up
@@ -154,6 +144,18 @@ the pores, though it is more likely that the cross-sectional area of
 the waveguide increases with height as the temperature increases and
 density drops. The relationship between pore size and intensity can
 indicate
+
+\subsection{Magnetoacoustic Waves}
+Magneto-acoustic waves can be divided into two categories:
+slow-mode and fast-mode (\cite{Asc}).
+The slow-mode waves have phase speeds roughly equal to the sound speed
+in the medium in which they reside, so these are general acoustic, or
+sound waves.
+
+Fast-mode magnetoacoustic waves have phase speeds close to the Alfv\'en
+speed.
+
+
 
 \subsection{Acoustic Oscillations}
 
@@ -175,16 +177,55 @@ were close to the 5-minute global oscillations of the sun.
 
 
 \subsection{Propagating Acoustic Waves}
+While standing acoustic waves are primarily seen in closed coronal
+loops, propagating waves are seen in both closed and open structures.
+Their propagation speed is much lower than the local Alfv\'en speed,
+so they are categorized as slow, longitudinal waves (acoustic waves,
+essentially) that travel along magnetic field lines at speeds equal to
+the local sound speed.
+Since this speed is proportional to the square of the equilibrium temperature,
+which is unchanging along the length of a coronal loop, measurement of the
+propagation speed could potentially provide a method of constraining the
+temperature, though unfortunately this technique currently suffers from
+projection effects
+(\cite{Nak}).
 
 \subsection{Propagating Fast Waves}
 
 \subsection{Torsional Modes}
 \subsection{Mixed Modes}
 
+
+
+
+\section{Discussion}\label{disc}
+The observational techniques and relevant properties of each of the different
+kinds of MHD waves are summarized in table 1.
+%----table----%
+\begin{table*}[ht]
+    \centering
+    \begin{tabular}{c c c c}
+        \toprule
+        Type of wave &
+        Timescales &
+        Sizescales &
+        Observational techniques\\
+        \midrule
+        Kink Oscillations & short & short & something\\
+        Sausage Oscillations & short & short & something\\
+        Acoustic Oscillations & x & x & x\\
+        Propagating & x & x & x\\
+        \bottomrule
+    \end{tabular}
+\end{table*}
+%-------------%
+
 \section{Data}\label{data}
 As part of the general topic of coronal seismology,
 a small research project was carried out as well, continuing
-over from several semesters previously.
+over from several semesters previously. Several of the observational
+and analytical methods used in the literature were reproduced for
+this project.
 
 \section{Analysis}\label{analysis}
 
