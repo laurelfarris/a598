@@ -20,10 +20,20 @@ Nakariakov, V.~M., \& Verwichte, E. 2005, Living Rev. Solar Phys.
 {Pascoe}, D.~J., {Wright}, A.~N., {De Moortel}, I., \& {Hood}, A.~W. 2015,
   \aap, 578, A99
 
+\bibitem[{{Robbrecht} {et~al.}(2001){Robbrecht}, {Verwichte}, {Berghmans},
+  {Hochedez}, {Poedts}, \& {Nakariakov}}]{pac_1}
+{Robbrecht}, E., {Verwichte}, E., {Berghmans}, D., {et~al.} 2001, \aap, 370,
+  591
+
 \bibitem[{{Roberts} {et~al.}(1984){Roberts}, {Edwin}, \& {Benz}}]{acoustic_1}
 {Roberts}, B., {Edwin}, P.~M., \& {Benz}, A.~O. 1984, \apj, 279, 857
 
 \bibitem[{{Srivastava} \& {Dwivedi}(2010)}]{acoustic_2}
 {Srivastava}, A.~K., \& {Dwivedi}, B.~N. 2010, \mnras, 405, 2317
+
+\bibitem[{{Uritsky} {et~al.}(2013){Uritsky}, {Davila}, {Viall}, \&
+  {Ofman}}]{pac_2}
+{Uritsky}, V.~M., {Davila}, J.~M., {Viall}, N.~M., \& {Ofman}, L. 2013, \apj,
+  778, 26
 
 \end{thebibliography}

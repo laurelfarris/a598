@@ -64,13 +64,24 @@ to the internal and external Alfv\'en and sound speeds.
     \label{speeds}
 \end{figure}
 
+Magneto-acoustic waves can be divided into two categories:
+slow-mode and fast-mode (\cite{Asc}).
+The slow-mode waves have phase speeds roughly equal to the sound speed
+in the medium in which they reside, so these are general acoustic, or
+sound waves.
+
+Fast-mode magnetoacoustic waves have phase speeds close to the Alfv\'en
+speed.
+
 %--------------------------------------------------------------------%
 \subsection{Equations and Models}
 MHD waves are often modeled with a cylindrical flux tube embedded
 in a magnetic field.
 
 [cylindrical model, equations of ideal MHD, etc.]
-$$ \xi(x) = \xi(r)e^{i(kx+m\phi)} $$
+\begin{equation}
+ \xi(x) = \xi(r)e^{i(kx+m\phi)}
+\end{equation}
 For kink oscillations, m=1, and for sausage modes, m=0.
 
 There are several equations for ideal MHD from which the dispersion
@@ -145,17 +156,6 @@ the waveguide increases with height as the temperature increases and
 density drops. The relationship between pore size and intensity can
 indicate
 
-\subsection{Magnetoacoustic Waves}
-Magneto-acoustic waves can be divided into two categories:
-slow-mode and fast-mode (\cite{Asc}).
-The slow-mode waves have phase speeds roughly equal to the sound speed
-in the medium in which they reside, so these are general acoustic, or
-sound waves.
-
-Fast-mode magnetoacoustic waves have phase speeds close to the Alfv\'en
-speed.
-
-
 
 \subsection{Acoustic Oscillations}
 
@@ -171,27 +171,115 @@ and up into the corona. The time series of intensity oscillations was
 converted into a power spectrum, and periodicities were extracted using
 wavelet analysis and periodograms (note here on what exactly these are?).
 The periods they derived
-($\sim$ 263 +/- 80 s for the He II 256.32 \AA{} emission line and
-($\sim$ 241 +/- 60 s for the Fe XII 195.12 \AA{}  emission line)
+($\sim 263 \pm 80$ s for the He II 256.32 \AA{} emission line and
+($\sim 241 \pm 60$ s for the Fe XII 195.12 \AA{}  emission line)
 were close to the 5-minute global oscillations of the sun.
 
 
 \subsection{Propagating Acoustic Waves}
 While standing acoustic waves are primarily seen in closed coronal
-loops, propagating waves are seen in both closed and open structures.
-Their propagation speed is much lower than the local Alfv\'en speed,
-so they are categorized as slow, longitudinal waves (acoustic waves,
-essentially) that travel along magnetic field lines at speeds equal to
+loops, propagating waves have been observed in both closed and open structures.
+The propagation speed of such waves is much lower than the local Alfv\'en speed,
+thus they are categorized as slow, longitudinal waves,
+(or magnetoacoustic waves),
+that travel along magnetic field lines at speeds roughly equal to
 the local sound speed.
-Since this speed is proportional to the square of the equilibrium temperature,
-which is unchanging along the length of a coronal loop, measurement of the
-propagation speed could potentially provide a method of constraining the
-temperature, though unfortunately this technique currently suffers from
-projection effects
+The changes in intensity along the same location as these waves
+propagate in time are mapped side by side to give time-distance
+information. The period, wavelength, propagation speed, and amplitude
+can all be derived using this method.
+Since the local sound, $c_{s}$ is related to temperature, $T$, as
+\begin{equation}\label{sound-temp}
+ c_{s} \propto \sqrt{T}
+\end{equation}
+a difference in observed propagation speeds implies a changing
+temperature profile in the transverse direction across the loop.
 (\cite{Nak}).
 
-\subsection{Propagating Fast Waves}
+One of the first studies to analyze
+simultaneous observations at different wavelengths was carried out by
+\cite{pac_1} using data from two different instruments:
+the Extreme ultraviolet Imaging Telescope (EIS)
+on the Solar and Heliospheric Observatory (SOHO) and the
+Transition Region And Coronal Explorer (TRACE).
+These wavelengths, along with their corresponding ions emitting at those
+wavelengths, the temperature, and other relevant quantities from the
+study are given in table \ref{stuff}.
+%-------------------------------------%
+\begin{table}[h]
+\centering
+\begin{tabular}{c c c}
+\hline\hline
+instrument & EIT & TRACE\\
+\hline
+ion & Fe {\footnotesize XII} & Fe {\footnotesize IX}\\
+wavelength & 195 \AA{} & 171 \AA{}\\
+cadence & 15 s & 25 s\\
+temperature & 1.6 MK & 1 MK\\
+sound speed & 192 km s$^{-1}$ & 152 km s$^{-1}$\\
+propagation speed & 110 km s$^{-1}$ & 95 km s$^{-1}$\\
+\hline\hline
+\end{tabular}
+\caption{Relevant quantities from \cite{pac_1}}
+\label{stuff}
+\end{table}
+%-------------------------------------%
+Both instruments observed AR 8218, where the presence of
+``weak transient disturbances'' were revealed, and later classified as
+slow, propagating magnetoacoustic waves, with speeds that varied
+between 65 and 150 km s$^{-1}$.
+The expression for the formal sound speed of the ambient region
+was given by
+\begin{equation}
+    c_{s} = 152\ \sqrt{T}\ \textrm{m}\ \textrm{s}^{-1}
+\end{equation}
+where $T$ is in units of Kelvin.
+This was compared to the observed speed of the progating wave, which
+was derived from the slope of the ``ridges'' on each of the four
+time-distance plots.
+The propatation speed of each wave was slightly ($\sim$ same order of
+magnitude) lower than the local sound speed. This difference
+was due to the angle between the loop and the plane of the sky against
+which the observations were made.
+The amount of time for a disturbance to pass a particular point was
+determined to be $\sim$ 169 s from the TRACE data.
+As both observations targeted the same wave, the signficance of the
+differing speeds for each observation indicated a temperature gradient
+in the loop itself, indicating either a bundle of loop threads that
+make up a single loop, or a number of concentric shells that make up a
+single loop.
 
+A similar analysis in multiple wavelengths was carried out by
+\cite{pac_2}, using about 6 hours of observational data from the
+Atmospheric Imaging Assemply (AIA) on the Solar Dynamics Observatory (SDO).
+In addition to these observations, they introduced the
+``surfacing transform technique''
+in order to address the difficulty in extracting information from these
+low-amplitude waves amidst the noise (a typical signal-to-noise
+($S/N$) ratio was $\sim$ 0.1 \%). (more information about this
+technique here?)
+This method involved the resonant behavior of ``surfing signals'',
+revealed during quasi-periodic disturbances.
+%Each surfing signal
+%(ST) is a periodic disturbance as a function of time and frequency
+
+This technique was applied to the lines at
+131 \AA{}, 171 \AA{}, 193 \AA{}, and 211 \AA{},
+over the active region (AR) NOAA AR 11082, where no sunspots were seen
+to be present and the flares were relatively low-energy.
+They found the same relationship between sound speed and temperature
+as shown in equation \ref{sound-temp}, though the driving mechanism
+for these disturbances was uncertain. The observed propagations were
+travelling primarily in the upward direction away from the footpoint,
+at speeds of about 40 to 180 km s$^{-1}$ and periodicities between 4
+and 8 minutes over all four channels. 
+
+
+
+
+
+
+\subsection{Propagating Fast Waves}
 \subsection{Torsional Modes}
 \subsection{Mixed Modes}
 
