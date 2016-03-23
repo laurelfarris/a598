@@ -51,9 +51,23 @@ its implications for the broader field of coronal seismology.
 Conclusions and future work are summed up in
 \S\ref{conclusion}.
 %====================================================================%
-\section{General MHD}\label{MHD}
+\section{Basic MHD}\label{MHD}
 %--------------------------------------------------------------------%
 \subsection{Types of Waves}
+In general, MHD waves are divided into two categories:
+Alfv\'en waves and magnetoacoustic waves.
+Magneto-acoustic waves can be further subdivided into
+slow-mode and fast-mode (\cite{Asc}).
+The slow-mode waves have phase speeds roughly equal to the sound speed
+in the medium in which they reside, analogous to typical acoustic waves,
+or sound waves. MHD studies usually focus on the fast-mode.
+Fast-mode magnetoacoustic waves have phase speeds comparable to the Alfv\'en
+speed, or $\omega/k \approx v_A$ (\cite{kink_1}).
+Two common fast modes in the corona are the asymmetric \emph{kink}
+oscillations and symmetric \emph{sausage} oscillations,
+which are discussed in more detail
+in \S{\ref{kink}} and \S{\ref{sausage}}, respectively.
+
 The categories of MHD waves and oscillations can be best understood
 by their relative speeds. Figure~\ref{speeds} shows the wave speeds relative
 to the internal and external Alfv\'en and sound speeds.
@@ -64,14 +78,13 @@ to the internal and external Alfv\'en and sound speeds.
     \label{speeds}
 \end{figure}
 
-Magneto-acoustic waves can be divided into two categories:
-slow-mode and fast-mode (\cite{Asc}).
-The slow-mode waves have phase speeds roughly equal to the sound speed
-in the medium in which they reside, so these are general acoustic, or
-sound waves.
-
-Fast-mode magnetoacoustic waves have phase speeds close to the Alfv\'en
-speed.
+Each MHD mode is characterized based on a number of qualities, such
+as its wavelength, period, lifetime, speed, and
+whether it is propagting or standing, fast or slow, longitudinal
+or transverse, etc. The driving mechanisms that give rise to each mode
+can differ depending on these qualities and the environment in which
+the modes reside, and is one of the important MHD topics under investigation,
+along with the damping mechanism (\cite{kink_1}).
 
 %--------------------------------------------------------------------%
 \subsection{Equations and Models}
@@ -94,42 +107,58 @@ relations are derived (I think).
 \subsection{Observation Techniques}
 Flux tubes (coronal loops), doppler shift and intensity variations,
 density variations, velocity and magnetic field values,
-etc.
+etc. Coronal loops are density inhomogeneities in the corona,
+where the (low-$\beta$) plasma is ``frozen-in'' along the magnetic
+field lines whose feet are anchored in the photosphere.
 %====================================================================%
 \section{Research Topics}\label{topics}
 %--------------------------------------------------------------------%
-\subsection{Kink Oscillations}
+\subsection{Kink Oscillations}\label{kink}
 Kink oscillations are directly observed in coronal loops in extreme
 ultraviolet (EUV) wavelengths.
 They characterize the spacial oscillations that occur over the surface of
 the loop, perpendicular to the direction traversed by the length
 of the loop (\cite{Nak}).
-Kink oscillations occur in the ``long-wavelength regime'';
+Kink oscillations generally are not accompanied by intensity variations;
+they displace the axis of the magnetic structure in which they propagate,
+but the cross-section of the waveguide remains roughly the same.
+Kink oscillations occur in the ``long-wavelength regime'',
+which is defined by
 the product of the wavenumber and the cross-section of the coronal
-loop is much less than 1 ($ka \ll 1$). The phase speed is just above
-the Alfv\'en speed within the loop, and the period of the oscillation
-is expected to be between $\sim$ 2 and 20 minutes
-(\cite{Asc}).
+loop being much less than 1 ($ka \ll 1$). In other words, the
+\emph{wavelength} of the oscillation is much \emph{greater} than the
+cross-section of the waveguide.
+The phase speed is just above the Alfv\'en speed within the loop,
+and the period of the oscillation is expected to be between
+$\sim$ 2 and 20 minutes (\cite{Asc}).
 
-While temporal variations have been observed previously,
-spatial variations were not revealed until the launch of
-TRACE\@.
-Some of the first observations of these spatial variations
-were carried out by~\cite{kink_1},
-utilizing preliminary data released from the TRACE mission
-to investigate the oscillations present in coronal loops.
+Due to a lack of sufficient instrumentation,
+spatial variations such as those caused by kink oscillations
+were not resolved until the launch of TRACE\@.
+Some of the first results from preliminary TRACE data were produced by
+\cite{kink_1} to investigate the oscillations present in coronal loops.
 Using 171 \AA{} data, they modeled five loops
-that occompanied a solar flare in 1998.
-The resulting model had several qualities characteristic of
-fast kink modes, including asymmetry and
-displacements represented by sine curves.
-As the period of kink modes were already known to correlate
-with the magnetic field strength of the loop, pinpointing this
-type of mode as the driver in coronal loops provided a valuable
-constraint on coronal conditions.
+that accompanied a class M4.6 solar flare in July of 1998.
+At this point, many MHD modes were characterized in theory
+
+The observations had enough qualities characteristic of
+fast kink modes, including the spatial displacements characterisic
+of this asymmetrical mode, to identify these oscillations as kink
+modes.
+An average period of $T = 269 \pm 6$ seconds, or
+roughly 4.5 minutes, was obtained, which fit well with the theoretical
+period for kink oscillations.
 The absense of any phase
 shift along the length of the loops revealed that these were
 \emph{standing waves}, with nodes located at the loop footpoints.
+The ability to identify kink modes has great significance
+for solar phsyics due to a correlation between the oscillation period,
+$T$, and the magnetic field strength, $B$, of the loop:
+\begin{equation}
+    T \propto \frac{L}{\sqrt{n}}{B}
+\end{equation}
+where $L$ is the loop length and $n$ is the number density,
+both of which can be estimated from known coronal conditions.
 
 %----paper2----%
 More recently,~\cite{kink_2} investigated the driving mechanism
@@ -147,13 +176,23 @@ the effect of a ``highly structured'' driver, which they
 found to be unrealistic, and the effects of eddies and photospheric
 motions around the footpoints of the coronal loops.
 
-\subsection{Sausage Oscillations}
+\subsection{Sausage Oscillations}\label{sausage}
+In contrast to kink oscillations, sausage oscillations do not displace
+the axis of the structure in which they reside. However, they do cause
+a periodic change in the cross-section of the waveguide, and hence
+are observable through changes in intensity (and therefore density,
+due to flux conservation).
+
 \cite{sausage_1} plotted the changes in intensity and cross-sectional
 area for sausage oscillations in photospheric pores extending up
 through the solar atmosphere. They used the general cylinder model for
 the pores, though it is more likely that the cross-sectional area of
 the waveguide increases with height as the temperature increases and
-density drops. The relationship between pore size and intensity can
+density decreases.
+Sausage waves are characterized by a change in the cross-section,
+but no displacement of the loop axis. They occur on much shorter
+timescales than kink waves.
+The relationship between pore size and intensity can
 indicate
 
 
