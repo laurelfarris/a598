@@ -35,20 +35,14 @@ context of coronal seismology.
 \keywords{Sun: corona \- Sun: oscillations \- Sun: seismology}
 
 \section{Introduction}\label{intro}
-The heating of the corona by magnetohydrodynamic (MHD)
-waves is one of two prevalent theories
-on how it reaches such high temperatures, the other being magnetic
-reconnection (\cite{acoustic_1}).
 
-The basic types of MHD waves and oscillations are discussed in
-\S\ref{MHD}.
-\S\ref{topics} discusses each of the research topics in detail,
-including including references to work that has been done and is
-currently being carried out to address each one.
-\S\ref{data} and \S\ref{analysis}
-include a description of the research project and
-its implications for the broader field of coronal seismology.
-Conclusions and future work are summed up in
+The basic concepts of MHD waves and oscillations are described in
+\S\ref{MHD}, and
+\S\ref{topics} covers several MHD modes in detail.
+Many of the techniques employed in coronal seismology were applied to AIA
+data; a description of the project and the results are presented in
+\S\ref{data} and \S\ref{analysis}.
+Conclusions and future work are discussed in
 \S\ref{conclusion}.
 %====================================================================%
 \section{Basic MHD}\label{MHD}
@@ -56,7 +50,7 @@ Conclusions and future work are summed up in
 \subsection{Types of Waves}
 In general, MHD waves are divided into two categories:
 Alfv\'en waves and magnetoacoustic waves.
-Magneto-acoustic waves can be further subdivided into
+Magnetoacoustic waves are further subdivided into
 slow-mode and fast-mode (\cite{Asc}).
 The slow-mode waves have phase speeds roughly equal to the sound speed
 in the medium in which they reside, analogous to typical acoustic waves,
@@ -78,6 +72,17 @@ to the internal and external Alfv\'en and sound speeds.
     \label{speeds}
 \end{figure}
 
+The sound speed in a medium is determined by thermal properties:
+the thermal pressure and the mass density of the medium.
+It is given by:
+\begin{equation}\label{sound_speed}
+    c_s = \sqrt{\frac{\gamma }{\rho}}
+\end{equation}
+The Alfv\'en speed, on the other hand, is determined by the magnetic
+pressure:
+\begin{equation}\label{Alfven_speed}
+    c_A = \frac{B}{\sqrt{4\pi\rho}}
+\end{equation}
 Each MHD mode is characterized based on a number of qualities, such
 as its wavelength, period, lifetime, speed, and
 whether it is propagting or standing, fast or slow, longitudinal
@@ -111,7 +116,7 @@ etc. Coronal loops are density inhomogeneities in the corona,
 where the (low-$\beta$) plasma is ``frozen-in'' along the magnetic
 field lines whose feet are anchored in the photosphere.
 %====================================================================%
-\section{Research Topics}\label{topics}
+\section{Types of MHD Modes}\label{topics}
 %--------------------------------------------------------------------%
 \subsection{Kink Oscillations}\label{kink}
 Kink oscillations are directly observed in coronal loops in extreme
@@ -218,13 +223,21 @@ were close to the 5-minute global oscillations of the sun.
 
 %-------------------------------------------------------------------%
 \subsection{Propagating Acoustic Waves}
+The MHD modes that have been discussed up to now are considered
+\emph{standing} modes: waves with nodes in a fixed
+position, such as the footpoints of coronal loops that are anchored in
+the photosphere. These are referred to as \emph{oscillations}.
+In contrast, \emph{propagating} waves have nodes that move with time
+(though two propagating waves traveling in opposite directions can
+have a net result of a single, standing oscillation; see
+\cite{Asc}, ch. 8).
 
-While standing acoustic waves are primarily seen in closed coronal
-loops, propagating waves have been observed in both closed and open structures.
-The propagation speed of such waves is much lower than the local Alfv\'en speed,
-thus they are categorized as slow, longitudinal waves,
-(or magnetoacoustic waves),
-that travel along magnetic field lines at speeds roughly equal to
+Standing acoustic waves are primarily seen in closed coronal
+loops, while propagating waves have been observed in both closed 
+and open structures.
+Waves with propagations speed much lower than the 
+local Alfv\'en speed, are categorized as slow magnetoacoustic waves.
+These waves travel along magnetic field lines at speeds roughly equal to
 the local sound speed.
 The changes in intensity along the same location as these waves
 propagate in time are mapped side by side to give time-distance
@@ -322,12 +335,21 @@ at speeds of about 40 to 180 km s$^{-1}$ and periodicities between 4
 and 8 minutes over all four channels.
 
 
-
-
-
-
 \subsection{Propagating Fast Waves}
+
+
 \subsection{Torsional Modes}
+Torsional modes, or more commonly, \emph{Alfv\'en} modes, are axisymmetric
+modes whose speed is determined purely by magnetic pressure forces
+(see equation \ref{Alfven_speed}).
+They are transverse waves that are highly anisotropic (\cite{intro}),
+traveling strictly along magnetic field lines in response
+to a restoring force that acts to resist shear (cite class notes?).
+
+In the classic cylindrical model of a plasma structure,
+Alfv\'en waves undergo torsion (aka, twisting), in opposite directions on
+either end of the cylindar (\cite{Nak}).
+
 \subsection{Mixed Modes}
 
 
