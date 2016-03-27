@@ -14,17 +14,22 @@
 \definecolor{tangerine}{rgb}{1.0, 0.6, 0.4}
 \definecolor{arylyellow}{rgb}{0.91, 0.84, 0.42}
 \definecolor{gsa}{rgb}{0.66, 0.89, 0.63}
+\definecolor{aqua}{rgb}{0.5, 1.0, 0.83}
+\definecolor{bblue}{rgb}{0.67, 0.9, 0.93}
 
 \setbeamercolor{normal text}{bg=black, fg=lightgrey}
 \setbeamercolor{title}{fg=arylyellow}
 \setbeamercolor{frametitle}{fg=tangerine}
 \setbeamercolor{framesubtitle}{fg=gsa}
-\setbeamercolor{itemize item}{fg=cblue} % all frames will have red bullets
-\setbeamercolor{enumerate item}{fg=cblue} % all frames will have red bullets
+\setbeamercolor{block title}{fg=aqua}
+\setbeamercolor{itemize item}{fg=amethyst} % all frames will have red bullets
+\setbeamercolor{enumerate item}{fg=amethyst} % all frames will have red bullets
 %\setbeamercolor{block title}{fg=green}
 
 \usefonttheme{serif}
 \setbeamerfont{frametitle}{series=\bfseries} % Frame titles should be bold
+
+\setbeamertemplate{itemize items}[circle]
 
 \title{\textbf{Coronal Seismology}}
 \subtitle{\textbf{ASTR 598}}
@@ -81,12 +86,32 @@ $ \xi(x) = \xi(r)e^{i(kz+m\phi)}  $
         \item Torsional modes (aka.\ Alfv\'en waves)
     \end{itemize}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{Kinks and Sausages}
-    \begin{center}
-    \includegraphics[width=3in]{kink_saus.png}
-    \par{\tiny image credit:
-    $https://inspirehep.net/record/1088737/files/figures_instab_locations.png$}
-    \end{center}
+\begin{frame}{Kinks vs.\ Sausages}
+%\begin{center}
+\begin{columns}
+        \column{0.6\textwidth}
+    \includegraphics[width=2.5in]{kink_saus.png}
+    %\par{\tiny image credit:\\
+    %$https://inspirehep.net/record/1088737/files/figures_instab_locations.png$}
+    %\end{center}
+        \column{0.4\textwidth}
+    \begin{block}{Kink}
+        \begin{itemize}
+            \item loop spatial displacement
+            \item Asymmetric
+            \item No intensity change
+            \item $k\sigma \ll 1$, or $\sigma\ll\lambda$
+        \end{itemize}
+    \end{block}
+    \begin{block}{Sausage}
+        \begin{itemize}
+            \item No loop spatial displacement
+            \item Symmetric
+            \item Intensity change\\ $\rightarrow$ density change
+            \item $\lambda\sim\sigma$
+        \end{itemize}
+    \end{block}
+\end{columns}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{Kink modes}
 {Coronal loop oscillations observed with the
@@ -111,10 +136,14 @@ $ \xi(x) = \xi(r)e^{i(kz+m\phi)}  $
     (Oscillations have fixed nodes).
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{Propagating fast waves}
+    \begin{itemize}
+        \item Moreton waves in the chromosphere
+        \item Fast EUV waves in the corona
+    \end{itemize}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{Torsional modes}
+\begin{frame}{Torsional modes}{aka.\ Alfv\'en wave}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{Mixed modes}
+\begin{frame}{Mixed modes}{Pulling individual modes out}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{Important Properties}
     \begin{center}

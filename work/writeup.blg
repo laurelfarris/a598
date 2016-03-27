@@ -3,12 +3,11 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: writeup.aux
 The style file: apj.bst
 Database file #1: reffile.bib
-Warning--I didn't find a database entry for "ac_1"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty publisher in Asc
 You've used 13 entries,
             3085 wiz_defined-function locations,
-            725 strings with 6784 characters,
+            724 strings with 6780 characters,
 and the built_in function-call counts, 6070 in all, are:
 = -- 510
 > -- 424
@@ -47,4 +46,4 @@ warning$ -- 1
 while$ -- 48
 width$ -- 0
 write$ -- 131
-(There were 2 warnings)
+(There was 1 warning)
