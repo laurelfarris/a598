@@ -1,46 +1,50 @@
-This is BibTeX, Version 0.99c (Web2C 7.5.6)
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: writeup.aux
 The style file: apj.bst
 Database file #1: reffile.bib
+Warning--I didn't find a database entry for "ac_1"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-You've used 10 entries,
+Warning--empty publisher in Asc
+You've used 13 entries,
             3085 wiz_defined-function locations,
-            703 strings with 5933 characters,
-and the built_in function-call counts, 4413 in all, are:
-= -- 383
-> -- 282
+            725 strings with 6784 characters,
+and the built_in function-call counts, 6070 in all, are:
+= -- 510
+> -- 424
 < -- 6
-+ -- 97
-- -- 102
-* -- 348
-:= -- 831
-add.period$ -- 10
-call.type$ -- 10
-change.case$ -- 69
-chr.to.int$ -- 10
-cite$ -- 10
-duplicate$ -- 187
-empty$ -- 284
-format.name$ -- 117
-if$ -- 877
++ -- 145
+- -- 156
+* -- 501
+:= -- 1144
+add.period$ -- 13
+call.type$ -- 13
+change.case$ -- 92
+chr.to.int$ -- 13
+cite$ -- 14
+duplicate$ -- 244
+empty$ -- 378
+format.name$ -- 172
+if$ -- 1202
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 10
-newline$ -- 34
-num.names$ -- 40
-pop$ -- 78
+missing$ -- 13
+newline$ -- 43
+num.names$ -- 52
+pop$ -- 102
 preamble$ -- 1
-purify$ -- 69
+purify$ -- 92
 quote$ -- 0
-skip$ -- 151
+skip$ -- 204
 stack$ -- 0
-substring$ -- 179
+substring$ -- 242
 swap$ -- 1
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 87
-warning$ -- 0
-while$ -- 37
+type$ -- 111
+warning$ -- 1
+while$ -- 48
 width$ -- 0
-write$ -- 101
+write$ -- 131
+(There were 2 warnings)

@@ -1,8 +1,13 @@
 \begin{thebibliography}{}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
+\bibitem[{{Asai} {et~al.}(2012){Asai}, {Ishii}, {Isobe}, {Kitai}, {Ichimoto},
+  {UeNo}, {Nagata}, {Morita}, {Nishida}, {Shiota}, {Oi}, {Akioka}, \&
+  {Shibata}}]{pfw_1}
+{Asai}, A., {Ishii}, T.~T., {Isobe}, H., {et~al.} 2012, \apjl, 745, L18
+
 \bibitem[{Aschwanden(2004)}]{Asc}
-Aschwanden, M. 2004, Springer
+Aschwanden, M. 2004, Physics of the Solar Corona: An Introduction
 
 \bibitem[{Aschwanden {et~al.}(1999)Aschwanden, Fletcher, Schrijver, \&
   Alexander}]{kink_1}
@@ -40,5 +45,14 @@ Nakariakov, V.~M., \& Verwichte, E. 2005, Living Rev. Solar Phys.
   {Ofman}}]{pac_2}
 {Uritsky}, V.~M., {Davila}, J.~M., {Viall}, N.~M., \& {Ofman}, L. 2013, \apj,
   778, 26
+
+\bibitem[{{Verwichte} {et~al.}(2013){Verwichte}, {Van Doorsselaere}, {Foullon},
+  \& {White}}]{tor_2}
+{Verwichte}, E., {Van Doorsselaere}, T., {Foullon}, C., \& {White}, R.~S. 2013,
+  \apj, 767, 16
+
+\bibitem[{{Yuan} {et~al.}(2013){Yuan}, {Shen}, {Liu}, {Nakariakov}, {Tan}, \&
+  {Huang}}]{pfw_2}
+{Yuan}, D., {Shen}, Y., {Liu}, Y., {et~al.} 2013, \aap, 554, A144
 
 \end{thebibliography}

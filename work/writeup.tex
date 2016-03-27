@@ -1,5 +1,6 @@
 \documentclass[preprint2]{aastex}
 \usepackage{natbib}
+\usepackage{color}
 \usepackage{booktabs}
 \bibliographystyle{apj}
 
@@ -25,7 +26,7 @@
 \begin{abstract}
 Coronal seismology involves the investigation of magnetohydrodynamic
 (MHD) waves and
-ocillatory phenomenae that arise in the solar corona. Here some of the
+oscillatory phenomena that arise in the solar corona. Here some of the
 dominant waves, oscillations, and modes are intimately investigated in
 the literature. Analysis of data from the Atmospheric Imaging
 Assembly (AIA) instrument on the Solar Dynamics Observatory (SDO) is
@@ -35,6 +36,9 @@ context of coronal seismology.
 \keywords{Sun: corona \- Sun: oscillations \- Sun: seismology}
 
 \section{Introduction}\label{intro}
+Properties of the corona that are difficult to measure directly
+can be extracted from observations of properties of MHD waves and
+oscillations (\cite{tor_2}).
 
 The basic concepts of MHD waves and oscillations are described in
 \S\ref{MHD}, and
@@ -85,7 +89,7 @@ pressure:
 \end{equation}
 Each MHD mode is characterized based on a number of qualities, such
 as its wavelength, period, lifetime, speed, and
-whether it is propagting or standing, fast or slow, longitudinal
+whether it is propagating or standing, fast or slow, longitudinal
 or transverse, etc. The driving mechanisms that give rise to each mode
 can differ depending on these qualities and the environment in which
 the modes reside, and is one of the important MHD topics under investigation,
@@ -107,7 +111,25 @@ relations are derived (I think).
 %--------------------------------------------------------------------%
 \subsection{Excitation and Damping Mechanisms}
 \subsubsection{Resonant Absorption}
+(The following is straight from (\cite{Nak}), so it needs to be
+re-worded and expanded at some point).
+If the frequency of a wave falls within one of two types of MHD
+continua (namely, the Alfv\'en or cusp continua), a resonance will
+occur in the location where math happens.
+In the cylinder model, this location is a shell at radius $r$.
+In the Alfv\'en continuum, the Alfv\'en wave is the mode that is
+resonantly excited and dissipates in the corona.
+This is one of the processes thought to contribute to the heating
+of the corona. It involves the conversion from a collective mode
+to a local mode, which occurs at a timescale much shorter than that
+of the dissipative damping.
+To analyze this mathematically, equations of ideal MHD cannot be used
+because dissipation effects must be taken into account.
+
 \subsubsection{Phase Mixing}
+Another effect associated with wave modes from MHD continua is called
+phase mixing, and is also a possibly mechanism behind the heating of
+the corona.
 %--------------------------------------------------------------------%
 \subsection{Observation Techniques}
 Flux tubes (coronal loops), doppler shift and intensity variations,
@@ -136,6 +158,8 @@ cross-section of the waveguide.
 The phase speed is just above the Alfv\'en speed within the loop,
 and the period of the oscillation is expected to be between
 $\sim$ 2 and 20 minutes (\cite{Asc}).
+Observations of kink oscillations are important to solar physics as
+the magnetic field strength can be derived from the period.
 
 Due to a lack of sufficient instrumentation,
 spatial variations such as those caused by kink oscillations
@@ -147,17 +171,17 @@ that accompanied a class M4.6 solar flare in July of 1998.
 At this point, many MHD modes were characterized in theory
 
 The observations had enough qualities characteristic of
-fast kink modes, including the spatial displacements characterisic
+fast kink modes, including the spatial displacements characteristic
 of this asymmetrical mode, to identify these oscillations as kink
 modes.
 An average period of $T = 269 \pm 6$ seconds, or
 roughly 4.5 minutes, was obtained, which fit well with the theoretical
 period for kink oscillations.
-The absense of any phase
+The absence of any phase
 shift along the length of the loops revealed that these were
 \emph{standing waves}, with nodes located at the loop footpoints.
 The ability to identify kink modes has great significance
-for solar phsyics due to a correlation between the oscillation period,
+for solar physics due to a correlation between the oscillation period,
 $T$, and the magnetic field strength, $B$, of the loop:
 \begin{equation}
     T \propto \frac{L}{\sqrt{n}}{B}
@@ -165,8 +189,7 @@ $T$, and the magnetic field strength, $B$, of the loop:
 where $L$ is the loop length and $n$ is the number density,
 both of which can be estimated from known coronal conditions.
 
-%----paper2----%
-More recently,~\cite{kink_2} investigated the driving mechanism
+More recently, \cite{kink_2} investigated the driving mechanism
 behind the production, and damping of kink oscillations.
 They compared two possible functional form of the damping profile
 of the driver: that of a Gaussian and an exponential form.
@@ -176,7 +199,7 @@ Gaussian.
 
 They also considered the effect of the spatial profile of the driver
 itself on the excitation and subsequent damping of the kink
-waves. Two different possiblilities were explored here:
+waves. Two different possibilities were explored here:
 the effect of a ``highly structured'' driver, which they
 found to be unrealistic, and the effects of eddies and photospheric
 motions around the footpoints of the coronal loops.
@@ -186,7 +209,11 @@ In contrast to kink oscillations, sausage oscillations do not displace
 the axis of the structure in which they reside. However, they do cause
 a periodic change in the cross-section of the waveguide, and hence
 are observable through changes in intensity (and therefore density,
-due to flux conservation).
+due to flux conservation). Sausage oscillations only exist shortward
+of the long wavelength cutoff, where the wavelength is comparable to
+the cross-section of the loop in which they oscillate. Therefore
+they can only exist in loops that are ``sufficiently thick and dense''
+(\cite{pfw_2}).
 
 \cite{sausage_1} plotted the changes in intensity and cross-sectional
 area for sausage oscillations in photospheric pores extending up
@@ -203,13 +230,13 @@ indicate
 
 \subsection{Acoustic Oscillations}
 
-The relatives periodicities of aacoustic oscillations were recognized
-as important characteristics, and modelled by~\cite{acoustic_1}.
+The relatives periodicities of acoustic oscillations were recognized
+as important characteristics, and modeled by~\cite{acoustic_1}.
 They recognized magnetoacoustic oscillations as a useful way to determine
 other properties of the solar atmosphere.
 
 \cite{acoustic_2} used intensity oscillations of a few different ionization
-species to pinpoint the orgin and progression of magnetoacoustic waves
+species to pinpoint the origin and progression of magnetoacoustic waves
 between bright points in the photosphere, through the transition regions,
 and up into the corona. The time series of intensity oscillations was
 converted into a power spectrum, and periodicities were extracted using
@@ -219,8 +246,6 @@ The periods they derived
 ($\sim 241 \pm 60$ s for the Fe XII 195.12 \AA{}  emission line)
 were close to the 5-minute global oscillations of the sun.
 
-
-
 %-------------------------------------------------------------------%
 \subsection{Propagating Acoustic Waves}
 The MHD modes that have been discussed up to now are considered
@@ -229,13 +254,15 @@ position, such as the footpoints of coronal loops that are anchored in
 the photosphere. These are referred to as \emph{oscillations}.
 In contrast, \emph{propagating} waves have nodes that move with time
 (though two propagating waves traveling in opposite directions can
-have a net result of a single, standing oscillation; see
-\cite{Asc}, ch. 8).
+have a net result of a single, standing oscillation; see \cite{Asc},
+ch. 8).
 
 Standing acoustic waves are primarily seen in closed coronal
-loops, while propagating waves have been observed in both closed 
+loops, while propagating waves have been observed in both closed
+(where the wave damps out before reaching the other footpoint;
+see \cite{acoustic_1})
 and open structures.
-Waves with propagations speed much lower than the 
+Waves with propagations speed much lower than the
 local Alfv\'en speed, are categorized as slow magnetoacoustic waves.
 These waves travel along magnetic field lines at speeds roughly equal to
 the local sound speed.
@@ -254,7 +281,7 @@ temperature profile in the transverse direction across the loop.
 Propagating acoustic waves are generally observed as ``propagating
 disturbances'' awaiting further diagnoses of magnetoacoustic waves,
 whose amplitudes are rather weak, requiring careful, detailed data
-analysis to aquire good signal-to-noise (S/N).
+analysis to acquire good signal-to-noise (S/N).
 
 One of the first studies to analyze
 simultaneous observations at different wavelengths was carried out by
@@ -294,16 +321,16 @@ was given by
     c_{s} = 152\ \sqrt{T}\ \textrm{m}\ \textrm{s}^{-1}
 \end{equation}
 where $T$ is in units of Kelvin.
-This was compared to the observed speed of the progating wave, which
+This was compared to the observed speed of the propagating wave, which
 was derived from the slope of the ``ridges'' on each of the four
 time-distance plots.
-The propatation speed of each wave was slightly ($\sim$ same order of
+The propagation speed of each wave was slightly ($\sim$ same order of
 magnitude) lower than the local sound speed. This difference
 was due to the angle between the loop and the plane of the sky against
 which the observations were made.
 The amount of time for a disturbance to pass a particular point was
 determined to be $\sim$ 169 s from the TRACE data.
-As both observations targeted the same wave, the signficance of the
+As both observations targeted the same wave, the significance of the
 differing speeds for each observation indicated a temperature gradient
 in the loop itself, indicating either a bundle of loop threads that
 make up a single loop, or a number of concentric shells that make up a
@@ -311,7 +338,7 @@ single loop.
 
 A similar analysis in multiple wavelengths was carried out by
 \cite{pac_2}, using about 6 hours of observational data from the
-Atmospheric Imaging Assemply (AIA) on the Solar Dynamics Observatory (SDO).
+Atmospheric Imaging Assembly (AIA) on the Solar Dynamics Observatory (SDO).
 In addition to these observations, they introduced the
 ``surfacing transform technique''
 in order to address the difficulty in extracting information from these
@@ -336,6 +363,52 @@ and 8 minutes over all four channels.
 
 
 \subsection{Propagating Fast Waves}
+Propagating waves with speeds greater than (?) are categorized as
+fast waves (or some other definition; \cite{Nak} is not clear on this).
+
+One type of fast propagating wave is the \emph{Moreton} wave. These tend
+to emerge as a result of energetic flares and CMEs and only last for
+about 10 minutes (\cite{pfw_1}).
+They travel in very specific directions, as opposed to other waves that
+can be isotropic (\textcolor{red}{source and better wording}).
+They were described as the intersection of MHD fast waves shock-propagating
+between the chromosphere and corona, and are observed in H$\alpha$.
+While they are rarely observed, their
+counterparts can be seen in the corona in the form of EIT waves
+(named after the \emph{EUV Imaging Telescope} on the
+\emph{Solar and Heliospheric Observatory}).
+
+% Add movie somewhere in here!
+
+Another investigation of propagating fast waves was carried out by
+\cite{pfw_2}.
+They observed intensity perturbations of ``quasi-periodic propagating fast
+magnetoacoustic wave trains'' associated with AR 11227.
+These wave trains appeared $\sim$ 110 Mm from the center of the flare,
+2.2 minutes after the flare occurred.
+They were only visible in the AIA 171 \AA{} bandpass, suggesting a
+location restricted to a certain height range above the photosphere.
+They derived an average velocity of
+833 km s$^{-1}$, which is in the Alfv\'en range.
+Three wavetrains were observed, travelling one behind the other
+with different wavelengths (periods) and different (initial) phase
+speeds (although they all ended with a phase speed of about 600 km s$^{-1}$.
+Comparisons between these waves and the radio spectrum of the flare
+acquired from the \emph{Nan\c{c}ay Radioheliograph (NRH)}
+revealed that each wave train was triggered by a burst of radio energy
+caused by the acceleration of non-thermal electrons above the
+magnetic reconnection site. The periods of such waves follow a
+characteristic ``tadpole'' pattern, where the period decreases at
+a fixed height, which is 150 Mm here.
+
+Could possibly be the kink mode if waveguide was in
+the form of a loop. These can only be identified if the observed loop
+segment has a certain line of sight with respect to the observer,
+and a longer wavelength results in a faster speed, which then results
+in the dispersion of fast magnetoacoustic waves. The range in
+propagating phase speeds they derived was
+$ v_{ph} = 735 - 845 $ km s$^{-1}$, with a final speed
+(post-dispersion) of 600 km s$^{-1}$.
 
 
 \subsection{Torsional Modes}
@@ -348,7 +421,14 @@ to a restoring force that acts to resist shear (cite class notes?).
 
 In the classic cylindrical model of a plasma structure,
 Alfv\'en waves undergo torsion (aka, twisting), in opposite directions on
-either end of the cylindar (\cite{Nak}).
+either end of the cylinder (\cite{Nak}).
+
+Alfv\'en waves can be difficult to observe (or at least difficult to
+identify observed disturbances as Alfv\'en waves) since, like kink
+oscillations, they do not cause any period changes in intensity or density.
+It follows that determining the Alfv\'en speed is also difficult.
+\cite{tor_2} use two techniques to determine the speed independently:
+seismology and magnetic extrapolation.
 
 \subsection{Mixed Modes}
 
