@@ -1,50 +1,49 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
 The top-level auxiliary file: writeup.aux
 The style file: apj.bst
 Database file #1: reffile.bib
-Warning--I didn't find a database entry for "tor_1"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--empty publisher in Asc
-You've used 13 entries,
+Warning--empty publisher in Somov
+You've used 15 entries,
             3085 wiz_defined-function locations,
-            725 strings with 6785 characters,
-and the built_in function-call counts, 6070 in all, are:
-= -- 510
-> -- 424
-< -- 6
-+ -- 145
-- -- 156
-* -- 501
-:= -- 1144
-add.period$ -- 13
-call.type$ -- 13
-change.case$ -- 92
-chr.to.int$ -- 13
-cite$ -- 14
-duplicate$ -- 244
-empty$ -- 378
-format.name$ -- 172
-if$ -- 1202
+            736 strings with 7189 characters,
+and the built_in function-call counts, 7041 in all, are:
+= -- 588
+> -- 490
+< -- 8
++ -- 168
+- -- 180
+* -- 578
+:= -- 1325
+add.period$ -- 15
+call.type$ -- 15
+change.case$ -- 110
+chr.to.int$ -- 18
+cite$ -- 17
+duplicate$ -- 283
+empty$ -- 445
+format.name$ -- 197
+if$ -- 1396
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 13
-newline$ -- 43
-num.names$ -- 52
-pop$ -- 102
+missing$ -- 15
+newline$ -- 49
+num.names$ -- 60
+pop$ -- 121
 preamble$ -- 1
-purify$ -- 92
+purify$ -- 108
 quote$ -- 0
-skip$ -- 204
+skip$ -- 239
 stack$ -- 0
-substring$ -- 242
-swap$ -- 1
+substring$ -- 276
+swap$ -- 3
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 111
-warning$ -- 1
-while$ -- 48
+type$ -- 126
+warning$ -- 2
+while$ -- 56
 width$ -- 0
-write$ -- 131
+write$ -- 150
 (There were 2 warnings)

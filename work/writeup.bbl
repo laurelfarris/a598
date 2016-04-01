@@ -14,7 +14,7 @@ Aschwanden, M. 2004, Physics of the Solar Corona: An Introduction
 Aschwanden, M.~J., Fletcher, L., Schrijver, C.~J., \& Alexander, D. 1999, The
   Astrophysical Journal, 520, 880
 
-\bibitem[{Goossens(2003)}]{intro}
+\bibitem[{Goossens(2003)}]{Goossens}
 Goossens, M. 2003, An Introduction to Plasma Astrophysics and
   Magnetohydrodynamics, Vol. 294 (P.O. Box 17, 3300 AA Dordrecht, The
   Netherlands: Kluwer Academic Publishers)
@@ -38,8 +38,16 @@ Nakariakov, V.~M., \& Verwichte, E. 2005, Living Rev. Solar Phys.
 \bibitem[{{Roberts} {et~al.}(1984){Roberts}, {Edwin}, \& {Benz}}]{acoustic_1}
 {Roberts}, B., {Edwin}, P.~M., \& {Benz}, A.~O. 1984, \apj, 279, 857
 
+\bibitem[{Somov(2013)}]{Somov}
+Somov, B.~V. 2013, Plasma Astrophysics, Part I: Fundamentals and Practice, 2nd
+  edn.
+
 \bibitem[{{Srivastava} \& {Dwivedi}(2010)}]{acoustic_2}
 {Srivastava}, A.~K., \& {Dwivedi}, B.~N. 2010, \mnras, 405, 2317
+
+\bibitem[{{Tian} {et~al.}(2012){Tian}, {McIntosh}, {Wang}, {Ofman}, {De
+  Pontieu}, {Innes}, \& {Peter}}]{tor_1}
+{Tian}, H., {McIntosh}, S.~W., {Wang}, T., {et~al.} 2012, \apj, 759, 144
 
 \bibitem[{{Uritsky} {et~al.}(2013){Uritsky}, {Davila}, {Viall}, \&
   {Ofman}}]{pac_2}
