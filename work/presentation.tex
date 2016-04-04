@@ -1,8 +1,18 @@
 \documentclass[table]{beamer}
+\usepackage[T1]{fontenc}
 \usepackage{mdwlist}
 \usepackage{multirow}
 \usepackage{graphicx}
 \usepackage{verbatim} % For using /begin{comment}; /end{comment}
+
+\usepackage{selinput} % ?
+%Loading a font package, uncomment one of the following lines to see changes
+\usepackage{libertine}
+
+%\usefonttheme{default}
+%\usefonttheme{professionalfonts}
+
+%\setbeamerfont{frametitle}{series=\bfseries} % Frame titles should be bold
 
 % Bright colors
 \definecolor{oj}{rgb}{1.0,0.65,0.0}
@@ -26,8 +36,6 @@
 \setbeamercolor{enumerate item}{fg=amethyst} % all frames will have red bullets
 %\setbeamercolor{block title}{fg=green}
 
-\usefonttheme{serif}
-\setbeamerfont{frametitle}{series=\bfseries} % Frame titles should be bold
 
 \setbeamertemplate{itemize items}[circle]
 
@@ -44,17 +52,36 @@
     \titlepage{}
 \end{frame}}%-------------------------------------------------------------%
 
-\begin{frame}{Overview}
-    The body of the frame
-\end{frame}%-------------------------------------------------------------%
-
 \begin{frame}{Motivation/Main Scientific Question}
+    {The coronal heating problem}
     \begin{itemize}
-        \item The coronal heating problem
+        \item ``Frozen-in'' magnetic field creates structure in the
+            solar atmosphere, such as loops and prominences.
+        \item Can observe oscillations and waves in the corona to extract
+            properties about the solar photosphere and atmosphere.
     \end{itemize}
 \end{frame}%-------------------------------------------------------------%
 
-\begin{frame}{Basic MHD}{Theory before observations}
+\begin{frame}{Coronal seismology}{General idea}
+    Based on how the \textcolor{arylyellow}{phase} speed is determined by
+    local plasma parameters. Density structures act as waveguides,
+    e.g.\ \textcolor{arylyellow}{coronal loops}.
+    \includegraphics[width=\textwidth]{loop_diagram.jpg}
+\end{frame}%-------------------------------------------------------------%
+
+\begin{frame}{Modeling}{Theory before observations}
+    \begin{columns}
+        \column{0.6\textwidth}
+        \includegraphics[width=\textwidth]{cylinder.png}
+        \column{0.4\textwidth}
+        \begin{itemize}
+            \item Straight flux tube in uniform magnetic field.
+            \item $ \xi(x) = \xi(r)e^{i(kz+m\phi)}  $
+        \end{itemize}
+    \end{columns}
+\end{frame}%-------------------------------------------------------------%
+
+\begin{frame}{Basic MHD}
     Types of waves/oscillations:
     \begin{itemize*}
         \item Alfv\'en: $V_A = \frac{B}{\mu_0\rho}$
@@ -66,14 +93,10 @@
     \end{itemize*}
 \end{frame}%-------------------------------------------------------------%
 
-\begin{frame}
+\begin{frame}{Dispersion diagram}
     \begin{figure}
         \includegraphics[width=3in]{disp_diagram.png}
     \end{figure}
-\end{frame}%-------------------------------------------------------------%
-
-\begin{frame}{MHD equations}
-$ \xi(x) = \xi(r)e^{i(kz+m\phi)}  $
 \end{frame}%-------------------------------------------------------------%
 
 \begin{frame}{MHD modes}
@@ -86,6 +109,11 @@ $ \xi(x) = \xi(r)e^{i(kz+m\phi)}  $
         \item Torsional modes (aka.\ Alfv\'en waves)
     \end{itemize}
 \end{frame}%-------------------------------------------------------------%
+
+\begin{frame}{Background}
+    Nak, Asc, Roberts, all those common authors.
+\end{frame}%-------------------------------------------------------------%
+
 \begin{frame}{Kinks vs.\ Sausages}
 %\begin{center}
 \begin{columns}
