@@ -59,6 +59,8 @@
             solar atmosphere, such as loops and prominences.
         \item Can observe oscillations and waves in the corona to extract
             properties about the solar photosphere and atmosphere.
+            Phase speeds, amplitudes, dissipation, etc.\ can help determine
+            physical properites that are otherwise inaccessible.
     \end{itemize}
 \end{frame}%-------------------------------------------------------------%
 
@@ -81,7 +83,9 @@
     \end{columns}
 \end{frame}%-------------------------------------------------------------%
 
-\begin{frame}{Basic MHD}
+\begin{frame}{Basic MHD}{What's the difference?}
+    Characteristic speeds are determined by the environment
+    (e.g.\ sounds waves traveling at $c_s=\sqrt{\frac{\gamma P}{\rho}}$
     Types of waves/oscillations:
     \begin{itemize*}
         \item Alfv\'en: $V_A = \frac{B}{\mu_0\rho}$
@@ -99,22 +103,40 @@
     \end{figure}
 \end{frame}%-------------------------------------------------------------%
 
-\begin{frame}{MHD modes}
-    \begin{itemize}
-        \item Kink
-        \item Sausage
-        \item Acoustic
-        \item Propagating acoustic modes
-        \item Propagating fast modes
-        \item Torsional modes (aka.\ Alfv\'en waves)
-    \end{itemize}
-\end{frame}%-------------------------------------------------------------%
-
 \begin{frame}{Background}
     Nak, Asc, Roberts, all those common authors.
 \end{frame}%-------------------------------------------------------------%
 
-\begin{frame}{Kinks vs.\ Sausages}
+\begin{frame}{MHD modes}{Oscillations vs.\ waves}
+    Or magnetoacoustic vs.\ Alfv\'en.
+    Or fast vs.\ slow.
+    \begin{itemize}
+        \item Fast standing oscillations
+            \begin{itemize}
+                \item Kink
+                \item Sausage
+            \end{itemize}
+        \item Slow standing oscillations
+            \begin{itemize}
+                \item Acoustic
+            \end{itemize}
+        \item Propagating slow waves
+            \begin{itemize}
+                \item Acoustic
+            \end{itemize}
+        \item Propagating fast waves
+            \begin{itemize}
+                \item Moreton
+                \item EIT waves
+            \end{itemize}
+        \item Torsional modes (aka.\ Alfv\'en waves)
+    \end{itemize}
+\end{frame}%-------------------------------------------------------------%
+\begin{frame}{Observational Methods}{How do you know what kind of mode
+    you're looking at, or how to find potential MHD modes in the first place?}
+    McIntosh et al.\ algorithm
+\end{frame}%-------------------------------------------------------------%
+\begin{frame}{Fast standing oscillations}{Kinks vs.\ Sausages}
 %\begin{center}
 \begin{columns}
         \column{0.6\textwidth}
@@ -141,27 +163,71 @@
     \end{block}
 \end{columns}
 \end{frame}%-------------------------------------------------------------%
+\begin{frame}{Fast standing oscillations}{Kinks vs.\ Sausages}
+\begin{columns}
+        \column{0.6\textwidth}
+        The long-wavelength limit
+        \column{0.4\textwidth}
+    \begin{block}{Kink}
+        \begin{itemize}
+            \item $k\sigma \ll 1$, or $\sigma\ll\lambda$
+        \end{itemize}
+    \end{block}
+    \begin{block}{Sausage}
+        \begin{itemize}
+            \item $\lambda\sim\sigma$
+        \end{itemize}
+    \end{block}
+\end{columns}
+\end{frame}%-------------------------------------------------------------%
+\begin{frame}{Kink modes}{general characteristics}
+    \begin{itemize}
+        \item $c_k=\sqrt{\frac{\rho_oV_{Ao}^2 + \rho_cV_{Ac}^2}
+            {\rho_o + \rho_c}}
+            \approx V_A\sqrt{\frac{2}{1+\frac{\rho_e}{\rho_o}}} $
+            in the low-$\beta$ plasma.
+        \item $v_{ph} = \frac{\omega}{k} \approx C_k \gtrsim V_A $
+        \item Period $P=\frac{2l}{V_A}\sqrt{\frac{1+\rho_e/\rho_o}{2}}$
+            where $\lambda=2l$ ($l$ is the loop length).
+            Typically, $l \approx 60-600$ Mm in the corona.
+        \item ``current pinch'' instability
+        \item Important observation from which magnetic field strength
+            can be derived.
+    \end{itemize}
+\end{frame}%-------------------------------------------------------------%
 \begin{frame}{Kink modes}
 {Coronal loop oscillations observed with the
 \emph{Transition Region And Coronal Explorer (TRACE)}}
     \begin{itemize}
+        \item Not just a single, global mode.
         \item Gaussian vs.\ exponential
         \item Plasma motions around footpoints of coronal loops
     \end{itemize}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{Kink modes}{Excitation and damping of broadband kink waves
-    in the solar corona}
+\begin{frame}{Kink modes}{``Excitation and damping of broadband kink waves
+    in the solar corona''}
+    Footpoint-driven, \emph{propagating} kink waves (which are
+    temporally and spatially ubiquitous in the corona).
+    Both standing and propagating kink waves are rapidly damped.
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{Sausage modes}{Observations of sausage modes in magnetic pores}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{Sausage modes}{Sausage waves in transversely nonuniform
     monolithic coronal tubes}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{Acoustic oscillations}
+\begin{frame}{Standing acoustic oscillations}
+\end{frame}%-------------------------------------------------------------%
+\begin{frame}{ac\_1}
+\end{frame}%-------------------------------------------------------------%
+\begin{frame}{ac\_2}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{Propagating acoustic waves}
     Nodes are in motion; \emph{traveling waves}
     (Oscillations have fixed nodes).
+\end{frame}%-------------------------------------------------------------%
+\begin{frame}{pac\_1}
+\end{frame}%-------------------------------------------------------------%
+\begin{frame}{pac\_2}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{Propagating fast waves}
     \begin{itemize}
@@ -169,7 +235,15 @@
         \item Fast EUV waves in the corona
     \end{itemize}
 \end{frame}%-------------------------------------------------------------%
+\begin{frame}{pfw\_1}
+\end{frame}%-------------------------------------------------------------%
+\begin{frame}{pfw\_2}
+\end{frame}%-------------------------------------------------------------%
 \begin{frame}{Torsional modes}{aka.\ Alfv\'en wave}
+\end{frame}%-------------------------------------------------------------%
+\begin{frame}{tor\_1}
+\end{frame}%-------------------------------------------------------------%
+\begin{frame}{tor\_2}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{Mixed modes}{Pulling individual modes out}
 \end{frame}%-------------------------------------------------------------%
