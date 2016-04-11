@@ -51,62 +51,58 @@
 \begin{frame}
     \titlepage{}
 \end{frame}}%-------------------------------------------------------------%
-
-\begin{frame}{Motivation/Main Scientific Question}
-    {The coronal heating problem}
+\begin{frame}{Coronal seismology}{Technique and motivation}
+    What it is: ``Frozen-in'' magnetic field creates density structures in the
+    solar atmosphere, such as loops and prominences. These act as waveguides:
     \begin{itemize}
-        \item ``Frozen-in'' magnetic field creates structure in the
-            solar atmosphere, such as loops and prominences.
-        \item Can observe oscillations and waves in the corona to extract
-            properties about the solar photosphere and atmosphere.
-            Phase speeds, amplitudes, dissipation, etc.\ can help determine
-            physical properites that are otherwise inaccessible.
+        \item Observe disturbances
+        \item Identify the mode, or type of wave
+        \item Insert observed properties into appropriate equations to
+            derive coronal parameters, that are otherwise difficult or
+            impossible to observe
+    \end{itemize}
+    Other unknowns:
+    \begin{itemize}
+        \item How disturbances are initiated, and how they are damped.
+        \item Coronal heating problem
     \end{itemize}
 \end{frame}%-------------------------------------------------------------%
-
-\begin{frame}{Coronal seismology}{General idea}
-    Based on how the \textcolor{arylyellow}{phase} speed is determined by
-    local plasma parameters. Density structures act as waveguides,
-    e.g.\ \textcolor{arylyellow}{coronal loops}.
+\begin{frame}{Coronal seismology}
     \includegraphics[width=\textwidth]{loop_diagram.jpg}
 \end{frame}%-------------------------------------------------------------%
-
-\begin{frame}{Modeling}{Theory before observations}
+\begin{frame}{Magnetohydrodynamics (MHD)}{Theory}
     \begin{columns}
-        \column{0.6\textwidth}
+        \column{0.5\textwidth}
         \includegraphics[width=\textwidth]{cylinder.png}
-        \column{0.4\textwidth}
+        \column{0.5\textwidth}
         \begin{itemize}
             \item Straight flux tube in uniform magnetic field.
-            \item $ \xi(x) = \xi(r)e^{i(kz+m\phi)}  $
+            \item $ \xi(x) = \xi(r)e^{i(kz+m{\phi})} $
         \end{itemize}
     \end{columns}
 \end{frame}%-------------------------------------------------------------%
-
-\begin{frame}{Basic MHD}{What's the difference?}
+\begin{frame}{MHD}{What's the difference?}
+    [Relationship between size and decay time].
     Characteristic speeds are determined by the environment
-    (e.g.\ sounds waves traveling at $c_s=\sqrt{\frac{\gamma P}{\rho}}$
+    (e.g.\ sounds waves traveling at $c_s=\sqrt{\frac{\gamma P}{\rho}}$)
     Types of waves/oscillations:
-    \begin{itemize*}
+    \begin{itemize}
         \item Alfv\'en: $V_A = \frac{B}{\mu_0\rho}$
         \item Magnetoacoustic: $C_s = \sqrt{\frac{\gamma P}{\rho}}$
-            \begin{itemize*}
+            \begin{itemize}
                 \item Fast $C_{A_0} < C_{fast} < C_{A_e} $
                 \item Slow $C_{T_0} < C_{slow} < C_{s_0} $
-            \end{itemize*}
-    \end{itemize*}
+            \end{itemize}
+    \end{itemize}
 \end{frame}%-------------------------------------------------------------%
-
 \begin{frame}{Dispersion diagram}
     \begin{figure}
         \includegraphics[width=3in]{disp_diagram.png}
     \end{figure}
 \end{frame}%-------------------------------------------------------------%
-
 \begin{frame}{Background}
     Nak, Asc, Roberts, all those common authors.
 \end{frame}%-------------------------------------------------------------%
-
 \begin{frame}{MHD modes}{Oscillations vs.\ waves}
     Or magnetoacoustic vs.\ Alfv\'en.
     Or fast vs.\ slow.
@@ -210,51 +206,99 @@
     temporally and spatially ubiquitous in the corona).
     Both standing and propagating kink waves are rapidly damped.
 \end{frame}%-------------------------------------------------------------%
+\begin{frame}{Sausage modes}{The basics}
+    Trapped fast modes supported by thick, dense loops because of the
+    cutoff wavenumber (pfw\_2). Observe spatially resolved radio
+    (see sources in pfw\_2).
+\end{frame}%-------------------------------------------------------------%
 \begin{frame}{Sausage modes}{Observations of sausage modes in magnetic pores}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{Sausage modes}{Sausage waves in transversely nonuniform
     monolithic coronal tubes}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{Standing acoustic oscillations}
+    [Insert movie here?]
     Characteristics:
     \begin{itemize}
-        \item Anisotropic (true in general for slow waves)
-        \item Longitudinal/compressive
-        \item Parallel to $\vec{B}$, perturbation of $\vec{B}$ is negligible.
         \item Pressure forces in opposition
-        \item Impulsively excited
-        \item Travel short distance (due to short decay time)
-        \item Observed as variations in EUV emission intensity and Doppler shift
-            (depending on orientation).
         \item Period = 7--31 minutes (20 minutes from another source)
         \item Decay times = 5.7--36.8 minutes
         \item Peak velocity = 200 km/sec
-        \item Velocity and intensity are 90$^{\circ}$ out of phase.
     \end{itemize}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{ac\_1}
+\begin{frame}{Standing oscillations vs.\ propagating waves}
+    \begin{itemize}
+        \item In loops, propagating waves damp before
+            reaching opposite footpoint.
+        \item Velocity and intensity are 90$^{\circ}$ out of phase
+            for standing oscillations, and are in phase for propagating
+            acoustic waves. Frequencies less than the cutoff are
+            filtered by the chromosphere, no loop shape change or
+            displacement, near footpoints
+    \end{itemize}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{ac\_2}
+\begin{frame}{Propagating acoustic waves}{Slow}
+    \begin{itemize}
+        \item $v_{ph}<150$ km s$^{-1}$ $\rightarrow$ slow
+        \item longitudinal, compressive, anisotropic
+        \item Parallel to $\vec{B}$, perturbation of $\vec{B}$ is negligible.
+        \item Generated impulsively at one end of a footpoint.
+        \item Only penetrate $\sim$ 10\% into loop before
+            damped by thermal conduction
+        \item weak dispersion in coronal conditions ($V_{A} \gg c_{s}$)
+        \item 3 phases: periodic, QP, decay
+        \item period = 3, 5, 10 minutes? Or 2--22 seconds? (see kink\_1),
+        \item velocity: 50--200 km s$^{-1}$
+        \item $c_{T} = \sqrt{\frac{c_{s}^2v_{A}^2}{c_{s}^2 + v_{A}^2}} $
+            propagate sub-sonically at $c_{T}$, which is less than $c_{s}$
+        \item ``large'' amplitude, max in top of chromosphere
+        \item Observed using spectroscopy (intensity variations in
+            EUV emission  and Doppler shifts)
+    \end{itemize}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{Propagating acoustic waves}
-    Nodes are in motion; \emph{traveling waves}
-    (Oscillations have fixed nodes).
+\begin{frame}{Propagating acoustic waves}{Fast}
+    \begin{itemize}
+        \item $v_{ph}>150$ km s$^{-1}$ $\rightarrow$ fast
+            (\emph{or} transverse standing waves).
+        \item Quasi-isotropic
+        \item Driven by magnetic forces + plasma pressure forces
+        \item Compressive (magnetic sound wave)
+        \item Speed: $c_{F} = \sqrt{c_{s}^2 + v_{A}^2} $
+        \item Moreton waves in the chromosphere
+        \item Fast EUV waves in the corona
+    \end{itemize}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{pac\_1}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{pac\_2}
-\end{frame}%-------------------------------------------------------------%
-\begin{frame}{Propagating fast waves}
-    \begin{itemize}
-        \item Moreton waves in the chromosphere
-        \item Fast EUV waves in the corona
-    \end{itemize}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{pfw\_1}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{pfw\_2}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{Torsional modes}{aka.\ Alfv\'en wave}
+    Properties:
+    \begin{itemize}
+        \item m$=$0 (Axisymmetric, or azimuthally symmetric)
+        \item transverse (shear) perturbations
+        \item Parallel to $\vec{B}$
+        \item Driving force: magnetic tensioin
+        \item incompressible
+        \item velocity: $v_{A} = \frac{B}{\mu_{o}\rho} $
+    \end{itemize}
+    How to observe:
+    \begin{itemize}
+        \item Only get Doppler shifts from \emph{long}-period waves
+            ($>$ a few minutes).
+        \item Measure additional (i.e.\ non-thermal) broadening
+            of coronal emission lines; indirect way to observe short-period waves.
+        \item Spatial variation in Doppler shift for long periods.
+            Gyrosynchrotron emission in radio regime.
+    \end{itemize}
+    Effects of twisting:
+    \begin{itemize}
+        \item Coupling of various MHD modes
+    \end{itemize}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{tor\_1}
 \end{frame}%-------------------------------------------------------------%
@@ -312,9 +356,8 @@
             \framebox{\includegraphics[width=1.5in]{kink_saus.png}}
     \end{columns}
 \end{frame}%-------------------------------------------------------------%
-
-
-\begin{frame}{My Research}
+\begin{frame}{Research}
+    %\includegraphics... need full disk and columns here!
 \end{frame}%-------------------------------------------------------------%
 
 \end{document}
