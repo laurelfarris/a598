@@ -408,14 +408,15 @@ and 8 minutes over all four channels.
 
 
 \subsection{Propagating Fast Waves}
-Propagating waves with speeds greater than (?) are categorized as
-fast waves (or some other definition; \cite{Nak} is not clear on this).
-
-One type of fast propagating wave is the \emph{Moreton} wave. These tend
-to emerge as a result of energetic flares and CMEs and only last for
-about 10 minutes (\cite{pfw_1}).
-They travel in very specific directions, as opposed to other waves that
-can be isotropic (\textcolor{red}{source and better wording}).
+% General stuff about Moreton waves; where they are, what triggers them,
+% characteristic speeds, significance of H-alpha, the search for coronal
+% counterparts...
+MHD modes that are categorized as ``fast'' (magnetoacoustic?) propagate
+at $\sim$ 570-800 km s$^{-1}$. These types of waves were investigated by
+\cite{pfw_1} using observations of a type of fast propagating wave called a
+\emph{Moreton}. These waves are
+typically triggered by energetic flares and CMEs, with lifetimes of
+about 10 minutes.
 They were described as the intersection of MHD fast waves shock-propagating
 between the chromosphere and corona, and are observed in H$\alpha$.
 While they are rarely observed, their
@@ -423,35 +424,61 @@ counterparts can be seen in the corona in the form of EIT waves
 (named after the \emph{EUV Imaging Telescope} on the
 \emph{Solar and Heliospheric Observatory}).
 
-\cite{pfw_1} observed a Moreton wave along with the (possibly)
-corresponding EUV wave in the corona. These waves were triggered by
-a class-X6.9 flare from AR NOAA 11263. The coronal wave was possibly
-the fast counterpart of the EIT wave. This was questionable due to
-the difference in the observed velocity between the two.
-The EIT wave had a velocity of 200-400 km s$^{-1}$ and lasted for
-about 45-60 minutes, while the Moreton wave had a velocity between 500 and
-1500 km s$^{-1}$ and only lasted for 10 minutes. It was possible
-that the coronal wave decelerated, resulting in a lower velocity, but
-the authors seemed to think that this was not the case.
-EIT waves propagate isotropically while Moreton waves can only
-travel in restricted angles. The Morton wave was observed in
-H$\alpha$ by the \emph{SMART} telescope, as well as in 195 \AA{}
-and 304 \AA{} by \emph{STEREO}, and in 193 \AA{} by \emph{AIA}
-(Fe{\footnotesize XII}, at a temperature $T$=10$^{6.1}$ K).
+\cite{pfw_1} presented the first simultaneous observations of both
+a Moreton wave in H$\alpha$ images, obtained from the
+\emph{Solar Magnetic Activity Research Telescope} (SMART),
+along with 193 \AA{} images from AIA
+(Fe{\footnotesize XII}, at a temperature $T$=10$^{6.1}$ K),
+and 195 \AA{} and 304 \AA{} images from the
+\emph{STEREO} instrument.
+The so-called {EIT} waves are EUV waves
+named after the instrument that first detected them,
+the \emph{EUV Imaging Telescope} (EIT) on the
+\emph{Solar and Heliospheric Observatory} (SOHO).
 
-The three main observations made here were:
-\begin{itemize}
-    \item (MHD) EUV fast coronal waves
-        \begin{itemize}
-            \item bright - Moreton wave
-            \item faint - Not associated with the Moreton wave
-        \end{itemize}
-    \item Slow, bright EUV wave (A typical EIT wave)
-    \item Filament and prominence oscillations
-\end{itemize}
-The lifetime of the Moreton wave was $\sim$ 6 minutes, with an average
+% Analysis
+The Moreton wave was triggered by
+a class-X6.9 flare from AR NOAA 11263 that occurred on August 9, 2011.
+It lasted for $\sim$ 6 minutes, with an average
 velocity of $\left\langle v \right\rangle$ = 760 km s$^{-1}$.
-The wave associated with the filament had $v$ = 300 km s$^{-1}$.
+The EUV waves were thought to be the coronal counterparts of the
+Moreton wave, although the difference in velocity and propagation
+direction showed that this was not the case.
+The EIT wave propagated at a velocity of 200-400 km s$^{-1}$ and lasted for
+about 45-60 minutes, while the Moreton wave propagated at a velocity
+of 500-1500 km s$^{-1}$ and only lasted for 10 minutes.
+Moreover, Moreton waves are quasi-isotropic, while the EIT waves were observed to
+propagate isotropically.
+
+Also observed were a filament and a promiance (two different structures)
+that were near the region where the flare ocurred. The waves that resulted
+from the flare passed by these two structures, causing them to oscillate,
+and thus provide a valuable observable for diagnoising the propgating
+disturbances.
+The velocity of the propagating coronal wave was derived to be
+$\sim$ 800 km s$^{-1}$ from observations of the prominance, and
+$\sim$ 570 km s$^{-1}$ from observations of the filament.
+These numbers provided the expected velocity range for the coronal
+waves, placing them in the category of fast-mode MHD waves.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{c c}
+         \hline\hline
+         Wave & velocity [km s$^{-1}$]\\
+         \hline
+         F1 & 760\\
+         F2b & 730\\
+         F2f & 620\\
+         S2b & ?\\
+         F3b & 550\\
+         S3b & 340\\
+         F3f & 580\\
+         \hline
+    \end{tabular}\\
+    \caption{Waves observed by~\cite{pfw_1}}
+    \label{table:lines}
+\end{table}
 
 % Add movie somewhere in here!
 
