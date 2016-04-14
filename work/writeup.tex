@@ -167,7 +167,6 @@ Some of the first results from preliminary TRACE data were produced by
 \cite{kink_1} to investigate the oscillations present in coronal loops.
 Using 171 \AA{} data, they modeled five loops
 that accompanied a class M4.6 solar flare in July of 1998.
-At this point, many MHD modes were characterized in theory
 
 The observations had enough qualities characteristic of
 fast kink modes, including the spatial displacements characteristic
@@ -515,8 +514,8 @@ $ v_{ph} = 735 - 845 $ km s$^{-1}$, with a final speed
 
 \subsection{Torsional Modes}
 Torsional modes, or more commonly, \emph{Alfv\'en} modes, are axisymmetric
-modes whose speed is determined purely by magnetic pressure forces
-(see equation \ref{Alfven_speed}).
+modes whose speed is determined primarily by magnetic pressure forces
+(see equation~\ref{Alfven_speed}).
 They are transverse waves that are highly anisotropic (\cite{Goossens}),
 with a \emph{group} speed that
 travels strictly along magnetic field lines in response
@@ -535,12 +534,39 @@ Alfv\'en waves undergo torsion (aka, twisting), in opposite directions on
 either end of the cylinder (\cite{Nak}).
 
 The primary damping mechanism for Aflv\'en waves is resonant absorption,
-and is thought to be a possible cause for coronal heating (?).
+and is thought to be a possible cause for coronal heating.
 
-\cite{tor_1} used spectroscopic observations of the Fe
-{\footnotesize XII} $\lambda$ 195.12 line to investigate Doppler shifts
-along the line-of-sight (LOS) in a coronal loop.
-They found that oscillations do not necessarily indicate MHD waves,
+\cite{tor_1} derived the magnetic field strength and Alfv\'en velocity
+using coronal seismology, and compared them to other techniques to
+confirm that coronal seismology was in fact a reliable method to determine
+these parameters. For the direct techniques,
+the magnetic field was found using magnetic extrapolation,
+and the Alfv\'en velocity was found
+using spectroscopic observations of the Fe
+{\footnotesize XII} $\lambda$ 195.12 line, where the Doppler shifts
+along the line-of-sight (LOS) in a coronal loop could be used to
+measure velocities. For the seismological applications, the AIA
+171 \AA{} data was used.
+
+They also took into account the situation of a non-zero density
+gradient and magnetic stratification, a more realistic consideration
+than the ideal case of a flux tube with constant density inside
+and zero density outside (the contrast between the two is one of
+the aforementioned difficult parameters to determine in the corona).
+
+The phase speed of the loop oscillation was found to be between
+2500 and 2600 km s$^{-1}$. This range fit the characteristic kink
+speed, given by
+\begin{equation}\label{kink_speed}
+    C_k \approx \sqrt{\frac{2}{1+\zeta^{-1}}}V_A
+\end{equation}
+where $\zeta$ is the ratio of the internal loop density to the external
+density, $\rho_i/\rho_e$.
+
+The results allowed for the conclusion that coronal seismology is a
+reliable method for deriving these coronal parameters.
+
+They did note that oscillations do not necessarily indicate MHD waves,
 as these same oscillations can result from upflows of jets, which were
 found to be the dominate source of the oscillations seen around the loop
 footpoints. Toward the top of the loop, the observed oscillations were
@@ -568,7 +594,6 @@ is determined by density and magnetic field:
     V_A \propto B\rho^{-1/2}
 \end{equation}
 
-\subsection{Mixed Modes}
 
 \section{Discussion}\label{disc}
 The observational techniques and relevant properties of each of the different
