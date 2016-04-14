@@ -50,10 +50,18 @@
 \begin{frame}
     \titlepage{}
 \end{frame}}%-------------------------------------------------------------%
-\begin{frame}{Magnetohydrodynamics (MHD) Theory}
-    [Relationship between size and decay time].
-    Characteristic speeds are determined by the environment
-    (e.g.\ sounds waves traveling at $c_s=\sqrt{\frac{\gamma P}{\rho}}$)
+\begin{frame}{Magnetohydrodynamics (MHD)}{Theory}
+    %[Relationship between size and decay time].
+    \begin{columns}
+        \column{0.5\textwidth}
+        \includegraphics[width=\textwidth]{cylinder.png}
+        \column{0.5\textwidth}
+        \begin{itemize}
+            \item Straight flux tube in uniform magnetic field.
+            \item $ \xi(x) = \xi(r)e^{i(kz+m{\phi})} $
+            \item Characteristic speeds are determined by the
+                environment
+        \end{itemize}
     Types of waves/oscillations:
     \begin{itemize}
         \item Alfv\'en: $V_A = \frac{B}{\mu_0\rho}$
@@ -63,6 +71,7 @@
                 \item Slow $C_{T_0} < C_{slow} < C_{s_0} $
             \end{itemize}
     \end{itemize}
+    \end{columns}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{Coronal seismology}{Technique and motivation}
     Problem: properties of the corona, such as magnetic field strength,
@@ -95,28 +104,15 @@
 \begin{frame}{Coronal seismology}
     \includegraphics[width=\textwidth]{loop_diagram.jpg}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{Magnetohydrodynamics (MHD)}{Theory}
-    \begin{columns}
-        \column{0.5\textwidth}
-        \includegraphics[width=\textwidth]{cylinder.png}
-        \column{0.5\textwidth}
-        \begin{itemize}
-            \item Straight flux tube in uniform magnetic field.
-            \item $ \xi(x) = \xi(r)e^{i(kz+m{\phi})} $
-        \end{itemize}
-    \end{columns}
-\end{frame}%-------------------------------------------------------------%
 \begin{frame}{Dispersion diagram}
     \begin{figure}
         \includegraphics[width=3in]{disp_diagram.png}
     \end{figure}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{Background}
-    Nak, Asc, Roberts, all those common authors.
-\end{frame}%-------------------------------------------------------------%
 \begin{frame}{MHD modes}{Oscillations vs.\ waves}
-    Or magnetoacoustic vs.\ Alfv\'en.
-    Or fast vs.\ slow.
+    (Or magnetoacoustic vs.\ Alfv\'en.)
+    (Or fast vs.\ slow.)
+    [insert characteristic speeds, periods, how observed, etc.\ here].
     \begin{itemize}
         \item Fast standing oscillations
             \begin{itemize}
@@ -139,15 +135,11 @@
         \item Torsional modes (aka.\ Alfv\'en waves)
     \end{itemize}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{Observational Methods}{How do you know what kind of mode
-    you're looking at, or how to find potential MHD modes in the first place?}
-    McIntosh et al.\ algorithm
-\end{frame}%-------------------------------------------------------------%
 \begin{frame}{Fast standing oscillations}{Kinks vs.\ Sausages}
 %\begin{center}
 \begin{columns}
         \column{0.6\textwidth}
-    \includegraphics[width=2.5in]{kink_saus.png}
+        \framebox{\includegraphics[width=2.5in]{kink_saus.png}}
     %\par{\tiny image credit:\\
     %$https://inspirehep.net/record/1088737/files/figures_instab_locations.png$}
     %\end{center}
@@ -166,27 +158,14 @@
             \item Symmetric
             \item Intensity change\\ $\rightarrow$ density change
             \item $\lambda\sim\sigma$
+            \item long-wavelength limit
         \end{itemize}
     \end{block}
 \end{columns}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{Fast standing oscillations}{Kinks vs.\ Sausages}
-\begin{columns}
-        \column{0.6\textwidth}
-        The long-wavelength limit
-        \column{0.4\textwidth}
-    \begin{block}{Kink}
-        \begin{itemize}
-            \item $k\sigma \ll 1$, or $\sigma\ll\lambda$
-        \end{itemize}
-    \end{block}
-    \begin{block}{Sausage}
-        \begin{itemize}
-            \item $\lambda\sim\sigma$
-        \end{itemize}
-    \end{block}
-\end{columns}
-\end{frame}%-------------------------------------------------------------%
+
+%========================================================================%
+\begin{comment}
 \begin{frame}{Kink modes}{general characteristics}
     \begin{itemize}
         \item $c_k=\sqrt{\frac{\rho_oV_{Ao}^2 + \rho_cV_{Ac}^2}
@@ -203,6 +182,7 @@
     \end{itemize}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{Research Goals}
+    [insert full disk here, as background or side image]
     \begin{itemize}
         \item Learn what the field is doing (review articles).
         \item Global contribution to topic --- variety of authors,
@@ -278,12 +258,10 @@
             EUV emission  and Doppler shifts)
     \end{itemize}
 \end{frame}%-------------------------------------------------------------%
-\begin{comment}
 \begin{frame}{pac\_1}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{pac\_2}
 \end{frame}%-------------------------------------------------------------%
-\end{comment}
 \begin{frame}{Propagating acoustic waves}{Fast}
     \begin{itemize}
         \item $v_{ph}>150$ km s$^{-1}$ $\rightarrow$ fast
@@ -331,6 +309,8 @@
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{tor\_2}
 \end{frame}%-------------------------------------------------------------%
+\end{comment}
+%========================================================================%
 \begin{frame}{Important Properties}
     \begin{center}
         \begin{tabular}{c|c|c|c|}
@@ -347,6 +327,8 @@
         \end{tabular}
     \end{center}
 \end{frame}%-------------------------------------------------------------%
+%========================================================================%
+\begin{comment}
 \begin{frame}{Example Table}
 \begin{center}
    \begin{tabular}{cc|c|c|}
@@ -369,7 +351,6 @@
     \end{tabular}
 \end{center}
 \end{frame}%-------------------------------------------------------------%
-
 \begin{frame}{Example of Two Column Output}
     \begin{columns}[c]
         \column{1.5in}
@@ -390,11 +371,14 @@
 \begin{frame}{Research}
     \includegraphics[width=5in]{figures/bp1_image.png}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{Research}
-    \includegraphics[width=\paperwidth]{figures/bp1_contour.png}
+\end{comment}
+%========================================================================%
+\begin{frame}{Research}{[put full disk at beginning]}
+    \framebox{\includegraphics[width=0.8\paperwidth]{figures/bp1_contour.png}}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{Research}
-    \includegraphics[width=0.9\paperwidth]{figures/bp1_cool2.png}
+    \hspace{-0.08\paperwidth}
+    \framebox{\includegraphics[width=0.9\paperwidth]{figures/bp1_cool2.png}}
 \end{frame}%-------------------------------------------------------------%
 
 \end{document}
