@@ -53,9 +53,7 @@
 \begin{frame}
     \titlepage{}
 \end{frame}}%-------------------------------------------------------------%
-
 \begin{comment}
-%
 \begin{frame}{template}
     \begin{columns}
         \column{0.5\textwidth}
@@ -63,34 +61,30 @@
         \column{0.5\textwidth}
         % ...
     \end{columns}
-\end{frame}
-%
+\end{frame}%-------------------------------------------------------------%
 \end{comment}
-
-
 \begin{frame}{Coronal seismology}{Technique and motivation}
     Motivation:
     \begin{itemize}
-        \item Coronal heating problem
-        \item Constraining flare/CME environment
+        \item Mystery of coronal heating
+        \item Space weather prediction
     \end{itemize}
-    Problem: properties of the corona, such as magnetic field strength,
-    densities, and Alfv\'en velocities, are difficult to measure.
-
-    Solution: coronal seismology.
+    Properties of the solar corona that are difficult to measure: [why? And why
+    do we need them?]
     \begin{itemize}
-        \item Observe disturbances in the corona, and measure:
-            \begin{itemize}
-                \item Period
-                \item Velocity
-                \item Timescales
-            \end{itemize}
-        \item Compare observed quantities to MHD theory to identify the
-            type of wave or mode.
-        \item Insert observed properties into appropriate equations to
-            derive coronal parameters.
+        \item magnetic field strength, $\vec{B}$
+        \item density
+        \item Alfv\'en velocity
     \end{itemize}
-    Current questions:
+    Solution: coronal seismology
+    \begin{enumerate}
+        \item Observe disturbances (triggered by flares, footpoint motions, etc.)
+            [insert eye candy here?]
+        \item Measure, e.g.\ period, velocities, timescales
+        \item Identify the type of wave or mode (MHD theory; stay tuned)
+        \item Extract coronal parameters from equations
+    \end{enumerate}
+    Other questions:
     \begin{itemize}
         \item How are these disturbances initiated?
         \item How are they damped, and what determines the timescales?
@@ -98,6 +92,7 @@
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{Magnetohydrodynamics (MHD)}{Theory}
     %[Relationship between size and decay time].
+    [Something about Asc, TRACE, etc.]
     \begin{columns}
         \column{0.45\textwidth}
         \includegraphics[width=\textwidth]{cylinder.png}\\
@@ -109,8 +104,7 @@
             %\item $ \xi(x) = \xi(r)e^{i(kz+m{\phi})} $
             \item Characteristic speeds are determined by the
                 environment
-            \item Density, temperature inside loop different from outside
-                loop
+            \item Density, temperature inside loop different from outside loop
             \item Non-ideal effects: gravitational stratification,
                 loop curvature, inhomogeneity in magnetic field strength
                 (considered negligible).
