@@ -1,26 +1,24 @@
 \documentclass[table]{beamer}
-\usepackage[T1]{fontenc}
-\usepackage{mdwlist}
+%\useoutertheme{infolines}
 \usepackage{multirow}
+\usepackage{textpos}
 \usepackage{graphicx}
+\usepackage{lipsum}
 %\graphicspath{{images/}}
 \usepackage{verbatim} % For using /begin{comment}; /end{comment}
-%\usepackage{selinput} % ?
-%Loading a font package, uncomment one of the following lines to see changes
-%\usepackage{libertine}
-%\usefonttheme{default}
-%\usefonttheme{professionalfonts}
 
+% Font
 %\setbeamerfont{frametitle}{series=\bfseries} % Frame titles should be bold
-
 \usepackage{lmodern}
 
-% Bright colors
+\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{itemize subitems}[circle]
+
+% Colors
 \definecolor{oj}{rgb}{1.0,0.65,0.0}
 \definecolor{cblue}{rgb}{0.39,0.58,0.93}
 \definecolor{amethyst}{rgb}{0.6, 0.4, 0.8}
 
-% Pale colors
 \definecolor{lightgrey}{rgb}{0.75, 0.75, 0.80}
 \definecolor{tangerine}{rgb}{1.0, 0.6, 0.4}
 \definecolor{arylyellow}{rgb}{0.91, 0.84, 0.42}
@@ -28,7 +26,23 @@
 \definecolor{aqua}{rgb}{0.5, 1.0, 0.83}
 \definecolor{bblue}{rgb}{0.67, 0.9, 0.93}
 
-\setbeamercolor{normal text}{bg=black, fg=white}
+
+%\usepackage{tikz}
+%\usebackgroundtemplate{%
+%\tikz\node[opacity=0.3]{%
+%\setbeamercolor{background canvas}{bg=black}
+%\includegraphics[height=\paperheight,width=\paperwidth]{awesome.jpg}};}
+
+%\setbeamertemplate{background}{%
+
+%\setbeamercolor{normal text}{bg=black, fg=white}
+
+%\setbeamercolor{bgcolor}{fg=black,bg=red!20}
+%\setbeamercolor{bgcolor}{bg=black}
+%\setbeamercolor{bgcolor}{bg=red!20}
+
+\setbeamercolor{background canvas}{bg=black}
+\setbeamercolor{normal text}{fg=white}
 \setbeamercolor{title}{fg=arylyellow}
 \setbeamercolor{frametitle}{fg=tangerine}
 \setbeamercolor{framesubtitle}{fg=gsa}
@@ -39,8 +53,14 @@
 \setbeamercolor{enumerate item}{fg=amethyst} % all frames will have red bullets
 %\setbeamercolor{block title}{fg=green}
 
-\setbeamertemplate{itemize items}[circle]
-\setbeamertemplate{itemize subitems}[circle]
+\newcommand\Wider[2][3em]{%
+    \makebox[\linewidth][c]{%
+       \begin{minipage}{\dimexpr\textwidth+#1\relax}
+           \raggedright#2
+       \end{minipage}%
+    }%
+}
+
 \title{\textbf{Coronal Seismology}}
 \subtitle{\textbf{ASTR 598}}
 \date{\textbf{Spring 2016}}
@@ -113,7 +133,7 @@
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{Dispersion diagram}{Solutions to dispersion relation}
     \begin{figure}
-        \includegraphics[width=3.5in]{disp_diagram.png}
+        \includegraphics[width=0.65\paperwidth]{disp_diagram.png}
     \end{figure}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{Magnetohydrodynamics (MHD)}{Two mode categories}
@@ -125,7 +145,7 @@
                     \item Slow $C_{T_0} < C_{slow} < C_{s_0} $
                 \end{itemize}
             \item \textcolor{bblue}{Alfv\'en}
-                $V_A = \frac{B}{\mu_0\rho}$
+                $V_A = \frac{B}{\sqrt{\mu_0\rho}}$
         \end{enumerate}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{Fast standing oscillations}{Kinks vs.\ Sausages}
@@ -152,9 +172,6 @@
     \end{block}
 \end{columns}
 \end{frame}%-------------------------------------------------------------%
-
-%========================================================================%
-\begin{comment}
 \begin{frame}{Kink modes}{general characteristics}
     \begin{itemize}
         \item $c_k=\sqrt{\frac{\rho_oV_{Ao}^2 + \rho_cV_{Ac}^2}
@@ -162,47 +179,19 @@
             \approx V_A\sqrt{\frac{2}{1+\frac{\rho_e}{\rho_o}}} $
             in the low-$\beta$ plasma.
         \item $v_{ph} = \frac{\omega}{k} \approx C_k \gtrsim V_A $
-        \item Period $P=\frac{2l}{V_A}\sqrt{\frac{1+\rho_e/\rho_o}{2}}$
-            where $\lambda=2l$ ($l$ is the loop length).
-            Typically, $l \approx 60-600$ Mm in the corona.
-        \item ``current pinch'' instability
-        \item Important observation from which magnetic field strength
-            can be derived.
-    \end{itemize}
-\end{frame}%-------------------------------------------------------------%
-\begin{frame}{Research Goals}
-    [insert full disk here, as background or side image]
-    \begin{itemize}
-        \item Learn what the field is doing (review articles).
-        \item Global contribution to topic --- variety of authors,
-            work done within the last five years or so.
-        \item Fit research into the ``big picture''
-    \end{itemize}
-\end{frame}%-------------------------------------------------------------%
-\begin{frame}{Kink modes}
-{Coronal loop oscillations observed with the
-\emph{Transition Region And Coronal Explorer (TRACE)}}
-    \begin{itemize}
+        \item Period $P=\frac{2L}{V_A}\sqrt{\frac{1+\rho_e/\rho_o}{2}}$
+            where $\lambda=2L$ ($L$ is the loop length).
+            Typically, $L \approx 60-600$ Mm in the corona.
+        \item Derive magnetic field!
         \item Not just a single, global mode.
-        \item Gaussian vs.\ exponential
         \item Plasma motions around footpoints of coronal loops
+        \item Rapidly damped
     \end{itemize}
-\end{frame}%-------------------------------------------------------------%
-\begin{frame}{Kink modes}{``Excitation and damping of broadband kink waves
-    in the solar corona''}
-    Footpoint-driven, \emph{propagating} kink waves (which are
-    temporally and spatially ubiquitous in the corona).
-    Both standing and propagating kink waves are rapidly damped.
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{Sausage modes}{The basics}
     Trapped fast modes supported by thick, dense loops because of the
     cutoff wavenumber (pfw\_2). Observe spatially resolved radio
     (see sources in pfw\_2).
-\end{frame}%-------------------------------------------------------------%
-\begin{frame}{Sausage modes}{Observations of sausage modes in magnetic pores}
-\end{frame}%-------------------------------------------------------------%
-\begin{frame}{Sausage modes}{Sausage waves in transversely nonuniform
-    monolithic coronal tubes}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{Standing acoustic oscillations}
     [Insert movie here?]
@@ -247,10 +236,6 @@
             EUV emission  and Doppler shifts)
     \end{itemize}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{pac\_1}
-\end{frame}%-------------------------------------------------------------%
-\begin{frame}{pac\_2}
-\end{frame}%-------------------------------------------------------------%
 \begin{frame}{Propagating acoustic waves}{Fast}
     \begin{itemize}
         \item $v_{ph}>150$ km s$^{-1}$ $\rightarrow$ fast
@@ -262,12 +247,6 @@
         \item Moreton waves in the chromosphere
         \item Fast EUV waves in the corona
     \end{itemize}
-\end{frame}%-------------------------------------------------------------%
-\begin{frame}{``FIRST SIMULTANEOUS OBSERVATION OF AN H$\alpha$
-    MORETON WAVE, EUV WAVE, AND FILAMENT/PROMINANCE OSCILLATIONS''}
-    {Asai, et al. (pfw\_2)}
-\end{frame}%-------------------------------------------------------------%
-\begin{frame}{pfw\_2}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{Torsional modes}{aka.\ Alfv\'en wave}
     Properties:
@@ -294,12 +273,6 @@
         \item Coupling of various MHD modes
     \end{itemize}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{tor\_1}
-\end{frame}%-------------------------------------------------------------%
-\begin{frame}{tor\_2}
-\end{frame}%-------------------------------------------------------------%
-\end{comment}
-%========================================================================%
 \begin{frame}{Important Properties}
     \begin{center}
         \begin{tabular}{c|c|c|c|}
@@ -317,26 +290,44 @@
         \end{tabular}
     \end{center}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{Research}
-    \includegraphics[width=0.7\paperwidth]{figures/full.png}
-\end{frame}%-------------------------------------------------------------%
-\begin{frame}{Research}
+{%
+\setbeamercolor{background canvas}{bg=black}
+\setbeamertemplate{background}{%
+\parbox[c][\paperheight][c]{\paperwidth}{%
+\centering
+%\hspace{3cm}
+\includegraphics[height=\paperheight]{figures/full_disk.png}}}
+\begin{frame}{Research}{AIA/SDO}
+\end{frame}}%------------------------------------------------------------%
+\begin{comment}
+\begin{frame}
+    Fe {\footnotesize XII, XXIV}\\
+    193 \AA{}\\
+    July 2012\\
+    11--12 pm\\
+\end{frame}
+\end{comment}
+\begin{frame}[c]{Research}{[Looks nicer than white background]}
     \includegraphics[width=0.7\paperwidth]{figures/bp1.png}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{Research}
+\begin{frame}[c]{Research}
     \includegraphics[width=0.8\paperwidth]{figures/bp1_image.png}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{Research}
+\begin{frame}[c]{Research}
     \framebox{\includegraphics[width=0.8\paperwidth]{figures/bp1_contour.png}}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{Research}
-    \hspace{-0.08\paperwidth}
-    \framebox{\includegraphics[width=0.9\paperwidth]{figures/bp1_cool2.png}}
+\begin{frame}[c]{Research}
+    \Wider[4em]{%
+    \begin{center}
+        \framebox{\includegraphics[width=0.9\paperwidth]{figures/bp1_cool2.png}}
+    \end{center}}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{Research}
-    \includegraphics[width=0.8\paperwidth]{figures/lightcurve3.png}
+    \begin{center}
+        \includegraphics[width=0.8\paperwidth]{figures/lightcurve3.png}
+    \end{center}
 \end{frame}%-------------------------------------------------------------%
 \begin{frame}{Acknowledgements}
 \end{frame}%-------------------------------------------------------------%
-\end{document}
 
+\end{document}
