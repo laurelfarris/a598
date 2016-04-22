@@ -1,12 +1,16 @@
 \documentclass[12pt]{article}
-\usepackage[margin=1.5in]{geometry}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{graphicx}
 \usepackage{titlesec}
 \setlength{\parindent}{0em}
 \setlength{\parskip}{0.5em}
 \usepackage{enumitem}
 \usepackage{mdwlist}
 \usepackage{color}
+\usepackage{sectsty}
 
+\definecolor{ao}{rgb}{0.0, 0.5, 0.0}
+\sectionfont{\color{ao}}
 
 \title{\vspace{-0.5in}Wave Stuff}
 \author{}
@@ -17,7 +21,7 @@
 
 \vspace{-1in}
 
-\section*{\textcolor{magenta}{A}}
+\section*{A}
 
 \subsection*{acoustic waves (aka sound waves)}
 \begin{itemize*}
@@ -48,6 +52,32 @@
 \end{itemize*}
 
 \subsection*{Alfv\'en waves}
+From presentation slides:
+
+Properties:
+\begin{itemize*}
+    \item m$=$0 (Axisymmetric, or azimuthally symmetric)
+    \item transverse (shear) perturbations
+    \item Parallel to $\vec{B}$
+    \item Driving force: magnetic tensioin
+    \item incompressible
+    \item velocity: $v_{A} = \frac{B}{\mu_{o}\rho}$;
+        $\sim$ 1000 km s$^{-1}$ in the corona
+\end{itemize*}
+How to observe:
+\begin{itemize*}
+    \item Only get Doppler shifts from \emph{long}-period waves
+        ($>$ a few minutes).
+    \item Measure additional (i.e.\ non-thermal) broadening
+        of coronal emission lines; indirect way to observe short-period waves.
+    \item Spatial variation in Doppler shift for long periods.
+        Gyrosynchrotron emission in radio regime.
+\end{itemize*}
+Effects of twisting:
+\begin{itemize*}
+    \item Coupling of various MHD modes
+\end{itemize*}
+Other:
 \begin{itemize*}
     \item \emph{Purely magnetic} and \emph{incompressible} in nature
     \item transverse (perpendicular to $\vec{F}_{res}$)
@@ -106,7 +136,7 @@
         \end{itemize*}
 \end{itemize*}
 
-\section*{\textcolor{magenta}{B}}
+\section*{B}
 
 \subsection*{ballooning modes}
 \begin{itemize*}
@@ -114,9 +144,25 @@
     \item Role not established yet
 \end{itemize*}
 
+\subsection*{Bessel's equations}
+
+(From Boas p. 587): Bessel functions are damped sines and cosines.
+Solutions of differential equations can be represented by power series.
+Graphs, formulas; electricty, heat, hydrodynamics, elasticity, wave motion,
+quantum$\ldots$, cylindrical symmetry$\ldots$
+
+Bessel's differential equation:
+$$ x^2\frac{d^y}{dx2} + x\frac{dy}{dx} + (x^2-p^2)y = 0 $$
+where $p$ is the \emph{order} of the Bessel function $y$ and is a constant, and
+$y$ is the solution.
+$a$ = integer $\rightarrow$ cylindrical,
+$a$ = half-integer $\rightarrow$ spherical.
+$$ x^2y'' + xy' + (x^2-p^2)y = 0  $$
+$$ x(xy') + (x^2-p^2)y' = 0  $$
+
 \subsection*{body modes}
 
-\section*{\textcolor{magenta}{C}}
+\section*{C}
 
 \subsection*{coronal loops}
 \begin{itemize*}
@@ -124,12 +170,47 @@
         upper solar atmosphere.
 \end{itemize*}
 
+\subsection*{coronal seismology}
+
+
 \subsection*{cusp speed}
 See \emph{tube speed}
 
-\section*{\textcolor{magenta}{D}}
+\section*{D}
 
-\subsection*{dispersion relations}
+\subsection*{dispersion}
+Dispersion is when the distinct phase velocities of the components of the
+envelope cause the wave packet to ``spread out'' over time.
+The components of the wave packet (or envelope) move apart to the degree
+where they no longer combine to complete the envelope.
+
+Causes different components of the wave to have different phase velocities.
+
+Different kinds of dispersion:
+\begin{itemize*}
+    \item Normal dispersion: strictly increasing Re $\epsilon(\omega)$ with
+        increasing $\omega$.
+    \item Anomalous dispersion: decreasing Re $\epsilon(\omega)$ with
+        increasing $\omega$.
+    \item Resonant absorption: occurs in regions where Im $\epsilon(\omega)$
+        is large.
+\end{itemize*}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=5in]{disp.png}
+\end{figure}
+
+No dispersion: $v_{ph} = v_{gr}$; dispersion: $v_{ph} \neq v_{gr}$.
+A medium that is free from dispersion has index of refraction that is constant
+as a function of frequency, so all wavelengths are similarly affected.
+Permittivity and permeability are functions of frequency.
+Non-dispersive waves have phase speed ($v_{ph}$, speed that wave actually travels
+through medium?) independent of wavenumber, $k$.
+All waves of \emph{any} $k$ propagate at the same speed.
+Uniform dissipation, resonant mode conversion, physical mechanisms vs. ?
+
+Dispersion \emph{relation}:
 \begin{itemize*}
     \item Relates the wavelength (or wavenumber) of a wave to its
         frequency.
@@ -137,9 +218,9 @@ See \emph{tube speed}
         of a wave traveling through that medium.
 \end{itemize*}
 
-\section*{\textcolor{magenta}{E}}
+\section*{E}
 
-\section*{\textcolor{magenta}{F}}
+\section*{F}
 
 \subsection*{fast waves}
 \begin{itemize*}
@@ -205,6 +286,22 @@ structure.
 Fast kink waves:
 \begin{itemize*}
     \item transverse (general property of fast waves)
+    \item $c_k = \sqrt{\frac{\rho_oV^2_{Ao}+\rho_eV^2_{Ae}}
+        {\rho_o+\rho_e}} \approx V_A\sqrt{\frac{2}{1+\frac{\rho_e}{\rho_o}}} $
+        in the low-$\beta$ plasma.
+    %\item $v_{ph} = \frac{\omega}{k} \approx C_k \gtrsim V_A $
+    \item Period $P=\frac{2l}{V_A}\sqrt{\frac{1+\rho_e/\rho_o}{2}}$
+        where $\lambda=2l$ ($l$ is the loop length).
+        Typically, $l \approx 60-600$ Mm in the corona.
+    \item ``current pinch'' instability
+    \item Important observation from which magnetic field strength
+        can be derived.
+    \item Period $P=\frac{2l}{V_A}\sqrt{\frac{1+\rho_e/\rho_o}{2}}$
+        where $\lambda=2l$ ($l$ is the loop length).
+        Typically, $l \approx 60-600$ Mm in the corona.
+    \item ``current pinch'' instability
+    \item Important observation from which magnetic field strength
+        can be derived.
     \item slab: phase speed = V$_{A_e}$
     \item tube: kink speed:
         $$ c_K = \frac{B_i^2 + B_e^2}{\sqrt{\mu(\rho_i+\rho_e)}} $$
@@ -212,6 +309,8 @@ Fast kink waves:
         Slab (or tube) is moved laterally; little variation in cross-sec,
         density, or intensity.
 \end{itemize*}
+Standing and propagating both rapidly damped.
+
 
 Slow kink waves:
 \begin{itemize*}
@@ -414,6 +513,38 @@ photosphere, spherical harmonics:
         number of planes slicing longitudinally. $-l\leq m\leq +l$
 \end{itemize*}
 
+\subsection*{propagating acoustic waves (slow)}
+\begin{itemize}
+    \item $v_{ph}<150$ km s$^{-1}$ $\rightarrow$ slow
+    \item longitudinal, compressive, anisotropic
+    \item Parallel to $\vec{B}$, perturbation of $\vec{B}$ is negligible.
+    \item Generated impulsively at one end of a footpoint.
+    \item Only penetrate $\sim$ 10\% into loop before
+        damped by thermal conduction
+    \item weak dispersion in coronal conditions ($V_{A} \gg c_{s}$)
+    \item 3 phases: periodic, QP, decay
+    \item period = 3, 5, 10 minutes? Or 2--22 seconds? (see kink\_1),
+    \item velocity: 50--200 km s$^{-1}$
+    \item $c_{T} = \sqrt{\frac{c_{s}^2v_{A}^2}{c_{s}^2 + v_{A}^2}} $
+        propagate sub-sonically at $c_{T}$, which is less than $c_{s}$
+    \item ``large'' amplitude, max in top of chromosphere
+    \item Observed using spectroscopy (intensity variations in
+        EUV emission  and Doppler shifts)
+\end{itemize}
+
+\subsection*{propagating acoustic waves (fast)}
+\begin{itemize}
+    \item $v_{ph}>150$ km s$^{-1}$ $\rightarrow$ fast
+        (\emph{or} transverse standing waves).
+    \item Quasi-isotropic
+    \item Driven by magnetic forces + plasma pressure forces
+    \item Compressive (magnetic sound wave)
+    \item Speed: $c_{F} = \sqrt{c_{s}^2 + v_{A}^2} $
+    \item Moreton waves in the chromosphere
+    \item Fast EUV waves in the corona
+\end{itemize}
+
+
 \section*{\textcolor{magenta}{R}}
 
 \subsection*{resonance}
@@ -435,9 +566,12 @@ $\rightarrow$ large amplitude.
     \item inherently non-linear
 \end{itemize*}
 
-\section*{\textcolor{magenta}{S}}
+\section*{S}
 
 \subsection*{sausage modes}
+%Trapped fast modes supported by thick, dense loops because of the cutoff
+%wavenumber (pfw_2). Observe spatially resolved radio (see sources in
+%pfw_2).
 \begin{itemize*}
     \item m = 0
     \item The fast magnetoacoustic sausage mode is another type of
@@ -509,6 +643,29 @@ Numbers:
         $-l \leq m \leq l$ (direction of waves is important); number of
         planes slicing longitudinally.
 \end{itemize*}
+
+\subsection*{standing acoustic oscillations}
+Characteristics:
+\begin{itemize}
+    \item Pressure forces in opposition
+    \item Period = 7--31 minutes (20 minutes from another source)
+    \item Decay times = 5.7--36.8 minutes
+    \item Peak velocity = 200 km/sec
+\end{itemize}
+Standing oscillations vs.\ propagating waves
+\begin{itemize}
+    \item In loops, propagating waves damp before
+        reaching opposite footpoint.
+    \item Velocity and intensity are 90$^{\circ}$ out of phase
+        for standing oscillations, and are in phase for propagating
+        acoustic waves.
+    \item Frequencies less than the cutoff are standing oscillations,
+        waves with frequency greater than the cutoff propagate into
+        the chromosphere.
+    \item no loop shape change or displacement
+    \item near footpoints.
+\end{itemize}
+
 
 \subsection*{standing waves}
 Confined to a finite region of space $\rightarrow$ quantifies the frequency
