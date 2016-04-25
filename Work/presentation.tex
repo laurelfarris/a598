@@ -1,11 +1,10 @@
-\documentclass[table]{beamer}
+\documentclass[11pt,table]{beamer}
 \usepackage{verbatim} % For using /begin{comment}; /end{comment}
 \setbeamertemplate{footline}{%
     \raisebox{5pt}{\makebox[\paperwidth]{\hfill\makebox[10pt]{%
     \scriptsize\insertframenumber}}}}
 \setbeamertemplate{navigation symbols}{}% Empty to get rid of them!
-\setbeamertemplate{itemize items}[circle]
-\setbeamertemplate{itemize subitems}[circle]
+\setbeamertemplate{itemize items}{$\circ$}
 \usepackage{multirow}
 \usepackage{textpos}
 \usepackage{graphicx}
@@ -13,40 +12,31 @@
 %\graphicspath{{images/}}
 %\setbeamerfont{frametitle}{series=\bfseries} % Frame titles should be bold
 \usepackage{lmodern}
-\definecolor{oj}{rgb}{1.0,0.65,0.0}
-\definecolor{cblue}{rgb}{0.39,0.58,0.93}
+
+\addtobeamertemplate{block begin}{\vspace{-8pt}}{}
+
+\definecolor{flilac}{rgb}{0.53, 0.38, 0.56}
 \definecolor{amethyst}{rgb}{0.6, 0.4, 0.8}
 \definecolor{lightgrey}{rgb}{0.75, 0.75, 0.80}
 \definecolor{tangerine}{rgb}{1.0, 0.6, 0.4}
 \definecolor{arylyellow}{rgb}{0.91, 0.84, 0.42}
 \definecolor{gsa}{rgb}{0.66, 0.89, 0.63}
 \definecolor{aqua}{rgb}{0.5, 1.0, 0.83}
-\definecolor{bblue}{rgb}{0.67, 0.9, 0.93}
+\definecolor{bblue}{rgb}{0, 0.72, 0.92}
+\definecolor{cblue}{rgb}{0.53, 0.81, 0.98}
 
-%\usepackage{tikz}
-%\usebackgroundtemplate{%
-%\tikz\node[opacity=0.3]{%
-%\setbeamercolor{background canvas}{bg=black}
-%\includegraphics[height=\paperheight,width=\paperwidth]{awesome.jpg}};}
-
-%\setbeamertemplate{background}{%
-%\setbeamercolor{normal text}{bg=black, fg=white}
-%\setbeamercolor{bgcolor}{fg=black,bg=red!20}
-%\setbeamercolor{bgcolor}{bg=black}
-%\setbeamercolor{bgcolor}{bg=red!20}
+\definecolor{bittersweet}{rgb}{1.0, 0.44, 0.37}
 
 \setbeamercolor{background canvas}{bg=black}
 \setbeamercolor{normal text}{fg=white}
 \setbeamercolor{title}{fg=arylyellow}
 \setbeamercolor{frametitle}{fg=tangerine}
 \setbeamercolor{framesubtitle}{fg=gsa}
-\setbeamercolor{block title}{fg=aqua}
-\setbeamercolor{column title}{fg=aqua}
-\setbeamercolor{description item}{fg=amethyst}
-\setbeamercolor{itemize item}{fg=amethyst} % all frames will have red bullets
-\setbeamercolor{itemize subitem}{fg=amethyst} % all frames will have red bullets
-\setbeamercolor{enumerate item}{fg=amethyst} % all frames will have red bullets
-\setbeamercolor{enumerate subitem}{fg=amethyst} % all frames will have red bullets
+\setbeamercolor{block title}{fg=cblue}
+\setbeamercolor{itemize item}{fg=gsa} % all frames will have red bullets
+\setbeamercolor{itemize subitem}{fg=tangerine} % all frames will have red bullets
+\setbeamercolor{enumerate item}{fg=tangerine} % all frames will have red bullets
+\setbeamercolor{enumerate subitem}{fg=gsa} % all frames will have red bullets
 
 \newcommand\Wider[2][3em]{%
     \makebox[\linewidth][c]{%
@@ -67,71 +57,35 @@
 \begin{frame}
     \titlepage{}
 \end{frame}}%-------------------------------------------------------------%
-\begin{frame}{Coronal seismology}{Technique and motivation}
-    \begin{columns}
-        %\column{0.5\paperwidth}
-        \column{0.5\textwidth}
-        \includegraphics[width=\textwidth]{schematic.png}
-        %\column{0.5\paperwidth}
-        \column{0.5\textwidth}
-            Elusive coronal properties:
-            \begin{itemize}
-                \item magnetic field strength, $\vec{B}$
-                \item density, $\rho$
-                \item Alfv\'en velocity, $V_A$
-            \end{itemize}
-            Solution: coronal seismology
-            \begin{enumerate}
-                \item Observe disturbances
-                \item Measure properties
-                \item Identify the wave or mode
-                \item Extract coronal parameters
-            \end{enumerate}
-            Motivation:
-            \begin{itemize}
-                \item Coronal heating
-                \item Space weather prediction
-            \end{itemize}
-    \end{columns}
-\end{frame}%-------------------------------------------------------------%
 \begin{frame}{Magnetohydrodynamics (MHD)}{Theory}
-    %[Relationship between size and decay time].
-    %[Something about Asc, TRACE, etc.]
     \begin{columns}
         \column{0.45\textwidth}
         \includegraphics[width=\textwidth]{cylinder.png}\\
         \includegraphics[width=\textwidth]{loop.jpg}
         \column{0.55\textwidth}
-        Model:
-        \begin{itemize}
-            \item Straight flux tube in uniform magnetic field.
-            \item Frozen-in plasma is compressive and elastic.
-            %\item $ \xi(x) = \xi(r)e^{i(kz+m{\phi})} $
-            \item Characteristic wave speeds are determined by
-                $\rho$, $T$, $P$, and $\vec{B}$
-        \end{itemize}
-        \begin{enumerate}
-            \item \textcolor{bblue}{Magnetoacoustic}
-                $C_s = \sqrt{\frac{\gamma P}{\rho}}$
-                \begin{enumerate}[(a)]
-                    \item \textcolor{bblue}{Fast} $k_{A_0} < C_{fast} < C_{A_e} $
-                    \item \textcolor{bblue}{Slow} $C_{T_0} < C_{slow} < C_{s_0} $
-                \end{enumerate}
-            \item \textcolor{bblue}{Alfv\'en}
-                $V_A = \frac{B}{\sqrt{\mu_0\rho}}$
-        \end{enumerate}
+        \begin{block}{Model}
+            \begin{itemize}
+                \item Straight cylindrical flux tube in uniform magnetic field.
+                \item $ \xi(x) = \xi(r)e^{i(kz+m{\phi})} $
+                \item Characteristic wave speeds are determined by
+                    $\rho$, $T$, $P$, and $\vec{B}$
+            \end{itemize}
+        \end{block}
+        \begin{block}{Sound speed}
+            \begin{itemize}
+                \item $C_s \propto \sqrt{\cfrac{P}{\rho}} \propto \sqrt{T}$
+            \end{itemize}
+        \end{block}
+        \begin{block}{Alfv\'en speed}
+            \begin{itemize}
+                \item $V_A \propto \cfrac{B}{\sqrt{\rho}}$
+            \end{itemize}
+        \end{block}
     \end{columns}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{Dispersion diagram}{Phase speed ($v_{ph}=\frac{\omega}{k}$)
-    as function of $ka$}
-    \begin{figure}
-        \includegraphics[width=0.65\paperwidth]{disp_diagram.png}
-    \end{figure}
-\end{frame}%-------------------------------------------------------------%
-\begin{frame}{Research Topics}
+\begin{frame}{MHD modes}{Research Topics}
     \begin{columns}
-        \column{0.5\paperwidth}
-        \column{0.5\paperwidth}
+        \column{0.5\textwidth}
         \begin{enumerate}
             \item Kink oscillations
             \item Sausage oscillations
@@ -140,14 +94,61 @@
             \item Propagating fast waves
             \item Torsional (Alfv\'en) modes
         \end{enumerate}
+        \begin{itemize}
+            \item Magnetoacoustic
+                %$C_s = \sqrt{\frac{\gamma P}{\rho}}$
+                \begin{itemize}
+                    \item Fast %$k_{A_0} < C_{fast} < C_{A_e} $
+                    \item Slow %$C_{T_0} < C_{slow} < C_{s_0} $
+                \end{itemize}
+            \item Alfv\'en
+                %$V_A = \frac{B}{\sqrt{\mu_0\rho}}$
+        \end{itemize}
+        \column{0.5\textwidth}
+        \begin{block}{\centering Dispersion diagram}
+        \begin{figure}
+            \includegraphics[width=\textwidth]{disp_diagram.png}
+        \end{figure}
+        $$ C_k = \sqrt{\frac{2}{1+\rho_e/\rho_o}}  $$
+    \end{block}
     \end{columns}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}[c]{Fast standing oscillations}{Kinks vs.\ Sausages}
+\begin{frame}{Coronal seismology}{Technique and motivation}
     \begin{columns}
-        \column{0.5\paperwidth}
-        \begin{center}
-            \includegraphics[width=0.8\textwidth]{kink_saus.png}
-        \end{center}
+        %\column{0.5\paperwidth}
+        \column{0.5\textwidth}
+        \includegraphics[width=\textwidth]{schematic.png}
+        %\column{0.5\paperwidth}
+        \column{0.5\textwidth}
+        \begin{block}{Elusive coronal properties}
+            \begin{itemize}
+                \item magnetic field strength, $\vec{B}$
+                \item density, $\rho$
+                \item Alfv\'en velocity, $V_A$
+            \end{itemize}
+        \end{block}
+        \begin{block}{Motivation}
+            \begin{itemize}
+                \item Coronal heating
+                \item Space weather prediction
+            \end{itemize}
+        \end{block}
+        \begin{block}{Coronal seismology}
+            \begin{enumerate}
+                \item Observe disturbances
+                \item Measure properties
+                \item Identify the wave or mode
+                \item Extract coronal parameters
+            \end{enumerate}
+        \end{block}
+    \end{columns}
+\end{frame}%-------------------------------------------------------------%
+\begin{frame}{Fast standing oscillations}{Kinks vs.\ Sausages}
+    \begin{columns}
+        \column{0.5\textwidth}
+        %\begin{center}
+            \includegraphics[width=\textwidth]{kink_saus.png}
+        %\end{center}
         \column{0.5\paperwidth}
         \vspace{-0.5in}
         \begin{block}{Kink}
@@ -155,11 +156,9 @@
                 \item loop spatial displacement
                 \item Asymmetric
                 \item No intensity change
-                \item $k\sigma \ll 1$, or $\sigma\ll\lambda$
-                \item Derive magnetic field!
-        \item Period $P=\frac{2L}{V_A}\sqrt{\frac{1+\rho_e/\rho_o}{2}}$
-            where $\lambda=2L$ ($L$ is the loop length).
-            Typically, $L \approx 60-600$ Mm in the corona.
+                \item Period $P=\frac{2\ell}{V_A}
+                    \sqrt{\frac{1+\rho_e/\rho_o}{2}}$\\
+                    where $\lambda=2\ell$
             \end{itemize}
         \end{block}
         \begin{block}{Sausage}
@@ -167,12 +166,13 @@
                 \item No loop spatial displacement
                 \item Symmetric
                 \item Intensity change\\ $\rightarrow$ density change
-                \item $\lambda\sim\sigma$
                 \item long-wavelength limit
             \end{itemize}
         \end{block}
 \end{columns}
 \end{frame}%-------------------------------------------------------------%
+
+\begin{comment}
 \begin{frame}{Standing oscillations vs.\ propagating waves}
     \begin{itemize}
         \item In loops, propagating waves damp before
@@ -185,37 +185,53 @@
             the chromosphere.
     \end{itemize}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{Torsional modes}{aka.\ Alfv\'en wave}
-    Properties:
-    \begin{itemize}
-        \item m$=$0 (Axisymmetric, or azimuthally symmetric)
-        \item transverse (shear) perturbations
-        \item Parallel to $\vec{B}$
-        \item Driving force: magnetic tensioin
-        \item incompressible
-        \item velocity: $v_{A} = \frac{B}{\mu_{o}\rho}$;
-            $\sim$ 1000 km s$^{-1}$ in the corona
-    \end{itemize}
-    How to observe:
-    \begin{itemize}
-        \item Only get Doppler shifts from \emph{long}-period waves
-            ($>$ a few minutes).
-        \item Measure additional (i.e.\ non-thermal) broadening
-            of coronal emission lines; indirect way to observe short-period waves.
-        \item Spatial variation in Doppler shift for long periods.
-            Gyrosynchrotron emission in radio regime.
-    \end{itemize}
-    Effects of twisting:
-    \begin{itemize}
-        \item Coupling of various MHD modes
-    \end{itemize}
-\end{frame}%-------------------------------------------------------------%
-\begin{frame}{Examples from the literature}{A. K. Srivastava and B. N. Dwivedi}
+\begin{frame}{Torsional modes}{(Alfv\'en waves)}
     \begin{columns}
         \column{0.5\textwidth}
-        \includegraphics[width=\textwidth]{ex1.png}
+        \begin{block}{Properties}
+            \begin{itemize}
+                \item transverse (shear) perturbations
+                \item Parallel to $\vec{B}$
+                \item Driving force: magnetic tension
+                \item incompressible (no twisting)
+                \item $v_{A} = \frac{B}{\mu_{o}\rho} \approx 1000$
+                    km s$^{-1}$
+            \end{itemize}
+        \end{block}
+        \begin{block}{How to observe}
+            \begin{itemize}
+                \item Doppler shifts from \emph{long}-period waves
+                    ($>$ a few minutes) reveal spatial variation;
+                    Gyrosynchrotron emission in radio regime.
+                \item non-thermal broadening
+                    of coronal emission lines;
+                    indirect way to observe short-period waves.
+            \end{itemize}
+        \end{block}
+        \begin{block}{Effects of twisting}
+            \begin{itemize}
+                \item Coupling of various MHD modes
+            \end{itemize}
+        \end{block}
         \column{0.5\textwidth}
+    \end{columns}
+\end{frame}%-------------------------------------------------------------%
+\end{comment}
+\begin{frame}[t]{``Observations of sausage modes in magnetic pores''}
+    {Morton et al. 2011}
+    \begin{block}{}
+        \includegraphics[width=\textwidth]{saus2.png}
+    \end{block}
+    \begin{block}{}
         \begin{itemize}
+            \item Periods $\sim$ 30--450 sec
+            \item Possibly driven by 5-min acoustic oscillations.
+        \end{itemize}
+    \end{block}
+\end{frame}%-------------------------------------------------------------%
+\begin{frame}[t]{Acoustic waves}{A. K. Srivastava and B. N. Dwivedi}
+    \begin{columns}
+        \column{0.5\textwidth}
             %\item Parallel to $\vec{B}$, perturbation of $\vec{B}$ is negligible.
             %\item Generated impulsively at one end of a footpoint.
             %\item Only penetrate $\sim$ 10\% into loop before
@@ -226,27 +242,59 @@
             %\item velocity: 50--200 km s$^{-1}$
             %\item $c_{T} = \sqrt{\frac{c_{s}^2v_{A}^2}{c_{s}^2 + v_{A}^2}} $
             %    propagate sub-sonically at $c_{T}$, which is less than $c_{s}$
-            %\item ``large'' amplitude, max in top of chromosphere
             %\item Observed using spectroscopy (intensity variations in
             %    EUV emission  and Doppler shifts)
-            \item Observed bright point (BP) with EIS on \emph{HINODE}
-            \item He{\footnotesize II} 256 \AA{} (TR and low corona)
-            \item Fe{\footnotesize XV} 195 \AA{} (Upper corona)
-            \item Leakage of acoustic oscillations in the inner corona
-        \end{itemize}
+        \begin{block}{Observed}
+            \begin{itemize}
+                \item Time series of a bright point (BP) in solar atmosphere
+            %with EIS on \emph{HINODE}
+            \end{itemize}
+        \end{block}
+        \begin{block}{Measured Periods}
+            \begin{itemize}
+                \item He {\footnotesize II} 256 \AA{}; P$\sim$ 263 s
+                \item Fe {\footnotesize XII} 195 \AA{}\\
+                \item Fe {\footnotesize XV} 284 \AA{}; P$\sim$ 241 s
+            \end{itemize}
+        \end{block}
+        \begin{block}{Identified}
+            \begin{itemize}
+                \item Acoustic oscillations leaking into the inner corona
+            \end{itemize}
+        \end{block}
+        \column{0.6\textwidth}
+        \begin{block}{}
+            \vspace{-0.5in}
+            \includegraphics[height=0.9\paperheight]{ex1.png}
+        \end{block}
     \end{columns}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{Examples from the literature}{Verwichte et al.}
+\begin{frame}{Alfv\'en waves}{Verwichte et al.}
     \begin{columns}
         \column{0.5\textwidth}
         \includegraphics[width=\textwidth]{tor2.png}
         \column{0.5\textwidth}
-        \begin{itemize}
-            \item Comparison of coronal seismology and direct methods
-        \end{itemize}
+        \begin{block}{}
+            \begin{itemize}
+                \item Determine Alfv\'en speed in two ways:
+                    \begin{enumerate}
+                        \item Coronal seismology
+                        \item Magnetic extrapolation and spectral methods
+                    \end{enumerate}
+            \end{itemize}
+        \end{block}
+        \begin{block}{Observed}
+            \begin{itemize}
+                \item Two transversely oscillating flares triggered by flare
+                \item Observed with AIA
+            \end{itemize}
+        \end{block}
     \end{columns}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}[t]{Examples from the literature}{Robbrecht, et al. (2001)}
+
+
+\begin{comment}
+\begin{frame}[t]{Slow magnetoacoustic waves}{Robbrecht, et al. (2001)}
     \begin{block}{}
         %\column{0.5\textwidth}
         \includegraphics[width=\textwidth]{pac1.png}
@@ -255,9 +303,14 @@
     \begin{block}{}
         \begin{itemize}
             \item Multi-wavelength observations
+            \item Same wave, different speeds at different temperatures
+            \item Loop contains sharp temperature gradient
         \end{itemize}
     \end{block}
 \end{frame}%-------------------------------------------------------------%
+\end{comment}
+
+
 \begin{frame}{Important Properties}
 \begin{center}
     \begin{tabular}{c|c|c|c|}
@@ -265,17 +318,17 @@
         {\textbf{decay time}} &
         {\textbf{velocity}}\\
     \hline \multicolumn{0}{|c|}{kink osc} &
-        2--20 m & value & value\\
+        2--20 m & quickly & value\\
     \hline \multicolumn{0}{|c|}{sausage osc} &
         value & value & value\\
     \hline \multicolumn{0}{|c|}{acoustic osc} &
-        20 m & 5--30 m & 200 km s$^{-1}$\\
+        7--31 m & 5--30 m (quickly) & 200 km s$^{-1}$\\
     \hline \multicolumn{0}{|c|}{acoustic waves} &
         value & value & $<$150 km s$^{-1}$\\
     \hline \multicolumn{0}{|c|}{fast waves} &
         value & value & $>$150 km s$^{-1}$\\
     \hline \multicolumn{0}{|c|}{torsional modes} &
-        10 m & value & 1000 km s$^{-1}$\\
+        10 m & long & 1000 km s$^{-1}$\\
     \hline
     \end{tabular}
 \end{center}
@@ -290,8 +343,6 @@
 \begin{frame}[t]{Research}{AIA/SDO}
     \hspace{-2em}Fe {\footnotesize XII, XXIV}\\
     \hspace{-2em}193 \AA{}\\
-    \hspace{-2em}July 2012\\
-    \hspace{-2em}11--12 pm
 \end{frame}}%------------------------------------------------------------%
 \begin{comment}
 \begin{frame}[c]{Research}{[Looks nicer than white background]}
@@ -301,10 +352,10 @@
     \includegraphics[width=0.8\paperwidth]{figures/bp1_image.png}
 \end{frame}%-------------------------------------------------------------%
 \end{comment}%===========================================================%
-\begin{frame}[c]{Research}
+\begin{frame}[c]{Research}{Bright Point}
     \includegraphics[width=0.8\paperwidth]{figures/bp1_contour.png}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{Research}
+\begin{frame}{Research}{Light curves}
     \begin{center}
         \includegraphics[width=0.8\paperwidth]{figures/lightcurve3.png}
     \end{center}
