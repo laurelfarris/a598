@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  25 APR 2016 08:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  30 APR 2016 18:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1084,120 +1084,146 @@ Package pdftex.def Info: kink_saus.png used on input line 176.
  [5
 
  <./kink_saus.png>]
-<saus2.png, id=61, 726.715pt x 384.43625pt>
-File: saus2.png Graphic file (type png)
- <use saus2.png>
-Package pdftex.def Info: saus2.png used on input line 234.
-(pdftex.def)             Requested size: 307.28987pt x 162.55907pt.
+<kink7.png, id=61, 575.14874pt x 415.5525pt>
+File: kink7.png Graphic file (type png)
+ <use kink7.png>
+Package pdftex.def Info: kink7.png used on input line 230.
+(pdftex.def)             Requested size: 153.64493pt x 111.00859pt.
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <14.4> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 230.
 
-Overfull \vbox (12.3222pt too high) detected at line 234
- []
+ [6
 
-[6
+ <./kink7.png>]
+<kink3.png, id=69, 484.81125pt x 722.7pt>
+File: kink3.png Graphic file (type png)
+ <use kink3.png>
+Package pdftex.def Info: kink3.png used on input line 234.
+(pdftex.def)             Requested size: 173.67378pt x 258.89662pt.
 
- <./saus2.png>] <ex1.png, id=68, 450.68375pt x 615.29875pt>
-File: ex1.png Graphic file (type png)
- <use ex1.png>
-Package pdftex.def Info: ex1.png used on input line 274.
-(pdftex.def)             Requested size: 180.05711pt x 245.83029pt.
-
-Overfull \vbox (4.74596pt too high) detected at line 274
+Overfull \vbox (8.11317pt too high) detected at line 234
  []
 
 [7
 
- <./ex1.png>] <tor2.png, id=76, 469.755pt x 446.66875pt>
+ <./kink3.png>] [8
+
+] <saus2.png, id=82, 726.715pt x 384.43625pt>
+File: saus2.png Graphic file (type png)
+
+<use saus2.png>
+Package pdftex.def Info: saus2.png used on input line 249.
+(pdftex.def)             Requested size: 307.28987pt x 162.55907pt.
+
+Overfull \vbox (12.3222pt too high) detected at line 249
+ []
+
+[9
+
+ <./saus2.png>] <ex1.png, id=89, 450.68375pt x 615.29875pt>
+File: ex1.png Graphic file (type png)
+ <use ex1.png>
+Package pdftex.def Info: ex1.png used on input line 289.
+(pdftex.def)             Requested size: 180.05711pt x 245.83029pt.
+
+Overfull \vbox (4.74596pt too high) detected at line 289
+ []
+
+[10
+
+ <./ex1.png>] <tor2.png, id=96, 469.755pt x 446.66875pt>
 File: tor2.png Graphic file (type png)
  <use tor2.png>
-Package pdftex.def Info: tor2.png used on input line 296.
+Package pdftex.def Info: tor2.png used on input line 311.
 (pdftex.def)             Requested size: 153.64493pt x 146.09254pt.
 
-[8
+[11
 
- <./tor2.png>] [9
+ <./tor2.png>] [12
 
-] <figures/full_disk.png, id=89, 702.625pt x 703.62875pt>
+]
+<figures/full_disk.png, id=109, 702.625pt x 703.62875pt>
 File: figures/full_disk.png Graphic file (type png)
 
 <use figures/full_disk.png>
-Package pdftex.def Info: figures/full_disk.png used on input line 349.
+Package pdftex.def Info: figures/full_disk.png used on input line 364.
 (pdftex.def)             Requested size: 272.75754pt x 273.14662pt.
- [10
+ [13
 
  <./figures/full_disk.png>]
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 357.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 372.
 
-<figures/bp1_contour.png, id=96, 737.75626pt x 561.09625pt>
+<figures/bp1_contour.png, id=117, 737.75626pt x 561.09625pt>
 File: figures/bp1_contour.png Graphic file (type png)
 
 <use figures/bp1_contour.png>
-Package pdftex.def Info: figures/bp1_contour.png used on input line 361.
+Package pdftex.def Info: figures/bp1_contour.png used on input line 376.
 (pdftex.def)             Requested size: 254.93564pt x 193.88663pt.
- [11
+ [14
 
  <./figures/bp1_contour.png>]
-<figures/lightcurve3.png, id=103, 578.16pt x 433.62pt>
+<figures/lightcurve3.png, id=124, 578.16pt x 433.62pt>
 File: figures/lightcurve3.png Graphic file (type png)
 
 <use figures/lightcurve3.png>
-Package pdftex.def Info: figures/lightcurve3.png used on input line 366.
+Package pdftex.def Info: figures/lightcurve3.png used on input line 381.
 (pdftex.def)             Requested size: 291.35739pt x 218.51653pt.
 
-Overfull \vbox (7.4934pt too high) detected at line 366
+Overfull \vbox (7.4934pt too high) detected at line 381
  []
 
-[12
+[15
 
  <./figures/lightcurve3.png>]
-<figures/bp1.png, id=110, 447.6725pt x 427.5975pt>
+<figures/bp1.png, id=131, 447.6725pt x 427.5975pt>
 File: figures/bp1.png Graphic file (type png)
  <use figures/bp1.png>
-Package pdftex.def Info: figures/bp1.png used on input line 384.
+Package pdftex.def Info: figures/bp1.png used on input line 399.
 (pdftex.def)             Requested size: 72.83795pt x 69.57184pt.
 
-<cross.png, id=111, 650.43pt x 216.81pt>
+<cross.png, id=132, 650.43pt x 216.81pt>
 File: cross.png Graphic file (type png)
  <use cross.png>
-Package pdftex.def Info: cross.png used on input line 384.
+Package pdftex.def Info: cross.png used on input line 399.
 (pdftex.def)             Requested size: 215.10196pt x 71.69969pt.
 
-<test2.png, id=112, 1153.30875pt x 350.30875pt>
+<test2.png, id=133, 1153.30875pt x 350.30875pt>
 File: test2.png Graphic file (type png)
  <use test2.png>
-Package pdftex.def Info: test2.png used on input line 384.
+Package pdftex.def Info: test2.png used on input line 399.
 (pdftex.def)             Requested size: 351.08986pt x 106.63821pt.
- [13
+ [16
 
  <./figures/bp1.png> <./cross.png> <./test2.png>]
-<figures/bp1_cc.png, id=122, 722.7pt x 576.1525pt>
+<figures/bp1_cc.png, id=142, 722.7pt x 576.1525pt>
 File: figures/bp1_cc.png Graphic file (type png)
  <use figures/bp1_cc.png>
-Package pdftex.def Info: figures/bp1_cc.png used on input line 406.
+Package pdftex.def Info: figures/bp1_cc.png used on input line 421.
 (pdftex.def)             Requested size: 162.3689pt x 129.4483pt.
 
-Overfull \hbox (8.72397pt too wide) in paragraph at lines 406--406
+Overfull \hbox (8.72397pt too wide) in paragraph at lines 421--421
  [] 
  []
 
-<figures/bp1_tt2.png, id=123, 754.82pt x 573.14125pt>
+<figures/bp1_tt2.png, id=143, 754.82pt x 573.14125pt>
 File: figures/bp1_tt2.png Graphic file (type png)
 
 <use figures/bp1_tt2.png>
-Package pdftex.def Info: figures/bp1_tt2.png used on input line 406.
+Package pdftex.def Info: figures/bp1_tt2.png used on input line 421.
 (pdftex.def)             Requested size: 170.48367pt x 129.4483pt.
 
-Overfull \hbox (16.83875pt too wide) in paragraph at lines 406--406
+Overfull \hbox (16.83875pt too wide) in paragraph at lines 421--421
  [] 
  []
 
-[14
+[17
 
- <./figures/bp1_cc.png> <./figures/bp1_tt2.png>] [15
+ <./figures/bp1_cc.png> <./figures/bp1_tt2.png>] [18
 
-] [16
+] [19
 
-] [17
+] [20
 
 ]
 \tf@nav=\write6
@@ -1209,28 +1235,28 @@ Overfull \hbox (16.83875pt too wide) in paragraph at lines 406--406
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 433.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 433.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 448.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 448.
 
 (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 433.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 433.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 448.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 448.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 433.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 448.
  ) 
 Here is how much of TeX's memory you used:
- 17045 strings out of 493089
- 325526 string characters out of 6134842
+ 17070 strings out of 493089
+ 325805 string characters out of 6134842
  395158 words of memory out of 5000000
- 20053 multiletter control sequences out of 15000+600000
- 60098 words of font info for 59 fonts, out of 8000000 for 9000
+ 20069 multiletter control sequences out of 15000+600000
+ 62862 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,14n,55p,456b,827s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/lo
-cal/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texliv
-e/2015/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2015/tex
-mf-dist/fonts/enc/dvips/lm/lm-rm.enc}</usr/local/texlive/2015/texmf-dist/fonts/
+cal/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/20
+15/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2015/texmf-d
+ist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2015/texmf-dist/fonts/
 type1/public/lm/lmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publ
 ic/lm/lmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmmi
 8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmss10.pfb></us
@@ -1239,12 +1265,13 @@ xlive/2015/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2015/
 texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
 pe1/public/lm/lmsso10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publi
-c/lm/lmsso8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmsy1
-0.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on presentation.pdf (17 pages, 2261346 bytes).
+c/lm/lmsso12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmss
+o8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
+Output written on presentation.pdf (20 pages, 2579839 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 127 compressed objects within 2 object streams
- 35 named destinations out of 1000 (max. 500000)
- 128 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 225 PDF objects out of 1000 (max. 8388607)
+ 146 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 138 words of extra memory for PDF output out of 10000 (max. 10000000)
 
