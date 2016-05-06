@@ -351,25 +351,25 @@ They recognized magnetoacoustic oscillations as a useful way to determine
 other properties of the solar atmosphere.
 %-------------------------------------------------------------------%
 \subsection{Propagating Acoustic Waves}
-
-The MHD modes that have been discussed up to now are considered
-\emph{standing} modes: waves with nodes in a fixed
-position, such as the footpoints of coronal loops that are anchored in
-the photosphere. These are referred to as \emph{oscillations}.
+% Propagating vs. standing
+The MHD modes that have been discussed up to this point are considered
+\emph{standing} modes: oscillations with nodes in a fixed
+position, such as the footpoints of coronal loops anchored in
+the photosphere, or the points at the photosphere and chromosphere where
+acoustic oscillations with frequencies less than the cutoff are trapped.
 In contrast, \emph{propagating} waves have nodes that move with time
 (though two propagating waves traveling in opposite directions can
 have a net result of a single, standing oscillation; see~\cite{Asc},
 ch. 8).
-
-Standing acoustic waves are primarily seen in closed coronal
-loops, while propagating waves have been observed in both closed
-(where the wave damps out before reaching the other footpoint;
-see~\cite{acoustic_1})
+Propagating acoustic waves have been observed in both closed loops
+(where the wave decays before it can reach the other footpoint
+and reflect back; see {\cite{acoustic_1}})
 and open structures.
 Waves with propagations speed much lower than the
 local Alfv\'en speed, are categorized as slow magnetoacoustic waves.
 These waves travel along magnetic field lines at speeds roughly equal to
 the local sound speed.
+
 The changes in intensity along the same location as these waves
 propagate in time are mapped side by side to give time-distance
 information. The period, wavelength, propagation speed, and amplitude
@@ -380,7 +380,7 @@ Since the local sound, $c_{s}$ is related to temperature, $T$, as
 \end{equation}
 a difference in observed propagation speeds implies a changing
 temperature profile in the transverse direction across the loop.
-(\cite{Nak}).
+(\cite{Nak}) \textcolor{red}{Use an actual paper here!}
 
 Propagating acoustic waves are generally observed as ``propagating
 disturbances'' awaiting further diagnoses of magnetoacoustic waves,
@@ -395,7 +395,7 @@ on the Solar and Heliospheric Observatory (SOHO) and the
 Transition Region And Coronal Explorer (TRACE).
 These wavelengths, along with their corresponding ions emitting at those
 wavelengths, the temperature, and other relevant quantities from the
-study are given in table \ref{stuff}.
+study are given in table {\ref{stuff}}.
 %-------------------------------------%
 \begin{table}[h]
 \centering
@@ -440,33 +440,50 @@ in the loop itself, indicating either a bundle of loop threads that
 make up a single loop, or a number of concentric shells that make up a
 single loop.
 
-A similar analysis in multiple wavelengths was carried out by
-\cite{pac_2}, using about 6 hours of observational data from the
-Atmospheric Imaging Assembly (AIA) on the Solar Dynamics Observatory (SDO).
-In addition to these observations, they introduced the
-``surfacing transform technique''
-in order to address the difficulty in extracting information from these
-low-amplitude waves amidst the noise (a typical signal-to-noise
-($S/N$) ratio was $\sim$ 0.1 \%). (more information about this
-technique here?)
-This method involved the resonant behavior of ``surfing signals'',
-revealed during quasi-periodic disturbances.
-%Each surfing signal
-%(ST) is a periodic disturbance as a function of time and frequency
+Because of the low amplitude of slow magnetoacoustic waves, their
+speeds can be difficult to determine observationally. Many techniques
+have been developed to extract these speeds with higher signal-to-noise
+ratio. One such technique
+involves the resonant behavior of ``surfing signals''
+revealed by quasi-periodic disturbances (\cite{pac_2})
+The method did not rely on a well-defined periodicity, which made it
+particularly useful for slow magnetoacoustic waves, as they tend to
+exhibit quasi-periodic characteristics. It also had the capability
+to extract both negative and positive velocities, i.e.\ waves traveling
+both up and down coronal loops.
 
-This technique was applied to the lines at
+Since the phase speed of slow magnetoacoustic waves is determined by
+the local sound speed where they are produced ($\propto\sqrt{T}$),
+the wave speeds along
+different loops with different temperatures were expected to vary,
+but the frequencies were expected to be the same for waves excited
+by the same mechanism.
+
+To test their technique on this temperature dependence for propagation
+velocities, {\cite{pac_2}} used
+about 6 hours of observational data from the
+Atmospheric Imaging Assembly (AIA) on the Solar Dynamics Observatory (SDO).
+The technique was applied to the lines at
 131 \AA{}, 171 \AA{}, 193 \AA{}, and 211 \AA{},
-over the active region (AR) NOAA AR 11082, where no sunspots were seen
-to be present and the flares were relatively low-energy.
-They found the same relationship between sound speed and temperature
-as shown in equation \ref{sound-temp}, though the driving mechanism
-for these disturbances was uncertain. The observed propagations were
+over the active region (AR) NOAA AR 11082, which was free of sunspots
+and high-energy flares.
+Though the actual driving mechanism behind the observed disturbances
+was uncertain, they did find
+the same relationship between sound speed and temperature
+as expressed in equation {\ref{sound-temp}}.
+The observed propagations were
 travelling primarily in the upward direction away from the footpoint,
 at speeds of about 40 to 180 km s$^{-1}$ and periodicities between 4
 and 8 minutes over all four channels.
 
-
-\subsection{Propagating Fast Waves}
+The lack of dependence on linearity or consistent periods, this could
+be useful method for analysis of mixed modes or damping waves.
+Additionally, this study confirmed the temperature-dependence of
+slow-mode velocities in non-flaring locations free of sunspots.
+(This is probably irrelevent)
+%Each surfing signal
+%(ST) is a periodic disturbance as a function of time and frequency
+\subsection{Propagating Fast Waves}%------------------------------------%
 % General stuff about Moreton waves; where they are, what triggers them,
 % characteristic speeds, significance of H-alpha, the search for coronal
 % counterparts...

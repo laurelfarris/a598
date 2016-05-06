@@ -6,38 +6,40 @@
 \setbeamertemplate{navigation symbols}{}% Empty to get rid of them!
 \setbeamertemplate{itemize items}{$\circ$}
 \usepackage{multirow}
+\usepackage{ragged2e}
 \usepackage{booktabs}
 \usepackage{textpos}
 \usepackage{graphicx}
 %\useoutertheme{infolines}
-%\graphicspath{{images/}}
-%\setbeamerfont{frametitle}{series=\bfseries} % Frame titles should be bold
 \usepackage{lmodern}
 
 \addtobeamertemplate{block begin}{\vspace{-8pt}}{}
 
-\definecolor{flilac}{rgb}{0.53, 0.38, 0.56}
-\definecolor{amethyst}{rgb}{0.6, 0.4, 0.8}
+\definecolor{onyx}{rgb}{0.06, 0.06, 0.06}
 \definecolor{lightgrey}{rgb}{0.75, 0.75, 0.80}
-\definecolor{tangerine}{rgb}{1.0, 0.6, 0.4}
-\definecolor{arylyellow}{rgb}{0.91, 0.84, 0.42}
+\definecolor{tan}{rgb}{1.0, 0.6, 0.4}
+\definecolor{ay}{rgb}{0.91, 0.84, 0.42}
 \definecolor{gsa}{rgb}{0.66, 0.89, 0.63}
-\definecolor{aqua}{rgb}{0.5, 1.0, 0.83}
-\definecolor{bblue}{rgb}{0, 0.72, 0.92}
 \definecolor{cblue}{rgb}{0.53, 0.81, 0.98}
+%\definecolor{pur}{rgb}{0.82, 0.62, 0.91}
+%\definecolor{pur}{rgb}{0.96, 0.73, 1.0}
+%\definecolor{pur}{rgb}{0.59, 0.48, 0.71}
+%\definecolor{pur}{rgb}{0.69, 0.61, 0.85}
+\definecolor{pur}{rgb}{0.88, 0.69, 1.0}
+\definecolor{bit}{rgb}{0.97, 0.56, 0.65}
 
-\definecolor{bittersweet}{rgb}{1.0, 0.44, 0.37}
-
-\setbeamercolor{background canvas}{bg=black}
+\setbeamercolor{background canvas}{bg=onyx}
 \setbeamercolor{normal text}{fg=white}
-\setbeamercolor{title}{fg=arylyellow}
-\setbeamercolor{frametitle}{fg=tangerine}
-\setbeamercolor{framesubtitle}{fg=gsa}
+\setbeamercolor{title}{fg=ay}
+\setbeamercolor{frametitle}{fg=ay}
+\setbeamercolor{framesubtitle}{fg=cblue}
 \setbeamercolor{block title}{fg=cblue}
-\setbeamercolor{itemize item}{fg=gsa} % all frames will have red bullets
-\setbeamercolor{itemize subitem}{fg=tangerine} % all frames will have red bullets
-\setbeamercolor{enumerate item}{fg=gsa} % all frames will have red bullets
-\setbeamercolor{enumerate subitem}{fg=tangerine} % all frames will have red bullets
+\setbeamercolor{itemize item}{fg=tan}
+\setbeamercolor{itemize subitem}{fg=pur}
+\setbeamercolor{enumerate item}{fg=gsa}
+\setbeamercolor{enumerate subitem}{fg=gsa}
+\setbeamercolor{description item}{fg=tan}
+
 
 \newcommand\Wider[2][3em]{%
     \makebox[\linewidth][c]{%
@@ -58,6 +60,26 @@
 \begin{frame}
     \titlepage{}
 \end{frame}}%-------------------------------------------------------------%
+\begin{frame}{Magnetohydrodynamics (MHD)}{Theory}
+    \begin{block}{Equations of ideal MHD}
+        \begin{list}{}
+            \item \textcolor{tan}{mass continuity equation}
+                $\frac{\partial\rho}{\partial{t}} +
+                \nabla\left(\rho\mathbf{V}\right) = 0 $
+            \item \textcolor{tan}{equation of motion}
+                $\rho\frac{\textrm{d}\mathbf{V}}{\textrm{d}t} =
+                -\nabla{P} - \frac{1}{\mu_{0}}\mathbf{B}\times\left(
+                \nabla\times\mathbf{B}\right) $
+            \item \textcolor{tan}{energy equation}
+                $\frac{\textrm{d}}{\textrm{d}t}
+                \left(\frac{P}{\rho^{\gamma}}\right) = 0$
+            \item \textcolor{tan}{induction equation}
+                $\frac{\partial\mathbf{B}}{\partial{t}} =
+                \nabla\times\left(\mathbf{V}\times
+                \mathbf{B}\right)$
+        \end{list}
+    \end{block}
+\end{frame}%--------------------------------------------------------------%
 \begin{frame}{Magnetohydrodynamics (MHD)}{Theory}
     \begin{columns}
         \column{0.45\textwidth}
@@ -84,27 +106,31 @@
         \end{block}
     \end{columns}
 \end{frame}%-------------------------------------------------------------%
-\begin{frame}{MHD modes}{Research Topics}
+\begin{frame}{MHD modes}
     \begin{columns}
         \column{0.5\textwidth}
-        \begin{enumerate}
-            \item Kink oscillations
-            \item Sausage oscillations
-            \item Acoustic oscillations
-            \item Propagating acoustic waves
-            \item Propagating fast waves
-            \item Torsional (Alfv\'en) modes
-        \end{enumerate}
-        \begin{itemize}
-            \item Magnetoacoustic
-                %$C_s = \sqrt{\frac{\gamma P}{\rho}}$
-                \begin{itemize}
-                    \item Fast %$k_{A_0} < C_{fast} < C_{A_e} $
-                    \item Slow %$C_{T_0} < C_{slow} < C_{s_0} $
-                \end{itemize}
-            \item Alfv\'en
-                %$V_A = \frac{B}{\sqrt{\mu_0\rho}}$
-        \end{itemize}
+        \begin{block}{Main categories}
+            \begin{itemize}
+                \item Magnetoacoustic
+                    %$C_s = \sqrt{\frac{\gamma P}{\rho}}$
+                    \begin{itemize}
+                        \item Fast %$k_{A_0} < C_{fast} < C_{A_e} $
+                        \item Slow %$C_{T_0} < C_{slow} < C_{s_0} $
+                    \end{itemize}
+                \item Alfv\'en
+                    %$V_A = \frac{B}{\sqrt{\mu_0\rho}}$
+            \end{itemize}
+        \end{block}
+        \begin{block}{Research Topics}
+            \begin{enumerate}
+                \item Kink oscillations
+                \item Sausage oscillations
+                \item Acoustic oscillations
+                \item Propagating acoustic waves
+                \item Propagating fast waves
+                \item Torsional (Alfv\'en) modes
+            \end{enumerate}
+        \end{block}
         \column{0.5\textwidth}
         \begin{block}{\centering Dispersion diagram}
         \begin{figure}
@@ -219,7 +245,6 @@
         \column{0.5\textwidth}
     \end{columns}
 \end{frame}%-------------------------------------------------------------%
-\end{comment}
 \begin{frame}{Coronal loop oscillations observed with \emph{TRACE}}
     {Aschwanden et al. 1999}
     \begin{columns}
@@ -235,6 +260,7 @@
 \begin{frame}{Excitation and damping of broadband kink waves in the solar
     corona}
 \end{frame}%-------------------------------------------------------------%
+\end{comment}
 \begin{frame}[t]{``Observations of sausage modes in magnetic pores''}
     {Morton et al. 2011}
     \begin{block}{}
@@ -335,17 +361,17 @@
         \cline{2-4} & {\textbf{\textcolor{gsa}{period}}} &
         {\textbf{\textcolor{gsa}{decay time}}} &
         {\textbf{\textcolor{gsa}{velocity}}}\\
-        \hline \multicolumn{0}{|c|}{\textcolor{bblue}{kink osc}} &
+        \hline \multicolumn{0}{|c|}{\textcolor{cblue}{kink osc}} &
             2{-}20 m & quickly & value\\
-        \hline \multicolumn{0}{|c|}{\textcolor{bblue}{sausage osc}} &
-            30 s{-}7 m & value & value\\
-        \hline \multicolumn{0}{|c|}{\textcolor{bblue}{acoustic osc}} &
+        \hline \multicolumn{0}{|c|}{\textcolor{cblue}{sausage osc}} &
+            30 s -- 7 m & value & value\\
+        \hline \multicolumn{0}{|c|}{\textcolor{cblue}{acoustic osc}} &
             7{-}31 m & 5{-}30 m & 200 km s$^{-1}$\\
-        \hline \multicolumn{0}{|c|}{\textcolor{bblue}{acoustic waves}} &
-            value & value & $<$150 km s$^{-1}$\\
-        \hline \multicolumn{0}{|c|}{\textcolor{bblue}{fast waves}} &
+        \hline \multicolumn{0}{|c|}{\textcolor{cblue}{acoustic waves}} &
+        140{-}420 s (2{-}7 m) & value & 35{-}165 km s$^{-1}$\\
+        \hline \multicolumn{0}{|c|}{\textcolor{cblue}{fast waves}} &
             value & value & $>$150 km s$^{-1}$\\
-        \hline \multicolumn{0}{|c|}{\textcolor{bblue}{torsional modes}} &
+        \hline \multicolumn{0}{|c|}{\textcolor{cblue}{torsional modes}} &
             10 m & long & 1000 km s$^{-1}$\\
         \hline
     \end{tabular}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  30 APR 2016 18:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  6 MAY 2016 09:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -252,16 +252,12 @@ Package pdftex.def Info: disp_diagram.png used on input line 74.
 [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./disp_diagram.png>] [2] [3] [4]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[5] [6]
-Underfull \hbox (badness 2894) in paragraph at lines 656--676
+ <./disp_diagram.png>] [2] [3] [4] [5] [6] [7]
+Underfull \hbox (badness 2894) in paragraph at lines 676--696
 []\OT1/cmr/m/n/10 The ob-ser-va-tional tech-niques and rel-e-vant
  []
 
-[7] (./writeup.bbl
+(./writeup.bbl
 Underfull \hbox (badness 1852) in paragraph at lines 10--11
 []\OT1/cmr/m/n/10 Aschwanden, M. 2004, Physics of the So-lar
  []
@@ -270,7 +266,7 @@ Underfull \hbox (badness 1852) in paragraph at lines 10--11
 Here is how much of TeX's memory you used:
  2913 strings out of 493089
  38213 string characters out of 6134842
- 105258 words of memory out of 5000000
+ 106258 words of memory out of 5000000
  6347 multiletter control sequences out of 15000+600000
  11645 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -293,7 +289,7 @@ b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></
 usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pf
 b>
-Output written on writeup.pdf (9 pages, 294230 bytes).
+Output written on writeup.pdf (9 pages, 294646 bytes).
 PDF statistics:
  105 PDF objects out of 1000 (max. 8388607)
  74 compressed objects within 1 object stream
