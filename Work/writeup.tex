@@ -588,7 +588,6 @@ propagating phase speeds they derived was
 $ v_{ph} = 735 - 845 $ km s$^{-1}$, with a final speed
 (post-dispersion) of 600 km s$^{-1}$.
 
-
 \subsection{Torsional Modes}
 Torsional modes, or more commonly, \emph{Alfv\'en} modes, are axisymmetric
 modes whose speed is determined primarily by magnetic pressure forces
@@ -596,15 +595,15 @@ modes whose speed is determined primarily by magnetic pressure forces
 They are transverse waves that are highly anisotropic (\cite{Goossens}),
 with a \emph{group} speed that
 travels strictly along magnetic field lines in response
-to a restoring force that acts to resist shear (cite class notes?).
+to a restoring force that acts to resist shear.
 The \emph{phase} speed can be at an angle $\theta$ to the direction
 of the magnetic field $\vec{B}$:
 \begin{equation}
     V_A = \pm \frac{B}{\sqrt{4\pi\rho}}\cos\theta
 \end{equation}
 The energy carried by this wave is contained in the group speed
-(\cite{Somov}$\ldots$ this source also has a good phase velocity
-diagram).
+(\cite{Somov}).
+%$\ldots$ this source also has a good phase velocity diagram).
 
 In the classic cylindrical model of a plasma structure,
 Alfv\'en waves undergo torsion (aka, twisting), in opposite directions on
@@ -612,6 +611,10 @@ either end of the cylinder (\cite{Nak}).
 
 The primary damping mechanism for Aflv\'en waves is resonant absorption,
 and is thought to be a possible cause for coronal heating.
+However, they are difficult to observe because, like the kink mode,
+they do not cause an intensity change, and additionally do not displace
+the structure through which they travel, so there is no visual indication
+that they are present.
 
 \cite{tor_1} derived the magnetic field strength and Alfv\'en velocity
 using coronal seismology, and compared them to other techniques to
@@ -661,15 +664,44 @@ identify observed disturbances as Alfv\'en waves) since, like kink
 oscillations, they do not cause any periodic changes in intensity or density.
 It follows that determining the Alfv\'en speed is also difficult,
 depending on what parameters are directly observable.
-\cite{tor_2} derived the Alfv\'en speed using using seismological techniques
-and compared this to the one measured from direct observation of two
-coronal loops whose oscillations were triggered by an X-class flare.
-They showed that there is a three-way interplay between seismology,
-magnetic extrapolation, and spectroscopy. Since the Alfv\'en speed, $V_A$
-is determined by density and magnetic field:
+
+\cite{tor_2} tested the accuracy of the coronal seismology technique by
+using those methods to determine the Alfv\'en speed, and hence the magentic
+field strength, and comparing the
+results to those from more ``direct'' methods of determining magnetic field
+strength, namely, magnetic extrapolation and spectroscopy.
+An X-class flare triggered oscillations in two coronal loops in AR
+1123 in 2011.
+The loops were observed in the AIA/SDO 171 \AA{} bandpass
+as transverse oscillations with periods of
+$\sim$ 2-3 minutes. Using the expression for the fundamental standing
+mode ($P = 2\lambda/V_{ph}$), the observed period and loop length were
+used to calculate the phase velocity, which was around 2500 km s$^{-1}$.
+Due to the tranverse nature of the oscillations and the relatively short
+periods, these were identified as kink oscillations. Using the expression
+for the kink speed in the low plasma-$\beta$ environment, along with the
+assumption of a uniform density and magnetic field along the length of
+the loop, setting the phase velocity equal to the kink speed and solving
+for the Alfv\'en speed gives
 \begin{equation}
-    V_A \propto B\rho^{-1/2}
+    V_{A} = V_{ph}\sqrt{\frac{1 + \rho_{e}/\rho_{i}}{2}}
 \end{equation}
+The ratio between the external ($\rho_{e}$) and internal ($\rho_{i}$)
+densities is a difficult value to measure, and is one of the primary reasons
+that Alfv\'en speeds are so hard to constrain.
+Here they used the DEM inversion technique to derive the density based
+on the observed intensity, and the magnetic field strength was extrapolated
+from the three-dimensional model of the coronal loops, represented as
+potential fields.
+They concluded that the two methods produced results similar enough
+to consider coronal seismology a reliable method. Previous studies
+had produced magnetic field strengths up to three times higher than
+those calculated using coronal seismology, but here this was thought
+to be due to a lack of consideration of loop stratification,
+rather than assuming constant density and magnetic field strength
+along the length of the loop, which extends far enough into the
+corona to undergo an overall gravitational stratification.
+
 
 
 \section{Discussion}\label{disc}
