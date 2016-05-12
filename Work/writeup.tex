@@ -38,58 +38,74 @@ Assembly} (AIA) instrument on the \emph{Solar Dynamics Observatory} (SDO).
 \keywords{Sun: corona{-}Sun: oscillations{-}Sun: seismology}
 
 \section{Introduction}\label{intro}
-Properties of the corona that are difficult to measure directly
-can be extracted from observations of properties of MHD waves and
-oscillations (\cite{tor_2}).
+The solar corona is characterized by various types of structures, such
+as coronal loops, filaments, and bright points. These are formed by
+plasma flowing along magnetic field lines and emitting light primarily in the
+EUV\@. Disturbances on the sun
+can be seen in the form of oscillations or waves propagating through such
+structures, which act as waveguides.
+Such disturbances can be triggered by flares and
+coronal mass ejections (CMEs), or by continuous excitations from
+photospheric motions and global seismological modes, such as pressure modes,
+in the solar interior.
+The behavior of these waves can be described using the theory of
+magnetohydrodynamics (MHD). Different MHD modes have different characteristic
+speeds, which are related to other physical properites of the corona, such
+as magnetic field strength and density, which are
+difficult to measure directly (\cite{tor_2}).
 
+Here, the properties of MHD modes are investigated, along with literature
+from a variety of authors in the field.
 The basic concepts of MHD waves and oscillations are described in
 \S\ref{MHD}, and
 \S\ref{topics} covers several MHD modes in detail.
-Many of the techniques employed in coronal seismology were applied to AIA
-data; a description of the project and the results are presented in
-\S\ref{data} and \S\ref{analysis}.
+A description of a research project and the results are presented in
+\S\ref{project}.
 Conclusions and future work are discussed in
 \S\ref{conclusion}.
-%====================================================================%
+
 \section{Basic MHD}\label{MHD}
-%--------------------------------------------------------------------%
-\subsection{Types of Waves}
+\subsection{Types of Modes}
+The relationship between MHD modes can be best understood
+by their relative phase speeds. A dispersion diagram is shown in
+figure {\ref{speeds}}, which plots the variation of phase velocity as a
+function of wavenumber for different modes.
+to the internal and external Alfv\'en and sound speeds.
+Each of these curves represents a solution to the dispersion relation,
+which is outside the scope of this paper.
+\begin{figure}[!htb]
+    \plotone{disp_diagram.png}
+    \caption{Dispersion diagram showing the variation in phase velocity
+        as a function of wavenumber. The phase velocity is expressed as a
+        factor of the internal sound speed, and the wavenumber is
+        multiplied by the factor $a$ to give it dimensionless units.
+        Image credit:~\cite{Nak}}
+    \label{speeds}
+\end{figure}
+There are two primary characteristic speeds determined by the properties
+of the surrouding medium.
+The acoustic, or sound speed ($C_{s}$), is driven by thermal pressure of
+the gas, and is given by:
+\begin{equation}\label{sound_speed}
+    C_s = \sqrt{\frac{\gamma{P}}{\rho}}
+\end{equation}
+In contrast, the Alfv\'en speed is magnetically driven, and is
+dependent upon the magnetic field strength.
+It is given by:
+\begin{equation}\label{Alfven_speed}
+    C_A = \frac{B}{\sqrt{4\pi\rho}}
+\end{equation}
 In general, MHD waves are divided into two categories:
 Alfv\'en waves and magnetoacoustic waves.
 Magnetoacoustic waves can be \emph{slow} or \emph{fast}, depending on
 how the velocity of the wave compares to the local sound speed,
-$c_{s}$.
-The slow-modes have phase speeds roughly equal to $c_{s}$
+$C_{s}$.
+Slow-mode magnetoacoustic waves have phase speeds roughly equal to $C_{s}$
 in the medium in which they reside, analogous to typical acoustic waves,
 or sound waves.
 Fast-mode magnetoacoustic waves have phase speeds comparable to the Alfv\'en
-speed, or $\omega/k \approx v_A$ (\cite{kink_1}).
-MHD studies usually focus on the fast-mode.
+speed, or $\omega/k \approx V_A$ (\cite{kink_1}).
 
-The relationship between the different MHD modes can be best understood
-by their relative speeds. Figure~\ref{speeds} shows the wave speeds relative
-to the internal and external Alfv\'en and sound speeds.
-
-\begin{figure}[ht]
-    \plotone{disp_diagram.png}
-    \caption{text (Image credit:~\cite{Nak})}
-    \label{speeds}
-\end{figure}
-
-There are two primary characteristic speeds determined by the properties
-of the surrouding medium.
-The acoustic, or sound speed ($c_{s}$), is thermally driven and is dependent
-upon the thermal pressure and the mass density of the medium.
-It is given by:
-\begin{equation}\label{sound_speed}
-    c_s = \sqrt{\frac{\gamma{P}}{\rho}}
-\end{equation}
-The Alfv\'en speed, on the other hand, is magnetically driven, and is
-dependent upon the magnetic field strength, as well as the mass density.
-It is given by:
-\begin{equation}\label{Alfven_speed}
-    c_A = \frac{B}{\sqrt{4\pi\rho}}
-\end{equation}
 Each MHD mode is characterized based on a number of qualities, such
 as its wavelength, period, lifetime, speed, and
 whether it is propagating or standing, fast or slow, longitudinal
@@ -98,38 +114,31 @@ can differ depending on these qualities and the environment in which
 the modes reside, and is one of the important MHD topics under investigation,
 along with the damping mechanism (\cite{kink_1}).
 
-%--------------------------------------------------------------------%
 \subsection{Equations and Models}
-MHD waves are often modeled with a cylindrical flux tube embedded
-in a magnetic field.
-
-[cylindrical model, equations of ideal MHD, etc.]
-\begin{equation}
- \xi(x) = \xi(r)e^{i(kx+m\phi)}
-\end{equation}
-For kink oscillations, m=1, and for sausage modes, m=0.
-
+MHD waves are often modeled with a straight, cylindrical flux tube embedded
+in a uniform magnetic field. The interior values of magnetic field strength
+($\mathbf{B}$), mass density ($\rho$), pressure ($P$), and temperature
+($T$) are different from the exterior values.
 %--------------------------------------------------------------------%
 \subsection{Excitation and Damping Mechanisms}
 \subsubsection{Resonant Absorption}
-(The following is straight from (\cite{Nak}), so it needs to be
-re-worded and expanded at some point).
 If the frequency of a wave falls within one of two types of MHD
 continua (namely, the Alfv\'en or cusp continua), a resonance will
-occur in the location where math happens.
+occur.
 In the cylinder model, this location is a shell at radius $r$.
 In the Alfv\'en continuum, the Alfv\'en wave is the mode that is
 resonantly excited and dissipates in the corona.
 This is one of the processes thought to contribute to the heating
 of the corona. It involves the conversion from a collective mode
-to a local mode, which occurs at a timescale much shorter than that
+to a local mode, at a timescale much shorter than that
 of the dissipative damping.
 To analyze this mathematically, equations of ideal MHD cannot be used
-because dissipation effects must be taken into account.
+because dissipation effects must be taken into account
+(\cite{Nak}).
 \subsubsection{Phase Mixing}
 Another effect associated with wave modes from MHD continua is called
-phase mixing, and is also a possibly mechanism behind the heating of
-the corona.
+phase mixing, and is also a possible mechanism driving the heating of
+the solar corona.
 %--------------------------------------------------------------------%
 \subsection{Observation Techniques}
 Due to the lack of spatial resolution for the scales at which MHD
@@ -137,28 +146,33 @@ oscillations occur,
 many are detected using time series analysis, where
 the periodic changes in intensity are analyzed as a function of time.
 As sufficient spatial resolution was developed, more observations
-of physical displacements, such as that of coronal loops by kink
-oscillations (see \S{} {\ref{kink}}).
+of physical phenomena were made possible,
+such as the transverse displacement of coronal
+loops by kink oscillations (see \S{} {\ref{kink}}).
 
-Flux tubes (coronal loops), Doppler shift and intensity variations,
-density variations, velocity and magnetic field values, applying
-a Fourier transform to time-varying data,
-etc. Coronal loops are density inhomogeneities in the corona,
-where the (low-$\beta$) plasma is ``frozen-in'' along the magnetic
-field lines whose feet are anchored in the photosphere.
+Density variations are usually observed as intensity variations,
+180$^{\circ}$ out of phase.
+Oscillations are often observed in coronal loops as modes reflected back
+and forth between the loop footpoints, which are
+anchored in the photosphere and act as the wave nodes.
+For insufficient spatial resolution (or line-of-sight (LOS) angle),
+Doppler shifts can be extracted.
 
-Most often, it is the \emph{period} of oscillation that is directly
+Often, it is the period of oscillation that is directly
 measured from observations. The general relationship between period
-and other wave parameters is:
+and other wave parameters for the fundamental oscillating mode is
+given by:
 \begin{equation}
-    P \propto \frac{\lambda}{c_{ph}}
+    P = \frac{\lambda}{C_{ph}}
 \end{equation}
-where $\lambda$ is the wavelength and $c_{ph}$ is the phase velocity.
-%====================================================================%
+where $\lambda$ is the wavelength. For example, in a coronal loop of length
+$\ell$, the wavelength is given by $\lambda = 2\ell$.
+
 \section{Types of MHD Modes}\label{topics}
-%--------------------------------------------------------------------%
-Two common fast modes in the corona are the asymmetric \emph{kink}
-oscillations and symmetric \emph{sausage} oscillations.
+The behavior of MHD modes can vary based on whether they are fast or slow,
+stading or propagating, etc. These are discussed below, along with short
+literature reviews of work that has been done to observe, identify, and
+utilize these modes to extract physical coronal parameters.
 
 \subsection{Kink Oscillations}\label{kink}
 Kink oscillations are directly observed in coronal loops in extreme
@@ -173,7 +187,7 @@ Kink oscillations occur in the ``long-wavelength regime'',
 which is defined by
 the product of the wavenumber and the cross-section of the coronal
 loop being much less than 1 ($ka \ll 1$). In other words, the
-\emph{wavelength} of the oscillation is much \emph{greater} than the
+wavelength of the oscillation is much greater than the
 cross-section of the waveguide.
 The phase speed is just above the Alfv\'en speed within the loop,
 and the period of the oscillation is expected to be between
@@ -183,10 +197,11 @@ the magnetic field strength can be derived from the period.
 
 Due to a lack of sufficient instrumentation,
 spatial variations such as those caused by kink oscillations
-were not resolved until the launch of TRACE\@.
+were not resolved until the launch of the \emph{Transition Region And
+Coronal Explorer} (TRACE) spacecraft.
 Some of the first results from preliminary TRACE data were produced by
 \cite{kink_1} after investigating oscillations detected in coronal loops.
-Images in the 171 \AA{} and 195 \AA{} extrememe ultraviolet (EUV) bandpasses
+Images in the 171 \AA{} and 195 \AA{} extreme ultraviolet (EUV) bandpasses
 revealed several coronal loops undergoing transverse oscillations
 triggered by a nearby class M4.6 solar flare that occurred in July of 1998.
 
@@ -209,14 +224,9 @@ physical distance between the flare site and the loops, the excitation
 must have been a disturbance generated by the flare that then
 traveled to the footpoints of the loops.
 
-The mean period (after considering the
-motion of both the maximum and minimum points in the loop) was
-about 269 seconds, or
-
 The observations had enough qualities characteristic of
 fast kink modes, including the spatial displacements characteristic
-of this asymmetrical mode, to identify these oscillations as kink
-modes.
+of this asymmetrical mode, to identify these oscillations as kink modes.
 An average period of $T = 269 \pm 6$ seconds, or
 roughly 4.5 minutes, was obtained, which fit well with the theoretical
 period for kink oscillations.
@@ -226,30 +236,30 @@ shift along the length of the loops revealed that these were
 
 The ability to identify kink modes has great significance
 for solar physics due to a correlation between the oscillation period,
-$T$, and the magnetic field strength, $B$, of the loop:
+$P$, and the magnetic field strength, $B$, of the loop:
 \begin{equation}
-    T \propto \frac{L}{\sqrt{n}}{B}
+    P \propto \frac{L}{\sqrt{n}}{B}
 \end{equation}
 where $L$ is the loop length and $n$ is the number density,
-both of which can be estimated from known coronal conditions.
+both of which can be (roughly) estimated from known coronal conditions.
 Kink waves are \emph{Alfv\'enic}; their phase speed is
 close to that of the internal Alfv\'en speed:
-$c_{k} \gtrsim v_{A}   $
+$C_{k} \gtrsim V_{A}   $
 
 More recently, \cite{kink_2} investigated the driving mechanism
-behind the production, and damping of the kink mode.
+behind the production and damping of the kink mode.
 This was found to occur on rapid timescales for both standing
 and propagating kink modes, both of which are consistently found
-throughout the solar coronal.
-However, it was unclear what was causing
-these modes to damp out so quickly.
+throughout the solar corona.
+However, the mechanism behind the rapid damping of these modes was
+unclear.
 The gravitational stratification of the atmosphere could have
-the effect in \emph{increasing} the velocity amplitude, thus
+the effect in increasing the velocity amplitude, thus
 reducing the attenuation caused by mode-coupling.
 
 They compared two possible functional forms of the damping profile
 of the driver: that of a Gaussian and an exponential form.
-The gaussian was a potential form of the amplitude variation at a
+The Gaussian was a potential form of the amplitude variation at a
 lower height ($z$), while the variation at higher $z$ took the
 form of an exponential.
 While the noise level of the data was too high to distinguish
@@ -261,10 +271,9 @@ itself on the excitation and subsequent damping of the kink
 waves. Two different possibilities were explored here:
 the effect of a ``highly structured'' driver including only the
 exponential damping profile, which they
-found to be unrealistic.
-The effects of small-scale (less than the size of the loop cross-section)
-of eddies and photospheric motions around the footpoints of the loops
-were also considered.
+found to be unrealistic, and
+the effects of small-scale (i.e.\ less than the size of the loop cross-section)
+of eddies and photospheric motions around the footpoints of the loops.
 These motions can excite kink modes along the length of the coronal
 loop, but not as efficiently as those produced by larger scale
 motions. These motions are what determine the properites of the
@@ -302,8 +311,8 @@ indicate
 
 \cite{sausage_2} investigated oscillations associated with magnetic
 pores, which are essentially small sunspots with an upper limit of
-about 1700 km in diameter and consist of an umbra, but no penumbra
-(cite class notes?). These features have high magnetic strength
+about 1700 km in diameter and consist of an umbra, but no penumbra.
+These features have high magnetic strength
 ($\sim$ 1700 G) in the photosphere and expand in diameter as the
 height above the
 photosphere increases into the chromosphere. As magnetic flux is
@@ -374,13 +383,13 @@ The changes in intensity along the same location as these waves
 propagate in time are mapped side by side to give time-distance
 information. The period, wavelength, propagation speed, and amplitude
 can all be derived using this method.
-Since the local sound, $c_{s}$ is related to temperature, $T$, as
+Since the local sound, $C_{s}$ is related to temperature, $T$, as
 \begin{equation}\label{sound-temp}
  c_{s} \propto \sqrt{T}
 \end{equation}
 a difference in observed propagation speeds implies a changing
-temperature profile in the transverse direction across the loop.
-(\cite{Nak}) \textcolor{red}{Use an actual paper here!}
+temperature profile in the transverse direction across the loop
+(\cite{Nak}).
 
 Propagating acoustic waves are generally observed as ``propagating
 disturbances'' awaiting further diagnoses of magnetoacoustic waves,
@@ -480,7 +489,6 @@ The lack of dependence on linearity or consistent periods, this could
 be useful method for analysis of mixed modes or damping waves.
 Additionally, this study confirmed the temperature-dependence of
 slow-mode velocities in non-flaring locations free of sunspots.
-(This is probably irrelevent)
 %Each surfing signal
 %(ST) is a periodic disturbance as a function of time and frequency
 \subsection{Propagating Fast Waves}%------------------------------------%
@@ -526,7 +534,7 @@ of 500-1500 km s$^{-1}$ and only lasted for 10 minutes.
 Moreover, Moreton waves are quasi-isotropic, while the EIT waves were observed to
 propagate isotropically.
 
-Also observed were a filament and a promiance (two different structures)
+Also observed were a filament and a promiance (two separate structures)
 that were near the region where the flare ocurred. The waves that resulted
 from the flare passed by these two structures, causing them to oscillate,
 and thus provide a valuable observable for diagnoising the propgating
@@ -579,10 +587,10 @@ magnetic reconnection site. The periods of such waves follow a
 characteristic ``tadpole'' pattern, where the period decreases at
 a fixed height, which is 150 Mm here.
 
-Could possibly be the kink mode if waveguide was in
+These could possibly be the kink mode if the waveguide was in
 the form of a loop. These can only be identified if the observed loop
-segment has a certain line of sight with respect to the observer,
-and a longer wavelength results in a faster speed, which then results
+segment has the correct line of sight with respect to the observer.
+A longer wavelength results in a faster speed, which then results
 in the dispersion of fast magnetoacoustic waves. The range in
 propagating phase speeds they derived was
 $ v_{ph} = 735 - 845 $ km s$^{-1}$, with a final speed
@@ -651,9 +659,7 @@ as these same oscillations can result from upflows of jets, which were
 found to be the dominate source of the oscillations seen around the loop
 footpoints. Toward the top of the loop, the observed oscillations were
 in fact found to be due to either kink or Alfv\'en waves
-(both are fast waves that do not cause density perturbations, and
-hence are not observed by intensity oscillations$\ldots$ other
-similarities?) They also noted that intensity changes can occur as
+They also noted that intensity changes can occur as
 a result of the loop itself begin in motion, transversing back and
 forth across the slit location, and cautioned that a phase difference
 between intensity and Doppler shift was not an immediate indication
@@ -702,8 +708,6 @@ rather than assuming constant density and magnetic field strength
 along the length of the loop, which extends far enough into the
 corona to undergo an overall gravitational stratification.
 
-
-
 \section{Discussion}\label{disc}
 The observational techniques and relevant properties of each of the different
 kinds of MHD waves are summarized in table 1.
@@ -726,17 +730,76 @@ kinds of MHD waves are summarized in table 1.
 \end{table*}
 %-------------%
 
-\section{Data}\label{data}
+\section{Research Project}\label{project}
 As part of the general topic of coronal seismology,
-a small research project was carried out as well, continuing
-over from several semesters previously. Several of the observational
-and analytical methods used in the literature were reproduced for
-this project.
+a small research project was carried out.
+Several of the observational
+and analytical methods employed in the literature were emulated for
+this project, in addition to a cross-correlation analysis.
+\subsection{Data}
+An hour of data from AIA/\emph{SDO} at 193 \AA{} was examined for possible
+wave activity or notable disturbances. Each image in the time series was
+separated by 12 seconds, and taken during July of 2012. The first image in
+the series is shown in figure {\ref{full}}.
+\begin{figure}[!htb]
+    \plotone{full_disk.png}
+    \caption{First image in the time series from AIA/\emph{SDO}.}
+    \label{full}
+\end{figure}
+The image clearly shows an active region in the lower right region
+and a coronal hole in the upper left, with areas of quiet sun in between.
 
-\section{Analysis}\label{analysis}
+
+\subsection{Lightcurves}
+To determine if there was a possible relationship between the size of the
+bright point and the intensity, the time variation of both quantities were
+plotted as shown in figure {\ref{lc}}.
+\begin{figure*}[!htb]
+    \plotone{plot2.png}
+    \caption{Size and intensity (counts per pixel) of the bright point as
+        functions of time throughout the entire data series.}
+    \label{lc}
+\end{figure*}
+There appears to be a possible correlation between the two, but further
+analysis is required, such as a fourier transform.
+
+\subsection{Cross-correlation}
+To check for variation or disturbances in the horizontal direction, i.e.\
+outward from the center of the bright point in the radial direction, a
+cross-correlation was run between a single pixel located roughly in the
+center of the bright point, and every other pixel in the image shown in
+figure {\ref{}}.
+\begin{figure}[!htb]
+    \plotone{bp1_contour.png}
+    \caption{Image of the single bright point analyzed for this research.
+        The contours outline the estimated size of the bright point
+        using an intensity cutoff. The areas in the upper region of the
+        image were also above the intensity threshold used to determine
+        the size of the bright point, and hence are also outlined. The circle
+        in the center indicates the location of the pixel that was correlated
+        with every other pixel in the image.}
+    \label{tt_color}
+\end{figure}
+
+
+\begin{figure*}[!htb]
+    \plottwo{cc_color.png}{tt_color.png}
+    \caption{{\sc Fig.~2} (\emph{a}) Image illustrating the maximum correlation
+        value of each pixel with the central pixel;
+        (\emph{b}) Image of the timelag corresponding to the maximum correlation
+        value of each pixel in \emph{a}.
+       \label{cc_tt}}
+\end{figure*}
 
 \section{Conclusion}\label{conclusion}
-And we're finished.
-
+The data set examined here requires further analysis, such as applying a
+Fourier Transform and finding exact locations for high correlation values.
+Data from the \emph{Helioseismic and Magnetic Imager} (HMI) on \emph{SDO} 
+might be worth examining to see if a counterpart to the bright points can
+be seen in the photosphere.
+These techniques could be applied to the active region in the same data set,
+assuming they produce reliable results from the ``cleaner'' data in the
+coronal hole.
+\newpage
 \bibliography{reffile}
 \end{document}
