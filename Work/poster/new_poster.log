@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  28 MAY 2016 22:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  31 MAY 2016 15:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -779,20 +779,25 @@ Package beamerposter Info: the input a0\ 1\ was correct, we proceed. on input l
 ine 128.
 Package beamerposter Info: finished size input check. on input line 128.
 Package beamerposter Info: myfontscale=1.0 on input line 128.
+Package beamerposter Info: checking orientation input, please wait. on input li
+ne 129.
+Package beamerposter Info: the input landscape\ 1\ was correct, we proceed. on 
+input line 129.
+Package beamerposter Info: finished orientation check. on input line 129.
 Package beamerposter Info: checking size input, please wait. on input line 129.
 
 Package beamerposter Info: the input custom\ 6\ was correct, we proceed. on inp
 ut line 129.
 Package beamerposter Info: finished size input check. on input line 129.
-Package beamerposter Info: custom poster width=35 on input line 129.
-Package beamerposter Info: custom poster height=40 on input line 129.
+Package beamerposter Info: custom poster width=115 on input line 129.
+Package beamerposter Info: custom poster height=100 on input line 129.
 Package beamerposter Info: myfontscale=1 on input line 129.
  ( FP-UPN
 ( FP-MUL ) ( FP-ROUND ) ) ( FP-UPN ( FP-SUB ) ) ( FP-UPN ( FP-SUB ) )
-Package beamerposter Info: paperwidth=995.84645pt, paperheight=1138.11023pt on 
-input line 172.
-Package beamerposter Info: textwidth=967.39369pt, textwidth=1109.65747pt on inp
-ut line 173.
+Package beamerposter Info: paperwidth=3272.06693pt, paperheight=2845.27559pt on
+ input line 172.
+Package beamerposter Info: textwidth=3243.61417pt, textwidth=2816.82283pt on in
+put line 173.
 Package beamerposter Info: fontscale=1.0, myfontscale=1.00 on input line 174.
  ( FP-UPN
 ( FP-MUL ) ( FP-ROUND ) ) ( FP-UPN ( FP-MUL ) ( FP-ROUND ) ) ( FP-UPN ( FP-MUL
@@ -816,24 +821,26 @@ Package: textpos 2014/01/03 v1.7j
 
 Package: textpos 2014/01/03 1.7j, absolute positioning of text on the page
 \TP@textbox=\box53
+\TP@holdbox=\box54
 \TPHorizModule=\dimen188
 \TPVertModule=\dimen189
 \TP@margin=\dimen190
 \TP@absmargin=\dimen191
-Grid set 16 x 16 = 62.2404pt x 71.13188pt
+Grid set 16 x 16 = 204.50418pt x 177.82971pt
 \TPboxrulesize=\dimen192
+\TP@ox=\dimen193
+\TP@oy=\dimen194
 \TP@tbargs=\toks45
-\TP@prevdepth=\dimen193
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
-Package: tcolorbox 2015/05/07 version 3.60 text color boxes
-
+\TP@prevdepth=\dimen195
+TextBlockOrigin set to 0pt x 0pt
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
 
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
 e.tex
 File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
-\pgfnodeparttextbox=\box54
+\pgfnodeparttextbox=\box55
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
 tex
@@ -842,17 +849,86 @@ File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen194
-\pgf@nodesepend=\dimen195
+\pgf@nodesepstart=\dimen196
+\pgf@nodesepend=\dimen197
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
-)) (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/verbatim.sty
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen198
+\pgffor@skip=\dimen199
+\pgffor@stack=\toks46
+\pgffor@toks=\toks47
+))
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
+\pgf@plot@mark@count=\count165
+\pgfplotmarksize=\dimen200
+)
+\tikz@lastx=\dimen201
+\tikz@lasty=\dimen202
+\tikz@lastxsaved=\dimen203
+\tikz@lastysaved=\dimen204
+\tikzleveldistance=\dimen205
+\tikzsiblingdistance=\dimen206
+\tikz@figbox=\box56
+\tikz@figbox@bg=\box57
+\tikz@tempbox=\box58
+\tikz@tempbox@bg=\box59
+\tikztreelevel=\count166
+\tikznumberofchildren=\count167
+\tikznumberofcurrentchild=\count168
+\tikz@fig@count=\count169
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count170
+\pgfmatrixcurrentcolumn=\count171
+\pgf@matrix@numberofcolumns=\count172
+)
+\tikz@expandcount=\count173
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
+)))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box60
+\shadowsize=\dimen207
+\@Sbox=\box61
+\do@VerbBox=\toks48
+\the@fancyput=\toks49
+\this@fancyput=\toks50
+\EndVerbatimTokens=\toks51
+\Verbatim@Outfile=\write5
+\Verbatim@Infile=\read2
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2015/05/07 version 3.60 text color boxes
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks46
-\verbatim@line=\toks47
-\verbatim@in@stream=\read2
+\every@verbatim=\toks52
+\verbatim@line=\toks53
+\verbatim@in@stream=\read3
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
@@ -862,43 +938,63 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/05/04 v2.2 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count165
+\etb@tempcnta=\count174
 )
-\tcb@titlebox=\box55
-\tcb@upperbox=\box56
-\tcb@lowerbox=\box57
-\tcb@phantombox=\box58
-\c@tcbbreakpart=\count166
-\c@tcblayer=\count167
-\tcb@temp=\box59
-\tcb@temp=\box60
-\tcb@temp=\box61
-\tcb@temp=\box62
-\tcb@out=\write5
-\tcb@record@out=\write6
+\tcb@titlebox=\box62
+\tcb@upperbox=\box63
+\tcb@lowerbox=\box64
+\tcb@phantombox=\box65
+\c@tcbbreakpart=\count175
+\c@tcblayer=\count176
+\tcb@temp=\box66
+\tcb@temp=\box67
+\tcb@temp=\box68
+\tcb@temp=\box69
+\tcb@out=\write6
+\tcb@record@out=\write7
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen196
+\bigstrutjot=\dimen208
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen197
-\lightrulewidth=\dimen198
-\cmidrulewidth=\dimen199
-\belowrulesep=\dimen200
-\belowbottomsep=\dimen201
-\aboverulesep=\dimen202
-\abovetopsep=\dimen203
-\cmidrulesep=\dimen204
-\cmidrulekern=\dimen205
-\defaultaddspace=\dimen206
-\@cmidla=\count168
-\@cmidlb=\count169
-\@aboverulesep=\dimen207
-\@belowrulesep=\dimen208
-\@thisruleclass=\count170
-\@lastruleclass=\count171
-\@thisrulewidth=\dimen209
+\heavyrulewidth=\dimen209
+\lightrulewidth=\dimen210
+\cmidrulewidth=\dimen211
+\belowrulesep=\dimen212
+\belowbottomsep=\dimen213
+\aboverulesep=\dimen214
+\abovetopsep=\dimen215
+\cmidrulesep=\dimen216
+\cmidrulekern=\dimen217
+\defaultaddspace=\dimen218
+\@cmidla=\count177
+\@cmidlb=\count178
+\@aboverulesep=\dimen219
+\@belowrulesep=\dimen220
+\@thisruleclass=\count179
+\@lastruleclass=\count180
+\@thisrulewidth=\dimen221
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen222
+\captionmargin@=\dimen223
+\captionwidth=\dimen224
+\caption@tempdima=\dimen225
+\caption@indent=\dimen226
+\caption@parindent=\dimen227
+\caption@hangindent=\dimen228
+)
+\c@ContinuedFloat=\count181
+Package caption Info: beamer document class.
+Package caption Info: hyperref package is loaded.
+Package caption Info: Hyperref support is turned off
+(caption)             because hyperref has stopped early.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
@@ -959,21 +1055,21 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 (./new_poster.aux)
 \openout1 = `new_poster.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 54.
 
  (/usr/local/texlive/2015/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -986,14 +1082,14 @@ File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(28.45274pt, 938.94096pt, 28.45274pt)
-* v-part:(T,H,B)=(0.0pt, 1138.11023pt, 0.0pt)
-* \paperwidth=995.84645pt
-* \paperheight=1138.11023pt
-* \textwidth=938.94096pt
-* \textheight=1109.6575pt
-* \oddsidemargin=-43.81725pt
-* \evensidemargin=-43.81725pt
+* h-part:(L,W,R)=(85.35826pt, 3101.3504pt, 85.35826pt)
+* v-part:(T,H,B)=(0.0pt, 2845.27559pt, 0.0pt)
+* \paperwidth=3272.06693pt
+* \paperheight=2845.27559pt
+* \textwidth=3101.3504pt
+* \textheight=2816.82286pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
@@ -1014,17 +1110,17 @@ File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count172
-\scratchdimen=\dimen210
-\scratchbox=\box63
-\nofMPsegments=\count173
-\nofMParguments=\count174
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count175
-\MPscratchDim=\dimen211
-\MPnumerator=\count176
-\makeMPintoPDFobject=\count177
-\everyMPtoPDFconversion=\toks49
+\scratchcounter=\count182
+\scratchdimen=\dimen229
+\scratchbox=\box70
+\nofMPsegments=\count183
+\nofMParguments=\count184
+\everyMPshowfont=\toks54
+\MPscratchCnt=\count185
+\MPscratchDim=\dimen230
+\MPnumerator=\count186
+\makeMPintoPDFobject=\count187
+\everyMPtoPDFconversion=\toks55
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1041,8 +1137,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box64
-Package hyperref Info: Link coloring OFF on input line 44.
+\AtBeginShipoutBox=\box71
+Package hyperref Info: Link coloring OFF on input line 54.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1050,62 +1146,62 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count178
+\c@section@level=\count188
 )
-LaTeX Info: Redefining \ref on input line 44.
-LaTeX Info: Redefining \pageref on input line 44.
-LaTeX Info: Redefining \nameref on input line 44.
+LaTeX Info: Redefining \ref on input line 54.
+LaTeX Info: Redefining \pageref on input line 54.
+LaTeX Info: Redefining \nameref on input line 54.
 
 (./new_poster.out) (./new_poster.out)
-\@outlinefile=\write7
-\openout7 = `new_poster.out'.
+\@outlinefile=\write8
+\openout8 = `new_poster.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 44.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 54.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 44.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 54.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 44.
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 54.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 44.
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 54.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmss/m/n --> OT1/lmr/m/n on input line 44.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 44.
+(Font)                  OT1/lmss/m/n --> OT1/lmr/m/n on input line 54.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> OT1/lmss/bx/n on input line 44.
+(Font)                  OT1/lmr/bx/n --> OT1/lmss/bx/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/lmss/bx/n on input line 44.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 44.
+(Font)                  OT1/lmr/bx/n --> OT1/lmss/bx/n on input line 54.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> OT1/lmss/m/n on input line 44.
+(Font)                  OT1/lmss/m/n --> OT1/lmss/m/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> OT1/lmss/m/n on input line 44.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 44.
+(Font)                  OT1/lmss/bx/n --> OT1/lmss/m/n on input line 54.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> OT1/lmss/m/it on input line 44.
+(Font)                  OT1/lmr/m/it --> OT1/lmss/m/it on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> OT1/lmss/m/it on input line 44.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 44.
+(Font)                  OT1/lmr/bx/it --> OT1/lmss/m/it on input line 54.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 44.
+(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 44.
+(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 54.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/lmss/m/n --> OT1/lmss/bx/n on input line 44.
+(Font)                  OT1/lmss/m/n --> OT1/lmss/bx/n on input line 54.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/lmss/m/it --> OT1/lmss/bx/it on input line 44.
+(Font)                  OT1/lmss/m/it --> OT1/lmss/bx/it on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/lmss/bx/n --> OT1/lmr/bx/n on input line 44.
+(Font)                  OT1/lmss/bx/n --> OT1/lmr/bx/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> OT1/lmss/bx/n on input line 44.
+(Font)                  OT1/lmss/bx/n --> OT1/lmss/bx/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/m/n --> OT1/lmss/bx/n on input line 44.
+(Font)                  OT1/lmss/m/n --> OT1/lmss/bx/n on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmss/m/it --> OT1/lmss/bx/it on input line 44.
+(Font)                  OT1/lmss/m/it --> OT1/lmss/bx/it on input line 54.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> OT1/lmtt/bx/n on input line 44.
+(Font)                  OT1/lmtt/m/n --> OT1/lmtt/bx/n on input line 54.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/beamer/translator/dicts/translato
 r-basic-dictionary/translator-basic-dictionary-English.dict
@@ -1131,137 +1227,170 @@ Dictionary: translator-numbers-dictionary, Language: English
 r-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 44.
+LaTeX Info: Redefining \includegraphics on input line 54.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: Incompatible package detected (regarding \caption).
+(caption)             \caption = macro:->\ifx \@captype \@undefined \@latex@err
+or {\noexpand \caption outside figure or table}\@ehd \expandafter \@gobble \els
+e \refstepcounter \@captype \expandafter \@firstofone \fi {\@dblarg {\@caption 
+\@captype }}.
 
+
+Package caption Warning: \caption will not be redefined since it's already
+(caption)                redefined by a document class or package which is
+(caption)                unknown to the caption package.
+See the caption package documentation for explanation.
+
+Package caption Info: End \AtBeginDocument code.
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 44.
+LaTeX Info: Redefining \selectfont on input line 54.
  (./new_poster.nav)
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 114.
+<../loop.jpg, id=13, 722.7pt x 501.875pt>
+File: ../loop.jpg Graphic file (type jpg)
+ <use ../loop.jpg>
+Package pdftex.def Info: ../loop.jpg used on input line 354.
+(pdftex.def)             Requested size: 488.46788pt x 339.21814pt.
+
+<../cylinder.png, id=14, 499.8675pt x 317.185pt>
+File: ../cylinder.png Graphic file (type png)
+ <use ../cylinder.png>
+Package pdftex.def Info: ../cylinder.png used on input line 354.
+(pdftex.def)             Requested size: 488.46788pt x 309.96315pt.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 354.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 114
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 354
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 114
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 354
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <24.88> on input line 114.
+(Font)              <24.88> on input line 354.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20.74> on input line 114.
+(Font)              <20.74> on input line 354.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 114.
+(Font)              <17.28> on input line 354.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <24.88> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 114.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 354.
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <20.74> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 114.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 354.
 
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <17.28> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 114.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 354.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
-[]\OT1/lmss/bx/n/29.86 Background &
- []
+<../schematic.png, id=16, 518.93875pt x 518.93875pt>
+File: ../schematic.png Graphic file (type png)
+ <use ../schematic.png>
+Package pdftex.def Info: ../schematic.png used on input line 354.
+(pdftex.def)             Requested size: 439.6181pt x 439.64305pt.
 
+<../disp_diagram.png, id=17, 592.2125pt x 552.0625pt>
+File: ../disp_diagram.png Graphic file (type png)
 
-Underfull \hbox (badness 7030) in paragraph at lines 114--114
-\OT1/lmss/m/n/24.88 the the-o-ries of ideal
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
-\OT1/lmss/m/n/24.88 mag-ne-to-hy-dro-dy-nam-ics
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
-\OT1/lmss/m/n/24.88 (MHD). Waves and
- []
-
-<full_disk.png, id=13, 702.625pt x 703.62875pt>
+<use ../disp_diagram.png>
+Package pdftex.def Info: ../disp_diagram.png used on input line 354.
+(pdftex.def)             Requested size: 439.6181pt x 409.82553pt.
+ <full_disk.png, id=18, 702.625pt x 703.62875pt>
 File: full_disk.png Graphic file (type png)
- <use full_disk.png>
-Package pdftex.def Info: full_disk.png used on input line 114.
-(pdftex.def)             Requested size: 192.7989pt x 193.0744pt.
-LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <28> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 114.
 
+<use full_disk.png>
+Package pdftex.def Info: full_disk.png used on input line 354.
+(pdftex.def)             Requested size: 434.18053pt x 434.81737pt.
+ <../bp1_contour.png, id=19, 737.75626pt x 561.09625pt>
+File: ../bp1_contour.png Graphic file (type png)
 
-Underfull \hbox (badness 1297) in paragraph at lines 114--114
-\OT1/lmss/m/n/24.88 mo-spheric Imag-ing As-
- []
+<use ../bp1_contour.png>
+Package pdftex.def Info: ../bp1_contour.png used on input line 354.
+(pdftex.def)             Requested size: 620.2606pt x 471.73715pt.
+ <../plot2.png, id=20, 1243.5258pt x 650.6709pt>
+File: ../plot2.png Graphic file (type png)
 
-<cc_color_2.png, id=15, 751.80875pt x 601.24625pt>
+<use ../plot2.png>
+Package pdftex.def Info: ../plot2.png used on input line 354.
+(pdftex.def)             Requested size: 558.25443pt x 292.1042pt.
+ <../test2.png, id=21, 1153.30875pt x 350.30875pt>
+File: ../test2.png Graphic file (type png)
+
+<use ../test2.png>
+Package pdftex.def Info: ../test2.png used on input line 354.
+(pdftex.def)             Requested size: 930.41458pt x 282.61533pt.
+ <cc_color_2.png, id=22, 751.80875pt x 601.24625pt>
 File: cc_color_2.png Graphic file (type png)
- <use cc_color_2.png>
-Package pdftex.def Info: cc_color_2.png used on input line 114.
-(pdftex.def)             Requested size: 216.89647pt x 173.45786pt.
 
-<tt_color_2.png, id=16, 764.8575pt x 599.23875pt>
+<use cc_color_2.png>
+Package pdftex.def Info: cc_color_2.png used on input line 354.
+(pdftex.def)             Requested size: 372.16014pt x 297.63156pt.
+ <tt_color_2.png, id=23, 764.8575pt x 599.23875pt>
 File: tt_color_2.png Graphic file (type png)
- <use tt_color_2.png>
-Package pdftex.def Info: tt_color_2.png used on input line 114.
-(pdftex.def)             Requested size: 216.89647pt x 169.92531pt.
 
-<nmsu.png, id=17, 595.22375pt x 125.46875pt>
+<use tt_color_2.png>
+Package pdftex.def Info: tt_color_2.png used on input line 354.
+(pdftex.def)             Requested size: 372.16014pt x 291.57224pt.
+ <nmsu.png, id=24, 595.22375pt x 125.46875pt>
 File: nmsu.png Graphic file (type png)
- <use nmsu.png>
-Package pdftex.def Info: nmsu.png used on input line 114.
+
+<use nmsu.png>
+Package pdftex.def Info: nmsu.png used on input line 354.
 (pdftex.def)             Requested size: 595.2223pt x 125.46843pt.
+ [1
 
-Overfull \vbox (690.49628pt too high) detected at line 114
- []
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-[1
 
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./full_
-disk.png> <./cc_color_2.png> <./tt_color_2.png> <./nmsu.png>]
-\tf@nav=\write8
-\openout8 = `new_poster.nav'.
+ <../loop.jpg> <../cylinder.png> <../schematic.png> <../disp_diagram.png> <./fu
+ll_disk.png> <../bp1_contour.png> <../plot2.png> <../test2.png> <./cc_color_2.p
+ng> <./tt_color_2.png> <./nmsu.png>]
+\tf@nav=\write9
+\openout9 = `new_poster.nav'.
 
-\tf@toc=\write9
-\openout9 = `new_poster.toc'.
+\tf@toc=\write10
+\openout10 = `new_poster.toc'.
 
-\tf@snm=\write10
-\openout10 = `new_poster.snm'.
+\tf@snm=\write11
+\openout11 = `new_poster.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
-
-(./new_poster.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 356.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 356.
+ (./new_poster.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 356.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 356.
 Package rerunfilecheck Info: File `new_poster.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 356.
  ) 
 Here is how much of TeX's memory you used:
- 20029 strings out of 493089
- 387295 string characters out of 6134842
- 494684 words of memory out of 5000000
- 23016 multiletter control sequences out of 15000+600000
- 40554 words of font info for 41 fonts, out of 8000000 for 9000
+ 23638 strings out of 493089
+ 465296 string characters out of 6134842
+ 647848 words of memory out of 5000000
+ 26570 multiletter control sequences out of 15000+600000
+ 43263 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,14n,83p,993b,1224s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/lm/lmsso17.pfb>
-Output written on new_poster.pdf (1 page, 1240066 bytes).
+ 57i,15n,96p,950b,1644s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/lo
+cal/texlive/2015/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texliv
+e/2015/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2015/texmf-d
+ist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2015/texmf-dist/fonts/
+type1/public/lm/lmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publ
+ic/lm/lmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmss
+17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/lm/lmsso17.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
+Output written on new_poster.pdf (1 page, 2392885 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
+ 93 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
  3 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 98 words of extra memory for PDF output out of 10000 (max. 10000000)
 
