@@ -1,31 +1,47 @@
-\documentclass[12pt]{article}
-\usepackage[margin=1.5in]{geometry}
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
-\usepackage{titlesec}
 \setlength{\parindent}{0em}
 \setlength{\parskip}{0.5em}
 \usepackage{enumitem}
-\usepackage{mdwlist}
-\usepackage{color}
-\usepackage{sectsty}
+\usepackage{xcolor}
+\usepackage{sectsty} % for customizing sections
+\usepackage{titlesec} % also for sections?
 \usepackage{amsmath}
+
+\usepackage{setspace} % for toc spacing
+\usepackage[toc]{multitoc}
+%\setlength{\columnseprule}{0.5pt}
+\usepackage{minitoc}
 
 \definecolor{ao}{rgb}{0.0, 0.5, 0.0}
 \sectionfont{\color{ao}}
+\setcounter{secnumdepth}{0}
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
 
-\title{\vspace{-0.5in}Wave Stuff}
-\author{}
-\date{}
+\usepackage{enumitem}
+\setlist[itemize]{%
+    itemsep=-1ex,}
+\setlist[enumerate]{%
+    itemsep=-1ex,}
+
+\usepackage{hyperref}
+\hypersetup{%
+    colorlinks=true,
+    urlcolor=blue,
+    linkcolor=black,}
+\urlstyle{same}
 
 \begin{document}
-\maketitle
+\addtocontents{toc}{\protect\setstretch{0.1}}
+\tableofcontents
 
-\vspace{-1in}
+\newpage
 
-\section*{A}
-
-\subsection*{acoustic waves (aka sound waves)}
-\begin{itemize*}
+\section*{Coronal Seismology}
+\subsection{acoustic waves (aka sound waves)}
+\begin{itemize}
     \item Longitudinal
     \item Isotropic
     \item Compressible (propagate by means of adiabatic
@@ -34,12 +50,12 @@
         they were \emph{created}, and maintain this speed even if they
         travel into medium with a different characteristic sound speed).
     \item Important quantities:
-        \begin{itemize*}
+        \begin{itemize}
             \item sound pressure
             \item particle velocity
             \item particle displacement
             \item sound intensity
-        \end{itemize*}
+        \end{itemize}
     \item exist because of a pressure restoring force: local compression
         (or rarefaction) sets up a \emph{pressure gradient} in opposition
         to the motion
@@ -50,10 +66,10 @@
     \item isotropic \- propagate equally in all directions. The phase
         and group velocities are both equal to the sound speed (hence, the
         part where acoustic waves are sound waves).
-\end{itemize*}
+\end{itemize}
 
-\subsection*{Alfv\'en waves}
-Alfv\'en waves are a type of MHD wave in which ions oscillate in response to a 
+\subsection{Alfv\'en waves}
+Alfv\'en waves are a type of MHD wave in which ions oscillate in response to a
 restoring force provided by an effective tension on the magentic field lines.
 Low frequency (compared to the ion cyclotron frequency) traveling
 oscillation of the ion and the magnetic field. The ion mass
@@ -73,8 +89,7 @@ magnetic field lines, and are
 weakily dissipative (can propagate long distances, deposit energy
 and momentum far from source).
 
-Properties:
-\begin{itemize*}
+\begin{itemize}
     \item m$=$0 (Axisymmetric, or azimuthally symmetric)
     \item transverse (shear) perturbations (perpendicular to $\vec{F}_{res}$);
         plasma has characteristic elasticity.
@@ -82,17 +97,19 @@ Properties:
         $\vec{B}$, but the \emph{phase} velocity doesn't have to be. The
         energy also propagates along the field lines, probably because the
         wave envelope is what carries all the information).
-    \item (only) driving force: magnetic tension, which ``snaps'' the field back
+    \item (only) driving force: magnetic tension, the restoring force,
+        which ``snaps'' the field back
         into a straight line, producing an Alfv\'en wave.
     \item Purely magnetic and incompressible in nature (in untwisted straight
         cylinder$\ldots$ twist may cause some compression).
     \item Displacement of plasma together with magnetic field frozen
         into it.
-    \item velocity: $v_{A} = \frac{B}{\mu_{o}\rho}$;
+    \item velocity: $v_{A} = \frac{B}{\sqrt{\mu_{o}\rho}}$;
         $\sim$ 1000 km s$^{-1}$ in the corona.
-\end{itemize*}
+    \item Mode conversion: fast MHD to Alfv\'en.
+\end{itemize}
 How to observe:
-\begin{itemize*}
+\begin{itemize}
     \item Only get Doppler shifts from \emph{long}-period waves
         ($>$ a few minutes).
     \item Measure additional (i.e.\ non-thermal) broadening
@@ -100,14 +117,14 @@ How to observe:
     \item Spatial variation in Doppler shift for long periods.
         Gyrosynchrotron emission in radio regime.
     \item $V_A$: temporal resolution?
-\end{itemize*}
+\end{itemize}
 Effects of twisting (or \emph{torsion}):
-\begin{itemize*}
+\begin{itemize}
     \item Coupling of various MHD modes
-\end{itemize*}
+\end{itemize}
 
 (From \emph{Priest}): Types of Alfv\'en waves:
-\begin{itemize*}
+\begin{itemize}
     \item Shear or Torsional: No accompanying pressure or
         density changes (plasma).
     \item Compressional or Fast-Mode: Becomes a fast
@@ -115,18 +132,16 @@ Effects of twisting (or \emph{torsion}):
         are included (Note: these are often the preferred names,
         even when the pressure gradient is unimportant, so as to
         avoid confusion with shear Alfv\'en waves).
-\end{itemize*}
+\end{itemize}
 
-\section*{B}
-
-\subsection*{ballooning modes}
-\begin{itemize*}
+\subsection{ballooning modes}
+\begin{itemize}
     \item m $>$ 1
 
     \item Role not established yet
-\end{itemize*}
+\end{itemize}
 
-\subsection*{Bessel's equations}
+\subsection{Bessel's equations}
 
 (From Boas p. 587): Bessel functions are damped sines and cosines.
 Solutions of differential equations can be represented by power series.
@@ -142,25 +157,20 @@ $a$ = half-integer $\rightarrow$ spherical.
 $$ x^2y'' + xy' + (x^2-p^2)y = 0  $$
 $$ x(xy') + (x^2-p^2)y' = 0  $$
 
-\subsection*{body modes}
+\subsection{body modes}
 
-\section*{C}
-
-\subsection*{coronal loops}
-\begin{itemize*}
+\subsection{coronal loops}
+\begin{itemize}
     \item Main observational feature of the magnetic structure in the
         upper solar atmosphere.
-\end{itemize*}
+\end{itemize}
 
-\subsection*{coronal seismology}
+\subsection{coronal seismology}
 
-
-\subsection*{cusp speed}
+\subsection{cusp speed}
 See \emph{tube speed}
 
-\section*{D}
-
-\subsection*{dispersion}
+\subsection{dispersion}
 Dispersion is when the distinct phase velocities of the components of the
 envelope cause the wave packet to ``spread out'' over time.
 The components of the wave packet (or envelope) move apart to the degree
@@ -169,14 +179,14 @@ where they no longer combine to complete the envelope.
 Causes different components of the wave to have different phase velocities.
 
 Different kinds of dispersion:
-\begin{itemize*}
+\begin{itemize}
     \item Normal dispersion: strictly increasing Re $\epsilon(\omega)$ with
         increasing $\omega$.
     \item Anomalous dispersion: decreasing Re $\epsilon(\omega)$ with
         increasing $\omega$.
     \item Resonant absorption: occurs in regions where Im $\epsilon(\omega)$
         is large.
-\end{itemize*}
+\end{itemize}
 
 \begin{figure}[h]
     \centering
@@ -193,43 +203,39 @@ All waves of \emph{any} $k$ propagate at the same speed.
 Uniform dissipation, resonant mode conversion, physical mechanisms vs. ?
 
 Dispersion \emph{relation}:
-\begin{itemize*}
+\begin{itemize}
     \item Relates the wavelength (or wavenumber) of a wave to its
         frequency.
     \item Describe the effect of dispersion in a medium on the properties
         of a wave traveling through that medium.
-\end{itemize*}
+\end{itemize}
 
-\section*{E}
 
-\section*{F}
-
-\subsection*{fast waves}
-\begin{itemize*}
+\subsection{fast waves}
+\begin{itemize}
     \item $C_{A_0} < C_{fast} < C_{A_e} $
     \item highly dispersive.
     \item Kink modes
     \item Sausage modes
     \item propagate faster than both $V_A$ and $C_s$
-\end{itemize*}
+\end{itemize}
 
-\subsection*{flute modes}
+\subsection{flute modes}
 See \emph{ballooning modes}
 
-\subsection*{fundamental modes}
+\subsection{fundamental modes}
 See \emph{global modes}
 
-\section*{G}
 
-\subsection*{global modes}
-\begin{itemize*}
+\subsection{global modes}
+\begin{itemize}
     \item $y(x,t)$ governed by some PDE with no \emph{explicit} time dependence.
     \item A global mode is a solution of the form
         $y(x,t) = \hat{y}(x)e^{i\omega t}$
     \item PDE-dynamical system of infinitely many equations coupled together.
-\end{itemize*}
+\end{itemize}
 
-\subsection*{gravity waves}
+\subsection{gravity waves}
 Generated in fluid medium or interface between two media when the
 force of gravity or buoyency tries to restore equilibrium
 e.g.\ ``wind waves'' from between atmosphere and ocean.
@@ -237,26 +243,20 @@ P-modes are global acoustic oscillations.
 (Note: \emph{gravitational} waves are not the same thing; they
 have something to do with relativity).
 
-\subsection*{group velocity}
+\subsection{group velocity}
 
-\subsection*{gyrosynchrotron radiation}
+\subsection{gyrosynchrotron radiation}
 Electromagnetic emission emitted by mildly relativistic electrons moving
 in a magnetic field
 (as opposed to synchrotron, with \emph{ultra}relativistic particles).
 
-\section*{H}
-
-\section*{I}
-\subsection*{instabilities}
+\subsection{instabilities}
 A disturbance that is not stabilized by the resulting forces.
 
-\section*{J}
-\section*{K}
-
-\subsection*{kink modes/waves/oscillations/instabilities}
+\subsection{kink modes/waves/oscillations/instabilities}
 
 Fast kink waves:
-\begin{itemize*}
+\begin{itemize}
     \item transverse (general property of fast waves)
     \item $v_{ph} = c_k = \sqrt{\frac{\rho_oV^2_{Ao}+\rho_eV^2_{Ae}}
         {\rho_o+\rho_e}} \approx V_A\sqrt{\frac{2}{1+\frac{\rho_e}{\rho_o}}} $
@@ -273,17 +273,17 @@ Fast kink waves:
         (mean Alfv\'enic speed).
         Slab (or tube) is moved laterally; little variation in cross-sec,
         density, or intensity.
-\end{itemize*}
+\end{itemize}
 Standing and propagating both rapidly damped.
 
 Slow kink waves:
-\begin{itemize*}
+\begin{itemize}
     \item longitudinal (velocity directed along magnetic field)
     \item compressible (variations in density and intensity)
-\end{itemize*}
+\end{itemize}
 
 Other (or simply unorganized):
-\begin{itemize*}
+\begin{itemize}
     \item oblique (inclined with respect to the flow direction)
     \item \emph{weakly compressible}, but could nevertheless be
         observed with imaging instruments as \emph{periodic standing}
@@ -297,22 +297,19 @@ Other (or simply unorganized):
         sausage fast modes tends to the so-called kink speed,
         which corresponds to the density weighed average Alfv\'en speed.
     \item Two instabilities of axisymmetric, current-carrying plasmas
-        \begin{itemize*}
+        \begin{itemize}
             \item sawtooth relaxations
             \item fishbone oscillations
-        \end{itemize*}
+        \end{itemize}
         associated with instability of internal kink modes
     \item Both standing and propagating, T = $\sim$ seconds-minutes.
     \item lowest spatial harmonics along field; global (fundamental)
         modes of coronal loops nodes of displacement at footpoints,
         maximum at apex.
-\end{itemize*}
+\end{itemize}
 
-
-\section*{L}
-
-\subsection*{leaky modes}
-\begin{itemize*}
+\subsection{leaky modes}
+\begin{itemize}
     \item Waves are allowed to radiate into the external medium,
         i.e.\ the condition of mode localization is relaxed.
     \item complex eigenfrequencies
@@ -327,16 +324,15 @@ Other (or simply unorganized):
     \item Relative amplitude of oscillatory part (leakage rate)
         must be sufficiently small that the mode maintains its
         shape as it decays, in order to be called a mode at all.
-\end{itemize*}
+\end{itemize}
 
-\subsection*{longitudinal waves}
+\subsection{longitudinal waves}
 waves in which the displacement of the \emph{medium} is in the
 same direction as, or the opposite direction to,
 the direction of travel of the wave.
 
-\section*{M}
-\subsection*{magnetoacoustic waves}
-\begin{itemize*}
+\subsection{magnetoacoustic waves}
+\begin{itemize}
     \item A magnetosonic wave (also magnetoacoustic wave) is a
         longitudinal wave of ions (and electrons) in a magnetized
         plasma propagating perpendicular to the stationary magnetic field.
@@ -350,22 +346,22 @@ the direction of travel of the wave.
         across neighbouring magnetic field lines and across transverse
         plasma inhomogeneities.
     \item observed as distrubances of EUV (and possibly X-ray) emission
-\end{itemize*}
+\end{itemize}
 
-\subsection*{magnetohydrodynamic (MHD) waves}
-\begin{itemize*}
+\subsection{magnetohydrodynamic (MHD) waves}
+\begin{itemize}
     \item study of electrically conducting fluids (plasma)
     \item Theoretical foundation:
-        \begin{itemize*}
+        \begin{itemize}
             \item dispersion relation of MHD modes of a plasma cylinder
             \item models: loops, prominence fibrils, plumes, various filaments
             \item evolutionary equations
-        \end{itemize*}
+        \end{itemize}
     \item Considerations of observed waves:
-        \begin{itemize*}
+        \begin{itemize}
             \item geometry: simple (slab or tube)? or more complex?
             \item mode
-                \begin{itemize*}
+                \begin{itemize}
                     \item longitudinal vs.\ transverse
                     \item compressible vs.\ incompressible
                     \item oscillating vs.\ propagating
@@ -373,8 +369,8 @@ the direction of travel of the wave.
                     \item propagating vs.\ standing
                     \item isotropic vs.\ anisotropic
                     \item phase differences?
-                \end{itemize*}
-        \end{itemize*}
+                \end{itemize}
+        \end{itemize}
     \item \textcolor{red}{Interpreting observations: distinguish between modes
         that are pressure driven (acoustic/slow magnetoacoustic)
         and magnetically driven (Alfv\'en)}
@@ -390,77 +386,76 @@ the direction of travel of the wave.
 \emph{Dissipation and Damping:}
 
     \item Dissipation of MHD waves is manifold:
-        \begin{itemize*}
+        \begin{itemize}
             \item Couple with each other
             \item interact non-linearly
             \item resonantly interact with the closed waveguide
             \item devolop non-linearly (e.g.\ solitons or shock waves
                 can form)
-        \end{itemize*}
+        \end{itemize}
     \item Inhomogeneous and magnetized plasma has two particular
         dissipation mechanisms of MHD waves:
-        \begin{itemize*}
+        \begin{itemize}
             \item Resonant absorption
             \item Phase mixing
-        \end{itemize*}
-\end{itemize*}
+        \end{itemize}
+\end{itemize}
 
 
-\subsection*{modes}
+\subsection{modes}
 A wave may be a superposition of lots of other waves. Each of those
 waves is a ``mode'' of the resultant wave (think of the foundation
 of Fourier Analysis: sums of sines and cosines).
 Modes with the lowest wave number are \emph{global}, or
 \emph{fundamental} modes.
-\begin{itemize*}
+\begin{itemize}
     \item Different modes are driven by \emph{different restoring forces}.
-\end{itemize*}
+\end{itemize}
 
-\subsection*{Moreton wave}
+\subsection{mode conversion}
+\subsection{mode coupling}
+
+\subsection{Moreton wave}
 Chromospheric signature of a large-scale coronal shock wave. Generated
 by flares, $\sim$ fast-mode MHD waves.
 
-\section*{N}
-\subsection*{Normal modes}
+\subsection{Normal modes}
 Vibrational state of an oscillatory \emph{system} where the frequency
 is the same for all elements. E.g.\ resonant frequencies: equally
 spaced multiples of the fundamental.
 
-\section*{O}
-\subsection*{oscillations}
+\subsection{oscillations}
 Three types:
-\begin{enumerate*}
+\begin{enumerate}
     \item un-damped
     \item damped
     \item forced
-\end{enumerate*}
+\end{enumerate}
 
-\section*{P}
-
-\subsection*{phase mixing}
-\begin{itemize*}
+\subsection{phase mixing}
+\begin{itemize}
     \item Large gradients in Alfv\'en velocity.
     \item Alfv\'en waves suffer intense phase mixing
     \item Cause decay of Alfv\'en waves.
     \item \emph{Not} likely to operate in closed magnetic structures
         (e.g.\ coronal loops)
-\end{itemize*}
+\end{itemize}
 
-\subsection*{Phase speed}
+\subsection{phase speed}
 $$ v_p = \frac{\lambda}{T} = \frac{\omega}{k} $$
 $$ k = \frac{2\pi}{\lambda}, \omega = \frac{2\pi}{T} $$
 
-\subsection*{polarization}
-\begin{itemize*}
+\subsection{polarization}
+\begin{itemize}
     \item Doesn't apply to longitudinal waves, e.g.\ sound.
     \item Linear waves oscillate (transversely) in a single direction.
-\end{itemize*}
+\end{itemize}
 
-\subsection*{pressure waves}
+\subsection{pressure waves}
 Longitudinal, fast, generated by turbulence near the photosphere,
 observed by measureing Doppler shift of absorption lines in the
 photosphere, spherical harmonics:
-\begin{itemize*}
+\begin{itemize}
     \item $n$: radial order, number of nodes in radial direction
     \item $l$: angular degree, or harmonic degree,
         number of node lines on surface,
@@ -468,9 +463,9 @@ photosphere, spherical harmonics:
     \item $m$: azimuthal number;
         number of surface nodal lines that cross the equator,
         number of planes slicing longitudinally. $-l\leq m\leq +l$
-\end{itemize*}
+\end{itemize}
 
-\subsection*{propagating acoustic waves (slow)}
+\subsection{propagating acoustic waves (slow)}
 \begin{itemize}
     \item $v_{ph}<150$ km s$^{-1}$ $\rightarrow$ slow
     \item longitudinal, compressive, anisotropic
@@ -489,7 +484,7 @@ photosphere, spherical harmonics:
         EUV emission  and Doppler shifts)
 \end{itemize}
 
-\subsection*{propagating acoustic waves (fast)}
+\subsection{propagating acoustic waves (fast)}
 \begin{itemize}
     \item $v_{ph}>150$ km s$^{-1}$ $\rightarrow$ fast
         (\emph{or} transverse standing waves).
@@ -502,34 +497,32 @@ photosphere, spherical harmonics:
 \end{itemize}
 
 
-\section*{R}
 
-\subsection*{resonance}
+\subsection{resonance}
 Periodic driving force frequency matches the wave frequency
 $\rightarrow$ large amplitude.
 
-\subsection*{resonant absorption}
-\begin{itemize*}
+\subsection{resonant absorption}
+\begin{itemize}
     \item Mechanism of wave heating
     \item could damp kink mode oscillations.
     \item Loss of acoustic power in sunspots. Time scales:
-        \begin{enumerate*}
+        \begin{enumerate}
             \item damping: collective mode $\rightarrow$ local mode,
                 \emph{independent} of dissipation.
             \item dissipative damping of small scale perturbations of local
                 mode.
-        \end{enumerate*}
+        \end{enumerate}
         $\tau_1 \ll \tau_2$
     \item inherently non-linear
-\end{itemize*}
+\end{itemize}
 
-\section*{S}
 
-\subsection*{sausage modes}
+\subsection{sausage modes}
 %Trapped fast modes supported by thick, dense loops because of the cutoff
 %wavenumber (pfw_2). Observe spatially resolved radio (see sources in
 %pfw_2).
-\begin{itemize*}
+\begin{itemize}
     \item m = 0
     \item The fast magnetoacoustic sausage mode is another type of
         localized, modified fast magnetoacoustic wave.
@@ -542,19 +535,19 @@ $\rightarrow$ large amplitude.
         \emph{Effects} of the sausage mode are easiest to observe in
         the radio regime (not the wave itself), where more of a
         ``point'' is observed, rather than extended$\ldots$
-    \item Main feature is the periodic fluctuation of the cross-sectional
+    \item Main feature is the periodic fluctuation of the cross-subsectional
         area of the waveguide. This change is also associated with
         periodic fluctuations in density and temperature within the
         waveguide.
     \item Distinct sign of sausage oscillations is when periodic
-        phenomena in cross-section and intensity are almost
+        phenomena in cross-subsection and intensity are almost
         180$^{\circ}$ out of phase $\rightarrow$ strong signal.
         (Less distinct signal is when periodicities in pore size
         don't match any intensity variations).
     \item Produce perturbations in density and magnetic field strength,
         and the corresponding plasma motions cause pulsations in the
-        tube cross-section.
-    \item Associated with perturbations of the loop cross-section
+        tube cross-subsection.
+    \item Associated with perturbations of the loop cross-subsection
         and plasma concentration.
     \item Perturbations of plasma in the radial direction are stronger
         than perturbations along the field.
@@ -562,17 +555,21 @@ $\rightarrow$ large amplitude.
         cannot take place (slow resonance can still operate).
     \item Phase speed is in the range between the Alfv\'en speed inside
         and outside the loop.
-\end{itemize*}
+\end{itemize}
 
-\subsection*{slow waves}
-\begin{itemize*}
+\subsection{slow waves}
+\begin{itemize}
     \item $C_{T_0} < C_{slow} < C_{s_0}$
     \item longitudinal
-    \item acoustic(?)
-    \item propagate slower than both $V_A$ and $C_s$
-\end{itemize*}
+    \item essentially acoustic in a low-$\beta$ plasma and subject to
+        reflection if the frequency is below the cutoff frequency.
+    \item propagate slower than both $V_A$ and $C_s$ (but faster than
+        the cusp speed).
+    \item Sound waves are subject to nonlinear steepening and shocking
+        as the density decreases with height through the chromosphere.
+\end{itemize}
 
-\subsection*{speeds}
+\subsection{speeds}
 Characteristic speeds of MHD:
 \begin{enumerate}
     \item sound
@@ -586,15 +583,15 @@ Characteristic speeds of MHD:
                (B$_o \sim$ 100 G; n$_o$ $\sim$ 10$^{16}$ m$^{-3}$)
 \end{enumerate}
 
-\subsection*{spherical harmonics}
+\subsection{spherical harmonics}
 3 kinds of resonant modes of oscillation:
-\begin{itemize*}
+\begin{itemize}
     \item p (pressure)
     \item g (gravity)
     \item f (?)
-\end{itemize*}
+\end{itemize}
 Numbers:
-\begin{itemize*}
+\begin{itemize}
     \item n - \emph{order}; Number of nodes in radial direction
     \item l - \emph{harmonic degree}; number of node lines on
         surface $\sim$ total number of planes slicing the sun.
@@ -602,9 +599,9 @@ Numbers:
         cross the equator; phase\\
         $-l \leq m \leq l$ (direction of waves is important); number of
         planes slicing longitudinally.
-\end{itemize*}
+\end{itemize}
 
-\subsection*{standing acoustic oscillations}
+\subsection{standing acoustic oscillations}
 Characteristics:
 \begin{itemize}
     \item Pressure forces in opposition
@@ -627,30 +624,27 @@ Standing oscillations vs.\ propagating waves
 \end{itemize}
 
 
-\subsection*{standing waves}
+\subsection{standing waves}
 Confined to a finite region of space $\rightarrow$ quantifies the frequency
-\begin{itemize*}
+\begin{itemize}
     \item Fundamental (2 nodes, one on each end):
         $$f_1 = \frac{1}{2L}\sqrt{\frac{F}{\mu}}$$
         where L is the string length, F is the tension, $\mu$ is the mass density
     \item 3 nodes: $f_2 = 2f_1$
     \item 4 nodes: $f_3 = 3f_1$
-\end{itemize*}
+\end{itemize}
 
 
-\subsection*{surface modes}
+\subsection{surface modes}
 evanescent behavior in both media (inside and outside cylinder).
 
-
-\section*{T}
-
-\subsection*{torsional vibration}
-\begin{itemize*}
+\subsection{torsional vibration}
+\begin{itemize}
     \item angular vibration of an object $\sim$ shaft along the
         axis of vibration
-\end{itemize*}
+\end{itemize}
 
-\subsection*{transverse waves}
+\subsection{transverse waves}
 \textcolor{magenta}{(from wikipedia:)}
 moving waves that \emph{consist} of oscillations occurring perpendicular
 to the direction of energy transfer.
@@ -664,7 +658,7 @@ the \emph{displacement of the medium} is perpendicular to the
 direction of propagation of the wave.
 Examples: A ripple in a pond and a wave on a string.
 
-\subsection*{trapped modes}
+\subsection{trapped modes}
 For a specified geometry, uniqueness of the solution to a forcing problem
 at a particular frequency is equivalent to the non-existence of a trapped
 mode at that frequency. A trapped mode is a solution of the corresponding
@@ -674,43 +668,38 @@ trapped modes may exist only at discrete frequencies.
 Mathematically, a trapped mode corresponds to an eigenvalue embedded
 in the continuous spectrum of the relevant operator.
 
-\subsection*{tube speed}
+\subsection{tube speed}
 Also known as \emph{cusp speed}, the tube speed is the combination of sound
 and Alfv\'en speeds.
 $$ C_T = C_sC_A/(C_A^2 + C_s^2)^{1/2} $$
 
-\section*{U}
-\section*{W}
 
-\subsection*{waves}
-\begin{itemize*}
+\subsection{waves}
+\begin{itemize}
     \item Caused by any turbulence in a medium.
     \item Observable properties
-        \begin{itemize*}
+        \begin{itemize}
             \item Period
             \item wavelength
             \item amplitude
             \item temporal/spatial signatures (shape of perturbation)
             \item characteristic scenerios of evolution (e.g.\ damped?)
-        \end{itemize*}
-\end{itemize*}
+        \end{itemize}
+\end{itemize}
 
-\subsection*{waveguide}
-\begin{itemize*}
+\subsection{waveguide}
+\begin{itemize}
     \item Width $\sim$ same order of magnitude as the wavelength of
         the guided wave.
     \item Pores extending up from the photosphere
         into the solar atmosphere can act as an
         MHD waveguide.
     \item Flux tubes are excellent waveguides
-\end{itemize*}
+\end{itemize}
 
-\subsection*{wave number}
+\subsection{wave number}
 Number of waves in a unit distance.
 $ k = 2\pi $
 
-\section*{X}
-\section*{Y}
-\section*{Z}
 
 \end{document}
