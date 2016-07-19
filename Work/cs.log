@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  28 JUN 2016 13:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  18 JUL 2016 16:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -107,25 +107,9 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/sectsty/sectsty.sty
-Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
-les
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/titlesec/titlesec.sty
-Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
-\ttl@box=\box27
-\beforetitleunit=\skip44
-\aftertitleunit=\skip45
-\ttl@plus=\dimen114
-\ttl@minus=\dimen115
-\ttl@toksa=\toks17
-\titlewidth=\dimen116
-\titlewidthlast=\dimen117
-\titlewidthfirst=\dimen118
-)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip46
+\@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -133,12 +117,12 @@ Package: amstext 2000/06/29 v2.01
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks18
-\ex@=\dimen119
+\@emptytoks=\toks17
+\ex@=\dimen114
 ))
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen120
+\pmbraise@=\dimen115
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
@@ -153,9 +137,9 @@ LaTeX Info: Redefining \overline on input line 306.
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
-\Mathstrutbox@=\box28
-\strutbox@=\box29
-\big@size=\dimen121
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen116
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \macc@depth=\count97
@@ -163,21 +147,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \dotsspace@=\muskip10
 \c@parentequation=\count99
 \dspbrk@lvl=\count100
-\tag@help=\toks19
+\tag@help=\toks18
 \row@=\count101
 \column@=\count102
 \maxfields@=\count103
-\andhelp@=\toks20
-\eqnshift@=\dimen122
-\alignsep@=\dimen123
-\tagshift@=\dimen124
-\tagwidth@=\dimen125
-\totwidth@=\dimen126
-\lineht@=\dimen127
-\@envbody=\toks21
-\multlinegap=\skip47
-\multlinetaggap=\skip48
-\mathdisplay@stack=\toks22
+\andhelp@=\toks19
+\eqnshift@=\dimen117
+\alignsep@=\dimen118
+\tagshift@=\dimen119
+\tagwidth@=\dimen120
+\totwidth@=\dimen121
+\lineht@=\dimen122
+\@envbody=\toks20
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks21
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
@@ -190,26 +174,27 @@ Package: multitoc 1999/06/08 v2.01 MultiToc Package (MS)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
 \c@tracingmulticols=\count104
-\mult@box=\box30
-\multicol@leftmargin=\dimen128
+\mult@box=\box29
+\multicol@leftmargin=\dimen123
 \c@unbalance=\count105
 \c@collectmore=\count106
 \doublecol@number=\count107
 \multicoltolerance=\count108
 \multicolpretolerance=\count109
-\full@width=\dimen129
-\page@free=\dimen130
-\premulticols=\dimen131
-\postmulticols=\dimen132
-\multicolsep=\skip49
-\multicolbaselineskip=\skip50
-\partial@page=\box31
-\last@line=\box32
-\maxbalancingoverflow=\dimen133
-\mult@rightbox=\box33
-\mult@grightbox=\box34
-\mult@gfirstbox=\box35
-\mult@firstbox=\box36
+\full@width=\dimen124
+\page@free=\dimen125
+\premulticols=\dimen126
+\postmulticols=\dimen127
+\multicolsep=\skip47
+\multicolbaselineskip=\skip48
+\partial@page=\box30
+\last@line=\box31
+\maxbalancingoverflow=\dimen128
+\mult@rightbox=\box32
+\mult@grightbox=\box33
+\mult@gfirstbox=\box34
+\mult@firstbox=\box35
+\@tempa=\box36
 \@tempa=\box37
 \@tempa=\box38
 \@tempa=\box39
@@ -226,14 +211,13 @@ Package: multicol 2015/03/31 v1.8m multicolumn formatting (FMi)
 \@tempa=\box50
 \@tempa=\box51
 \@tempa=\box52
-\@tempa=\box53
 \c@columnbadness=\count110
 \c@finalcolumnbadness=\count111
-\last@try=\dimen134
-\multicolovershoot=\dimen135
-\multicolundershoot=\dimen136
-\mult@nat@firstbox=\box54
-\colbreak@box=\box55
+\last@try=\dimen129
+\multicolovershoot=\dimen130
+\multicolundershoot=\dimen131
+\mult@nat@firstbox=\box53
+\colbreak@box=\box54
 \mc@col@check@num=\count112
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
@@ -248,8 +232,8 @@ Package: mtcmess 2006/03/14
 Package minitoc Info: I0001
 (minitoc)             *** minitoc package, version 60 ***.
 \tf@mtc=\write3
-\mtcindent=\skip51
-\mtcskipamount=\skip52
+\mtcindent=\skip49
+\mtcskipamount=\skip50
 Package minitoc Info: I0005
 (minitoc)             compatible with hyperref.
 Package minitoc Info: I0023
@@ -258,9 +242,9 @@ Package minitoc Info: I0004
 (minitoc)             chapter level macros NOT available.
 Package minitoc Info: I0028
 (minitoc)             section level macros available.
-\mtc@toks=\toks23
-\mtc@strutbox=\box56
-\mtc@hstrutbox=\box57
+\mtc@toks=\toks22
+\mtc@strutbox=\box55
+\mtc@hstrutbox=\box56
 Package minitoc Info: I0002
 (minitoc)             Autoconfiguration of extensions.
 \openout3 = `cs.mtc0'.
@@ -279,10 +263,10 @@ Package minitoc Info: I0031
 
 \c@ptc=\count113
 \c@parttocdepth=\count114
-\ptcindent=\skip53
+\ptcindent=\skip51
 \c@stc=\count115
 \c@secttocdepth=\count116
-\stcindent=\skip54
+\stcindent=\skip52
 Package minitoc Info: I0010
 (minitoc)             The english language is selected.
 (minitoc)              on input line 4910.
@@ -293,6 +277,22 @@ File: english.mld 2006/01/13
 (/usr/local/texlive/2015/texmf-dist/tex/latex/minitoc/english.mld
 File: english.mld 2006/01/13
 ))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box57
+\beforetitleunit=\skip53
+\aftertitleunit=\skip54
+\ttl@plus=\dimen132
+\ttl@minus=\dimen133
+\ttl@toksa=\toks23
+\titlewidth=\dimen134
+\titlewidthlast=\dimen135
+\titlewidthfirst=\dimen136
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
@@ -403,25 +403,25 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip55
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 30.
+Package hyperref Info: Option `colorlinks' set `true' on input line 34.
 
 (./cs.aux)
 \openout1 = `cs.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -516,7 +516,7 @@ Package minitoc(hints) Warning: W0023
 (minitoc(hints))                of loading the ``hyperref'' package.
 
 \AtBeginShipoutBox=\box59
-Package hyperref Info: Link coloring ON on input line 33.
+Package hyperref Info: Link coloring ON on input line 38.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -525,56 +525,53 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count133
 )
-LaTeX Info: Redefining \ref on input line 33.
-LaTeX Info: Redefining \pageref on input line 33.
-LaTeX Info: Redefining \nameref on input line 33.
+LaTeX Info: Redefining \ref on input line 38.
+LaTeX Info: Redefining \pageref on input line 38.
+LaTeX Info: Redefining \nameref on input line 38.
 
 (./cs.out) (./cs.out)
 \@outlinefile=\write4
 \openout4 = `cs.out'.
 
- (./cs.toc)
+ (./cs.toc [1
+
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write5
 \openout5 = `cs.toc'.
 
- [1
-
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 42.
+ [2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 47.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 42.
- [2] [3]
-<disp.png, id=384, 566.115pt x 270.00874pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
+ [3] [4]
+<disp.png, id=505, 566.115pt x 270.00874pt>
 File: disp.png Graphic file (type png)
  <use disp.png>
-Package pdftex.def Info: disp.png used on input line 201.
+Package pdftex.def Info: disp.png used on input line 229.
 (pdftex.def)             Requested size: 361.34999pt x 172.35179pt.
- [4 <./disp.png>]
+ [5 <./disp.png>]
+[6]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 259.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\alpha' on input line 259.
+(hyperref)                removing `math shift' on input line 343.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 259.
+(hyperref)                removing `\alpha' on input line 343.
 
-[5] [6] [7] [8] [9] [10]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 343.
+
+[7] [8] [9] [10] [11] [12] [13]
 Missing character: There is no â in font cmr10!
 Missing character: There is no € in font cmr10!
 Missing character: There is no “ in font cmr10!
- [11]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[12]
+ [14]
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
 (minitoc)             Creating the cs.maf file.
@@ -582,44 +579,50 @@ Package minitoc Info: I0009
 
 
 
+Package minitoc(hints) Warning: W0037
+(minitoc(hints))                The sectsty package should be 
+(minitoc(hints))                loaded BEFORE the minitoc package.
+
+
 Package minitoc(hints) Warning: W0024
 (minitoc(hints))                Some hints have been written 
 (minitoc(hints))                in the cs.log file.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 783.
-[13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 783.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 923.
+[15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 923.
  (./cs.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 783.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 783.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 923.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 923.
 Package rerunfilecheck Info: File `cs.out' has not changed.
-(rerunfilecheck)             Checksum: 0E899DA3F0C70CDE239DF52E57AAC187;3885.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 783.
+(rerunfilecheck)             Checksum: FBAC54C0C057CD4E555E6862257473DF;6008.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 923.
  ) 
 Here is how much of TeX's memory you used:
- 9144 strings out of 493089
- 130421 string characters out of 6134842
- 280818 words of memory out of 5000000
- 12247 multiletter control sequences out of 15000+600000
- 5353 words of font info for 20 fonts, out of 8000000 for 9000
+ 9213 strings out of 493089
+ 131413 string characters out of 6134842
+ 264019 words of memory out of 5000000
+ 12289 multiletter control sequences out of 15000+600000
+ 9070 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,10n,35p,241b,434s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,10n,35p,241b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local
-/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on cs.pdf (13 pages, 214166 bytes).
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
+/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on cs.pdf (15 pages, 235713 bytes).
 PDF statistics:
- 502 PDF objects out of 1000 (max. 8388607)
- 468 compressed objects within 5 object streams
- 93 named destinations out of 1000 (max. 500000)
- 574 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 636 PDF objects out of 1000 (max. 8388607)
+ 598 compressed objects within 6 object streams
+ 118 named destinations out of 1000 (max. 500000)
+ 758 words of extra memory for PDF output out of 10000 (max. 10000000)
 

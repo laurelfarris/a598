@@ -1,72 +1,95 @@
 \setstretch {0.1}
-\contentsline {subsection}{acoustic waves (aka sound waves)}{2}{subsection*.1}
-\contentsline {subsection}{adiabatic index}{2}{subsection*.2}
-\contentsline {subsection}{Alfv\'en waves}{2}{subsection*.3}
-\contentsline {subsection}{ballooning modes}{3}{subsection*.4}
-\contentsline {subsection}{Bessel's equations}{3}{subsection*.5}
-\contentsline {subsection}{body modes}{3}{subsection*.6}
+\contentsline {section}{Solar and coronal seismology terms}{3}{section*.1}
+\contentsline {subsection}{acoustic waves (aka sound waves)}{3}{subsection*.2}
+\contentsline {subsection}{active regions}{3}{subsection*.3}
+\contentsline {subsection}{adiabatic index}{3}{subsection*.4}
+\contentsline {subsection}{Bright points}{3}{subsection*.5}
+\contentsline {subsection}{coronal holes}{3}{subsection*.6}
 \contentsline {subsection}{coronal loops}{3}{subsection*.7}
-\contentsline {subsection}{coronal streamer}{3}{subsection*.8}
-\contentsline {subsection}{cusp speed}{4}{subsection*.9}
-\contentsline {subsection}{DEM, DEM inversion}{4}{subsection*.10}
-\contentsline {subsection}{dispersion}{4}{subsection*.11}
-\contentsline {subsection}{EIT wave}{4}{subsection*.12}
-\contentsline {subsection}{emission measure}{4}{subsection*.13}
-\contentsline {subsection}{fast waves}{4}{subsection*.14}
-\contentsline {subsection}{flute modes}{5}{subsection*.15}
-\contentsline {subsection}{fundamental modes}{5}{subsection*.16}
-\contentsline {subsection}{global modes}{5}{subsection*.17}
-\contentsline {subsection}{gravity waves}{5}{subsection*.18}
-\contentsline {subsection}{group velocity}{5}{subsection*.19}
-\contentsline {subsection}{gyrosynchrotron radiation}{5}{subsection*.20}
-\contentsline {subsection}{H$\alpha $ images}{5}{subsection*.21}
-\contentsline {subsection}{instabilities}{5}{subsection*.22}
-\contentsline {subsection}{kink modes}{5}{subsection*.23}
-\contentsline {subsection}{leaky modes}{6}{subsection*.24}
-\contentsline {subsection}{longitudinal waves}{6}{subsection*.25}
-\contentsline {subsection}{magnetoacoustic waves}{7}{subsection*.26}
-\contentsline {subsection}{magnetohydrodynamic (MHD) waves}{7}{subsection*.27}
-\contentsline {subsection}{modes}{7}{subsection*.28}
-\contentsline {subsection}{mode conversion}{8}{subsection*.29}
-\contentsline {subsection}{mode coupling}{8}{subsection*.30}
-\contentsline {subsection}{Moreton wave}{8}{subsection*.31}
-\contentsline {subsection}{Normal modes}{8}{subsection*.32}
-\contentsline {subsection}{oscillations}{8}{subsection*.33}
-\contentsline {subsection}{periodogram}{8}{subsection*.34}
-\contentsline {subsection}{phase mixing}{8}{subsection*.35}
-\contentsline {subsection}{phase speed}{8}{subsection*.36}
-\contentsline {subsection}{polarization}{8}{subsection*.37}
-\contentsline {subsection}{polytropic index}{8}{subsection*.38}
-\contentsline {subsection}{pressure waves}{8}{subsection*.39}
-\contentsline {subsection}{propagating acoustic waves (slow)}{9}{subsection*.40}
-\contentsline {subsection}{propagating acoustic waves (fast)}{9}{subsection*.41}
-\contentsline {subsection}{resonance}{9}{subsection*.42}
-\contentsline {subsection}{resonant absorption}{9}{subsection*.43}
-\contentsline {subsection}{sausage modes}{9}{subsection*.44}
-\contentsline {subsection}{slow waves}{10}{subsection*.45}
-\contentsline {subsection}{speeds}{10}{subsection*.46}
-\contentsline {subsection}{spherical harmonics}{10}{subsection*.47}
-\contentsline {subsection}{standing acoustic oscillations}{11}{subsection*.48}
-\contentsline {subsection}{standing waves}{11}{subsection*.49}
-\contentsline {subsection}{surface modes}{11}{subsection*.50}
-\contentsline {subsection}{torsional vibration}{11}{subsection*.51}
-\contentsline {subsection}{transverse waves}{11}{subsection*.52}
-\contentsline {subsection}{trapped modes}{12}{subsection*.53}
-\contentsline {subsection}{tube speed}{12}{subsection*.54}
-\contentsline {subsection}{wavelet analysis}{12}{subsection*.55}
-\contentsline {subsection}{waves}{12}{subsection*.56}
-\contentsline {subsection}{waveguide}{12}{subsection*.57}
-\contentsline {subsection}{wave number}{12}{subsection*.58}
-\contentsline {subsection}{WKB approximation}{12}{subsection*.59}
-\contentsline {subsection}{Zeeman effect}{12}{subsection*.60}
-\contentsline {subsection}{SoHO}{12}{subsection*.61}
-\contentsline {subsection}{SDO}{13}{subsection*.62}
-\contentsline {subsubsection}{AIA}{13}{subsubsection*.63}
-\contentsline {subsubsection}{EVE}{13}{subsubsection*.64}
-\contentsline {subsubsection}{HMI}{13}{subsubsection*.65}
-\contentsline {subsection}{RHESSI}{13}{subsection*.66}
-\contentsline {subsection}{Hinode}{13}{subsection*.67}
-\contentsline {subsection}{TRACE}{13}{subsection*.68}
-\contentsline {subsection}{DKIST}{13}{subsection*.69}
-\contentsline {subsection}{SECIS}{13}{subsection*.70}
-\contentsline {subsection}{STEREO}{13}{subsection*.71}
+\contentsline {subsection}{coronal mass ejections (CMEs)}{3}{subsection*.8}
+\contentsline {subsection}{Alfv\'en waves}{3}{subsection*.9}
+\contentsline {subsection}{ballooning modes}{4}{subsection*.10}
+\contentsline {subsection}{Bessel's equations}{4}{subsection*.11}
+\contentsline {subsection}{body modes}{4}{subsection*.12}
+\contentsline {subsection}{coronal loops}{4}{subsection*.13}
+\contentsline {subsection}{coronal streamer}{5}{subsection*.14}
+\contentsline {subsection}{cusp speed}{5}{subsection*.15}
+\contentsline {subsection}{Differential Emission Measure (DEM)}{5}{subsection*.16}
+\contentsline {subsection}{dispersion}{5}{subsection*.17}
+\contentsline {subsection}{EIT wave}{6}{subsection*.18}
+\contentsline {subsection}{emission measure}{6}{subsection*.19}
+\contentsline {subsection}{faculae}{6}{subsection*.20}
+\contentsline {subsection}{fast waves}{6}{subsection*.21}
+\contentsline {subsection}{filament}{6}{subsection*.22}
+\contentsline {subsection}{flares}{6}{subsection*.23}
+\contentsline {subsection}{flux tubes}{6}{subsection*.24}
+\contentsline {subsection}{Fraunhofer lines}{6}{subsection*.25}
+\contentsline {subsection}{flute modes}{6}{subsection*.26}
+\contentsline {subsection}{frozen-in flux}{6}{subsection*.27}
+\contentsline {subsection}{fundamental modes}{7}{subsection*.28}
+\contentsline {subsection}{global modes}{7}{subsection*.29}
+\contentsline {subsection}{gravity waves}{7}{subsection*.30}
+\contentsline {subsection}{group velocity}{7}{subsection*.31}
+\contentsline {subsection}{gyrosynchrotron radiation}{7}{subsection*.32}
+\contentsline {subsection}{H$\alpha $ images}{7}{subsection*.33}
+\contentsline {subsection}{instabilities}{7}{subsection*.34}
+\contentsline {subsection}{jets}{7}{subsection*.35}
+\contentsline {subsection}{kink modes}{7}{subsection*.36}
+\contentsline {subsection}{leaky modes}{8}{subsection*.37}
+\contentsline {subsection}{longitudinal waves}{8}{subsection*.38}
+\contentsline {subsection}{magnetoacoustic waves}{8}{subsection*.39}
+\contentsline {subsection}{magnetohydrodynamic (MHD) waves}{9}{subsection*.40}
+\contentsline {subsection}{modes}{9}{subsection*.41}
+\contentsline {subsection}{mode conversion}{9}{subsection*.42}
+\contentsline {subsection}{mode coupling}{9}{subsection*.43}
+\contentsline {subsection}{Moreton wave}{9}{subsection*.44}
+\contentsline {subsection}{Normal modes}{9}{subsection*.45}
+\contentsline {subsection}{oscillations}{10}{subsection*.46}
+\contentsline {subsection}{periodogram}{10}{subsection*.47}
+\contentsline {subsection}{phase mixing}{10}{subsection*.48}
+\contentsline {subsection}{phase speed}{10}{subsection*.49}
+\contentsline {subsection}{plage}{10}{subsection*.50}
+\contentsline {subsection}{plume}{10}{subsection*.51}
+\contentsline {subsection}{polarization}{10}{subsection*.52}
+\contentsline {subsection}{polytropic index}{10}{subsection*.53}
+\contentsline {subsection}{pores}{10}{subsection*.54}
+\contentsline {subsection}{pressure waves}{10}{subsection*.55}
+\contentsline {subsection}{prominence}{11}{subsection*.56}
+\contentsline {subsection}{propagating acoustic waves (slow)}{11}{subsection*.57}
+\contentsline {subsection}{propagating acoustic waves (fast)}{11}{subsection*.58}
+\contentsline {subsection}{resonance}{11}{subsection*.59}
+\contentsline {subsection}{resonant absorption}{11}{subsection*.60}
+\contentsline {subsection}{sausage modes}{11}{subsection*.61}
+\contentsline {subsection}{slow waves}{12}{subsection*.62}
+\contentsline {subsection}{solar wind}{12}{subsection*.63}
+\contentsline {subsection}{speeds}{12}{subsection*.64}
+\contentsline {subsection}{spherical harmonics}{12}{subsection*.65}
+\contentsline {subsection}{spicules}{13}{subsection*.66}
+\contentsline {subsection}{standing acoustic oscillations}{13}{subsection*.67}
+\contentsline {subsection}{sunspots}{13}{subsection*.68}
+\contentsline {subsection}{supergranules}{13}{subsection*.69}
+\contentsline {subsection}{surges}{13}{subsection*.70}
+\contentsline {subsection}{standing waves}{13}{subsection*.71}
+\contentsline {subsection}{surface modes}{13}{subsection*.72}
+\contentsline {subsection}{torsional vibration}{14}{subsection*.73}
+\contentsline {subsection}{transverse waves}{14}{subsection*.74}
+\contentsline {subsection}{trapped modes}{14}{subsection*.75}
+\contentsline {subsection}{tube speed}{14}{subsection*.76}
+\contentsline {subsection}{wave}{14}{subsection*.77}
+\contentsline {subsection}{wave number}{14}{subsection*.78}
+\contentsline {subsection}{waveguide}{14}{subsection*.79}
+\contentsline {subsection}{wavelet analysis}{14}{subsection*.80}
+\contentsline {subsection}{WKB approximation}{14}{subsection*.81}
+\contentsline {subsection}{Zeeman effect}{14}{subsection*.82}
+\contentsline {section}{Solar instruments}{14}{section*.83}
+\contentsline {subsection}{SoHO}{14}{subsection*.84}
+\contentsline {subsection}{SDO}{15}{subsection*.85}
+\contentsline {subsubsection}{AIA}{15}{subsubsection*.86}
+\contentsline {subsubsection}{EVE}{15}{subsubsection*.87}
+\contentsline {subsubsection}{HMI}{15}{subsubsection*.88}
+\contentsline {subsection}{RHESSI}{15}{subsection*.89}
+\contentsline {subsection}{Hinode}{15}{subsection*.90}
+\contentsline {subsection}{TRACE}{15}{subsection*.91}
+\contentsline {subsection}{DKIST}{15}{subsection*.92}
+\contentsline {subsection}{SECIS}{15}{subsection*.93}
+\contentsline {subsection}{STEREO}{15}{subsection*.94}

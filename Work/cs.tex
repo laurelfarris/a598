@@ -5,8 +5,6 @@
 \setlength{\parskip}{0.5em}
 \usepackage{enumitem}
 \usepackage{xcolor}
-\usepackage{sectsty} % for customizing sections
-\usepackage{titlesec} % also for sections?
 \usepackage{amsmath}
 
 \usepackage{setspace} % for toc spacing
@@ -14,29 +12,36 @@
 %\setlength{\columnseprule}{0.5pt}
 \usepackage{minitoc} % Doesn't appear to do anything
 
-\definecolor{ao}{rgb}{0.0, 0.5, 0.0}
+\usepackage{sectsty} % for customizing sections
+%\definecolor{ao}{rgb}{0.0, 0.5, 0.0}
+\definecolor{ao}{rgb}{0.05, 0.5, 0.06}
+\definecolor{forestgreen}{rgb}{0.0, 0.27, 0.13}
 \sectionfont{\color{ao}}
+\subsectionfont{\color{forestgreen}}
+\usepackage{titlesec}
+\titlespacing*{\section}{-0.5in}{2ex}{1ex}
+\titlespacing*{\subsection}{-0.25in}{1ex}{0ex}
+
 \setcounter{secnumdepth}{0}
-\titleformat*{\section}{\large\bfseries}
-\titleformat*{\subsection}{\normalsize\bfseries}
+
+
 
 \usepackage{enumitem}
 \setlist{itemsep=-1ex, topsep=0ex}
 
 \usepackage{hyperref}
-\hypersetup{%
-    urlcolor=blue,
-    colorlinks=true,
-    linkcolor=black,}
+\definecolor{darkpowderblue}{rgb}{0.0, 0.2, 0.6}
+\hypersetup{colorlinks=true, linkcolor=black, urlcolor=darkpowderblue}
 \urlstyle{same}
+
 
 \begin{document}%-------------------------------------------------------%
 \addtocontents{toc}{\protect\setstretch{0.1}}
 \tableofcontents
-
+\url{http://solarscience.msfc.nasa.gov/feature3.shtml}
 \newpage
-\section*{Coronal Seismology: terms}
 
+\section{Solar and coronal seismology terms}
 \subsection{acoustic waves (aka sound waves)}
 \begin{itemize}
     \item Longitudinal
@@ -64,8 +69,19 @@
         and group velocities are both equal to the sound speed (hence, the
         part where acoustic waves are sound waves).
 \end{itemize}
+
+\subsection{active regions}
 \subsection{adiabatic index}
 $\gamma$ is the ratio of specific heats, generally taken to be 5/3.
+\subsection{Bright points}
+\subsection{coronal holes}
+\subsection{coronal loops}
+\begin{itemize}
+    \item \emph{Modelled} as flux tubes; probably consist of
+        many flux tubes.
+\end{itemize}
+\subsection{coronal mass ejections (CMEs)}
+Release of magnetic energy; reach Earth in a few days.
 
 \subsection{Alfv\'en waves}
 Alfv\'en waves are a type of MHD wave in which ions oscillate in response to a
@@ -148,13 +164,13 @@ Graphs, formulas; electricty, heat, hydrodynamics, elasticity, wave motion,
 quantum$\ldots$, cylindrical symmetry$\ldots$
 
 Bessel's differential equation:
-$$ x^2\frac{d^y}{dx2} + x\frac{dy}{dx} + (x^2-p^2)y = 0 $$
-where $p$ is the \emph{order} of the Bessel function $y$ and is a constant, and
-$y$ is the solution.
-$a$ = integer $\rightarrow$ cylindrical,
-$a$ = half-integer $\rightarrow$ spherical.
-$$ x^2y'' + xy' + (x^2-p^2)y = 0  $$
-$$ x(xy') + (x^2-p^2)y' = 0  $$
+$${ x^2\frac{d^y}{dx2} + x\frac{dy}{dx} + (x^2-p^2)y = 0 }$$
+where ${p}$ is the \emph{order} of the Bessel function ${y}$ and is a constant, and
+${y}$ is the solution.
+${a}$ = integer $\rightarrow$ cylindrical,
+${a}$ = half-integer $\rightarrow$ spherical.
+$${ x^{2}y'' + xy' + (x^{2}-p^{2})y = 0  }$$
+$${ x(xy') + (x^{2}-p^{2})y' = 0  }$$
 
 \subsection{body modes}
 In the context of flux tubes and coronal seismology,
@@ -177,7 +193,21 @@ They are large scale magnetic structures of the equatorial solar corona.
 \subsection{cusp speed}
 See \emph{tube speed}
 
-\subsection{DEM, DEM inversion}
+\subsection{Differential Emission Measure (DEM)}
+$${
+    EM = \int{n_{e}^{2}\mathrm{d}V}
+}$$ $${
+    DEM = \xi(T_{e}) = \int{\frac{n^{2}(r)}{|\nabla{T}|}\mathrm{d}S_{T}}
+}$$ or $${
+    DEM = \frac{\mathrm{d}}{\mathrm{d}T}\left[\int{n_{e}^{2}\mathrm{d}S}\right]
+}$$
+in units of [cm ${^{-5}}$ K${^{-1}}$]. DEM is the integral of electron
+density squared along an optically thin line of sight as a function of
+temperature.
+``Can predict the coronal bremsstrahlung flux component\ldots
+bremsstrahlung correlates with EUV emission.''
+
+
 \subsection{dispersion}
 Dispersion is when the distinct phase velocities of the components of the
 envelope cause the wave packet to ``spread out'' over time.
@@ -188,11 +218,11 @@ Causes different components of the wave to have different phase velocities.
 
 Different kinds of dispersion:
 \begin{itemize}
-    \item Normal dispersion: strictly increasing Re $\epsilon(\omega)$ with
-        increasing $\omega$.
-    \item Anomalous dispersion: decreasing Re $\epsilon(\omega)$ with
-        increasing $\omega$.
-    \item Resonant absorption: occurs in regions where Im $\epsilon(\omega)$
+    \item Normal dispersion: strictly increasing Re ${\epsilon(\omega)}$ with
+        increasing ${\omega}$.
+    \item Anomalous dispersion: decreasing Re ${\epsilon(\omega)}$ with
+        increasing ${\omega}$.
+    \item Resonant absorption: occurs in regions where Im ${\epsilon(\omega)}$
         is large.
 \end{itemize}
 
@@ -201,13 +231,13 @@ Different kinds of dispersion:
     \includegraphics[width=5in]{disp.png}
 \end{figure}
 
-No dispersion: $v_{ph} = v_{gr}$; dispersion: $v_{ph} \neq v_{gr}$.
+No dispersion: ${v_{ph} = v_{gr}}$; dispersion: ${v_{ph} \neq v_{gr}}$.
 A medium that is free from dispersion has index of refraction that is constant
 as a function of frequency, so all wavelengths are similarly affected.
 Permittivity and permeability are functions of frequency.
-Non-dispersive waves have phase speed ($v_{ph}$, speed that wave actually travels
-through medium?) independent of wavenumber, $k$.
-All waves of \emph{any} $k$ propagate at the same speed.
+Non-dispersive waves have phase speed (${v_{ph}}$, speed that wave actually travels
+through medium?) independent of wavenumber, ${k}$.
+All waves of \emph{any} ${k}$ propagate at the same speed.
 Uniform dissipation, resonant mode conversion, physical mechanisms vs. ?
 
 Dispersion \emph{relation}:
@@ -220,6 +250,18 @@ Dispersion \emph{relation}:
 
 \subsection{EIT wave}
 \subsection{emission measure}
+\subsection{faculae}
+Aka.\ ``little torch''
+    \begin{itemize}
+        \item Appear in \emph{photosphere}; same thing as plage
+            (which appear in the chromosphere).
+        \item Bright spots --- reason why total brightness is higher at
+            solar maximum.
+        \item small scale bright points in the vicinity of sunspots;
+            appear hours before the sunspots, but can remain for months
+            after the sunspots are gone.
+        \item visible only near limb.
+    \end{itemize}
 \subsection{fast waves}
 \begin{itemize}
     \item $C_{A_0} < C_{fast} < C_{A_e} $
@@ -228,9 +270,53 @@ Dispersion \emph{relation}:
     \item Sausage modes
     \item propagate faster than both $V_A$ and $C_s$
 \end{itemize}
-
+\subsection{filament}
+    \begin{itemize}
+        \item Viewed on disk ($\equiv$ prominence against sky)
+        \item Thin, cool, dark ribbons
+    \end{itemize}
+    Filament channel:
+\subsection{flares}
+\subsection{flux tubes}
+    \begin{itemize}
+        \item Formed deep in the convection zone.
+        \item Rise by magnetic buoyancy in an $\Omega$-shaped loop.
+        \item Magnetic field lines can be thought of as infinitely
+          thin flux tubes.
+    \end{itemize}
+\subsection{Fraunhofer lines}
+First observed in 1802 by William Hyde Wallaston, and carefully
+studied by Joseph von Fraunhofer (1787--1826), who catalogued
+the wavelengths in 1814. Ionized sodium: inert gas structure,
+no lines in visible regime. Dark absorption features in solar
+spectrum, in cooler layers of the atmosphere.
+\begin{itemize}
+    \item H and K lines of ionized Calcium
+    \item D line of neutral sodium (5890 \AA{}, 5896 \AA{};
+        resonance lines between n=1 and n-2).
+    \item E (iron)
+    \item C and F (hydrogen)
+\end{itemize}
 \subsection{flute modes}
 See \emph{ballooning modes}
+\subsection{frozen-in flux}
+In a perfectly conducting material (i.e.\ $\eta = 0$),
+Ohm's law goes from
+$ \vec{E} + \vec{v} \times \vec{B} = \vec{J}\eta $ to
+$ \vec{E} + \vec{v} \times \vec{B} = 0 $
+Nothing can be perpendicular to the field lines $\ldots$
+See Alfv\'en's Theorem.
+
+A property of a moving fluid which represents the potential for helical flow
+(i.e. flow which follows the pattern of a corkscrew) to evolve. Helicity is
+proportional to the strength of the flow, the amount of vertical wind shear,
+and the amount of turning in the flow (i.e. vorticity). Atmospheric helicity is
+computed from the vertical wind profile in the lower part of the atmosphere
+(usually from the surface up to 3 km), and is measured relative to storm
+motion. Higher values of helicity (generally, around 150 m2/s2 or more) favor
+the development of mid-level rotation (i.e. mesocyclones). Extreme values can
+exceed 600 m2/s2.
+
 \subsection{fundamental modes}
 See \emph{global modes}
 
@@ -260,8 +346,16 @@ in a magnetic field
 \subsection{instabilities}
 A disturbance that is not stabilized by the resulting forces.
 
-\subsection{kink modes}
+\subsection{jets}
+Word for rapid burst of emission? Rapid upflows, plasma
+ejections$\ldots$ UV spectral emission requires high temperatures.
+For UV:\ flux from photospheric continuum is low. Chromosphere:
+temp is lower and background is higher (compared to $\ldots$?)
+so lines are in absorption. Low flux: radiative excitation doesn't occur.
+High temps allow for collisional excitation and emission upon returning
+to the ground state. $\Delta v = \sqrt{v_{th}^2+v_{Nth}^2}$.
 
+\subsection{kink modes}
 Fast kink waves:
 \begin{itemize}
     \item transverse (general property of fast waves)
@@ -456,6 +550,23 @@ Three types:
 $$ v_p = \frac{\lambda}{T} = \frac{\omega}{k} $$
 $$ k = \frac{2\pi}{\lambda}, \omega = \frac{2\pi}{T} $$
 
+\subsection{plage}
+    \begin{itemize}
+        \item Appear in \emph{chromosphere}; same thing as faculae.
+        \item Bright spots caused by light emitted by clouds of
+            hydrogen or calcium (specifically H$\alpha$ and
+            Ca H and K lines).
+    \end{itemize}
+
+\subsection{plume}
+Apparently help to shield Earth from solar storms.
+They are long thin streamers that project outward from the Sun's north and
+south poles. We often find bright areas at the footpoints of these
+features that are associated with small magnetic regions on the solar
+surface. These structures are associated with the \emph{open} magnetic
+field lines at the Sun's \emph{poles}. The plumes are formed by the action of
+the solar wind in much the same way as the peaks on the helmet
+streamers.
 \subsection{polarization}
 \begin{itemize}
     \item Doesn't apply to longitudinal waves, e.g.\ sound.
@@ -463,7 +574,10 @@ $$ k = \frac{2\pi}{\lambda}, \omega = \frac{2\pi}{T} $$
 \end{itemize}
 
 \subsection{polytropic index}
-
+\subsection{pores}
+Small sunspots with an umbra, but no penumbra.
+Size on order of upper limit of magnetic bright points ($\sim$ 1700
+km).
 \subsection{pressure waves}
 Longitudinal, fast, generated by turbulence near the photosphere,
 observed by measureing Doppler shift of absorption lines in the
@@ -477,7 +591,12 @@ photosphere, spherical harmonics:
         number of surface nodal lines that cross the equator,
         number of planes slicing longitudinally. $-l\leq m\leq +l$
 \end{itemize}
-
+\subsection{prominence}
+    \begin{itemize}
+        \item Viewed on the limb; same thing as filaments.
+        \item May erupt sometime during its life and be associated
+        with a CME
+    \end{itemize}
 \subsection{propagating acoustic waves (slow)}
 \begin{itemize}
     \item $v_{ph}<150$ km s$^{-1}$ $\rightarrow$ slow
@@ -496,7 +615,6 @@ photosphere, spherical harmonics:
     \item Observed using spectroscopy (intensity variations in
         EUV emission  and Doppler shifts)
 \end{itemize}
-
 \subsection{propagating acoustic waves (fast)}
 \begin{itemize}
     \item $v_{ph}>150$ km s$^{-1}$ $\rightarrow$ fast
@@ -508,13 +626,9 @@ photosphere, spherical harmonics:
     \item Moreton waves in the chromosphere
     \item Fast EUV waves in the corona
 \end{itemize}
-
-
-
 \subsection{resonance}
 Periodic driving force frequency matches the wave frequency
 $\rightarrow$ large amplitude.
-
 \subsection{resonant absorption}
 \begin{itemize}
     \item Mechanism of wave heating
@@ -529,8 +643,6 @@ $\rightarrow$ large amplitude.
         $\tau_1 \ll \tau_2$
     \item inherently non-linear
 \end{itemize}
-
-
 \subsection{sausage modes}
 %Trapped fast modes supported by thick, dense loops because of the cutoff
 %wavenumber (pfw_2). Observe spatially resolved radio (see sources in
@@ -582,6 +694,12 @@ $\rightarrow$ large amplitude.
         as the density decreases with height through the chromosphere.
 \end{itemize}
 
+\subsection{solar wind}
+Stream of energized, charged particles, primarily protons and electrons,
+flowing outward from the sun at $v \leq 900$ km s$^{-1}$ and T = 10$^6$ K.
+Solar wind plasma originates in thin, intense flux tubes at granule
+and supergranule boundaries. Fast (steady) vs.\ slow (variable) wind.
+
 \subsection{speeds}
 Characteristic speeds of MHD:
 \begin{enumerate}
@@ -614,6 +732,12 @@ Numbers:
         planes slicing longitudinally.
 \end{itemize}
 
+\subsection{spicules}
+Dynamic jet of about 500 km diameter in the \emph{chromosphere} of the Sun.
+It moves upward at about 20 km/s from the photosphere. Generated in the
+chromosphere, where magnetic flux is concentrated, which outline boundaries
+of supergranule network.
+
 \subsection{standing acoustic oscillations}
 Characteristics:
 \begin{itemize}
@@ -636,6 +760,24 @@ Standing oscillations vs.\ propagating waves
     \item near footpoints.
 \end{itemize}
 
+\subsection{sunspots}
+Dark regions of intense magnetic field.
+
+\subsection{supergranules}
+Show up most clearly as a pattern of horizontal motions.
+\begin{itemize}
+    \item Doppler measurements near limb
+    \item local correlation tracking of granules near center
+\end{itemize}
+Above a supergranule cell
+\begin{itemize}
+    \item 750 km active regions
+    \item 1600 km quiet regions
+\end{itemize}
+Magnetic field spreads out to fill the chromosphere and form a
+horizontal canopy or partial canopy.
+
+\subsection{surges}
 
 \subsection{standing waves}
 Confined to a finite region of space $\rightarrow$ quantifies the frequency
@@ -666,7 +808,7 @@ to the direction of energy transfer.
 If a \emph{transverse} wave is moving in the positive x-direction,
 its \emph{oscillations} are in up and down directions that lie in the y–z plane.
 Light is an example of a transverse wave.
-($\vec B$ and $\vec E$ oscillate in directions perpendicular to the direction
+($\vec{B}$ and $\vec{E}$ oscillate in directions perpendicular to the direction
 in which the light is actually traveling).
 With regard to transverse waves in matter,
 the \emph{displacement of the medium} is perpendicular to the
@@ -686,11 +828,9 @@ in the continuous spectrum of the relevant operator.
 \subsection{tube speed}
 Also known as \emph{cusp speed}, the tube speed is the combination of sound
 and Alfv\'en speeds.
-$$ C_T = C_sC_A/(C_A^2 + C_s^2)^{1/2} $$
+$${ C_{T} = C_{s}C_{A}/\left(C_{A}^{2} + C_{s}^{2}\right)^{1/2} }$$
 
-\subsection{wavelet analysis}
-
-\subsection{waves}
+\subsection{wave}
 \begin{itemize}
     \item Caused by any turbulence in a medium.
     \item Observable properties
@@ -703,6 +843,10 @@ $$ C_T = C_sC_A/(C_A^2 + C_s^2)^{1/2} $$
         \end{itemize}
 \end{itemize}
 
+\subsection{wave number}
+Number of waves in a unit distance.
+${ k = 2\pi }$
+
 \subsection{waveguide}
 \begin{itemize}
     \item Width $\sim$ same order of magnitude as the wavelength of
@@ -713,14 +857,12 @@ $$ C_T = C_sC_A/(C_A^2 + C_s^2)^{1/2} $$
     \item Flux tubes are excellent waveguides
 \end{itemize}
 
-\subsection{wave number}
-Number of waves in a unit distance.
-$ k = 2\pi $
-
+\subsection{wavelet analysis}
 \subsection{WKB approximation}
 \subsection{Zeeman effect}
 
-\section*{Solar instruments}
+
+\section{Solar instruments}
 \subsection{SoHO}
 \emph{The Solar and Heliospheric Observatory}
 
