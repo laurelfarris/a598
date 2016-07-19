@@ -25,7 +25,7 @@
 \contentsline {subsection}{flux tubes}{6}{subsection*.24}
 \contentsline {subsection}{Fraunhofer lines}{6}{subsection*.25}
 \contentsline {subsection}{flute modes}{6}{subsection*.26}
-\contentsline {subsection}{frozen-in flux}{6}{subsection*.27}
+\contentsline {subsection}{frozen-in flux}{7}{subsection*.27}
 \contentsline {subsection}{fundamental modes}{7}{subsection*.28}
 \contentsline {subsection}{global modes}{7}{subsection*.29}
 \contentsline {subsection}{gravity waves}{7}{subsection*.30}
@@ -43,7 +43,7 @@
 \contentsline {subsection}{mode conversion}{9}{subsection*.42}
 \contentsline {subsection}{mode coupling}{9}{subsection*.43}
 \contentsline {subsection}{Moreton wave}{9}{subsection*.44}
-\contentsline {subsection}{Normal modes}{9}{subsection*.45}
+\contentsline {subsection}{Normal modes}{10}{subsection*.45}
 \contentsline {subsection}{oscillations}{10}{subsection*.46}
 \contentsline {subsection}{periodogram}{10}{subsection*.47}
 \contentsline {subsection}{phase mixing}{10}{subsection*.48}
@@ -70,7 +70,7 @@
 \contentsline {subsection}{supergranules}{13}{subsection*.69}
 \contentsline {subsection}{surges}{13}{subsection*.70}
 \contentsline {subsection}{standing waves}{13}{subsection*.71}
-\contentsline {subsection}{surface modes}{13}{subsection*.72}
+\contentsline {subsection}{surface modes}{14}{subsection*.72}
 \contentsline {subsection}{torsional vibration}{14}{subsection*.73}
 \contentsline {subsection}{transverse waves}{14}{subsection*.74}
 \contentsline {subsection}{trapped modes}{14}{subsection*.75}
@@ -82,7 +82,7 @@
 \contentsline {subsection}{WKB approximation}{14}{subsection*.81}
 \contentsline {subsection}{Zeeman effect}{14}{subsection*.82}
 \contentsline {section}{Solar instruments}{14}{section*.83}
-\contentsline {subsection}{SoHO}{14}{subsection*.84}
+\contentsline {subsection}{SoHO}{15}{subsection*.84}
 \contentsline {subsection}{SDO}{15}{subsection*.85}
 \contentsline {subsubsection}{AIA}{15}{subsubsection*.86}
 \contentsline {subsubsection}{EVE}{15}{subsubsection*.87}
