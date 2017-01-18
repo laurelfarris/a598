@@ -1,5 +1,6 @@
 \documentclass{article}
-\usepackage[margin=1in]{geometry}
+\renewcommand\familydefault{\sfdefault}
+\usepackage[margin=1.5in]{geometry}
 \usepackage{graphicx}
 \setlength{\parindent}{0em}
 \setlength{\parskip}{0.5em}
@@ -71,15 +72,6 @@
 \subsection{active regions}
 \subsection{adiabatic index}
 $\gamma$ is the ratio of specific heats, generally taken to be 5/3.
-\subsection{Bright points}
-\subsection{coronal holes}
-\subsection{coronal loops}
-\begin{itemize}
-    \item \emph{Modelled} as flux tubes; probably consist of
-        many flux tubes.
-\end{itemize}
-\subsection{coronal mass ejections (CMEs)}
-Release of magnetic energy; reach Earth in a few days.
 
 \subsection{Alfv\'en waves}
 Alfv\'en waves are a type of MHD wave in which ions oscillate in response to a
@@ -175,11 +167,20 @@ In the context of flux tubes and coronal seismology,
 body waves are oscillatory inside the tube (whereas surface waves are
 non-oscillatory inside the tube).
 
+\subsection{Bright points}
+
+\subsection{coronal holes}
+
 \subsection{coronal loops}
 \begin{itemize}
     \item Main observational feature of the magnetic structure in the
         upper solar atmosphere.
+    \item \emph{Modelled} as flux tubes; probably consist of
+        many flux tubes.
 \end{itemize}
+
+\subsection{coronal mass ejections (CMEs)}
+Release of magnetic energy; reach Earth in a few days.
 
 \subsection{coronal streamer}
 A wisp-like stream of particles traveling through the Sun's corona, visible
@@ -192,19 +193,21 @@ They are large scale magnetic structures of the equatorial solar corona.
 See \emph{tube speed}
 
 \subsection{Differential Emission Measure (DEM)}
-$${
+\[
     EM = \int{n_{e}^{2}\mathrm{d}V}
-}$$ $${
+    \]
+\[
     DEM = \xi(T_{e}) = \int{\frac{n^{2}(r)}{|\nabla{T}|}\mathrm{d}S_{T}}
-}$$ or $${
+    \]
+or
+\[
     DEM = \frac{\mathrm{d}}{\mathrm{d}T}\left[\int{n_{e}^{2}\mathrm{d}S}\right]
-}$$
+    \]
 in units of [cm ${^{-5}}$ K${^{-1}}$]. DEM is the integral of electron
 density squared along an optically thin line of sight as a function of
 temperature.
 ``Can predict the coronal bremsstrahlung flux component\ldots
 bremsstrahlung correlates with EUV emission.''
-
 
 \subsection{dispersion}
 A mathematical term that applies to wave behavior; separation of a complex
@@ -252,7 +255,9 @@ Dispersion \emph{relation}:
 \end{itemize}
 
 \subsection{EIT wave}
+
 \subsection{emission measure}
+
 \subsection{faculae}
 Aka.\ ``little torch''
     \begin{itemize}
@@ -266,6 +271,7 @@ Aka.\ ``little torch''
         \item visible only near limb.
     \end{itemize}
 \subsection{fast waves}
+
 \begin{itemize}
     \item $C_{A_0} < C_{fast} < C_{A_e} $
     \item highly dispersive.
@@ -273,13 +279,18 @@ Aka.\ ``little torch''
     \item Sausage modes
     \item propagate faster than both $V_A$ and $C_s$
 \end{itemize}
+
 \subsection{filament}
     \begin{itemize}
         \item Viewed on disk ($\equiv$ prominence against sky)
         \item Thin, cool, dark ribbons
     \end{itemize}
     Filament channel:
+
 \subsection{flares}
+Rapid conversion of stored magnetic energy to particles acceleration and
+excess radiation in the corona.
+
 \subsection{flux tubes}
     \begin{itemize}
         \item Formed deep in the convection zone.
@@ -340,6 +351,10 @@ P-modes are global acoustic oscillations.
 have something to do with relativity).
 
 \subsection{group velocity}
+Direction of a wave's energy flow (Poynting vector for light).
+\[
+    v_{g} = \frac{ \mathrm{d}\omega }{ \mathrm{d}k }
+    \]
 
 \subsection{gyrosynchrotron radiation}
 Electromagnetic emission emitted by mildly relativistic electrons moving
@@ -550,8 +565,13 @@ Three types:
 \end{itemize}
 
 \subsection{phase speed}
-$$ v_p = \frac{\lambda}{T} = \frac{\omega}{k} $$
-$$ k = \frac{2\pi}{\lambda}, \omega = \frac{2\pi}{T} $$
+\[
+    v_{p} = \frac{\lambda}{T} = \frac{\omega}{k} = \frac{c}{n}
+    \]
+where $n$ = index of refraction ($n = 1$ in vacuum).
+\[
+    k = \frac{2\pi}{\lambda}, \omega = \frac{2\pi}{T}
+    \]
 
 \subsection{plage}
     \begin{itemize}
