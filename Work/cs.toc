@@ -6,7 +6,7 @@
 \contentsline {subsection}{Alfv\'en waves}{3}{subsection*.5}
 \contentsline {subsection}{ballooning modes}{4}{subsection*.6}
 \contentsline {subsection}{Bessel's equations}{4}{subsection*.7}
-\contentsline {subsection}{body modes}{4}{subsection*.8}
+\contentsline {subsection}{body modes}{5}{subsection*.8}
 \contentsline {subsection}{Bright points}{5}{subsection*.9}
 \contentsline {subsection}{coronal holes}{5}{subsection*.10}
 \contentsline {subsection}{coronal loops}{5}{subsection*.11}
@@ -26,7 +26,7 @@
 \contentsline {subsection}{flute modes}{7}{subsection*.25}
 \contentsline {subsection}{frozen-in flux}{7}{subsection*.26}
 \contentsline {subsection}{fundamental modes}{7}{subsection*.27}
-\contentsline {subsection}{global modes}{7}{subsection*.28}
+\contentsline {subsection}{global modes}{8}{subsection*.28}
 \contentsline {subsection}{gravity waves}{8}{subsection*.29}
 \contentsline {subsection}{group velocity}{8}{subsection*.30}
 \contentsline {subsection}{gyrosynchrotron radiation}{8}{subsection*.31}
@@ -36,7 +36,7 @@
 \contentsline {subsection}{kink modes}{8}{subsection*.35}
 \contentsline {subsection}{leaky modes}{9}{subsection*.36}
 \contentsline {subsection}{longitudinal waves}{9}{subsection*.37}
-\contentsline {subsection}{magnetoacoustic waves}{9}{subsection*.38}
+\contentsline {subsection}{magnetoacoustic waves}{10}{subsection*.38}
 \contentsline {subsection}{magnetohydrodynamic (MHD) waves}{10}{subsection*.39}
 \contentsline {subsection}{modes}{11}{subsection*.40}
 \contentsline {subsection}{mode conversion}{11}{subsection*.41}
@@ -47,7 +47,7 @@
 \contentsline {subsection}{periodogram}{11}{subsection*.46}
 \contentsline {subsection}{phase mixing}{11}{subsection*.47}
 \contentsline {subsection}{phase speed}{11}{subsection*.48}
-\contentsline {subsection}{plage}{11}{subsection*.49}
+\contentsline {subsection}{plage}{12}{subsection*.49}
 \contentsline {subsection}{plume}{12}{subsection*.50}
 \contentsline {subsection}{polarization}{12}{subsection*.51}
 \contentsline {subsection}{polytropic index}{12}{subsection*.52}
@@ -63,26 +63,26 @@
 \contentsline {subsection}{solar wind}{14}{subsection*.62}
 \contentsline {subsection}{speeds}{14}{subsection*.63}
 \contentsline {subsection}{spherical harmonics}{14}{subsection*.64}
-\contentsline {subsection}{spicules}{14}{subsection*.65}
+\contentsline {subsection}{spicules}{15}{subsection*.65}
 \contentsline {subsection}{standing acoustic oscillations}{15}{subsection*.66}
 \contentsline {subsection}{sunspots}{15}{subsection*.67}
 \contentsline {subsection}{supergranules}{15}{subsection*.68}
 \contentsline {subsection}{surges}{15}{subsection*.69}
 \contentsline {subsection}{standing waves}{15}{subsection*.70}
-\contentsline {subsection}{surface modes}{15}{subsection*.71}
+\contentsline {subsection}{surface modes}{16}{subsection*.71}
 \contentsline {subsection}{torsional vibration}{16}{subsection*.72}
 \contentsline {subsection}{transverse waves}{16}{subsection*.73}
 \contentsline {subsection}{trapped modes}{16}{subsection*.74}
 \contentsline {subsection}{tube speed}{16}{subsection*.75}
 \contentsline {subsection}{wave}{16}{subsection*.76}
 \contentsline {subsection}{wave number}{16}{subsection*.77}
-\contentsline {subsection}{waveguide}{16}{subsection*.78}
-\contentsline {subsection}{wavelet analysis}{16}{subsection*.79}
-\contentsline {subsection}{WKB approximation}{16}{subsection*.80}
+\contentsline {subsection}{waveguide}{17}{subsection*.78}
+\contentsline {subsection}{wavelet analysis}{17}{subsection*.79}
+\contentsline {subsection}{WKB approximation}{17}{subsection*.80}
 \contentsline {subsection}{Zeeman effect}{17}{subsection*.81}
 \contentsline {section}{Solar instruments}{17}{section*.82}
 \contentsline {subsection}{SoHO}{17}{subsection*.83}
-\contentsline {subsection}{SDO}{17}{subsection*.84}
+\contentsline {subsection}{Solar Dynamics Observatory (SDO)}{17}{subsection*.84}
 \contentsline {subsubsection}{AIA}{17}{subsubsection*.85}
 \contentsline {subsubsection}{EVE}{17}{subsubsection*.86}
 \contentsline {subsubsection}{HMI}{17}{subsubsection*.87}
@@ -90,5 +90,5 @@
 \contentsline {subsection}{Hinode}{17}{subsection*.89}
 \contentsline {subsection}{TRACE}{17}{subsection*.90}
 \contentsline {subsection}{DKIST}{17}{subsection*.91}
-\contentsline {subsection}{SECIS}{17}{subsection*.92}
-\contentsline {subsection}{STEREO}{17}{subsection*.93}
+\contentsline {subsection}{SECIS}{18}{subsection*.92}
+\contentsline {subsection}{STEREO}{18}{subsection*.93}
