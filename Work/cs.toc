@@ -75,7 +75,7 @@
 \contentsline {subsection}{trapped modes}{16}{subsection*.74}
 \contentsline {subsection}{tube speed}{16}{subsection*.75}
 \contentsline {subsection}{wave}{16}{subsection*.76}
-\contentsline {subsection}{wave number}{16}{subsection*.77}
+\contentsline {subsection}{wave number}{17}{subsection*.77}
 \contentsline {subsection}{waveguide}{17}{subsection*.78}
 \contentsline {subsection}{wavelet analysis}{17}{subsection*.79}
 \contentsline {subsection}{WKB approximation}{17}{subsection*.80}
