@@ -60,35 +60,36 @@
 \contentsline {subsection}{resonant absorption}{13}{subsection*.59}
 \contentsline {subsection}{sausage modes}{13}{subsection*.60}
 \contentsline {subsection}{slow waves}{14}{subsection*.61}
-\contentsline {subsection}{solar wind}{14}{subsection*.62}
-\contentsline {subsection}{speeds}{14}{subsection*.63}
-\contentsline {subsection}{spherical harmonics}{14}{subsection*.64}
-\contentsline {subsection}{spicules}{15}{subsection*.65}
-\contentsline {subsection}{standing acoustic oscillations}{15}{subsection*.66}
-\contentsline {subsection}{sunspots}{15}{subsection*.67}
-\contentsline {subsection}{supergranules}{15}{subsection*.68}
-\contentsline {subsection}{surges}{15}{subsection*.69}
-\contentsline {subsection}{standing waves}{15}{subsection*.70}
-\contentsline {subsection}{surface modes}{16}{subsection*.71}
-\contentsline {subsection}{torsional vibration}{16}{subsection*.72}
-\contentsline {subsection}{transverse waves}{16}{subsection*.73}
-\contentsline {subsection}{trapped modes}{16}{subsection*.74}
-\contentsline {subsection}{tube speed}{16}{subsection*.75}
-\contentsline {subsection}{wave}{16}{subsection*.76}
-\contentsline {subsection}{wave number}{17}{subsection*.77}
-\contentsline {subsection}{waveguide}{17}{subsection*.78}
-\contentsline {subsection}{wavelet analysis}{17}{subsection*.79}
-\contentsline {subsection}{WKB approximation}{17}{subsection*.80}
-\contentsline {subsection}{Zeeman effect}{17}{subsection*.81}
-\contentsline {section}{Solar instruments}{17}{section*.82}
-\contentsline {subsection}{SoHO}{17}{subsection*.83}
-\contentsline {subsection}{Solar Dynamics Observatory (SDO)}{17}{subsection*.84}
-\contentsline {subsubsection}{AIA}{17}{subsubsection*.85}
-\contentsline {subsubsection}{EVE}{17}{subsubsection*.86}
-\contentsline {subsubsection}{HMI}{17}{subsubsection*.87}
-\contentsline {subsection}{RHESSI}{17}{subsection*.88}
-\contentsline {subsection}{Hinode}{17}{subsection*.89}
-\contentsline {subsection}{TRACE}{17}{subsection*.90}
-\contentsline {subsection}{DKIST}{17}{subsection*.91}
-\contentsline {subsection}{SECIS}{18}{subsection*.92}
-\contentsline {subsection}{STEREO}{18}{subsection*.93}
+\contentsline {subsection}{solar cycle}{14}{subsection*.62}
+\contentsline {subsection}{solar wind}{14}{subsection*.63}
+\contentsline {subsection}{speeds}{14}{subsection*.64}
+\contentsline {subsection}{spherical harmonics}{15}{subsection*.65}
+\contentsline {subsection}{spicules}{15}{subsection*.66}
+\contentsline {subsection}{standing acoustic oscillations}{15}{subsection*.67}
+\contentsline {subsection}{sunspots}{15}{subsection*.68}
+\contentsline {subsection}{supergranules}{15}{subsection*.69}
+\contentsline {subsection}{surges}{16}{subsection*.70}
+\contentsline {subsection}{standing waves}{16}{subsection*.71}
+\contentsline {subsection}{surface modes}{16}{subsection*.72}
+\contentsline {subsection}{torsional vibration}{16}{subsection*.73}
+\contentsline {subsection}{transverse waves}{16}{subsection*.74}
+\contentsline {subsection}{trapped modes}{16}{subsection*.75}
+\contentsline {subsection}{tube speed}{16}{subsection*.76}
+\contentsline {subsection}{wave}{17}{subsection*.77}
+\contentsline {subsection}{wave number}{17}{subsection*.78}
+\contentsline {subsection}{waveguide}{17}{subsection*.79}
+\contentsline {subsection}{wavelet analysis}{17}{subsection*.80}
+\contentsline {subsection}{WKB approximation}{17}{subsection*.81}
+\contentsline {subsection}{Zeeman effect}{17}{subsection*.82}
+\contentsline {section}{Solar instruments}{17}{section*.83}
+\contentsline {subsection}{SoHO}{17}{subsection*.84}
+\contentsline {subsection}{Solar Dynamics Observatory (SDO)}{17}{subsection*.85}
+\contentsline {subsubsection}{AIA}{17}{subsubsection*.86}
+\contentsline {subsubsection}{EVE}{17}{subsubsection*.87}
+\contentsline {subsubsection}{HMI}{17}{subsubsection*.88}
+\contentsline {subsection}{RHESSI}{17}{subsection*.89}
+\contentsline {subsection}{Hinode}{18}{subsection*.90}
+\contentsline {subsection}{TRACE}{18}{subsection*.91}
+\contentsline {subsection}{DKIST}{18}{subsection*.92}
+\contentsline {subsection}{SECIS}{18}{subsection*.93}
+\contentsline {subsection}{STEREO}{18}{subsection*.94}
