@@ -17,7 +17,7 @@
 \contentsline {subsection}{dispersion}{5}{subsection*.16}
 \contentsline {subsection}{EIT wave}{6}{subsection*.17}
 \contentsline {subsection}{emission measure}{6}{subsection*.18}
-\contentsline {subsection}{faculae}{6}{subsection*.19}
+\contentsline {subsection}{facula}{6}{subsection*.19}
 \contentsline {subsection}{fast waves}{6}{subsection*.20}
 \contentsline {subsection}{filament}{7}{subsection*.21}
 \contentsline {subsection}{flares}{7}{subsection*.22}
@@ -74,7 +74,7 @@
 \contentsline {subsection}{torsional vibration}{16}{subsection*.73}
 \contentsline {subsection}{transverse waves}{16}{subsection*.74}
 \contentsline {subsection}{trapped modes}{16}{subsection*.75}
-\contentsline {subsection}{tube speed}{16}{subsection*.76}
+\contentsline {subsection}{tube speed}{17}{subsection*.76}
 \contentsline {subsection}{wave}{17}{subsection*.77}
 \contentsline {subsection}{wave number}{17}{subsection*.78}
 \contentsline {subsection}{waveguide}{17}{subsection*.79}
@@ -85,9 +85,9 @@
 \contentsline {subsection}{SoHO}{17}{subsection*.84}
 \contentsline {subsection}{Solar Dynamics Observatory (SDO)}{17}{subsection*.85}
 \contentsline {subsubsection}{AIA}{17}{subsubsection*.86}
-\contentsline {subsubsection}{EVE}{17}{subsubsection*.87}
-\contentsline {subsubsection}{HMI}{17}{subsubsection*.88}
-\contentsline {subsection}{RHESSI}{17}{subsection*.89}
+\contentsline {subsubsection}{EVE}{18}{subsubsection*.87}
+\contentsline {subsubsection}{HMI}{18}{subsubsection*.88}
+\contentsline {subsection}{RHESSI}{18}{subsection*.89}
 \contentsline {subsection}{Hinode}{18}{subsection*.90}
 \contentsline {subsection}{TRACE}{18}{subsection*.91}
 \contentsline {subsection}{DKIST}{18}{subsection*.92}

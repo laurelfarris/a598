@@ -38,7 +38,10 @@
 \addtocontents{toc}{\protect\setstretch{0.1}}
 \tableofcontents
 \url{http://solarscience.msfc.nasa.gov/feature3.shtml}
+
 \newpage
+
+\hypersetup{linkcolor=darkpowderblue}
 
 \section{Solar and coronal seismology terms}
 \subsection{acoustic waves (aka sound waves)}
@@ -276,7 +279,7 @@ Dispersion \emph{relation}:
 
 \subsection{emission measure}
 
-\subsection{facula}
+\subsection{facula}\label{ssec:facula}
 Aka.\ ``little torch''
     \begin{itemize}
         \item Appear in \emph{photosphere}; same thing as plage
@@ -573,12 +576,25 @@ Three types:
 \end{enumerate}
 
 \subsection{periodogram}
+
 \subsection{phase mixing}
 \begin{itemize}
-    \item Large gradients in Alfv\'en velocity.
-    \item Alfv\'en waves suffer intense phase mixing
-    \item Cause decay of Alfv\'en waves.
-    \item \emph{Not} likely to operate in closed magnetic structures
+    \item Cause decay of Alfv\'en waves, which suffer intense phase mixing
+    \item Large gradients in Alfv\'{e}n velocity.
+    \item Part of resonant absorption, but is effective over entire range of frequencies,
+        not just resonant ones; spread over volume rather than localized in
+        narrow resonance layer.
+    \item Occurs spatially (propagating wave) or in time (standing wave).
+        \begin{itemize}
+            \item Space: produces effective wavenumber $k_{x}^{*}$ which increases
+                with $z$, so that the effective wavelength decreases. Eventually
+                dissipation converts energy to heat.
+                \[
+                    k_{x}^{*} = \frac{\mathrm{d}k_{z}}{\mathrm{d}x}z
+                    \]
+            \item Time: field lines become more and more out of phase.
+        \end{itemize}
+        \emph{Not} likely to operate in closed magnetic structures
         (e.g.\ coronal loops)
 \end{itemize}
 
@@ -593,7 +609,7 @@ where $n$ = index of refraction ($n = 1$ in vacuum).
 
 \subsection{plage}
     \begin{itemize}
-        \item Appear in \emph{chromosphere}; same thing as faculae.
+        \item Appear in \emph{chromosphere}; same thing as \hyperref[ssec:facula]{faculae}
         \item Bright spots caused by light emitted by clouds of
             hydrogen or calcium (specifically H$\alpha$ and
             Ca H and K lines).
@@ -615,6 +631,7 @@ streamers.
 \end{itemize}
 
 \subsection{polytropic index}
+
 \subsection{pores}
 Small sunspots with an umbra, but no penumbra.
 Size on order of upper limit of magnetic bright points ($\sim$ 1700

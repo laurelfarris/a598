@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.11.14)  8 FEB 2017 11:22
+This is pdfTeXk, Version 3.141592-1.40.3 (Web2C 7.5.6) (format=pdflatex 2015.11.14)  13 FEB 2017 11:25
 entering extended mode
  %&-line parsing enabled.
 **cs.tex
@@ -423,36 +423,36 @@ LaTeX Info: Redefining \pageref on input line 37.
 \openout5 = `cs.toc'.
 
  [2]
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 46.
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 49.
 
-LaTeX Font Info:    No file OMScmss.fd. on input line 46.
+LaTeX Font Info:    No file OMScmss.fd. on input line 49.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 46.
+(Font)              for symbol `textbullet' on input line 49.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 51.
+(Font)              Font shape `OT1/cmss/m/sl' tried instead on input line 54.
 
 
-LaTeX Warning: Reference `plage' on page 3 undefined on input line 73.
+LaTeX Warning: Reference `plage' on page 3 undefined on input line 76.
 
 [3] [4] [5] <disp.png, id=510, 566.115pt x 270.00874pt>
 File: disp.png Graphic file (type png)
  <use disp.png> [6 <./disp.png>] [7]
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `math shift' on input line 381.
+(hyperref)                removing `math shift' on input line 384.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `\alpha' on input line 381.
+(hyperref)                removing `\alpha' on input line 384.
 
 
 Package hyperref Warning: Token not allowed in a PDFDocEncoded string,
-(hyperref)                removing `math shift' on input line 381.
+(hyperref)                removing `math shift' on input line 384.
 
 [8] [9] [10] [11] [12] [13] [14] [15]
 Missing character: There is no â in font cmss10!
@@ -484,10 +484,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 6166 strings out of 256214
- 81861 string characters out of 1916999
+ 6167 strings out of 256214
+ 81874 string characters out of 1916999
  180289 words of memory out of 1500000
- 9092 multiletter control sequences out of 10000+200000
+ 9093 multiletter control sequences out of 10000+200000
  10261 words of font info for 37 fonts, out of 1200000 for 2000
  645 hyphenation exceptions out of 8191
  27i,10n,35p,206b,486s stack positions out of 5000i,500n,6000p,200000b,15000s
@@ -500,9 +500,9 @@ sky/cm/cmr7.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmss10.pfb></usr/share
 /texmf/fonts/type1/bluesky/cm/cmssbx10.pfb></usr/share/texmf/fonts/type1/bluesk
 y/cm/cmssi10.pfb></usr/share/texmf/fonts/type1/bluesky/cm/cmsy10.pfb></usr/shar
 e/texmf/fonts/type1/bluesky/cm/cmsy7.pfb>
-Output written on cs.pdf (18 pages, 211011 bytes).
+Output written on cs.pdf (18 pages, 212282 bytes).
 PDF statistics:
- 648 PDF objects out of 1000 (max. 8388607)
+ 649 PDF objects out of 1000 (max. 8388607)
  124 named destinations out of 1000 (max. 131072)
  774 words of extra memory for PDF output out of 10000 (max. 10000000)
 
