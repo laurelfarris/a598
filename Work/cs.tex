@@ -17,13 +17,13 @@
 %\definecolor{ao}{rgb}{0.0, 0.5, 0.0}
 \definecolor{ao}{rgb}{0.05, 0.5, 0.06}
 \definecolor{forestgreen}{rgb}{0.0, 0.27, 0.13}
-\sectionfont{\color{ao}}
-\subsectionfont{\color{forestgreen}}
+\sectionfont{\color{black}}
+\subsectionfont{\color{black}}
 \usepackage{titlesec}
 \titlespacing*{\section}{-0.5in}{2ex}{1ex}
 \titlespacing*{\subsection}{-0.25in}{1ex}{0ex}
 
-\setcounter{secnumdepth}{0}
+%\setcounter{secnumdepth}{0}
 
 \usepackage{enumitem}
 \setlist{noitemsep, topsep=0ex}
@@ -816,10 +816,13 @@ Numbers:
 \end{itemize}
 
 \subsection{spicules}
-Dynamic jet of about 500 km diameter in the \emph{chromosphere} of the Sun.
-It moves upward at about 20 km/s from the photosphere. Generated in the
-chromosphere, where magnetic flux is concentrated, which outline boundaries
-of supergranule network.
+Observed in the chromosphere, jets are about 500 km diameter and move upward
+from the photosphere at speeds of about 20 km/s. They are regions of intense
+energy, possibly caused by plasma being propelled by shock waves that
+originated in the interior.
+
+Type I spicules (dynamic fibers) are caused by shock waves.
+Type II spicules are caused by strong flows.
 
 \subsection{standing acoustic oscillations}
 Characteristics:
@@ -1014,5 +1017,27 @@ Instruments:
         radio disturbances traveling from the Sun to the orbit of
         Earth.
 \end{itemize}
+
+\subsection{Interface Region Imaging Spectrograph (IRIS)}
+\begin{itemize}
+    \item Sun-synchronous, low-Earth orbit.
+    \item 19 cm Cassegrain telescope
+        \begin{itemize}
+            \item dual-range UV spectrograph
+            \item slit-jaw imager (SJI) with four passbands:
+                \begin{enumerate}
+                    \item CII 1335\AA{} (transition region line)
+                    \item SiIV 1403\AA{} (transition region line)
+                    \item Mg II k 2796\AA{} (chromospheric line)
+                    \item 2830\AA{} (photospheric passband)
+                \end{enumerate}
+        \end{itemize}
+    \item ``NASA Small Explorer developed and operated by LMSAL with mission operations
+    executed at NASA Ames Research center and major contributions to downlink
+    communications funded by ESA and the Norwegian Space Center.''
+    (Bryans et al. 2016)
+\end{itemize}
+
+
 
 \end{document}
