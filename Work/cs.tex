@@ -14,16 +14,13 @@
 \usepackage{minitoc} % Doesn't appear to do anything
 
 \usepackage{sectsty} % for customizing sections
-%\definecolor{ao}{rgb}{0.0, 0.5, 0.0}
-\definecolor{ao}{rgb}{0.05, 0.5, 0.06}
-\definecolor{forestgreen}{rgb}{0.0, 0.27, 0.13}
 \sectionfont{\color{black}}
 \subsectionfont{\color{black}}
 \usepackage{titlesec}
 \titlespacing*{\section}{-0.5in}{2ex}{1ex}
 \titlespacing*{\subsection}{-0.25in}{1ex}{0ex}
 
-%\setcounter{secnumdepth}{0}
+\setcounter{secnumdepth}{1}
 
 \usepackage{enumitem}
 \setlist{noitemsep, topsep=0ex}
@@ -33,18 +30,299 @@
 \hypersetup{colorlinks=true, linkcolor=black, urlcolor=darkpowderblue}
 \urlstyle{same}
 
-%----------------------------------------------------------------------------%
+%----------------------------------------------------------------------------------
 \begin{document}
 \addtocontents{toc}{\protect\setstretch{0.1}}
 \tableofcontents
 \url{http://solarscience.msfc.nasa.gov/feature3.shtml}
-
 \newpage
-
 \hypersetup{linkcolor=darkpowderblue}
 
-\section{Solar and coronal seismology terms}
-\subsection{acoustic waves (aka sound waves)}
+
+\section{Atmosphere}
+\subsection{Chromosphere}
+\subsection{Corona}
+Strength and direction of magnetic field is hard to measure here.
+
+\subsubsection{Emission lines}
+\begin{itemize}
+    \item Fe XIII 10747\AA{}
+\end{itemize}
+
+\section{Solar features}
+\subsection{Granules}
+\subsection{Supergranules}
+Show up most clearly as a pattern of horizontal motions.
+\begin{itemize}
+    \item Doppler measurements near limb
+    \item local correlation tracking of granules near center
+\end{itemize}
+Above a supergranule cell
+\begin{itemize}
+    \item 750 km active regions
+    \item 1600 km quiet regions
+\end{itemize}
+Magnetic field spreads out to fill the chromosphere and form a
+horizontal canopy or partial canopy.
+
+\subsection{Flux tubes}
+    \begin{itemize}
+        \item Formed deep in the convection zone.
+        \item Rise by magnetic buoyancy in an $\Omega$-shaped loop.
+        \item Magnetic field lines can be thought of as infinitely
+          thin flux tubes.
+    \end{itemize}
+
+\subsection{Frozen-in flux}
+In a perfectly conducting material (i.e.\ $\eta = 0$),
+Ohm's law goes from
+$ \vec{E} + \vec{v} \times \vec{B} = \vec{J}\eta $ to
+$ \vec{E} + \vec{v} \times \vec{B} = 0 $
+Nothing can be perpendicular to the field lines $\ldots$
+See Alfv\'en's Theorem.
+
+A property of a moving fluid which represents the potential for helical flow
+(i.e. flow which follows the pattern of a corkscrew) to evolve. Helicity is
+proportional to the strength of the flow, the amount of vertical wind shear,
+and the amount of turning in the flow (i.e. vorticity). Atmospheric helicity is
+computed from the vertical wind profile in the lower part of the atmosphere
+(usually from the surface up to 3 km), and is measured relative to storm
+motion. Higher values of helicity (generally, around 150 m2/s2 or more) favor
+the development of mid-level rotation (i.e. mesocyclones). Extreme values can
+exceed 600 m2/s2.
+
+\subsection{Bright points}
+
+\subsection{Active regions}
+Appear as bright \textit{plages} (\S \ref{plage})
+of emission in the equatorial belt within $\pm$
+30 degrees of the equator and represent moderate concentrations of magnetic flux
+with mean field of 100 G or so.
+
+\subsection{Pores}
+Small sunspots with an umbra, but no penumbra. Size on order of upper limit of
+magnetic bright points ($\sim$ 1700 km).
+
+\subsection{Sunspots}
+Dark regions of intense magnetic field.
+
+\subsection{Spicules}
+Towers of gas observed in the chromosphere, $\sim$ 500 km above the
+photosphere. Last 5-10 minutes. Jets are about 500 km diameter and move upward
+from the photosphere at speeds of about 20 km/s. They are regions of intense
+energy, possibly caused by plasma being propelled by shock waves that
+originated in the interior. Acoustic waves from photosphere shock and heat
+plasma inside magnetic structures. Potential mass for solar wind and energy for
+corona.
+
+Two types of spicules:
+\begin{enumerate}
+    \item Type I spicules (dynamic fibers) are caused by shock waves.
+        Fibrils driven by slow-mode magnetoacoustic shocks, sawtooth shape
+        in chromospheric emission lines.
+    \item Type II spicules are caused by strong flows. Rapidly evolving.
+\end{enumerate}
+
+\subsection{Facula}\label{ssec:facula}
+Aka.\ ``little torch''
+    \begin{itemize}
+        \item Appear in \emph{photosphere}; same thing as plage
+            (which appear in the chromosphere).
+        \item Bright spots --- reason why total brightness is higher at
+            solar maximum.
+        \item small scale bright points in the vicinity of sunspots;
+            appear hours before the sunspots, but can remain for months
+            after the sunspots are gone.
+        \item visible only near limb.
+    \end{itemize}
+\subsection{Plage}
+    \begin{itemize}
+        \item Appear in \emph{chromosphere}; same thing as \hyperref[ssec:facula]{faculae}
+        \item Bright spots caused by light emitted by clouds of
+            hydrogen or calcium (specifically H$\alpha$ and
+            Ca H and K lines).
+    \end{itemize}
+
+\subsection{Prominence/Filament}
+Prominence: Viewed on the limb against the dark sky;
+may erupt sometime during its life and be associated with a CME.
+
+Filament: Thin, cool, dark ribbons viewed against disk.
+
+\subsection{Plume}
+Apparently help to shield Earth from solar storms.
+They are long thin streamers that project outward from the Sun's north and
+south poles. We often find bright areas at the footpoints of these
+features that are associated with small magnetic regions on the solar
+surface. These structures are associated with the \emph{open} magnetic
+field lines at the Sun's \emph{poles}. The plumes are formed by the action of
+the solar wind in much the same way as the peaks on the helmet
+streamers.
+
+\subsection{Coronal streamer}
+A wisp-like stream of particles traveling through the Sun's corona, visible in
+images taken with a coronagraph or during a total solar eclipse. Coronal
+streamers are thought to be associated with active regions and/or prominences
+and are most impressive near the maximum of the solar cycle. They are large
+scale magnetic structures of the equatorial solar corona.
+
+Helmet/bipolar streamers are surrounded by open field of opposite polarities.
+
+Coronal \textit{pseudostreamers} consist of multipolar closed field
+surrounded by unipolar open magnetic field.
+
+\subsection{Coronal loops}
+\begin{itemize}
+    \item Main observational feature of the magnetic structure in the
+        upper solar atmosphere.
+    \item \emph{Modelled} as flux tubes; probably consist of
+        many flux tubes.
+\end{itemize}
+
+\subsection{Flares}
+Rapid conversion of stored magnetic energy to particles acceleration and
+excess radiation in the corona.
+
+\subsection{Coronal Mass Ejections (CMEs)}
+Release of magnetic energy; reach Earth in a few days.
+
+\subsection{Jets}
+Word for rapid burst of emission? Rapid upflows, plasma
+ejections$\ldots$ UV spectral emission requires high temperatures.
+For UV:\ flux from photospheric continuum is low. Chromosphere:
+temp is lower and background is higher (compared to $\ldots$?)
+so lines are in absorption. Low flux: radiative excitation doesn't occur.
+High temps allow for collisional excitation and emission upon returning
+to the ground state. $\Delta v = \sqrt{v_{th}^2+v_{Nth}^2}$.
+
+\subsection{Solar cycle}
+Three stages:
+\begin{enumerate}
+    \item Build-up of magnetic field
+    \item Turnover (maximum)
+    \item Reversal of poles
+\end{enumerate}
+This takes a total of $\sim$ 11 years, followed by another 11 years of the same
+sequence, but with the poles reversed, for a total of 22 years.
+
+\subsection{Solar wind}
+Stream of energized, charged particles, primarily protons and electrons,
+flowing outward from the sun at $v \leq 900$ km s$^{-1}$ and T = 10$^6$ K.
+Solar wind plasma originates in thin, intense flux tubes at granule
+and supergranule boundaries. Fast (steady) vs.\ slow (variable) wind.
+
+\section{Magnetic field}
+\begin{itemize}
+    \item Strength and direction is hard to measure in the corona.
+\end{itemize}
+
+\section{Oscillations and waves}
+
+\subsection{General}
+\subsubsection{Instability}
+A disturbance that is not stabilized by the resulting forces.
+\subsubsection{Oscillations}
+Three types:
+\begin{enumerate}
+    \item un-damped
+    \item damped
+    \item forced
+\end{enumerate}
+\subsubsection{Waves}
+\begin{itemize}
+    \item Caused by any turbulence in a medium.
+    \item Observable properties
+        \begin{itemize}
+            \item Period
+            \item wavelength
+            \item amplitude
+            \item temporal/spatial signatures (shape of perturbation)
+            \item characteristic scenerios of evolution (e.g.\ damped?)
+        \end{itemize}
+\end{itemize}
+\subsubsection{Standing waves}
+Confined to a finite region of space $\rightarrow$ quantifies the frequency
+\begin{itemize}
+    \item Fundamental (2 nodes, one on each end):
+        \[
+            f_{1} = \frac{1}{2L}\sqrt{\frac{F}{\mu}}
+            \]
+        where $L$ is the string length, $F$ is the tension,
+        $\mu$ is the mass density
+    \item 3 nodes: $f_{2} = 2f_{1}$
+    \item 4 nodes: $f_{3} = 3f_{1}$
+\end{itemize}
+\subsubsection{Propagating waves}
+\subsubsection{wave number}
+$k=2\pi=$ number of waves in a unit distance.
+
+\subsubsection{Phase velocity}
+\[
+    v_{p} = \frac{\lambda}{T} = \frac{\omega}{k} = \frac{c}{n}
+    \]
+where $n$ = index of refraction ($n = 1$ in vacuum).
+\[
+    k = \frac{2\pi}{\lambda}, \omega = \frac{2\pi}{T}
+    \]
+\subsubsection{Group velocity}
+Direction of a wave's energy flow (Poynting vector for light).
+\[
+    v_{g} = \frac{ \mathrm{d}\omega }{ \mathrm{d}k }
+    \]
+\subsubsection{Dispersion}
+A mathematical term that applies to wave behavior; separation of a complex
+wave into its component parts according to a given characteristic
+(frequency, wavelength, etc.) ``Dissipation'' is a term that has to do with
+shock and heating, and can be applied to anything. Safer to use this one
+if you're not sure.
+\textbf{Dispersion} is when the distinct phase velocities of the components of the
+envelope cause the wave packet to ``spread out'' over time.
+The components of the wave packet (or envelope) move apart to the degree
+where they no longer combine to complete the envelope.
+Causes different components of the wave to have different phase velocities.
+Different kinds of dispersion:
+\begin{itemize}
+    \item Normal dispersion: strictly increasing Re ${\epsilon(\omega)}$ with
+        increasing ${\omega}$.
+    \item Anomalous dispersion: decreasing Re ${\epsilon(\omega)}$ with
+        increasing ${\omega}$.
+    \item Resonant absorption: occurs in regions where Im ${\epsilon(\omega)}$
+        is large.
+\end{itemize}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=5in]{disp.png}
+\end{figure}
+No dispersion: ${v_{ph} = v_{gr}}$; dispersion: ${v_{ph} \neq v_{gr}}$.
+A medium that is free from dispersion has index of refraction that is constant
+as a function of frequency, so all wavelengths are similarly affected.
+Permittivity and permeability are functions of frequency.
+Non-dispersive waves have phase speed (${v_{ph}}$, speed that wave actually travels
+through medium?) independent of wavenumber, ${k}$.
+All waves of \emph{any} ${k}$ propagate at the same speed.
+Uniform dissipation, resonant mode conversion, physical mechanisms vs. ?
+Dispersion \emph{relation}:
+\begin{itemize}
+    \item Relates the wavelength (or wavenumber) of a wave to its
+        frequency.
+    \item Describe the effect of dispersion in a medium on the properties
+        of a wave traveling through that medium.
+\end{itemize}
+
+
+\subsubsection{waveguide}
+\begin{itemize}
+    \item Width $\sim$ same order of magnitude as the wavelength of
+        the guided wave.
+    \item Pores extending up from the photosphere
+        into the solar atmosphere can act as an
+        MHD waveguide.
+    \item Flux tubes are excellent waveguides
+\end{itemize}
+
+
+\subsection{Types of waves}
+\subsubsection{acoustic waves (aka sound waves)}
 \begin{itemize}
     \item Longitudinal
     \item Isotropic
@@ -71,21 +349,298 @@
         and group velocities are both equal to the sound speed (hence, the
         part where acoustic waves are sound waves).
 \end{itemize}
+\subsubsection{longitudinal waves}
+waves in which the displacement of the \emph{medium} is in the
+same direction as, or the opposite direction to,
+the direction of travel of the wave.
+\subsubsection{transverse waves}
+\textcolor{magenta}{(from wikipedia:)} moving waves that \emph{consist} of
+oscillations occurring perpendicular to the direction of energy transfer. If a
+\emph{transverse} wave is moving in the positive x-direction, its
+\emph{oscillations} are in up and down directions that lie in the y–z plane.
+Light is an example of a transverse wave. ($\vec{B}$ and $\vec{E}$ oscillate in
+directions perpendicular to the direction in which the light is actually
+traveling). With regard to transverse waves in matter, the \emph{displacement
+of the medium} is perpendicular to the direction of propagation of the wave.
+Examples: A ripple in a pond and a wave on a string.
 
-\subsection{active regions}
-Appear as bright \textit{plages} (\S \ref{plage})
-of emission in the equatorial belt within $\pm$
-30 degrees of the equator and represent moderate concentrations of magnetic flux
-with mean field of 100 G or so.
+\subsection{Spherical harmonics}
+3 kinds of resonant modes of oscillation:
+\begin{itemize}
+    \item p (pressure)
+    \item g (gravity)
+    \item f (?)
+\end{itemize}
+Numbers:
+\begin{itemize}
+    \item n - \emph{order}; Number of nodes in radial direction
+    \item l - \emph{harmonic degree}; number of node lines on
+        surface $\sim$ total number of planes slicing the sun.
+    \item m - \emph{something}; number of surface nodal lines that
+        cross the equator; phase\\
+        $-l \leq m \leq l$ (direction of waves is important); number of
+        planes slicing longitudinally.
+\end{itemize}
+\subsubsection{pressure waves}
+P-modes are global acoustic oscillations.
+Longitudinal, fast, generated by turbulence near the photosphere,
+observed by measuring Doppler shift of absorption lines in the
+photosphere, spherical harmonics:
+\begin{itemize}
+    \item $n$: radial order, number of nodes in radial direction
+    \item $l$: angular degree, or harmonic degree,
+        number of node lines on surface,
+        $\sim$ total number of planes slicing the sun
+    \item $m$: azimuthal number;
+        number of surface nodal lines that cross the equator,
+        number of planes slicing longitudinally. $-l\leq m\leq +l$
+\end{itemize}
+\subsubsection{gravity waves}
+Generated in fluid medium or interface between two media when the
+force of gravity or buoyency tries to restore equilibrium
+e.g.\ ``wind waves'' from between atmosphere and ocean.
 
-\subsection{adiabatic index}
-The adiabatic index is the ratio of specific heats:
-\[
-    \gamma = \frac{c_{P}}{c_{V}}
-    \]
+\subsection{Magnetohydrodynamic (MHD) waves}
+\begin{itemize}
+    \item study of electrically conducting fluids (plasma)
+    \item Theoretical foundation:
+        \begin{itemize}
+            \item dispersion relation of MHD modes of a plasma cylinder
+            \item models: loops, prominence fibrils, plumes, various filaments
+            \item evolutionary equations
+        \end{itemize}
+    \item Considerations of observed waves:
+        \begin{itemize}
+            \item geometry: simple (slab or tube)? or more complex?
+            \item mode
+                \begin{itemize}
+                    \item longitudinal vs.\ transverse
+                    \item compressible vs.\ incompressible
+                    \item oscillating vs.\ propagating
+                    \item fast vs.\ slow
+                    \item propagating vs.\ standing
+                    \item isotropic vs.\ anisotropic
+                    \item phase differences?
+                \end{itemize}
+        \end{itemize}
+    \item \textcolor{red}{Interpreting observations: distinguish between modes
+        that are pressure driven (acoustic/slow magnetoacoustic)
+        and magnetically driven (Alfv\'en)}
+    \item \textcolor{red}{Relations between the (internal and external)
+        characteristic speeds (Alfv\'en, sound, and tube speeds)
+        \emph{determine properties of MHD modes guided by the tube.}}
+    \item The behavior of linear perturbations of the form
+        $$ \delta P_{tot}(r)\textrm{exp}\left[i(k_zz+m\phi-\omega t)\right]  $$
+        is governed by  the following system of first order differential
+        equations and algebraic equations:
+        $$ D\frac{d}{dr}(r\xi_r) = (C_A^2+C_s^2)\ldots  $$
+    \item \textcolor{red}{Linearised equations}
 
+\emph{Dissipation and Damping:}
 
-\subsection{Alfv\'en waves}
+    \item Dissipation of MHD waves is manifold:
+        \begin{itemize}
+            \item Couple with each other
+            \item interact non-linearly
+            \item resonantly interact with the closed waveguide
+            \item devolop non-linearly (e.g.\ solitons or shock waves
+                can form)
+        \end{itemize}
+    \item Inhomogeneous and magnetized plasma has two particular
+        dissipation mechanisms of MHD waves:
+        \begin{itemize}
+            \item Resonant absorption
+            \item Phase mixing
+        \end{itemize}
+\end{itemize}
+
+\subsubsection{Characteristic speeds of MHD}
+\begin{enumerate}
+    \item Sound speed: $C_{s} = \sqrt{\frac{\gamma p_{0}}{\rho_{0}}}
+            \approx 166 T_{o}^{1/2}$ m s$^{-1}$ = 200 km s$^{-1}$
+    \item Alfv\'en speed: $C_{A} = \frac{B_{0}}{\sqrt{\mu_{0}\rho_{0}}}$
+        \[
+            V_{A} = 2.18\times10^{12}\frac{B_o}{\sqrt{n_o}}
+            \textrm{m}\ \textrm{s}^{-1} = 3000 \textrm{km}\ \textrm{s}^{-1}
+            \]
+        (B$_{o} \sim$ 100 G; n$_{o}$ $\sim$ 10$^{16}$ m$^{-3}$)
+    \item Tube/Cusp speed:
+        $C_{T} = C_{s}C_{A}/\left(C_{A}^{2} + C_{s}^{2}\right)^{1/2}$
+        = combination of sound and Alfv\'en speeds
+\end{enumerate}
+
+\subsubsection{Magnetoacoustic waves}
+\begin{itemize}
+    \item A magnetosonic wave (also magnetoacoustic wave) is a
+        longitudinal wave of ions (and electrons) in a magnetized
+        plasma propagating perpendicular to the stationary magnetic field.
+    \item compressible
+    \item slow MHD wave; slow MA waves only have 1-3 oscillations before
+        damping out, observed oscillations are manifestation of rapid
+        damping due to radiative energy losses. Reduced $\vec{B}$ regions
+        = increased $\rho\rightarrow$ rapid radiative losses. \emph{Fast}
+        MH waves radiate little because they're damped too slowly.
+    \item collectively supported by the plasma environment, i.e., the wave mode acts
+        across neighbouring magnetic field lines and across transverse
+        plasma inhomogeneities.
+    \item observed as disturbances of EUV (and possibly X-ray) emission
+\end{itemize}
+\subsubsection{kink modes}
+Fast kink waves:
+\begin{itemize}
+    \item transverse (general property of fast waves)
+    \item $v_{ph} = c_k = \sqrt{\frac{\rho_oV^2_{Ao}+\rho_eV^2_{Ae}}
+        {\rho_o+\rho_e}} \approx V_A\sqrt{\frac{2}{1+\frac{\rho_e}{\rho_o}}} $
+        in the low-$\beta$ plasma.
+    \item Period $P=\frac{2\ell}{V_A}\sqrt{\frac{1+\rho_e/\rho_o}{2}}$
+        where $\lambda=2\ell$ ($\ell$ is the loop length).
+        Typically, $\ell \approx 60-600$ Mm in the corona.
+    \item Period of global kink mode, $P = \frac{2\ell}{c_K}$
+    \item Important observation from which magnetic field strength
+        can be derived.
+    \item slab: phase speed = V$_{A_e}$
+    \item tube: kink speed:
+        $$ c_K = \frac{B_i^2 + B_e^2}{\sqrt{\mu(\rho_i+\rho_e)}} $$
+        (mean Alfv\'enic speed).
+        Slab (or tube) is moved laterally; little variation in cross-sec,
+        density, or intensity.
+\end{itemize}
+Standing and propagating both rapidly damped. Much more observations of
+standing kink modes than propagating (`tadpole'-like structures moving
+downward; open magnetic structures).
+
+Slow kink waves:
+\begin{itemize}
+    \item longitudinal (velocity directed along magnetic field)
+    \item compressible (variations in density and intensity)
+\end{itemize}
+
+Other (or simply unorganized):
+\begin{itemize}
+    \item oblique (inclined with respect to the flow direction)
+    \item \emph{weakly compressible}, but could nevertheless be
+        observed with imaging instruments as \emph{periodic standing}
+        or \emph{propagating} displacements of coronal structures, e.g.\ coronal loops.
+        The frequency of transverse or ``kink'' modes is given by the following expression:
+            $$ w_K = \sqrt{ \frac{2k_zB^2}{\mu(\rho_i+\rho_e)}  }   $$
+        In a cylindrical model of a loop,
+        the parameter \emph{azimuthal wave number},
+        m, is equal to 1 for kink modes.
+    \item In the long wavelength limit, the phase speed of all but
+        sausage fast modes tends to the so-called kink speed,
+        which corresponds to the density weighed average Alfv\'en speed.
+    \item Two instabilities of axisymmetric, current-carrying plasmas
+        \begin{itemize}
+            \item sawtooth relaxations
+            \item fishbone oscillations
+        \end{itemize}
+        associated with instability of internal kink modes
+    \item Both standing and propagating, T = $\sim$ seconds-minutes.
+    \item lowest spatial harmonics along field; global (fundamental)
+        modes of coronal loops nodes of displacement at footpoints,
+        maximum at apex.
+\end{itemize}
+\subsubsection{sausage modes}
+%Trapped fast modes supported by thick, dense loops because of the cutoff
+%wavenumber (pfw_2). Observe spatially resolved radio (see sources in
+%pfw_2).
+\begin{itemize}
+    \item m = 0
+    \item The fast magnetoacoustic sausage mode is another type of
+        localized, modified fast magnetoacoustic wave.
+    \item Mainly transverse.
+    \item Standing fast sausage modes have symmetric tube modes
+    \item Has a long-wavelength cutoff (trapped sausage modes do
+        not exist at longer wavelengths).
+        Approaches a cut-off at the external Alfv\'en speed.
+        (Under condition of \emph{mode localization}).
+        \emph{Effects} of the sausage mode are easiest to observe in
+        the radio regime (not the wave itself), where more of a
+        ``point'' is observed, rather than extended$\ldots$
+    \item Main feature is the periodic fluctuation of the cross-subsectional
+        area of the waveguide. This change is also associated with
+        periodic fluctuations in density and temperature within the
+        waveguide.
+    \item Distinct sign of sausage oscillations is when periodic
+        phenomena in cross-subsection and intensity are almost
+        180$^{\circ}$ out of phase $\rightarrow$ strong signal.
+        (Less distinct signal is when periodicities in pore size
+        don't match any intensity variations).
+    \item Produce perturbations in density and magnetic field strength,
+        and the corresponding plasma motions cause pulsations in the
+        tube cross-subsection.
+    \item Associated with perturbations of the loop cross-subsection
+        and plasma concentration.
+    \item Perturbations of plasma in the radial direction are stronger
+        than perturbations along the field.
+    \item Mode conversion and absorption through Alfv\'en resonance
+        cannot take place (slow resonance can still operate).
+    \item Phase speed is in the range between the Alfv\'en speed inside
+        and outside the loop.
+\end{itemize}
+\subsubsection{slow magnetoacoustic waves}
+\begin{itemize}
+    \item $C_{T_{0}} < C_{slow} < C_{s_{0}}$
+    \item longitudinal
+    \item essentially acoustic in a low-$\beta$ plasma and subject to
+        reflection if the frequency is below the cutoff frequency.
+    \item propagate slower than both $V_{A}$ and $C_{s}$ (but faster than
+        the cusp speed).
+    \item Sound waves are subject to nonlinear steepening and shocking
+        as the density decreases with height through the chromosphere.
+\end{itemize}
+
+\subsubsection{standing acoustic oscillations}
+Characteristics:
+\begin{itemize}
+    \item Pressure forces in opposition
+    \item Period = 7--31 minutes (20 minutes from another source)
+    \item Decay times = 5.7--36.8 minutes
+    \item Peak velocity = 200 km/sec
+\end{itemize}
+Standing oscillations vs.\ propagating waves
+\begin{itemize}
+    \item In loops, propagating waves damp before
+        reaching opposite footpoint.
+    \item Velocity and intensity are 90$^{\circ}$ out of phase
+        for standing oscillations, and are in phase for propagating
+        acoustic waves.
+    \item Frequencies less than the cutoff are standing oscillations,
+        waves with frequency greater than the cutoff propagate into
+        the chromosphere.
+    \item no loop shape change or displacement
+    \item near footpoints.
+\end{itemize}
+\subsubsection{propagating acoustic waves (slow)}
+\begin{itemize}
+    \item $v_{ph}<150$ km s$^{-1}$ $\rightarrow$ slow
+    \item longitudinal, compressive, anisotropic
+    \item Parallel to $\vec{B}$, perturbation of $\vec{B}$ is negligible.
+    \item Generated impulsively at one end of a footpoint.
+    \item Only penetrate $\sim$ 10\% into loop before
+        damped by thermal conduction
+    \item weak dispersion in coronal conditions ($V_{A} \gg c_{s}$)
+    \item 3 phases: periodic, QP, decay
+    \item period = 3, 5, 10 minutes? Or 2--22 seconds? (see kink\_1),
+    \item velocity: 50--200 km s$^{-1}$
+    \item $c_{T} = \sqrt{\frac{c_{s}^2v_{A}^2}{c_{s}^2 + v_{A}^2}} $
+        propagate sub-sonically at $c_{T}$, which is less than $c_{s}$
+    \item ``large'' amplitude, max in top of chromosphere
+    \item Observed using spectroscopy (intensity variations in
+        EUV emission  and Doppler shifts)
+\end{itemize}
+\subsubsection{propagating acoustic waves (fast)}
+\begin{itemize}
+    \item $v_{ph}>150$ km s$^{-1}$ $\rightarrow$ fast
+        (\emph{or} transverse standing waves).
+    \item Quasi-isotropic
+    \item Driven by magnetic forces + plasma pressure forces
+    \item Compressive (magnetic sound wave)
+    \item Speed: $c_{F} = \sqrt{c_{s}^2 + v_{A}^2} $
+    \item Moreton waves in the chromosphere
+    \item Fast EUV waves in the corona
+\end{itemize}
+\subsubsection{Alfv\'en waves}
 Alfv\'en waves are a type of MHD wave in which ions oscillate in response to a
 restoring force provided by an effective tension on the magnetic field lines.
 Low frequency (compared to the ion cyclotron frequency) traveling
@@ -151,13 +706,196 @@ Effects of twisting (or \emph{torsion}):
         even when the pressure gradient is unimportant, so as to
         avoid confusion with shear Alfv\'en waves).
 \end{itemize}
+\subsubsection{EIT wave}
+\subsubsection{Moreton wave}
+Chromospheric signature of a large-scale coronal shock wave. Generated
+by flares, $\sim$ fast-mode MHD waves.
 
+\subsection{resonance}
+Periodic driving force frequency matches the wave frequency
+$\rightarrow$ large amplitude.
+\subsection{resonant absorption}
+\begin{itemize}
+    \item Mechanism of wave heating
+    \item could damp kink mode oscillations.
+    \item Loss of acoustic power in sunspots. Time scales:
+        \begin{enumerate}
+            \item damping: collective mode $\rightarrow$ local mode,
+                \emph{independent} of dissipation.
+            \item dissipative damping of small scale perturbations of local
+                mode.
+        \end{enumerate}
+        $\tau_1 \ll \tau_2$
+    \item inherently non-linear
+\end{itemize}
+
+
+
+
+
+\subsection{torsional vibration}
+\begin{itemize}
+    \item angular vibration of an object $\sim$ shaft along the
+        axis of vibration
+\end{itemize}
+
+\subsection{Modes}
+A wave may be a superposition of lots of other waves. Each of those
+waves is a ``mode'' of the resultant wave (think of the foundation
+of Fourier Analysis: sums of sines and cosines).
+Modes with the lowest wave number are \emph{global}, or
+\emph{fundamental} modes.
+\begin{itemize}
+    \item Different modes are driven by \emph{different restoring forces}.
+\end{itemize}
+\subsection{Normal modes}
+Vibrational state of an oscillatory \emph{system} where the frequency
+is the same for all elements. E.g.\ resonant frequencies: equally
+spaced multiples of the fundamental.
+\subsection{trapped modes}
+For a specified geometry, uniqueness of the solution to a forcing problem
+at a particular frequency is equivalent to the non-existence of a trapped
+mode at that frequency. A trapped mode is a solution of the corresponding
+homogeneous problem and represents a free oscillation with finite energy
+of the fluid surrounding the fixed structure. For a given structure,
+trapped modes may exist only at discrete frequencies.
+Mathematically, a trapped mode corresponds to an eigenvalue embedded
+in the continuous spectrum of the relevant operator.
+\subsection{flute modes}
+See \emph{ballooning modes}
 \subsection{ballooning modes}
 \begin{itemize}
     \item $m > 1$
     \item Role not established yet
 \end{itemize}
+\subsection{leaky modes}
+\begin{itemize}
+    \item Waves are allowed to radiate into the external medium,
+        i.e.\ the condition of mode localization is relaxed.
+    \item complex eigenfrequencies eigenfrequency
+    \item Bessel functions are replaced by Hankel functions in the
+        dispersion relation. Can be the fundamental harmonic.
+    \item Wavenumbers below cutoff value?
+    \item Has electric field that decays monotonically for a finite
+        distance in the transverse direction but becomes oscillatory
+        everywhere beyond that finite distance.
+    \item Mode ``leaks'' out of
+        the waveguide as it travels down it, producing attenuation.
+    \item Relative amplitude of oscillatory part (leakage rate)
+        must be sufficiently small that the mode maintains its
+        shape as it decays, in order to be called a mode at all.
+\end{itemize}
+\subsection{Global/Fundamental modes}
+\begin{itemize}
+    \item $y(x,t)$ governed by some PDE with no \emph{explicit} time dependence.
+    \item A global mode is a solution of the form
+        $y(x,t) = \hat{y}(x)e^{i\omega t}$
+    \item PDE-dynamical system of infinitely many equations coupled together.
+\end{itemize}
+\subsection{Surface modes}
+evanescent behavior in both media (inside and outside cylinder).
+In the context of flux tubes and coronal seismology, surface waves are
+non-oscillatory inside the flux tube (body waves are oscillatory).
+\subsection{Body modes}
+In the context of flux tubes and coronal seismology,
+body waves are oscillatory inside the tube (whereas surface waves are
+non-oscillatory inside the tube).
+\subsection{mode conversion}
+\subsection{mode coupling}
+\subsection{phase mixing}
+\begin{itemize}
+    \item Cause decay of Alfv\'en waves, which suffer intense phase mixing
+    \item Large gradients in Alfv\'{e}n velocity.
+    \item Part of resonant absorption, but is effective over entire range of frequencies,
+        not just resonant ones; spread over volume rather than localized in
+        narrow resonance layer.
+    \item Occurs spatially (propagating wave) or in time (standing wave).
+        \begin{itemize}
+            \item Space: produces effective wavenumber $k_{x}^{*}$ which increases
+                with $z$, so that the effective wavelength decreases. Eventually
+                dissipation converts energy to heat.
+                \[
+                    k_{x}^{*} = \frac{\mathrm{d}k_{z}}{\mathrm{d}x}z
+                    \]
+            \item Time: field lines become more and more out of phase.
+        \end{itemize}
+        \emph{Not} likely to operate in closed magnetic structures
+        (e.g.\ coronal loops)
+\end{itemize}
 
+
+\section{Observables}
+
+\subsection{Polarimetry}
+
+Circular vs. linear polarization\ldots
+linear is $\sim$100 times brighter than circular.
+\begin{itemize}
+    \item Doesn't apply to longitudinal waves, e.g.\ sound.
+    \item Linear waves oscillate (transversely) in a single direction.
+\end{itemize}
+\subsection{Zeeman effect}
+\subsection{Hanle effect}
+\begin{itemize}
+    \item Reduction in polarization of light (depolarization)
+    \item Used to indirectly measure $\overline{B}$
+    \item Depolarization of Fe XIII 10747 in corona (originally polarized due
+        to scattering of unpolarized light from photosphere) preserves
+        information about the direction, but not the strength, of the magnetic
+        field.
+\end{itemize}
+\subsection{Emission measure}
+\begin{itemize}
+    \item $C_{A_{0}} < C_{fast} < C_{A_{e}} $
+    \item highly dispersive.
+    \item Kink modes
+    \item Sausage modes
+    \item propagate faster than both $V_{A}$ and $C_{s}$
+\end{itemize}
+\subsection{Differential Emission Measure (DEM)}
+\[
+    EM = \int{n_{e}^{2}\mathrm{d}V}
+    \]
+\[
+    DEM = \xi(T_{e}) = \int{\frac{n^{2}(r)}{|\nabla{T}|}\mathrm{d}S_{T}}
+    \]
+or
+\[
+    DEM = \frac{\mathrm{d}}{\mathrm{d}T}\left[\int{n_{e}^{2}\mathrm{d}S}\right]
+    \]
+in units of [cm ${^{-5}}$ K${^{-1}}$]. DEM is the integral of electron
+density squared along an optically thin line of sight as a function of
+temperature.
+``Can predict the coronal bremsstrahlung flux component\ldots
+bremsstrahlung correlates with EUV emission.''
+
+\subsection{Fraunhofer lines}
+First observed in 1802 by William Hyde Wallaston, and carefully
+studied by Joseph von Fraunhofer (1787--1826), who catalogued
+the wavelengths in 1814. Ionized sodium: inert gas structure,
+no lines in visible regime. Dark absorption features in solar
+spectrum, in cooler layers of the atmosphere.
+\begin{itemize}
+    \item H and K lines of ionized Calcium
+    \item D line of neutral sodium (5890 \AA{}, 5896 \AA{};
+        resonance lines between n=1 and n-2).
+    \item E (iron)
+    \item C and F (hydrogen)
+\end{itemize}
+
+\subsection{gyrosynchrotron radiation}
+Electromagnetic emission emitted by mildly relativistic electrons moving
+in a magnetic field
+(as opposed to synchrotron, with \emph{ultra}relativistic particles).
+
+
+\section{Analysis techniques}
+\subsection{periodogram}
+\subsection{wavelet analysis}
+\subsection{WKB approximation}
+
+
+\section{Maths}
 \subsection{Bessel's equations}
 
 (From Boas p. 587): Bessel functions are damped sines and cosines.
@@ -183,770 +921,14 @@ ${a}$ = half-integer $\rightarrow$ spherical.
     x\left(xy'\right) + \left(x^{2}-p^{2} \right) y' = 0
     \]
 
-\subsection{body modes}
-In the context of flux tubes and coronal seismology,
-body waves are oscillatory inside the tube (whereas surface waves are
-non-oscillatory inside the tube).
+\subsection{Fourier analysis}
 
-\subsection{Bright points}
-
-\subsection{coronal holes}
-
-\subsection{coronal loops}
-\begin{itemize}
-    \item Main observational feature of the magnetic structure in the
-        upper solar atmosphere.
-    \item \emph{Modelled} as flux tubes; probably consist of
-        many flux tubes.
-\end{itemize}
-
-\subsection{coronal mass ejections (CMEs)}
-Release of magnetic energy; reach Earth in a few days.
-
-\subsection{coronal streamer}
-A wisp-like stream of particles traveling through the Sun's corona,
-visible in images taken with a coronagraph or during a total solar eclipse. Coronal
-streamers are thought to be associated with active regions and/or
-prominences and are most impressive near the maximum of the solar cycle.
-They are large scale magnetic structures of the equatorial solar corona.
-
-\subsection{cusp speed}
-See \emph{tube speed}
-
-\subsection{Differential Emission Measure (DEM)}
+\section{Other}
+\subsection{adiabatic index}
+The adiabatic index is the ratio of specific heats:
 \[
-    EM = \int{n_{e}^{2}\mathrm{d}V}
+    \gamma = \frac{c_{P}}{c_{V}}
     \]
-\[
-    DEM = \xi(T_{e}) = \int{\frac{n^{2}(r)}{|\nabla{T}|}\mathrm{d}S_{T}}
-    \]
-or
-\[
-    DEM = \frac{\mathrm{d}}{\mathrm{d}T}\left[\int{n_{e}^{2}\mathrm{d}S}\right]
-    \]
-in units of [cm ${^{-5}}$ K${^{-1}}$]. DEM is the integral of electron
-density squared along an optically thin line of sight as a function of
-temperature.
-``Can predict the coronal bremsstrahlung flux component\ldots
-bremsstrahlung correlates with EUV emission.''
-
-\subsection{dispersion}
-A mathematical term that applies to wave behavior; separation of a complex
-wave into its component parts according to a given characteristic
-(frequency, wavelength, etc.) ``Dissipation'' is a term that has to do with
-shock and heating, and can be applied to anything. Safer to use this one
-if you're not sure.
-\textbf{Dispersion} is when the distinct phase velocities of the components of the
-envelope cause the wave packet to ``spread out'' over time.
-The components of the wave packet (or envelope) move apart to the degree
-where they no longer combine to complete the envelope.
-
-Causes different components of the wave to have different phase velocities.
-
-Different kinds of dispersion:
-\begin{itemize}
-    \item Normal dispersion: strictly increasing Re ${\epsilon(\omega)}$ with
-        increasing ${\omega}$.
-    \item Anomalous dispersion: decreasing Re ${\epsilon(\omega)}$ with
-        increasing ${\omega}$.
-    \item Resonant absorption: occurs in regions where Im ${\epsilon(\omega)}$
-        is large.
-\end{itemize}
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=5in]{disp.png}
-\end{figure}
-
-No dispersion: ${v_{ph} = v_{gr}}$; dispersion: ${v_{ph} \neq v_{gr}}$.
-A medium that is free from dispersion has index of refraction that is constant
-as a function of frequency, so all wavelengths are similarly affected.
-Permittivity and permeability are functions of frequency.
-Non-dispersive waves have phase speed (${v_{ph}}$, speed that wave actually travels
-through medium?) independent of wavenumber, ${k}$.
-All waves of \emph{any} ${k}$ propagate at the same speed.
-Uniform dissipation, resonant mode conversion, physical mechanisms vs. ?
-
-Dispersion \emph{relation}:
-\begin{itemize}
-    \item Relates the wavelength (or wavenumber) of a wave to its
-        frequency.
-    \item Describe the effect of dispersion in a medium on the properties
-        of a wave traveling through that medium.
-\end{itemize}
-
-\subsection{EIT wave}
-
-\subsection{emission measure}
-
-\subsection{facula}\label{ssec:facula}
-Aka.\ ``little torch''
-    \begin{itemize}
-        \item Appear in \emph{photosphere}; same thing as plage
-            (which appear in the chromosphere).
-        \item Bright spots --- reason why total brightness is higher at
-            solar maximum.
-        \item small scale bright points in the vicinity of sunspots;
-            appear hours before the sunspots, but can remain for months
-            after the sunspots are gone.
-        \item visible only near limb.
-    \end{itemize}
-\subsection{fast waves}
-
-\begin{itemize}
-    \item $C_{A_{0}} < C_{fast} < C_{A_{e}} $
-    \item highly dispersive.
-    \item Kink modes
-    \item Sausage modes
-    \item propagate faster than both $V_{A}$ and $C_{s}$
-\end{itemize}
-
-\subsection{filament}
-    \begin{itemize}
-        \item Viewed on disk ($\equiv$ prominence against sky)
-        \item Thin, cool, dark ribbons
-    \end{itemize}
-    Filament channel:
-
-\subsection{flares}
-Rapid conversion of stored magnetic energy to particles acceleration and
-excess radiation in the corona.
-
-\subsection{flux tubes}
-    \begin{itemize}
-        \item Formed deep in the convection zone.
-        \item Rise by magnetic buoyancy in an $\Omega$-shaped loop.
-        \item Magnetic field lines can be thought of as infinitely
-          thin flux tubes.
-    \end{itemize}
-
-\subsection{Fraunhofer lines}
-First observed in 1802 by William Hyde Wallaston, and carefully
-studied by Joseph von Fraunhofer (1787--1826), who catalogued
-the wavelengths in 1814. Ionized sodium: inert gas structure,
-no lines in visible regime. Dark absorption features in solar
-spectrum, in cooler layers of the atmosphere.
-\begin{itemize}
-    \item H and K lines of ionized Calcium
-    \item D line of neutral sodium (5890 \AA{}, 5896 \AA{};
-        resonance lines between n=1 and n-2).
-    \item E (iron)
-    \item C and F (hydrogen)
-\end{itemize}
-
-\subsection{flute modes}
-See \emph{ballooning modes}
-
-\subsection{frozen-in flux}
-In a perfectly conducting material (i.e.\ $\eta = 0$),
-Ohm's law goes from
-$ \vec{E} + \vec{v} \times \vec{B} = \vec{J}\eta $ to
-$ \vec{E} + \vec{v} \times \vec{B} = 0 $
-Nothing can be perpendicular to the field lines $\ldots$
-See Alfv\'en's Theorem.
-
-A property of a moving fluid which represents the potential for helical flow
-(i.e. flow which follows the pattern of a corkscrew) to evolve. Helicity is
-proportional to the strength of the flow, the amount of vertical wind shear,
-and the amount of turning in the flow (i.e. vorticity). Atmospheric helicity is
-computed from the vertical wind profile in the lower part of the atmosphere
-(usually from the surface up to 3 km), and is measured relative to storm
-motion. Higher values of helicity (generally, around 150 m2/s2 or more) favor
-the development of mid-level rotation (i.e. mesocyclones). Extreme values can
-exceed 600 m2/s2.
-
-\subsection{fundamental modes}
-See \emph{global modes}
-
-\subsection{global modes}
-\begin{itemize}
-    \item $y(x,t)$ governed by some PDE with no \emph{explicit} time dependence.
-    \item A global mode is a solution of the form
-        $y(x,t) = \hat{y}(x)e^{i\omega t}$
-    \item PDE-dynamical system of infinitely many equations coupled together.
-\end{itemize}
-
-\subsection{gravity waves}
-Generated in fluid medium or interface between two media when the
-force of gravity or buoyency tries to restore equilibrium
-e.g.\ ``wind waves'' from between atmosphere and ocean.
-
-\subsection{group velocity}
-Direction of a wave's energy flow (Poynting vector for light).
-\[
-    v_{g} = \frac{ \mathrm{d}\omega }{ \mathrm{d}k }
-    \]
-
-\subsection{gyrosynchrotron radiation}
-Electromagnetic emission emitted by mildly relativistic electrons moving
-in a magnetic field
-(as opposed to synchrotron, with \emph{ultra}relativistic particles).
-\subsection{H$\alpha$ images}
-\subsection{instabilities}
-A disturbance that is not stabilized by the resulting forces.
-
-\subsection{jets}
-Word for rapid burst of emission? Rapid upflows, plasma
-ejections$\ldots$ UV spectral emission requires high temperatures.
-For UV:\ flux from photospheric continuum is low. Chromosphere:
-temp is lower and background is higher (compared to $\ldots$?)
-so lines are in absorption. Low flux: radiative excitation doesn't occur.
-High temps allow for collisional excitation and emission upon returning
-to the ground state. $\Delta v = \sqrt{v_{th}^2+v_{Nth}^2}$.
-
-\subsection{kink modes}
-Fast kink waves:
-\begin{itemize}
-    \item transverse (general property of fast waves)
-    \item $v_{ph} = c_k = \sqrt{\frac{\rho_oV^2_{Ao}+\rho_eV^2_{Ae}}
-        {\rho_o+\rho_e}} \approx V_A\sqrt{\frac{2}{1+\frac{\rho_e}{\rho_o}}} $
-        in the low-$\beta$ plasma.
-    \item Period $P=\frac{2\ell}{V_A}\sqrt{\frac{1+\rho_e/\rho_o}{2}}$
-        where $\lambda=2\ell$ ($\ell$ is the loop length).
-        Typically, $\ell \approx 60-600$ Mm in the corona.
-    \item Period of global kink mode, $P = \frac{2\ell}{c_K}$
-    \item Important observation from which magnetic field strength
-        can be derived.
-    \item slab: phase speed = V$_{A_e}$
-    \item tube: kink speed:
-        $$ c_K = \frac{B_i^2 + B_e^2}{\sqrt{\mu(\rho_i+\rho_e)}} $$
-        (mean Alfv\'enic speed).
-        Slab (or tube) is moved laterally; little variation in cross-sec,
-        density, or intensity.
-\end{itemize}
-Standing and propagating both rapidly damped. Much more observations of
-standing kink modes than propagating (`tadpole'-like structures moving
-downward; open magnetic structures).
-
-Slow kink waves:
-\begin{itemize}
-    \item longitudinal (velocity directed along magnetic field)
-    \item compressible (variations in density and intensity)
-\end{itemize}
-
-Other (or simply unorganized):
-\begin{itemize}
-    \item oblique (inclined with respect to the flow direction)
-    \item \emph{weakly compressible}, but could nevertheless be
-        observed with imaging instruments as \emph{periodic standing}
-        or \emph{propagating} displacements of coronal structures, e.g.\ coronal loops.
-        The frequency of transverse or ``kink'' modes is given by the following expression:
-            $$ w_K = \sqrt{ \frac{2k_zB^2}{\mu(\rho_i+\rho_e)}  }   $$
-        In a cylindrical model of a loop,
-        the parameter \emph{azimuthal wave number},
-        m, is equal to 1 for kink modes.
-    \item In the long wavelength limit, the phase speed of all but
-        sausage fast modes tends to the so-called kink speed,
-        which corresponds to the density weighed average Alfv\'en speed.
-    \item Two instabilities of axisymmetric, current-carrying plasmas
-        \begin{itemize}
-            \item sawtooth relaxations
-            \item fishbone oscillations
-        \end{itemize}
-        associated with instability of internal kink modes
-    \item Both standing and propagating, T = $\sim$ seconds-minutes.
-    \item lowest spatial harmonics along field; global (fundamental)
-        modes of coronal loops nodes of displacement at footpoints,
-        maximum at apex.
-\end{itemize}
-
-\subsection{leaky modes}
-\begin{itemize}
-    \item Waves are allowed to radiate into the external medium,
-        i.e.\ the condition of mode localization is relaxed.
-    \item complex eigenfrequencies eigenfrequency 
-    \item Bessel functions are replaced by Hankel functions in the
-        dispersion relation. Can be the fundamental harmonic.
-    \item Wavenumbers below cutoff value?
-    \item Has electric field that decays monotonically for a finite
-        distance in the transverse direction but becomes oscillatory
-        everywhere beyond that finite distance.
-    \item Mode ``leaks'' out of
-        the waveguide as it travels down it, producing attenuation.
-    \item Relative amplitude of oscillatory part (leakage rate)
-        must be sufficiently small that the mode maintains its
-        shape as it decays, in order to be called a mode at all.
-\end{itemize}
-
-\subsection{longitudinal waves}
-waves in which the displacement of the \emph{medium} is in the
-same direction as, or the opposite direction to,
-the direction of travel of the wave.
-
-\subsection{magnetoacoustic waves}
-\begin{itemize}
-    \item A magnetosonic wave (also magnetoacoustic wave) is a
-        longitudinal wave of ions (and electrons) in a magnetized
-        plasma propagating perpendicular to the stationary magnetic field.
-    \item compressible
-    \item slow MHD wave; slow MA waves only have 1-3 oscillations before
-        damping out, observed oscillations are manifestation of rapid
-        damping due to radiative energy losses. Reduced $\vec{B}$ regions
-        = increased $\rho\rightarrow$ rapid radiative losses. \emph{Fast}
-        MH waves radiate little because they're damped too slowly.
-    \item collectively supported by the plasma environment, i.e., the wave mode acts
-        across neighbouring magnetic field lines and across transverse
-        plasma inhomogeneities.
-    \item observed as disturbances of EUV (and possibly X-ray) emission
-\end{itemize}
-
-\subsection{magnetohydrodynamic (MHD) waves}
-\begin{itemize}
-    \item study of electrically conducting fluids (plasma)
-    \item Theoretical foundation:
-        \begin{itemize}
-            \item dispersion relation of MHD modes of a plasma cylinder
-            \item models: loops, prominence fibrils, plumes, various filaments
-            \item evolutionary equations
-        \end{itemize}
-    \item Considerations of observed waves:
-        \begin{itemize}
-            \item geometry: simple (slab or tube)? or more complex?
-            \item mode
-                \begin{itemize}
-                    \item longitudinal vs.\ transverse
-                    \item compressible vs.\ incompressible
-                    \item oscillating vs.\ propagating
-                    \item fast vs.\ slow
-                    \item propagating vs.\ standing
-                    \item isotropic vs.\ anisotropic
-                    \item phase differences?
-                \end{itemize}
-        \end{itemize}
-    \item \textcolor{red}{Interpreting observations: distinguish between modes
-        that are pressure driven (acoustic/slow magnetoacoustic)
-        and magnetically driven (Alfv\'en)}
-    \item \textcolor{red}{Relations between the (internal and external)
-        characteristic speeds (Alfv\'en, sound, and tube speeds)
-        \emph{determine properties of MHD modes guided by the tube.}}
-    \item The behavior of linear perturbations of the form
-        $$ \delta P_{tot}(r)\textrm{exp}\left[i(k_zz+m\phi-\omega t)\right]  $$
-        is governed by  the following system of first order differential
-        equations and algebraic equations:
-        $$ D\frac{d}{dr}(r\xi_r) = (C_A^2+C_s^2)\ldots  $$
-    \item \textcolor{red}{Linearised equations}
-
-\emph{Dissipation and Damping:}
-
-    \item Dissipation of MHD waves is manifold:
-        \begin{itemize}
-            \item Couple with each other
-            \item interact non-linearly
-            \item resonantly interact with the closed waveguide
-            \item devolop non-linearly (e.g.\ solitons or shock waves
-                can form)
-        \end{itemize}
-    \item Inhomogeneous and magnetized plasma has two particular
-        dissipation mechanisms of MHD waves:
-        \begin{itemize}
-            \item Resonant absorption
-            \item Phase mixing
-        \end{itemize}
-\end{itemize}
-
-
-\subsection{modes}
-A wave may be a superposition of lots of other waves. Each of those
-waves is a ``mode'' of the resultant wave (think of the foundation
-of Fourier Analysis: sums of sines and cosines).
-Modes with the lowest wave number are \emph{global}, or
-\emph{fundamental} modes.
-\begin{itemize}
-    \item Different modes are driven by \emph{different restoring forces}.
-\end{itemize}
-
-\subsection{mode conversion}
-\subsection{mode coupling}
-
-\subsection{Moreton wave}
-Chromospheric signature of a large-scale coronal shock wave. Generated
-by flares, $\sim$ fast-mode MHD waves.
-
-\subsection{Normal modes}
-Vibrational state of an oscillatory \emph{system} where the frequency
-is the same for all elements. E.g.\ resonant frequencies: equally
-spaced multiples of the fundamental.
-
-\subsection{oscillations}
-Three types:
-\begin{enumerate}
-    \item un-damped
-    \item damped
-    \item forced
-\end{enumerate}
-
-\subsection{periodogram}
-
-\subsection{phase mixing}
-\begin{itemize}
-    \item Cause decay of Alfv\'en waves, which suffer intense phase mixing
-    \item Large gradients in Alfv\'{e}n velocity.
-    \item Part of resonant absorption, but is effective over entire range of frequencies,
-        not just resonant ones; spread over volume rather than localized in
-        narrow resonance layer.
-    \item Occurs spatially (propagating wave) or in time (standing wave).
-        \begin{itemize}
-            \item Space: produces effective wavenumber $k_{x}^{*}$ which increases
-                with $z$, so that the effective wavelength decreases. Eventually
-                dissipation converts energy to heat.
-                \[
-                    k_{x}^{*} = \frac{\mathrm{d}k_{z}}{\mathrm{d}x}z
-                    \]
-            \item Time: field lines become more and more out of phase.
-        \end{itemize}
-        \emph{Not} likely to operate in closed magnetic structures
-        (e.g.\ coronal loops)
-\end{itemize}
-
-\subsection{phase speed}
-\[
-    v_{p} = \frac{\lambda}{T} = \frac{\omega}{k} = \frac{c}{n}
-    \]
-where $n$ = index of refraction ($n = 1$ in vacuum).
-\[
-    k = \frac{2\pi}{\lambda}, \omega = \frac{2\pi}{T}
-    \]
-
-\subsection{plage}
-    \begin{itemize}
-        \item Appear in \emph{chromosphere}; same thing as \hyperref[ssec:facula]{faculae}
-        \item Bright spots caused by light emitted by clouds of
-            hydrogen or calcium (specifically H$\alpha$ and
-            Ca H and K lines).
-    \end{itemize}
-
-\subsection{plume}
-Apparently help to shield Earth from solar storms.
-They are long thin streamers that project outward from the Sun's north and
-south poles. We often find bright areas at the footpoints of these
-features that are associated with small magnetic regions on the solar
-surface. These structures are associated with the \emph{open} magnetic
-field lines at the Sun's \emph{poles}. The plumes are formed by the action of
-the solar wind in much the same way as the peaks on the helmet
-streamers.
-\subsection{polarization}
-\begin{itemize}
-    \item Doesn't apply to longitudinal waves, e.g.\ sound.
-    \item Linear waves oscillate (transversely) in a single direction.
-\end{itemize}
-
-\subsection{polytropic index}
-
-\subsection{pores}
-Small sunspots with an umbra, but no penumbra.
-Size on order of upper limit of magnetic bright points ($\sim$ 1700
-km).
-\subsection{pressure waves}
-P-modes are global acoustic oscillations.
-Longitudinal, fast, generated by turbulence near the photosphere,
-observed by measuring Doppler shift of absorption lines in the
-photosphere, spherical harmonics:
-\begin{itemize}
-    \item $n$: radial order, number of nodes in radial direction
-    \item $l$: angular degree, or harmonic degree,
-        number of node lines on surface,
-        $\sim$ total number of planes slicing the sun
-    \item $m$: azimuthal number;
-        number of surface nodal lines that cross the equator,
-        number of planes slicing longitudinally. $-l\leq m\leq +l$
-\end{itemize}
-\subsection{prominence}
-    \begin{itemize}
-        \item Viewed on the limb; same thing as filaments.
-        \item May erupt sometime during its life and be associated
-        with a CME
-    \end{itemize}
-\subsection{propagating acoustic waves (slow)}
-\begin{itemize}
-    \item $v_{ph}<150$ km s$^{-1}$ $\rightarrow$ slow
-    \item longitudinal, compressive, anisotropic
-    \item Parallel to $\vec{B}$, perturbation of $\vec{B}$ is negligible.
-    \item Generated impulsively at one end of a footpoint.
-    \item Only penetrate $\sim$ 10\% into loop before
-        damped by thermal conduction
-    \item weak dispersion in coronal conditions ($V_{A} \gg c_{s}$)
-    \item 3 phases: periodic, QP, decay
-    \item period = 3, 5, 10 minutes? Or 2--22 seconds? (see kink\_1),
-    \item velocity: 50--200 km s$^{-1}$
-    \item $c_{T} = \sqrt{\frac{c_{s}^2v_{A}^2}{c_{s}^2 + v_{A}^2}} $
-        propagate sub-sonically at $c_{T}$, which is less than $c_{s}$
-    \item ``large'' amplitude, max in top of chromosphere
-    \item Observed using spectroscopy (intensity variations in
-        EUV emission  and Doppler shifts)
-\end{itemize}
-\subsection{propagating acoustic waves (fast)}
-\begin{itemize}
-    \item $v_{ph}>150$ km s$^{-1}$ $\rightarrow$ fast
-        (\emph{or} transverse standing waves).
-    \item Quasi-isotropic
-    \item Driven by magnetic forces + plasma pressure forces
-    \item Compressive (magnetic sound wave)
-    \item Speed: $c_{F} = \sqrt{c_{s}^2 + v_{A}^2} $
-    \item Moreton waves in the chromosphere
-    \item Fast EUV waves in the corona
-\end{itemize}
-\subsection{resonance}
-Periodic driving force frequency matches the wave frequency
-$\rightarrow$ large amplitude.
-\subsection{resonant absorption}
-\begin{itemize}
-    \item Mechanism of wave heating
-    \item could damp kink mode oscillations.
-    \item Loss of acoustic power in sunspots. Time scales:
-        \begin{enumerate}
-            \item damping: collective mode $\rightarrow$ local mode,
-                \emph{independent} of dissipation.
-            \item dissipative damping of small scale perturbations of local
-                mode.
-        \end{enumerate}
-        $\tau_1 \ll \tau_2$
-    \item inherently non-linear
-\end{itemize}
-\subsection{sausage modes}
-%Trapped fast modes supported by thick, dense loops because of the cutoff
-%wavenumber (pfw_2). Observe spatially resolved radio (see sources in
-%pfw_2).
-\begin{itemize}
-    \item m = 0
-    \item The fast magnetoacoustic sausage mode is another type of
-        localized, modified fast magnetoacoustic wave.
-    \item Mainly transverse.
-    \item Standing fast sausage modes have symmetric tube modes
-    \item Has a long-wavelength cutoff (trapped sausage modes do
-        not exist at longer wavelengths).
-        Approaches a cut-off at the external Alfv\'en speed.
-        (Under condition of \emph{mode localization}).
-        \emph{Effects} of the sausage mode are easiest to observe in
-        the radio regime (not the wave itself), where more of a
-        ``point'' is observed, rather than extended$\ldots$
-    \item Main feature is the periodic fluctuation of the cross-subsectional
-        area of the waveguide. This change is also associated with
-        periodic fluctuations in density and temperature within the
-        waveguide.
-    \item Distinct sign of sausage oscillations is when periodic
-        phenomena in cross-subsection and intensity are almost
-        180$^{\circ}$ out of phase $\rightarrow$ strong signal.
-        (Less distinct signal is when periodicities in pore size
-        don't match any intensity variations).
-    \item Produce perturbations in density and magnetic field strength,
-        and the corresponding plasma motions cause pulsations in the
-        tube cross-subsection.
-    \item Associated with perturbations of the loop cross-subsection
-        and plasma concentration.
-    \item Perturbations of plasma in the radial direction are stronger
-        than perturbations along the field.
-    \item Mode conversion and absorption through Alfv\'en resonance
-        cannot take place (slow resonance can still operate).
-    \item Phase speed is in the range between the Alfv\'en speed inside
-        and outside the loop.
-\end{itemize}
-
-\subsection{slow waves}
-\begin{itemize}
-    \item $C_{T_0} < C_{slow} < C_{s_0}$
-    \item longitudinal
-    \item essentially acoustic in a low-$\beta$ plasma and subject to
-        reflection if the frequency is below the cutoff frequency.
-    \item propagate slower than both $V_{A}$ and $C_{s}$ (but faster than
-        the cusp speed).
-    \item Sound waves are subject to nonlinear steepening and shocking
-        as the density decreases with height through the chromosphere.
-\end{itemize}
-
-\subsection{solar cycle}
-Three stages:
-\begin{enumerate}
-    \item Build-up of magnetic field
-    \item Turnover (maximum)
-    \item Reversal of poles
-\end{enumerate}
-This takes a total of $\sim$ 11 years, followed by another 11 years of the same
-sequence, but with the poles reversed, for a total of 22 years.
-
-\subsection{solar wind}
-Stream of energized, charged particles, primarily protons and electrons,
-flowing outward from the sun at $v \leq 900$ km s$^{-1}$ and T = 10$^6$ K.
-Solar wind plasma originates in thin, intense flux tubes at granule
-and supergranule boundaries. Fast (steady) vs.\ slow (variable) wind.
-
-\subsection{speeds}
-Characteristic speeds of MHD:
-\begin{enumerate}
-    \item sound
-        \[
-            C_{s} = \sqrt{\frac{\gamma p_{0}}{\rho_{0}}} 
-            \]
-        \[
-            C_{s} \approx 166 T_{o}^{1/2} m s^{-1} = 200 km s^{-1}
-            \]
-    \item Alfv\'en
-        \[
-            C_{A} = \frac{B_{0}}{\sqrt{\mu_{0}\rho_{0}}} 
-            \]
-        \[
-            V_{A} = 2.18\times10^{12}\frac{B_o}{\sqrt{n_o}}
-        \textrm{m}\ \textrm{s}^{-1}
-               = 3000 \textrm{km}\ \textrm{s}^{-1}
-            \]
-               (B$_{o} \sim$ 100 G; n$_{o}$ $\sim$ 10$^{16}$ m$^{-3}$)
-\end{enumerate}
-
-
-
-
-
-
-
-\subsection{spherical harmonics}
-3 kinds of resonant modes of oscillation:
-\begin{itemize}
-    \item p (pressure)
-    \item g (gravity)
-    \item f (?)
-\end{itemize}
-Numbers:
-\begin{itemize}
-    \item n - \emph{order}; Number of nodes in radial direction
-    \item l - \emph{harmonic degree}; number of node lines on
-        surface $\sim$ total number of planes slicing the sun.
-    \item m - \emph{something}; number of surface nodal lines that
-        cross the equator; phase\\
-        $-l \leq m \leq l$ (direction of waves is important); number of
-        planes slicing longitudinally.
-\end{itemize}
-
-\subsection{spicules}
-Observed in the chromosphere, jets are about 500 km diameter and move upward
-from the photosphere at speeds of about 20 km/s. They are regions of intense
-energy, possibly caused by plasma being propelled by shock waves that
-originated in the interior.
-
-Type I spicules (dynamic fibers) are caused by shock waves.
-Type II spicules are caused by strong flows.
-
-\subsection{standing acoustic oscillations}
-Characteristics:
-\begin{itemize}
-    \item Pressure forces in opposition
-    \item Period = 7--31 minutes (20 minutes from another source)
-    \item Decay times = 5.7--36.8 minutes
-    \item Peak velocity = 200 km/sec
-\end{itemize}
-Standing oscillations vs.\ propagating waves
-\begin{itemize}
-    \item In loops, propagating waves damp before
-        reaching opposite footpoint.
-    \item Velocity and intensity are 90$^{\circ}$ out of phase
-        for standing oscillations, and are in phase for propagating
-        acoustic waves.
-    \item Frequencies less than the cutoff are standing oscillations,
-        waves with frequency greater than the cutoff propagate into
-        the chromosphere.
-    \item no loop shape change or displacement
-    \item near footpoints.
-\end{itemize}
-
-\subsection{sunspots}
-Dark regions of intense magnetic field.
-
-\subsection{supergranules}
-Show up most clearly as a pattern of horizontal motions.
-\begin{itemize}
-    \item Doppler measurements near limb
-    \item local correlation tracking of granules near center
-\end{itemize}
-Above a supergranule cell
-\begin{itemize}
-    \item 750 km active regions
-    \item 1600 km quiet regions
-\end{itemize}
-Magnetic field spreads out to fill the chromosphere and form a
-horizontal canopy or partial canopy.
-
-\subsection{surges}
-
-\subsection{standing waves}
-Confined to a finite region of space $\rightarrow$ quantifies the frequency
-\begin{itemize}
-    \item Fundamental (2 nodes, one on each end):
-        $$f_1 = \frac{1}{2L}\sqrt{\frac{F}{\mu}}$$
-        where L is the string length, F is the tension, $\mu$ is the mass density
-    \item 3 nodes: $f_2 = 2f_1$
-    \item 4 nodes: $f_3 = 3f_1$
-\end{itemize}
-
-
-\subsection{surface modes}
-evanescent behavior in both media (inside and outside cylinder).
-In the context of flux tubes and coronal seismology, surface waves are
-non-oscillatory inside the flux tube (body waves are oscillatory).
-
-\subsection{torsional vibration}
-\begin{itemize}
-    \item angular vibration of an object $\sim$ shaft along the
-        axis of vibration
-\end{itemize}
-
-\subsection{transverse waves}
-\textcolor{magenta}{(from wikipedia:)}
-moving waves that \emph{consist} of oscillations occurring perpendicular
-to the direction of energy transfer.
-If a \emph{transverse} wave is moving in the positive x-direction,
-its \emph{oscillations} are in up and down directions that lie in the y–z plane.
-Light is an example of a transverse wave.
-($\vec{B}$ and $\vec{E}$ oscillate in directions perpendicular to the direction
-in which the light is actually traveling).
-With regard to transverse waves in matter,
-the \emph{displacement of the medium} is perpendicular to the
-direction of propagation of the wave.
-Examples: A ripple in a pond and a wave on a string.
-
-\subsection{trapped modes}
-For a specified geometry, uniqueness of the solution to a forcing problem
-at a particular frequency is equivalent to the non-existence of a trapped
-mode at that frequency. A trapped mode is a solution of the corresponding
-homogeneous problem and represents a free oscillation with finite energy
-of the fluid surrounding the fixed structure. For a given structure,
-trapped modes may exist only at discrete frequencies.
-Mathematically, a trapped mode corresponds to an eigenvalue embedded
-in the continuous spectrum of the relevant operator.
-
-\subsection{tube speed}
-Also known as \emph{cusp speed}, the tube speed is the combination of sound
-and Alfv\'en speeds.
-$${ C_{T} = C_{s}C_{A}/\left(C_{A}^{2} + C_{s}^{2}\right)^{1/2} }$$
-
-\subsection{wave}
-\begin{itemize}
-    \item Caused by any turbulence in a medium.
-    \item Observable properties
-        \begin{itemize}
-            \item Period
-            \item wavelength
-            \item amplitude
-            \item temporal/spatial signatures (shape of perturbation)
-            \item characteristic scenerios of evolution (e.g.\ damped?)
-        \end{itemize}
-\end{itemize}
-
-\subsection{wave number}
-Number of waves in a unit distance.
-${ k = 2\pi }$
-
-\subsection{waveguide}
-\begin{itemize}
-    \item Width $\sim$ same order of magnitude as the wavelength of
-        the guided wave.
-    \item Pores extending up from the photosphere
-        into the solar atmosphere can act as an
-        MHD waveguide.
-    \item Flux tubes are excellent waveguides
-\end{itemize}
-
-\subsection{wavelet analysis}
-\subsection{WKB approximation}
-\subsection{Zeeman effect}
-
 
 \section{Solar instruments}
 \subsection{SoHO}
@@ -958,6 +940,60 @@ Instruments:
         in the corona.
 \end{itemize}
 
+\subsection{DKIST}
+\begin{description}
+    \item [Visible Broadband Imager (VBI)] high spatial/temporal resoloution
+        of the atmosphere.
+    \item [Visible Spectro-Polarimeter (ViSP)] multi-line spectropolarimeter
+    \item [double Fabry-P\'erot based Visible Tunable Filter (VTF)] high spatial
+        resolution spectropolarimetry
+    \item [DL-NIRSP] fiber-fed diffraction-limited NIR spectropolarimeter
+    \item [Cryo-NIRSP] cryogenic NIR SP for coronal magnetic field measurements
+        and on-disk observations of, e.g., the CO line at 4.7 ${\mu}$
+\end{description}
+\subsection{Hinode}
+
+\subsection{Interface Region Imaging Spectrograph (IRIS)}
+\begin{itemize}
+    \item Lockheed Martin Solar and Astrophysical Laboratory (LMSAL)
+    \item Launched June 2013; sun-synchronous, low-Earth orbit.
+    \item Goals: Understand how chromosphere is energized
+    \item Revealed complexity, density/temperature contrasts in the interface
+        region.
+    \item 19 cm Cassegrain telescope
+        \begin{itemize}
+            \item dual-range UV spectrograph (imaging) with 1 second cadence,
+                0.3'' spatial resolution, $<$ 1\AA{} spectral resolution.
+            \item slit-jaw imager (SJI) with four passbands:
+                \begin{enumerate}
+                    \item CII 1335\AA{} (transition region line)
+                    \item SiIV 1403\AA{} (transition region line)
+                    \item Mg II k 2796\AA{} (chromospheric line)
+                    \item 2830\AA{} (photospheric passband)
+                \end{enumerate}
+        \end{itemize}
+    \item ``NASA Small Explorer developed and operated by LMSAL with mission operations
+    executed at NASA Ames Research center and major contributions to downlink
+    communications funded by ESA and the Norwegian Space Center.''
+    (Bryans et al. 2016)
+\end{itemize}
+\subsection{RHESSI}
+
+\subsection{Skylab}
+Launched 1973
+
+Instruments:
+\begin{itemize}
+    \item Apollo Telescope Mount (ATM)
+\end{itemize}
+
+\subsection{Coronal Multichannel Polarimeter (CoMP)}
+\begin{itemize}
+    \item Daily observations of coronal emission-line polarization.
+    \item 20 cm
+\end{itemize}
+
+\subsection{STEREO}
 \subsection{Solar Dynamics Observatory (SDO)}
 \subsubsection{AIA}
 \begin{table}[h]
@@ -972,22 +1008,7 @@ Instruments:
 \end{table}
 \subsubsection{EVE}
 \subsubsection{HMI}
-\subsection{RHESSI}
-\subsection{Hinode}
 \subsection{TRACE}
-\subsection{DKIST}
-\begin{description}
-    \item [Visible Broadband Imager (VBI)] high spatial/temporal resoloution
-        of the atmosphere.
-    \item [Visible Spectro-Polarimeter (ViSP)] multi-line spectropolarimeter
-    \item [double Fabry-P\'erot based Visible Tunable Filter (VTF)] high spatial
-        resolution spectropolarimetry
-    \item [DL-NIRSP] fiber-fed diffraction-limited NIR spectropolarimeter
-    \item [Cryo-NIRSP] cryogenic NIR SP for coronal magnetic field measurements
-        and on-disk observations of, e.g., the CO line at 4.7 ${\mu}$
-\end{description}
-\subsection{SECIS}
-\subsection{STEREO}
 The Solar Terrestrial Relations Observatory (STEREO) is a solar observation
 mission. Two nearly identical spacecraft were launched in 2006 into
 orbits around the Sun that cause them to respectively pull farther ahead
@@ -1018,29 +1039,6 @@ Instruments:
         Earth.
 \end{itemize}
 
-\subsection{Interface Region Imaging Spectrograph (IRIS)}
-\begin{itemize}
-    \item Lockheed Martin Solar and Astrophysical Laboratory (LMSAL)
-    \item Launched June 2013; sun-synchronous, low-Earth orbit.
-    \item Goals: Understand how chromosphere is energized
-    \item Revealed complexity, density/temperature contrasts in the interface region.
-    \item 19 cm Cassegrain telescope
-        \begin{itemize}
-            \item dual-range UV spectrograph (imaging) with 1 second cadence,
-                0.3'' spatial resolution, $\lt$ 1\AA{} spectral resolution.
-            \item slit-jaw imager (SJI) with four passbands:
-                \begin{enumerate}
-                    \item CII 1335\AA{} (transition region line)
-                    \item SiIV 1403\AA{} (transition region line)
-                    \item Mg II k 2796\AA{} (chromospheric line)
-                    \item 2830\AA{} (photospheric passband)
-                \end{enumerate}
-        \end{itemize}
-    \item ``NASA Small Explorer developed and operated by LMSAL with mission operations
-    executed at NASA Ames Research center and major contributions to downlink
-    communications funded by ESA and the Norwegian Space Center.''
-    (Bryans et al. 2016)
-\end{itemize}
 
 
 
